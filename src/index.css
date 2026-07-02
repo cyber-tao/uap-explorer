@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 4%;
+    --foreground: 30 14% 92%;
+    --card: 210 33% 4%;
+    --card-foreground: 30 14% 92%;
+    --popover: 210 33% 4%;
+    --popover-foreground: 30 14% 92%;
+    --primary: 190 70% 50%;
+    --primary-foreground: 210 33% 4%;
+    --secondary: 210 10% 12%;
+    --secondary-foreground: 30 14% 92%;
+    --muted: 210 10% 12%;
+    --muted-foreground: 240 5% 55%;
+    --accent: 210 10% 12%;
+    --accent-foreground: 30 14% 92%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 10% 15%;
+    --input: 210 10% 15%;
+    --ring: 190 70% 50%;
+    --radius: 0.625rem;
+
+    /* UAP Explorer custom colors */
+    --uap-base: #050A0F;
+    --uap-surface: #0A1117;
+    --uap-surface-elevated: #0F1923;
+    --uap-ivory: #EDE8E4;
+    --uap-muted: #8A99A8;
+    --uap-cyan: #30B0D0;
+    --uap-amber: #F5A623;
+    --uap-high: #00D9A5;
+    --uap-medium: #F5A623;
+    --uap-low: #FF6B35;
+    --uap-speculative: #B8B8B8;
+    --uap-nuclear: #FF2E63;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    font-family: 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #050A0F;
+    color: #EDE8E4;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    word-break: keep-all;
+  }
+}
+
+@layer components {
+  .font-serif-display {
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+  }
+
+  .font-sans-body {
+    font-family: 'Noto Sans SC', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .font-mono-data {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+  }
+
+  .uap-card {
+    background: rgba(10, 17, 23, 0.85);
+    border: 1px solid rgba(138, 153, 168, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+  }
+
+  .uap-card:hover {
+    border-color: rgba(48, 176, 208, 0.4);
+    box-shadow: 0 0 24px rgba(48, 176, 208, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .uap-badge-high {
+    background: rgba(0, 217, 165, 0.15);
+    color: #00D9A5;
+    border: 1px solid rgba(0, 217, 165, 0.4);
+  }
+
+  .uap-badge-medium {
+    background: rgba(245, 166, 35, 0.15);
+    color: #F5A623;
+    border: 1px solid rgba(245, 166, 35, 0.4);
+  }
+
+  .uap-badge-low {
+    background: rgba(255, 107, 53, 0.15);
+    color: #FF6B35;
+    border: 1px solid rgba(255, 107, 53, 0.4);
+  }
+
+  .uap-badge-speculative {
+    background: rgba(184, 184, 184, 0.15);
+    color: #B8B8B8;
+    border: 1px solid rgba(184, 184, 184, 0.4);
+  }
+
+  .uap-glow-cyan {
+    box-shadow: 0 0 24px rgba(48, 176, 208, 0.15);
+  }
+
+  .uap-text-shadow {
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
+  }
+
+  .uap-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .uap-scrollbar::-webkit-scrollbar-track {
+    background: rgba(10, 17, 23, 0.5);
+  }
+
+  .uap-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(48, 176, 208, 0.3);
+    border-radius: 3px;
+  }
+
+  .uap-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(48, 176, 208, 0.5);
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
