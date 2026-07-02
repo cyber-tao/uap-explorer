@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
-import { ArrowLeft, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Radioactive, Users, Telescope, ChevronDown, ChevronUp, Globe, Share2, Box, HeartPulse, Radio, BrainCircuit, ExternalLink } from 'lucide-react'
-import { observables, hypotheses, infoGaps, researchDirections, globalDistribution } from '../data/analysis'
-import { events } from '../data/events'
+import { Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope, ChevronDown, ChevronUp, Globe, Share2, Box, HeartPulse, Radio, BrainCircuit } from 'lucide-react'
+import { observables, hypotheses, infoGaps, researchDirections } from '../data/analysis'
 import { confidenceColors } from '../data/events'
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -12,7 +10,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'ArrowUp': <ArrowUp className="w-6 h-6" />,
   'Radar': <Radar className="w-6 h-6" />,
   'Footprints': <Footprints className="w-6 h-6" />,
-  'Radioactive': <Radioactive className="w-6 h-6" />,
+  'Radioactive': <Radio className="w-6 h-6" />,
   'Users': <Users className="w-6 h-6" />,
   'Telescope': <Telescope className="w-6 h-6" />,
   'Globe': <Globe className="w-6 h-6" />,
@@ -25,7 +23,6 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export default function AnalysisPage() {
   const [expandedGaps, setExpandedGaps] = useState<Set<number>>(new Set())
-  const navigate = useNavigate()
 
   const toggleGap = (id: number) => {
     const next = new Set(expandedGaps)

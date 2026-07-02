@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
-import { Search, SlidersHorizontal, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Radioactive, Users, Telescope, ExternalLink } from 'lucide-react'
-import { events, confidenceColors, confidenceLabels, physicalCharLabels, regionLabels, searchEvents, getEventsByConfidence, getEventsByRegion, getEventsByCharacteristic } from '../data/events'
+import { useNavigate } from 'react-router-dom'
+import { Search, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope } from 'lucide-react'
+import { events, confidenceColors, confidenceLabels, physicalCharLabels, regionLabels, searchEvents } from '../data/events'
 import type { UAPEvent, ConfidenceLevel } from '../data/events'
 
 const confidenceOptions: { value: string; label: string }[] = [
@@ -45,7 +45,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'multi-sensor': <Radar className="w-3 h-3" />,
   'electromagnetic': <Zap className="w-3 h-3" />,
   'physical-traces': <Footprints className="w-3 h-3" />,
-  'nuclear-association': <Radioactive className="w-3 h-3" />,
+  'nuclear-association': <Zap className="w-3 h-3" />,
   'group-sighting': <Users className="w-3 h-3" />,
   'space': <Telescope className="w-3 h-3" />,
 }

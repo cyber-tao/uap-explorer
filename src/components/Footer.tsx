@@ -1,4 +1,3 @@
-import { Link, useLocation } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
 
 const footerLinks = [
@@ -25,18 +24,15 @@ const footerLinks = [
   {
     heading: '声明',
     entries: [
-      { text: '数据截至 2026-07-02' },
-      { text: '置信度框架：High / Medium / Low / Speculative' },
-      { text: '参考文献：300+独立信息源' },
-      { text: '覆盖范围：全球22国/地区' },
+      { text: '数据截至 2026-07-02', href: '' },
+      { text: '置信度框架：High / Medium / Low / Speculative', href: '' },
+      { text: '参考文献：300+独立信息源', href: '' },
+      { text: '覆盖范围：全球22国/地区', href: '' },
     ],
   },
 ]
 
 export default function Footer() {
-  const location = useLocation()
-  const isHome = location.pathname === '/'
-
   return (
     <footer
       className="relative"

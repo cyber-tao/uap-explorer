@@ -1,20 +1,7 @@
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { ArrowLeft, ExternalLink, Calendar, MapPin, Radar, AlertTriangle, Link2, Share2 } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Calendar, MapPin, AlertTriangle, Link2, Share2 } from 'lucide-react'
 import { getEventById, confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
 import { events } from '../data/events'
-
-const iconMap: Record<string, React.ReactNode> = {
-  'instantaneous-acceleration': <Radar className="w-4 h-4" />,
-  'low-observability': <Radar className="w-4 h-4" />,
-  'transmedium': <Radar className="w-4 h-4" />,
-  'anti-gravity': <Radar className="w-4 h-4" />,
-  'multi-sensor': <Radar className="w-4 h-4" />,
-  'electromagnetic': <Radar className="w-4 h-4" />,
-  'physical-traces': <Radar className="w-4 h-4" />,
-  'nuclear-association': <Radar className="w-4 h-4" />,
-  'group-sighting': <Radar className="w-4 h-4" />,
-  'space': <Radar className="w-4 h-4" />,
-}
 
 export default function EventDetailPage() {
   const { id } = useParams<{ id: string }>()

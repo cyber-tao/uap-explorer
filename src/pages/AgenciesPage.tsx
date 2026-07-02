@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { ExternalLink, Award, TrendingUp, FileText, Globe } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { agencies, transparencyMilestones } from '../data/agencies'
 
 const transparencyColorMap: Record<string, string> = {
@@ -17,8 +15,6 @@ const milestoneColorMap: Record<string, string> = {
 }
 
 export default function AgenciesPage() {
-  const [tableScroll, setTableScroll] = useState(false)
-
   return (
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>
       {/* Page header */}
