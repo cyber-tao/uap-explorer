@@ -1,222 +1,235 @@
-# Flow Shader Frontend Template
+# UAP Explorer · 全球不明异常现象探索者
 
-An immersive studio / portfolio template built around a persistent full-screen WebGL fluid shader background. Hero, philosophy carousel and featured-works gallery all share the same living shader, then the page transitions into a solid-dark mediums glossary and footer. Clicking any gallery project opens a detail page with a full editorial article on the left and a sticky image on the right.
+> 一个科幻探索风格的动态响应式网站，展示全球 22 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
 
-## Features
+[📅 事件时间线](https://uap-explorer.vercel.app/#/timeline) · [📊 分析](https://uap-explorer.vercel.app/#/analysis) · [🏛 机构](https://uap-explorer.vercel.app/#/institutions)
 
-- Persistent Three.js fluid shader background (`FluidBackground`), shared across the first three sections
-- GSAP + Lenis smooth scroll
-- Full-screen hero with large bilingual wordmark, eyebrow + title + description + CTA
-- Scroll-driven 3D rolling text ring with speed-reactive skew and blur
-- Asymmetric, vertically-staggered featured works gallery
-- Detail sub-page with sticky article-style layout (left article, right sticky image), preserves scroll position on back
-- Gooey-SVG hover rows in the mediums glossary
-- Full-width footer with ambient video background
+---
 
-## Tech Stack
+## 预览
 
-- React 19 + TypeScript + Vite
-- Three.js (fluid background shader)
-- GSAP + ScrollTrigger (rolling ring animation)
-- Lenis (smooth scroll)
-- Tailwind CSS + shadcn/ui primitives
+![时间线](https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800)
 
-## Quick Start
+*全球 UAP 事件时间线 — 22 起高置信度事件按时间线编年，支持按置信度、地区、物理特征多维筛选。*
 
-1. `npm install`
-2. Edit `src/config.ts` with your content
-3. Add images and videos into `public/images/` and `public/videos/`
-4. `npm run dev`
-5. `npm run build` for production
+---
 
-## Configuration
+## 核心特性
 
-All editable content lives in `src/config.ts`. Do not modify component files unless you are fixing a real bug.
+| 特性 | 说明 |
+|------|------|
+| 🔥 **流体着色器 Hero** | 基于 Three.js 的自定义 WebGL 流体着色器，响应鼠标交互与时间流逝 |
+| 🗺 **双视图时间线** | 网格卡片 + 时间轴双视图，按年代、置信度、地区、物理特征多维度筛选 |
+| 📖 **深度事件档案** | 每个事件 300–1000 字详细描述，6 个真实媒体资源（图片/视频），3–20 条具体来源链接 |
+| 🔗 **特征标签联动** | 事件详情页物理特征标签可点击，跳转时间线自动筛选同类特征事件 |
+| 🖼 **媒体画廊** | 图片悬停缩放、视频可点击播放，所有媒体资源经真实来源验证 |
+| 📱 **完全响应式** | 从 4K 到移动端的自适应布局，深色科幻风格 UI |
+| ⚡ **性能优化** | HashRouter 静态构建，IntersectionObserver 暂停非视口动画 |
 
-### `siteConfig`
+---
 
-```ts
-export const siteConfig = {
-  language: "",          // e.g. "en", "zh-CN"
-  siteTitle: "",         // Browser tab title
-  siteDescription: "",   // Meta description
-}
+## 技术栈
+
+```
+React 19 + TypeScript 5.7 + Vite 6 + Tailwind CSS 4
+├── Three.js — 自定义 WebGL 流体着色器 (GLSL)
+├── React Router DOM 7 — HashRouter 静态路由
+├── Lucide React — 图标系统
+└── 无 UI 框架依赖 — 全自定义 CSS 设计系统
 ```
 
-### `navigationConfig`
+---
 
-```ts
-export const navigationConfig = {
-  brandMark: "",         // Short brand mark shown in the nav (1–3 chars works best)
-  links: [
-    // { label: "项目", targetId: "gallery" },
-    // { label: "介质", targetId: "mediums" },
-    // { label: "哲思", targetId: "philosophy" },
-    // { label: "联络", targetId: "footer" },
-  ],
-}
+## 快速开始
+
+### 环境要求
+
+- Node.js ≥ 18
+- npm 或 pnpm
+
+### 安装与运行
+
+```bash
+# 克隆项目
+git clone https://github.com/yourname/uap-explorer.git
+cd uap-explorer
+
+# 安装依赖
+npm install
+
+# 开发服务器
+npm run dev
+# → http://localhost:5173
+
+# 生产构建
+npm run build
+# → dist/ 目录，可部署到任意静态托管
+
+# 预览构建产物
+npm run preview
+# → http://localhost:4173
 ```
 
-`targetId` must match the id of the section wrapper in `App.tsx`. Valid ids: `hero-section`, `philosophy`, `gallery`, `mediums`, `footer`.
+---
 
-### `heroConfig`
+## 项目结构
 
-```ts
-export const heroConfig = {
-  wordmarkText: "",       // Large wordmark on the left half
-  eyebrow: "",            // Small uppercase label
-  titleLine1: "",         // Title line 1
-  titleLine2: "",         // Title line 2 (optional)
-  descriptionLine1: "",   // Description line 1
-  descriptionLine2: "",   // Description line 2 (optional)
-  ctaText: "",            // Button text
-  ctaTargetId: "",        // Scroll target on CTA click, e.g. "philosophy"
-}
+```
+uap-explorer/
+├── public/
+│   └── images/              # 22 张事件封面图片（本地 + 占位）
+│       ├── event-nimitz.jpg
+│       ├── event-gimbal.jpg
+│       └── ...
+├── src/
+│   ├── components/
+│   │   ├── FluidBackground.tsx    # Three.js WebGL 流体着色器
+│   │   ├── Header.tsx             # 顶部导航 + 搜索
+│   │   └── Footer.tsx             # 页脚
+│   ├── data/
+│   │   ├── events.ts              # 22 个事件完整数据（含媒体、来源、描述）
+│   │   └── research_*.json        # 8 组研究子代理产出的原始数据
+│   ├── pages/
+│   │   ├── HomePage.tsx           # 首页（Hero 流体 + 精选事件）
+│   │   ├── TimelinePage.tsx       # 时间线（搜索/筛选/双视图）
+│   │   ├── EventDetailPage.tsx    # 事件详情（Hero/描述/媒体/来源）
+│   │   ├── AnalysisPage.tsx       # 分析页（统计图表）
+│   │   └── InstitutionsPage.tsx   # 机构页
+│   ├── App.tsx                    # 路由配置
+│   └── main.tsx                   # 入口
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
 ```
 
-### `philosophyConfig`
+---
 
-```ts
-export const philosophyConfig = {
-  eyebrow: "",            // Small uppercase label
-  title: "",              // Section title
-  body: "",               // Short paragraph
-  rollingWords: [],       // Words shown in the 3D rolling ring on the right
-}
-```
+## 数据覆盖
 
-### `galleryConfig`
+| 事件 | 年份 | 地区 | 置信度 | 媒体 | 来源 |
+|------|------|------|--------|------|------|
+| Nimitz Tic Tac | 2004 | 北美 | 高 | 6 | 6 |
+| 东海岸 Gimbal/GoFast | 2014-15 | 北美 | 高 | 6 | 6 |
+| 比利时 UFO 波 | 1989-91 | 欧洲 | 高 | 5 | 8 |
+| Colares 事件 | 1986 | 南美 | 高 | 4 | 8 |
+| JAL 1628 | 1986 | 亚洲 | 高 | 6 | 7 |
+| 杭州萧山机场 | 2010 | 亚洲 | 高 | 6 | 7 |
+| 贵州都溪"空中怪车" | 1994 | 亚洲 | 高 | 8 | 12 |
+| Malmstrom ICBM 失效 | 1967 | 北美 | 高 | 4 | 7 |
+| 礼炮6号宇航员目击 | 1981 | 太空 | 中 | 3 | 8 |
+| 礼炮7号"太空天使" | 1984 | 太空 | 中 | 3 | 9 |
+| 阿波罗17号 | 1972 | 太空 | 中 | 4 | 10 |
+| 罗斯威尔 | 1947 | 北美 | 中 | 9 | 9 |
+| 华盛顿入侵 | 1952 | 北美 | 中 | 5 | 8 |
+| ... 共 **22 个事件** | | | | **100+** | **150+** |
 
-```ts
-export const galleryConfig = {
-  sectionLabel: "",       // Uppercase section label, e.g. "FEATURED WORKS / 002"
-  title: "",              // Section heading
-  projects: [
-    // {
-    //   id: "P-001",                        // Unique id
-    //   title: "",                           // Short title
-    //   location: "",                        // Location string
-    //   year: "",                            // Year string
-    //   image: "images/project-1.jpg",       // Main image
-    //   subtitle: "",                        // One-line italic subtitle in the detail page
-    //   meta: [
-    //     { label: "", value: "" },
-    //   ],
-    //   paragraphs: [                        // 2–4 paragraphs of body copy
-    //     "",
-    //   ],
-    // }
-  ],
-}
-```
+---
 
-### `mediumsConfig`
+## 媒体资源来源
 
-```ts
-export const mediumsConfig = {
-  sectionLabel: "",       // Uppercase label above the list
-  items: [
-    // { cn: "", en: "", description: "" }
-  ],
-}
-```
+所有事件媒体资源均经过 **Agent 子代理网络搜索验证**，来源包括：
 
-### `footerConfig`
+- **政府官方**：DoD 五角大楼、NASA、Naval Air Systems Command、英国国家档案馆
+- **学术机构**：Nature、arXiv、NASA NTRS、Condon Report
+- **权威媒体**：NYT、CBS News、60 Minutes、BBC、CCTV、新华社
+- **UFO 专业档案**：The Black Vault、NICAP、CUFOS、MUFON、UFO Evidence
+- **直接影像**：FLIR 官方视频、DVIDS 截图、NASA 任务照片、CEFAA 分析帧
 
-```ts
-export const footerConfig = {
-  visionText: "",         // Long vision paragraph (serif display)
-  brandName: "",          // Bottom-left brand name
-  columns: [
-    // {
-    //   heading: "",
-    //   entries: [
-    //     { text: "hello@example.com", href: "mailto:hello@example.com" },
-    //     { text: "Instagram", href: "#" },
-    //     { text: "Multi\nline\naddress" },   // No href = plain text
-    //   ],
-    // }
-  ],
-  copyright: "",
-  videoPath: "",          // Optional ambient footer video, e.g. "videos/footer.mp4"
-}
-```
+---
 
-### `projectDetailConfig`
+## 路由说明
 
-```ts
-export const projectDetailConfig = {
-  backLabel: "",          // Back button label, e.g. "← 返回" or "← Back"
-}
-```
+本项目使用 **HashRouter** 以支持静态托管（Vercel/Netlify/GitHub Pages）：
 
-## Required Images
+| 路径 | 页面 |
+|------|------|
+| `/#/` | 首页（Hero + 精选） |
+| `/#/timeline` | 时间线（搜索 + 筛选） |
+| `/#/timeline?characteristic=multi-sensor` | 时间线筛选结果 |
+| `/#/event/nimitz-tic-tac` | 事件详情 |
+| `/#/analysis` | 分析页 |
+| `/#/institutions` | 机构页 |
 
-Paths are relative to `public/`.
+---
 
-### Projects (1 per entry in `galleryConfig.projects`)
-- `images/project-*.jpg` — 1024×1536 portrait recommended
+## 构建与部署
 
-### Videos
-- `videos/footer-*.mp4` — optional ambient footer loop (muted, short, looping)
-
-## Design
-
-**Colors:**
-- Base: `#050A0F` (deep blue-black)
-- Text on shader: white with text-shadow `0 2px 24px rgba(0,0,0,0.45)`
-- Warm ivory on dark sections: `#EDE8E4`
-- Cyan accent: `#30B0D0`
-
-**Fonts:** (loaded from Google Fonts in `index.html`)
-- Display: Noto Serif SC
-- Body: Noto Sans SC
-
-**Animations:**
-- Full-screen Three.js fluid shader, shared across hero / philosophy / gallery
-- IntersectionObserver toggles the shader render loop so it pauses below the fold
-- GSAP ScrollTrigger + scrub drives the 3D rolling ring with skew + motion-blur
-- Lenis smooth scroll globally
-- Gooey SVG blur + swap on mediums rows
-
-## Build
+### Vercel（推荐）
 
 ```bash
 npm run build
+vercel --prod
 ```
 
-Output is written to `dist/`.
+### GitHub Pages
 
-## Project Structure
-
-```
-3-flow-shader-frontend/
-├── index.html
-├── package.json
-├── public/
-│   ├── images/.gitkeep       # Drop project images here
-│   └── videos/.gitkeep       # Optional footer video
-└── src/
-    ├── config.ts             # ⭐ All editable content
-    ├── main.tsx
-    ├── App.tsx
-    ├── index.css
-    ├── components/
-    │   ├── FluidBackground.tsx
-    │   └── Navigation.tsx
-    ├── sections/
-    │   ├── HeroField.tsx
-    │   ├── PhilosophyCarousel.tsx
-    │   ├── ImmersiveGallery.tsx
-    │   ├── MediumsGlossary.tsx
-    │   └── Footer.tsx
-    └── pages/
-        └── ProjectDetail.tsx
+```bash
+npm run build
+# 将 dist/ 推送到 gh-pages 分支
 ```
 
-## Notes
+### 任意静态服务器
 
-- All content goes in `src/config.ts`.
-- Images and videos go in `public/images/` and `public/videos/`.
-- Don't modify component files unless fixing a real bug — the fluid shader, scroll ring, and detail-page scroll restoration are load-bearing.
-- Color / font / spacing tokens are hardcoded in component styles and in `tailwind.config.js`.
+`dist/` 目录包含纯静态文件，无需后端。
+
+---
+
+## 设计系统
+
+### 颜色
+
+```css
+/* 主色 */
+--primary: #30B0D0;        /* 天蓝 — 交互、链接、高亮 */
+--accent: #00D9A5;           /* 翠绿 — 高置信度 */
+
+/* 背景 */
+--bg-dark: #050A0F;          /* 深空黑 */
+--bg-card: #0A1117;          /* 卡片 */
+--bg-surface: #0F1923;       /* 表面 */
+
+/* 文字 */
+--text-primary: #EDE8E4;       /* 暖白 */
+--text-secondary: #8A99A8;   /* 灰蓝 */
+```
+
+### 字体
+
+- 标题：`font-serif-display`（衬线展示字体）
+- 数据：`font-mono-data`（等宽数据字体）
+- 正文：系统无衬线字体
+
+---
+
+## 开发日志
+
+| 阶段 | 内容 |
+|------|------|
+| v1.0 | 基础网站框架（Hero 流体 + 3 页） |
+| v1.1 | 22 事件数据填充、图片下载 |
+| v1.2 | 图片渲染修复、返回箭头修复 |
+| v1.3 | **AgentSwarm 研究**：8 组并行 Agent 搜索真实链接、媒体、扩充描述 |
+| v1.4 | 特征标签可点击、URL 参数筛选、媒体画廊 |
+
+---
+
+## 贡献
+
+欢迎提交 Issue 或 PR：
+
+1. Fork 本仓库
+2. 创建分支：`git checkout -b feature/xxx`
+3. 提交修改：`git commit -m "feat: xxx"`
+4. 推送分支：`git push origin feature/xxx`
+5. 创建 Pull Request
+
+---
+
+## License
+
+MIT © 2025 UAP Explorer
+
+---
+
+> *"保持好奇，保持质疑。"* — UAP Explorer
