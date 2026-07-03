@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from 'react-router-dom'
-import { ArrowLeft, ExternalLink, Calendar, MapPin, AlertTriangle, Link2, Share2 } from 'lucide-react'
+import { ArrowLeft, ExternalLink, Calendar, MapPin, AlertTriangle, Link2, Share2, Film, ImageIcon } from 'lucide-react'
 import { getEventById, confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
 import { events } from '../data/events'
 
@@ -39,24 +39,31 @@ export default function EventDetailPage() {
           style={{ color: '#8A99A8' }}
         >
           <ArrowLeft className="w-4 h-4" />
-          ← 返回
+          返回
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
           {/* Left content */}
           <div className="lg:col-span-3">
-            {/* Hero image placeholder */}
+            {/* Hero image */}
             <div
               className="rounded-xl overflow-hidden mb-8 relative"
               style={{ aspectRatio: '16/9', background: 'linear-gradient(135deg, #0A1117, #0F1923)' }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
+              <img
+                src={event.image}
+                alt={event.name}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="eager"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center -z-10">
                 <span className="font-serif-display text-6xl opacity-10" style={{ color: '#30B0D0' }}>
                   {event.name[0]}
                 </span>
               </div>
-              <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(5,10,15,0.8), transparent)' }} />
-              <div className="absolute bottom-4 left-4 right-4">
+              <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(to top, rgba(5,10,15,0.8), transparent)' }} />
+              <div className="absolute bottom-4 left-4 right-4 z-20">
                 <div className="flex items-center gap-3 mb-2">
                   <span
                     className="px-2.5 py-1 rounded text-[11px] font-bold"
@@ -100,13 +107,14 @@ export default function EventDetailPage() {
               </h2>
               <div className="flex flex-wrap gap-2">
                 {event.physicalCharacteristics.map((char) => (
-                  <span
+                  <Link
                     key={char}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm"
+                    to={`/timeline?characteristic=${char}`}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors hover:bg-[rgba(48,176,208,0.2)]"
                     style={{ background: 'rgba(48, 176, 208, 0.1)', color: '#30B0D0', border: '1px solid rgba(48, 176, 208, 0.2)' }}
                   >
                     {physicalCharLabels[char]?.label || char}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -126,6 +134,62 @@ export default function EventDetailPage() {
                 ))}
               </ul>
             </div>
+
+            {/* Media Gallery */}
+            {event.media && event.media.length > 0 && (
+              <div className="mb-8">
+                <h2 className="font-serif-display text-xl font-bold mb-4 flex items-center gap-2" style={{ color: '#EDE8E4' }}>
+                  <Film className="w-5 h-5" style={{ color: '#30B0D0' }} />
+                  相关媒体
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+                  {event.media.map((m, idx) => (
+                    m.type === 'image' ? (
+                      <a
+                        key={idx}
+                        href={m.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group relative rounded-lg overflow-hidden"
+                        style={{ aspectRatio: '16/10', background: 'linear-gradient(135deg, #0A1117, #0F1923)' }}
+                      >
+                        <img
+                          src={m.url}
+                          alt={m.caption}
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                        />
+                        <div className="absolute inset-0 z-10" style={{ background: 'linear-gradient(to top, rgba(5,10,15,0.85), transparent 60%)' }} />
+                        <div className="absolute bottom-2 left-2 right-2 z-20">
+                          <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>{m.caption}</p>
+                        </div>
+                        <div className="absolute top-2 right-2 z-20">
+                          <ImageIcon className="w-4 h-4" style={{ color: '#30B0D0' }} />
+                        </div>
+                      </a>
+                    ) : (
+                      <a
+                        key={idx}
+                        href={m.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex flex-col rounded-lg overflow-hidden p-4 transition-colors hover:bg-[rgba(48,176,208,0.08)]"
+                        style={{ background: 'rgba(48, 176, 208, 0.04)', border: '1px solid rgba(48, 176, 208, 0.15)', aspectRatio: '16/10' }}
+                      >
+                        <div className="flex-1 flex items-center justify-center">
+                          <Film className="w-8 h-8" style={{ color: '#30B0D0' }} />
+                        </div>
+                        <div className="mt-2">
+                          <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>{m.caption}</p>
+                          <p className="text-[10px] mt-1 font-mono-data" style={{ color: '#30B0D0' }}>▶ 播放视频</p>
+                        </div>
+                      </a>
+                    )
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Sources */}
             <div className="mb-8">

@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "id": "malstrom-icbm",
+      "expandedDescription": "1967年3月，美国蒙大拿州马尔姆斯特罗姆空军基地（Malmstrom AFB）发生了冷战时期最耸人听闻的UFO与核武器交互事件。该基地隶属美国空军第341战略导弹联队，负责管控美国境内最重要的洲际弹道导弹（ICBM）之一。\n\n事件分为两次独立但高度相似的遭遇。第一次发生在3月16日（Echo Flight），当时地下发射控制中心的值班人员突然接到地面安全警卫的紧急报告，称一个散发红光的碟形不明物体正悬停在前门上空。几乎在同一时刻，控制台上的10枚民兵I型（Minuteman I）洲际弹道导弹几乎在10秒内相继从战备状态转为\"No-Go\"（无法发射）状态。维修和技术团队紧急排查，却找不到任何机械故障或电力中断的原因。第二次类似事件发生在3月24日（Oscar Flight），当时1st Lt. Robert Salas正在值班。安全警卫报告称，一个红色发光的椭圆形UFO悬停在发射控制设施外，随即导弹再次以每秒一枚的速度接连离线。更离奇的是，一名试图靠近该物体的警卫据称受了轻伤，并被直升机紧急撤离。\n\n美国空军对此事展开了最高级别的内部调查。美国国防部承包商波音公司（Boeing）被秘密派遣到基地，并出具了一份被标记为\"SECRET\"的《马尔姆斯特罗姆Echo Flight事件工程调查报告》。报告指出，所有10枚导弹的制导和控制系统同时出现了\"No-Go\"信号，但导弹的电源系统却完全正常。波音工程师在实验室中尝试模拟了这一故障，他们通过向逻辑耦合器注入某种\"信号噪声\"成功复现了导弹离线的现象，但始终无法确定这种信号的真实来源。 decades later, 通过《信息自由法》（FOIA）申请解密的第341战略导弹联队历史记录中，虽然淡化了UFO与导弹故障之间的关联，但时任单位历史学家David Gamble后来向研究者Jim Klotz承认，在编纂官方历史时确实了解到有关UFO活动的报告。\n\n2010年9月27日，Robert Salas上尉联合其他六名退伍军人在华盛顿国家新闻俱乐部（National Press Club）举行公开新闻发布会，宣誓作证并提供了22份书面和视频证据。2023年2月，Salas更是向五角大楼新成立的\"全域异常现象解析办公室\"（AARO）进行了近两小时的详细汇报。这一系列事件至今被视为UFO能够直接干扰美国战略核威慑系统的最强有力证据之一，也引发了对电磁脉冲（EMP）与未知飞行物之间关系的持续讨论。",
+      "sources": [
+        {"label": "NICAP - Malmstrom AFB Missile/UFO Incident (1967)", "url": "https://www.nicap.org/malmstrom67dir.htm"},
+        {"label": "The Black Vault - Declassified Malmstrom Documents (PDF)", "url": "https://documents.theblackvault.com/documents/ufos/malmstromufo.pdf"},
+        {"label": "Earthfiles - 20 ICBMs at Malmstrom AFB Powered Down by UFOs", "url": "https://www.earthfiles.com/2021/10/07/20-icbms-at-malmstrom-afb-in-march-1967-and-50-icbms-at-warren-afb-in-2010-powered-down-by-ufos/"},
+        {"label": "New Space Economy - The 1967 Malmstrom Air Force Base UFO Incident", "url": "https://newspaceeconomy.ca/2025/04/13/the-1967-malmstrom-air-force-base-ufo-incident/"},
+        {"label": "Calgary Herald - Seminal Montana UFO Events Pentagon Briefing", "url": "https://calgaryherald.com/news/seminal-montana-ufo-events-pentagon"},
+        {"label": "CUFOS - UFOs and Intelligence Timeline (PDF)", "url": "https://cufos.org/PDFs/pdfs/UFOsandIntelligence.pdf"},
+        {"label": "3AF/SIGMA2 Rapport Avancement 2021 (French Defense Report)", "url": "https://ayuba.fr/pdf/UAP-3AF-SIGMA2-rapport-avancement-2021-fr.pdf"}
+      ],
+      "media": [
+        {"type": "image", "url": "https://www.earthfiles.com/wp-content/uploads/2021/10/Robert-L.-Salas-USAF-Captain-Ret.-graduated-in-1964-from-the-Air-Force-Academy.jpg", "caption": "Robert L. Salas, 美国空军退役上尉，1967年Oscar Flight事件亲历者，2010年国家新闻俱乐部新闻发布会宣誓人之一"},
+        {"type": "image", "url": "https://www.nicap.org/malmstrom67-2.jpg", "caption": "NICAP档案中的341st SMW单位历史记录封面（经FOIA解密）"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=xNxHrGLvsMk", "caption": "Robert Salas 关于1967年马尔姆斯特罗姆UFO/导弹事件的证词访谈"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=-7HIWQX0bz0", "caption": "Robert Salas 在国家新闻俱乐部关于UFO与核武器的公开演讲（2010年）"}
+      ]
+    },
+    {
+      "id": "washington-invasion",
+      "expandedDescription": "1952年7月的华盛顿特区不明飞行物入侵事件，被UFO史学家Curtis Peebles称为\"1952年UFO浪潮的顶峰\"，是冷战初期美国历史上最著名的雷达-目视联合目击事件。\n\n事件发生在连续两个周末：7月19-20日和7月26-27日。7月19日深夜11:40，华盛顿国家机场（今里根华盛顿国家机场）的空中交通管制员Edward Nugent在雷达屏幕上发现七个异常光点，位于城市西南15英里处，它们既不在任何已知民航或军用航线上，飞行轨迹也完全不遵循常规飞机模式。Nugent的上级Harry Barnes——一位资深管制员——亲眼目睹后写道：\"我们立即意识到情况非常奇怪……它们的移动与普通飞机相比完全不合常理。\" 管制员们仔细检查了雷达设备，确认一切运转正常。与此同时，机场控制塔内的Howard Cocklin和Joe Zacko也在独立雷达系统上捕捉到了相同的目标，并透过塔窗看到天空中一个\"明亮的悬停光点\"以不可思议的速度飞离。\n\n更令人震惊的是，这些目标随后出现在美国最敏感的禁飞区上空——白宫和国会大厦。Barnes紧急联络了10英里外的安德鲁斯空军基地（Andrews AFB）。虽然该基地雷达最初没有显示异常，但塔台上的空军士兵William Brady很快报告称看到一个\"巨大的火橙色球体\"在天空中以不可思议的加减速移动。当空军派出F-94喷气式战斗机从特拉华州的新堡空军基地紧急起飞拦截时，这些UFO要么从雷达上瞬间消失，要么以战斗机无法企及的速度加速逃离。在某些情况下，雷达操作员报告这些物体似乎绕到了战斗机后方，仿佛能够预判军机的行动。Capital Airlines机长S.C. Pierman在地面等待起飞时报告看到六颗\"像没有尾巴的流星般\"的明亮光点以极高速度移动。\n\n事件引发了全国轰动，《华盛顿邮报》头版刊登了\"飞碟跑赢喷气机\"的报道。时任总统哈里·杜鲁门亲自致电空军要求答案。7月29日，空军情报总监John Samford少将在五角大楼召开了自二战以来规模最大的军事新闻发布会，将雷达回波归因于\"温度逆温\"（temperature inversion），即暖空气层像透镜一样折射地面灯光和雷达波，制造了虚假的空中目标。然而，在场的Project Blue Book负责人Edward Ruppelt上尉在其著作《The Report on Unidentified Flying Objects》中指出，当时华盛顿地区几乎每晚都有温度逆温，但并未引发类似的大规模雷达异常。雷达管制员Barnes直到去世都坚持认为这些目标\"绝非天气现象\"。\n\n这一事件的深远影响在于它直接催生了1953年1月的CIA\"Robertson Panel\"——由物理学家Howard P. Robertson主持的一群科学家，仅用12小时审查了23个案例，便建议空军主动\"揭穿\"UFO报告，以消除公众兴趣。该建议实质上塑造了此后五十年的美国政府UFO政策基调。",
+      "sources": [
+        {"label": "HISTORY - Flying Saucers Over Washington Sent the Press Into a Frenzy", "url": "https://www.history.com/articles/ufos-washington-dc-news-reports"},
+        {"label": "Gaia - 1952 Washington D.C. UFO Incident Explained", "url": "https://www.gaia.com/article/1952-washington-dc-ufo-incident-explained"},
+        {"label": "3i-Atlas - UFO Sightings Over Capitol Hill: The 1952 Washington Invasion", "url": "https://3i-atlas.net/posts/ufo-sightings-capitol-hill-washington-dc"},
+        {"label": "Yahoo News - 1952 Washington UFO Sighting That Upended Decades of Denial", "url": "https://www.yahoo.com/news/articles/1952-ufo-washington-sighting-upended-180000090.html"},
+        {"label": "UFO Report - 1952 Washington D.C. UFO Incident", "url": "https://uforeport.com/1952-washington-d-c-ufo-incident-a-historic-confluence-of-mystery-and-panic/"},
+        {"label": "Britannica - Project Blue Book", "url": "https://www.britannica.com/topic/Project-Blue-Book"},
+        {"label": "Condon Report - Final Report of Scientific Study of UFOs (PDF, references Washington case)", "url": "https://documents2.theblackvault.com/documents/ntis/CondonReport-Complete.pdf"},
+        {"label": "Rockefeller Briefing Document - UFOs and Intelligence (PDF)", "url": "https://www.openminds.tv/wp-content/uploads/Rockefeller-Briefing-Document.pdf"}
+      ],
+      "media": [
+        {"type": "image", "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fa24ab15aj00rshqpl0019c000go00egm.jpg&thumbnail=660x2147483647&quality=80&type=jpg", "caption": "1952年7月29日五角大楼UFO新闻发布会上，Project Blue Book负责人Edward Ruppelt（站立者）与空军情报总监Samford少将"},
+        {"type": "image", "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fd37208e2j00rshqpl000wc000dw00dwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg", "caption": "1952年新闻报道《拦截机在华盛顿特区上空追逐飞碟》的报纸版面"},
+        {"type": "image", "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2F3bf01c8bj00rshqpl000tc000hs00bwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg", "caption": "1952年华盛顿雷达事件期间的新闻报道与照片资料"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=H07x82S6jU4", "caption": "纪录片：1952年华盛顿特区不明飞行物入侵事件的历史回顾与证人访谈"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=1N4ciVZxUT8", "caption": "The Real Roswell 与华盛顿入侵事件相关的历史纪录片片段"}
+      ]
+    },
+    {
+      "id": "roswell",
+      "expandedDescription": "1947年7月，美国新墨西哥州罗斯威尔附近发生的事件，被公认为现代UFO史上最具标志性、最具争议性的案件。\n\n7月7日，当地牧场主W.W. (Mac) Brazel在其位于罗斯威尔西北约75英里处的福斯特牧场（Foster Ranch）发现了一片大范围的金属残骸。这些材料包括轻薄的金属箔片、木棍和某种类似橡胶的物质。当时正值1947年\"UFO热潮\"，Brazel向当地警长报告，怀疑自己发现了\"飞碟\"的残骸。警长随即联系了附近的罗斯威尔陆军航空基地（RAAF），该基地派遣情报官Jesse Marcel少校和两名反情报特工前往现场勘察。Marcel收集了一部分残骸带回基地。\n\n7月8日，罗斯威尔基地公共信息官Walter G. Haut中尉向当地媒体发布了一份轰动全球的新闻稿：\"罗斯威尔陆军航空基地的情报官在一位地方牧场的协助下，于罗斯威尔地区附近的一个牧场上获得了一枚飞碟。\" 美联社迅速将该消息传遍全球。然而，仅仅一天之后，事态发生了180度逆转。第八航空队司令Roger Ramey准将在得克萨斯州沃斯堡陆军航空基地亲自检查了残骸，随后召来基地气象官Irving Newton准尉，将材料鉴定为\"气象气球及其雷达反射器\"。Ramey邀请媒体拍摄了Marcel手持普通气象气球材料的照片，官方宣布这只是一场误会。\n\n然而，这一反转非但没有平息争议，反而点燃了长达数十年的\"掩盖论\"。1978年，UFO研究者Stanton Friedman在路易斯安那州找到了已退休的Marcel。Marcel声称，1947年他被命令不得谈论残骸的真实性质，他描述那些材料\"绝非来自地球\"。他特别提到一种带有\"象形文字般符号\"的轻质木棍，以及一种\"无论如何揉捏都不会留下折痕\"的金属箔。他的证词在1980年出版的《The Roswell Incident》一书中被广泛传播，直接催生了现代UFO学。\n\n此后，更多\"证人\"浮出水面。1989年，当地殡仪馆工作人员Glenn Dennis声称，他在基地医院目睹了医生们围绕\"几个小型非人类尸体\"进行解剖的场景，并保留了一位护士在餐巾纸上手绘的外星人素描。此外，所谓的\"Majestic 12\"文件（据称是1980年代泄露的秘密委员会档案）进一步加深了阴谋论氛围。\n\n面对持续压力，美国空军在1994年和1997年分别发布了官方调查报告。1994年报告确认，残骸属于当时被归为\"最高机密\"的Project Mogul项目——一个利用高空气球和声纳浮标来监测苏联核试验的监视计划。1997年的报告《The Roswell Incident: Case Closed》则进一步解释了\"外星尸体\"的传闻：在1950年代，美国空军为测试高空跳伞安全性，在白沙导弹靶场投放了大量人形假人（anthropomorphic dummies），这些活动被后来的证人记忆混淆，与1947年的残骸事件混为一谈。\n\n然而，这些官方解释并未完全说服公众。1995年，英国企业家Ray Santilli发布的\"外星人解剖\"录像带（后承认大部分为伪造）在全球范围内引发轰动。2007年，Roswell基地前信息官Walter G. Haut的\"临终宣誓书\"在他去世后公开，声称他确实看到了\"蛋形飞行器\"和\"类似儿童大小的生物\"。哈里斯民意调查显示，60%的美国公众相信智慧外星生命的存在。罗斯威尔事件至今仍是美国政府、军方与公众之间信任鸿沟的象征。",
+      "sources": [
+        {"label": "The Black Vault - The Roswell Report: Fact Versus Fiction (Full PDF)", "url": "https://www.theblackvault.com/documents/roswellreportfull.pdf"},
+        {"label": "U.S. Air Force - The Roswell Report: Case Closed (Official PDF, 1997)", "url": "https://media.defense.gov/2010/Oct/27/2001330219/-1/-1/0/AFD-101027-030.pdf"},
+        {"label": "UFO Evidence - Roswell UFO Crash Case Report and Photos", "url": "http://ufoevidence.org/cases/case1134.htm"},
+        {"label": "Roswell Files - Synopsis of Project Mogul", "url": "http://www.roswellfiles.com/Articles/ProjectMogul.htm"},
+        {"label": "FAS - GAO Report on Roswell Incident", "url": "https://sgp.fas.org/othergov/roswell.html"},
+        {"label": "BlackBox UFO Research - Weather Balloon Cover Story Analysis", "url": "https://blackboxufo.com/cases/roswell-detailed/weather-balloon-cover-story-analysis/"},
+        {"label": "Air & Space Forces Magazine - Roswell (PDF)", "url": "https://www.airandspaceforces.com/app/uploads/2011/06/June2011.pdf"},
+        {"label": "Project Mogul Report - UC Berkeley/LBL", "url": "https://muller.lbl.gov/teaching/physics10/Roswell/USMogulReport.html"},
+        {"label": "U.S. Department of Justice - FBI Vault: Roswell UFO", "url": "https://vault.fbi.gov/rosell-ufo/roswell-ufo-part-1-of-1/view"}
+      ],
+      "media": [
+        {"type": "image", "url": "http://ufoevidence.org/cases/pictures/JesseMarcelSr1.jpg", "caption": "Jesse Marcel少校在1947年7月9日的新闻发布会上展示被官方解释为气象气球的残骸材料"},
+        {"type": "image", "url": "http://ufoevidence.org/cases/pictures/RoswellRecord3.jpg", "caption": "1947年7月8日《Roswell Daily Record》报纸头版：\"RAAF捕获了罗斯威尔地区牧场上的飞碟\""},
+        {"type": "image", "url": "http://ufoevidence.org/cases/pictures/GlennDennis.jpg", "caption": "Glenn Dennis，当地殡仪馆工作人员，声称目睹了1947年罗斯威尔基地医院内的非人类生物解剖"},
+        {"type": "image", "url": "http://ufoevidence.org/cases/pictures/NurseSketch1.jpg", "caption": "据称由罗斯威尔基地医院护士在餐巾纸上手绘的外星人形象素描（由Glenn Dennis保存）"},
+        {"type": "image", "url": "https://c1.vgtstatic.com/thumb/9/5/9542-v1-half/1947-roswell-crash-site-ufo.jpg", "caption": "1947年罗斯威尔坠毁/残骸地点的卫星定位图（Corona, NM附近）"},
+        {"type": "image", "url": "https://www.conspiracies.net/wp-content/uploads/2017/01/Roswell-Daily-Record-Newspaper-on-UFO-Crash-Site-656x348.png", "caption": "Roswell Daily Record关于UFO坠毁事件的详细新闻报道版面"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=mwUSctoPo0A", "caption": "纪录片：The Roswell UFO Crash - 1947年事件的完整历史回顾与证人分析"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=lYmHu-ecjvA", "caption": "纪录片：The Real Roswell Conspiracy - 官方解释与民间理论的对比"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=Cm_0cCmCv2I", "caption": "历史频道纪录片：罗斯威尔事件与灰人外星人的历史关联"}
+      ]
+    }
+  ]
+}

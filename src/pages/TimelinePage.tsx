@@ -1,5 +1,5 @@
-import { useState, useMemo } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState, useMemo, useEffect } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Search, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope } from 'lucide-react'
 import { events, confidenceColors, confidenceLabels, physicalCharLabels, regionLabels, searchEvents } from '../data/events'
 import type { UAPEvent, ConfidenceLevel } from '../data/events'
@@ -51,12 +51,24 @@ const iconMap: Record<string, React.ReactNode> = {
 }
 
 export default function TimelinePage() {
-  const [searchQuery, setSearchQuery] = useState('')
-  const [confidenceFilter, setConfidenceFilter] = useState('')
-  const [regionFilter, setRegionFilter] = useState('')
-  const [charFilter, setCharFilter] = useState('')
-  const [viewMode, setViewMode] = useState<'grid' | 'timeline'>('grid')
+  const [searchParams, setSearchParams] = useSearchParams()
   const navigate = useNavigate()
+
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '')
+  const [confidenceFilter, setConfidenceFilter] = useState(searchParams.get('confidence') || '')
+  const [regionFilter, setRegionFilter] = useState(searchParams.get('region') || '')
+  const [charFilter, setCharFilter] = useState(searchParams.get('characteristic') || '')
+  const [viewMode, setViewMode] = useState<'grid' | 'timeline'>('grid')
+
+  // Sync filters to URL params
+  useEffect(() => {
+    const params: Record<string, string> = {}
+    if (searchQuery) params.search = searchQuery
+    if (confidenceFilter) params.confidence = confidenceFilter
+    if (regionFilter) params.region = regionFilter
+    if (charFilter) params.characteristic = charFilter
+    setSearchParams(params, { replace: true })
+  }, [searchQuery, confidenceFilter, regionFilter, charFilter, setSearchParams])
 
   const filteredEvents = useMemo(() => {
     let result = [...events]
@@ -87,8 +99,15 @@ export default function TimelinePage() {
         onClick={() => navigate(`/event/${event.id}`)}
       >
         <div className="relative overflow-hidden" style={{ aspectRatio: '16/10' }}>
+          <img
+            src={event.image}
+            alt={event.name}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+          />
           <div
-            className="absolute inset-0 flex items-center justify-center"
+            className="absolute inset-0 flex items-center justify-center -z-10"
             style={{ background: 'linear-gradient(135deg, #0A1117, #0F1923)' }}
           >
             <span className="font-serif-display text-2xl opacity-20" style={{ color: '#30B0D0' }}>
@@ -97,7 +116,7 @@ export default function TimelinePage() {
           </div>
           {/* Confidence badge */}
           <div
-            className="absolute top-3 right-3 px-2.5 py-1 text-[11px] font-bold rounded"
+            className="absolute top-3 right-3 px-2.5 py-1 text-[11px] font-bold rounded z-10"
             style={{
               background: `${confColor}20`,
               color: confColor,
@@ -108,7 +127,7 @@ export default function TimelinePage() {
             {confLabel}
           </div>
           {/* Bottom gradient overlay */}
-          <div className="absolute inset-x-0 bottom-0 h-24" style={{ background: 'linear-gradient(transparent, rgba(5,10,15,0.8))' }} />
+          <div className="absolute inset-x-0 bottom-0 h-24 z-10" style={{ background: 'linear-gradient(transparent, rgba(5,10,15,0.8))' }} />
         </div>
         <div className="p-5">
           <div className="flex items-center gap-3 mb-2">
