@@ -1,4 +1,5 @@
 import { footerConfig } from '../config';
+import { assetUrl } from '../lib/utils';
 
 export default function Footer() {
   if (!footerConfig.visionText && !footerConfig.brandName && footerConfig.columns.length === 0) {
@@ -36,7 +37,7 @@ export default function Footer() {
               objectFit: 'cover',
             }}
           >
-            <source src={footerConfig.videoPath} type="video/mp4" />
+            <source src={assetUrl(footerConfig.videoPath)} type="video/mp4" />
           </video>
         </div>
       )}
