@@ -1,0 +1,937 @@
+{
+  "events": [
+    {
+      "id": "MQ9-YEMEN-2024-10-30",
+      "date": "2024-10-30",
+      "location": "也门海岸 / Red Sea near Yemen",
+      "country": "也门",
+      "name": "MQ-9也门地狱火导弹UAP事件",
+      "nameEn": "MQ-9 Yemen Hellfire UAP Incident",
+      "shortDesc": "MQ-9 Reaper无人机发射Hellfire导弹击中UAP光球，物体未被摧毁并继续飞行",
+      "description": "2024年10月30日，一架美国MQ-9 Reaper无人机在也门海岸附近追踪一个不明飞行物。另一架MQ-9发射了AGM-114 Hellfire导弹试图拦截该目标。视频显示导弹击中了物体，但物体并未被摧毁，而是继续沿原轨迹飞行。该视频于2025年9月9日美国众议院监督委员会听证会上首次公开，由议员Eric Burlison播放。视频中出现'LRD LASE DES'字样，表明一架MQ-9使用激光指示目标，另一架发射激光制导Hellfire。这是首次公开的MQ-9无人机在作战环境中尝试拦截空中目标的实例。该物体被描述为光球/orb形状，在受到导弹直接命中后似乎仅有一些碎片脱落，主体继续飞行。",
+      "confidence": "High",
+      "sensors": [
+        "FLIR",
+        "EO",
+        "激光指示器"
+      ],
+      "physicalCharacteristics": [
+        "transmedium-resistance",
+        "high-speed",
+        "orb-shaped",
+        "impact-resistant"
+      ],
+      "sources": [
+        {
+          "label": "ABC News - Congressman shows video at UAP hearing",
+          "url": "https://abcnews.com/Politics/congressman-shows-video-military-ufo-hearing/story?id=125413475"
+        },
+        {
+          "label": "Fox News - Hellfire missile bounces off orb",
+          "url": "https://www.foxnews.com/politics/hellfire-missile-bounces-mysterious-orb-stunning-uap-footage-shown-congress"
+        },
+        {
+          "label": "The War Zone - MQ-9 engaging aerial targets",
+          "url": "https://www.twz.com/news-features/revelation-that-mq-9-reapers-are-now-engaging-aerial-targets-comes-from-uap-hearing"
+        },
+        {
+          "label": "DefenseScoop - Military whistleblowers hearing",
+          "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://twitter.com/RepEricBurlison/status/1832830194000000000",
+          "caption": "MQ-9 Yemen UAP footage released at Congressional hearing"
+        }
+      ],
+      "limitations": [
+        "视频未获DoD官方确认",
+        "来源为匿名告密者通过议员公开",
+        "导弹为何未引爆原因不明"
+      ]
+    },
+    {
+      "id": "DOW-PR28-GREECE-2024-01",
+      "date": "2024-01",
+      "location": "希腊上空",
+      "country": "希腊",
+      "name": "希腊菱形UAP（SWIR传感器）",
+      "nameEn": "Greece Diamond-Shaped UAP (SWIR Detection)",
+      "shortDesc": "美军平台多传感器拍摄到菱形UAP，仅短波红外(SWIR)可见，速度约434节",
+      "description": "2024年1月，美国中央司令部(CENTCOM)向AARO提交了一份UAP报告，包含1分5秒的多传感器视频 footage。 accompanying任务报告DoW-UAP-D7描述该UAP为'菱形'，以约434节速度移动。观察者报告该物体仅通过短波红外(SWIR)传感器可探测，在光电(EO)传感器中不可见。视频描述：前10秒屏幕分为两个视图，右侧为EO画面，左侧为SWIR画面。00:04时，右侧画面中心出现一个对比区域。00:10时，切换为全屏SWIR视图。00:55时，对比区域保持在传感器视野中心，视觉上类似于倒泪滴形状，下方有垂直线性拖尾质量。00:56时，操作员切换到可见光谱传感器，目标在背景中丢失。00:57-01:05，操作员切回SWIR(Black-Hot)但未能重新捕获目标。",
+      "confidence": "Medium",
+      "sensors": [
+        "SWIR",
+        "EO"
+      ],
+      "physicalCharacteristics": [
+        "swir-only-visible",
+        "diamond-shaped",
+        "high-speed-434-knots",
+        "inverted-teardrop"
+      ],
+      "sources": [
+        {
+          "label": "DVIDS - DOW-UAP-PR28 Unresolved Report Greece",
+          "url": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024"
+        },
+        {
+          "label": "PURSUE UAP Tracker - Greece Jan 2024",
+          "url": "https://pursueufotracker.com/files/unresolved-uap-report-greece-january-2024"
+        },
+        {
+          "label": "UAP File Watch - DOW-UAP-D25 Mission Report",
+          "url": "https://uapfilewatch.com/document/dow-uap-d25-mission-report-greece-january-2024"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.dvidshub.net/video/1006073",
+          "caption": "DOW-UAP-PR28 1min5sec multi-sensor footage"
+        }
+      ],
+      "limitations": [
+        "操作员未提供书面描述",
+        "未重新捕获目标",
+        "缺乏多传感器同时确认"
+      ]
+    },
+    {
+      "id": "DOW-PR32-SYRIA-2024-10",
+      "date": "2024-10",
+      "location": "叙利亚上空",
+      "country": "叙利亚",
+      "name": "叙利亚白色光球UAP",
+      "nameEn": "Syria White Orb UAP (FMV)",
+      "shortDesc": "美军FMV相机拍摄到6秒视频，不规则白色光球，顶部有光晕/眩光效应",
+      "description": "2024年10月，美国中央司令部(CENTCOM)向AARO提交了一份UAP报告，包含6秒全动态视频(FMV) footage，来自美军平台。accompanying任务报告DoW-UAP-D32描述该UAP为'不规则的白色光球'，并报告在FMV画面上方出现'光/眩光晕效应'。视频描述：00:02-00:04时，一个不规则颜色和亮度的区域出现在传感器显示顶部边缘中心附近，主要由白色和红色高光组成。该区域横向延伸至约画面宽度的三分之一，垂直区域约占视野的六分之一。整体形状最好描述为沿其长轴对分的水平半椭圆形。该物体被描述为'变形且不均匀的白色光球'。",
+      "confidence": "Medium",
+      "sensors": [
+        "FMV"
+      ],
+      "physicalCharacteristics": [
+        "orb-shaped",
+        "white-light",
+        "glare-halo",
+        "half-oval"
+      ],
+      "sources": [
+        {
+          "label": "DVIDS - DOW-UAP-PR32 Syria Oct 2024",
+          "url": "https://www.dvidshub.net/video/1006078"
+        },
+        {
+          "label": "PURSUE UAP Tracker - Syria Oct 2024",
+          "url": "https://pursueufotracker.com/generated/files/unresolved-uap-report-syria-october-2024"
+        },
+        {
+          "label": "UFO File Watch - CENTCOM Syria UAP",
+          "url": "https://ufofiles.fyi/topics/middle-east-uap/"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.dvidshub.net/video/1006078",
+          "caption": "DOW-UAP-PR32 6-second FMV footage"
+        }
+      ],
+      "limitations": [
+        "仅6秒视频",
+        "单一传感器",
+        "可能是镜头光晕或传感器伪影"
+      ]
+    },
+    {
+      "id": "DOW-D75-GULFADEN-2024-07-14",
+      "date": "2024-07-14",
+      "location": "亚丁湾",
+      "country": "也门/索马里海域",
+      "name": "亚丁湾UAP遭遇（7月14日）",
+      "nameEn": "Gulf of Aden UAP Encounter (July 14, 2024)",
+      "shortDesc": "2024年7月14日，美军ISR任务中观测到UAP，直线飞行，速度超过常规飞机",
+      "description": "2024年7月14日05:17 UTC，美国中央司令部(CENTCOM)第124攻击中队执行ISR任务期间，在亚丁湾观测到一个UAP。任务报告(MISREP 10194673)记录：该UAP保持直线飞行路径，在同一高度，向西北方向飞行，速度超过友方飞机。机组人员评估该UAP为'良性'，推进方式未知，对人员或设备无观察到的影响。该物体被追踪直到距离过远无法维持跟踪。该文件为SECRET级别，于2025年6月2日由USCENTCOM参谋长Brandon R. Tegtmeier少将批准向AARO发布。",
+      "confidence": "Medium",
+      "sensors": [
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "straight-flight-path",
+        "constant-altitude",
+        "faster-than-conventional"
+      ],
+      "sources": [
+        {
+          "label": "UAP File Watch - DOW-UAP-D75 Mission Report",
+          "url": "https://uapfilewatch.com/document/dow-uap-d75-mission-report-gulf-of-aden-july-2024"
+        },
+        {
+          "label": "Disclosure Vault - DOW-D75 Tranche",
+          "url": "https://disclosurevault.org/docs?q=AARO"
+        },
+        {
+          "label": "UFO Files Archive - Middle East UAP",
+          "url": "https://ufofiles.fyi/topics/middle-east-uap/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "SECRET级别原始文件",
+        "仅有任务报告文本描述",
+        "无视频公开"
+      ]
+    },
+    {
+      "id": "DOW-PR29-UAE-2024-06",
+      "date": "2024-06",
+      "location": "阿联酋上空",
+      "country": "阿联酋",
+      "name": "阿联酋倒泪滴UAP（底部垂直杆）",
+      "nameEn": "UAE Inverted Teardrop UAP with Vertical Pole",
+      "shortDesc": "21秒红外视频，物体底部有垂直杆/条，可能是水面反射",
+      "description": "2024年6月，美国北方司令部(NORTHCOM)向AARO提交了一份UAP报告，包含21秒红外传感器视频，来自美军平台。accompanying任务报告DoW-UAP-D8描述该UAP为'底部附有垂直杆或条的物体'。观察者还报告该UAP可能是水面物体的反射。视频描述：00:00-00:21时，一个对比区域保持在传感器视野中心，视觉上类似于倒泪滴形状，下方有垂直线性悬挂质量。该物体在水面附近被观察到，以140节速度移动。",
+      "confidence": "Low",
+      "sensors": [
+        "红外"
+      ],
+      "physicalCharacteristics": [
+        "inverted-teardrop",
+        "vertical-pole",
+        "water-surface",
+        "140-knots"
+      ],
+      "sources": [
+        {
+          "label": "DVIDS - DOW-UAP-PR29 UAE June 2024",
+          "url": "https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.dvidshub.net/video/1006074",
+          "caption": "DOW-UAP-PR29 21-second IR footage"
+        }
+      ],
+      "limitations": [
+        "观察者本人认为是水面反射",
+        "单一传感器",
+        "可能是已知物体反射"
+      ]
+    },
+    {
+      "id": "USS-JACKSON-TICTAC-2023-02-15",
+      "date": "2023-02-15",
+      "location": "南加州海岸 Whiskey-291 警戒区",
+      "country": "美国",
+      "name": "USS Jackson Tic Tac跨介质UAP",
+      "nameEn": "USS Jackson Tic Tac Transmedium UAP",
+      "shortDesc": "2023年2月15日，USS Jackson船员目击自发光Tic Tac从海洋冒出，与三个同类物体同步加速消失",
+      "description": "2023年2月15日约19:15 PST，在南加州海岸Whiskey-291警戒区，美国海军高级士官Alexandro Wiggins在USS Jackson上服役期间目击了UAP。他在2025年9月9日国会听证会上作证。根据证词：Wiggins在内部通信中心(ICC-1)和舰桥翼之间移动，关联传感器图像与目视观察。一个自发光的Tic Tac形状物体从海洋中冒出，随后与另外三个类似物体汇合。四个物体随后同时消失，伴随着高度同步的、近乎瞬时的加速。Wiggins报告没有观察到音爆，没有常规推进特征，没有排气羽流，没有在Sapphire图像系统上观察到控制面活动。这些观察是多传感器的，并在ICC-1内记录，有时间位置叠加显示在源帧中。此后有记者公开了相关传感器画面。Wiggins表示，根据他在该地区多年的操作经验，类似事件在美国南加州作业区域反复发生。",
+      "confidence": "High",
+      "sensors": [
+        "雷达",
+        "Sapphire图像系统",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "transmedium",
+        "self-luminous",
+        "tictac-shaped",
+        "instantaneous-acceleration",
+        "formation-flight",
+        "no-sonic-boom",
+        "no-exhaust"
+      ],
+      "sources": [
+        {
+          "label": "DefenseScoop - Wiggins testimony Sep 2025",
+          "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+        },
+        {
+          "label": "Rev.com - House UAP Hearing Transcript",
+          "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing"
+        },
+        {
+          "label": "Popular Mechanics - Navy Officer Underwater UFOs",
+          "url": "https://www.popularmechanics.com/military/a65709166/navy-officer-says-underwater-ufos-are-legitimate-threats-the-evidence-is-hard-to-ignore/"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "",
+          "caption": "Sapphire系统记录帧（由记者公开）"
+        }
+      ],
+      "limitations": [
+        "2023年事件但2025年才作证",
+        "原始传感器数据未完全公开",
+        "AARO未正式确认该事件"
+      ]
+    },
+    {
+      "id": "LANGLEY-AFB-DRONES-2023-12",
+      "date": "2023-12",
+      "location": "弗吉尼亚州兰利空军基地",
+      "country": "美国",
+      "name": "兰利空军基地无人机群入侵",
+      "nameEn": "Langley Air Force Base Drone Swarm Incursion",
+      "shortDesc": "不明无人机群连续17天闯入兰利空军基地限制空域，F-22被迫转移",
+      "description": "2023年12月，一个不明无人机群连续17天闯入弗吉尼亚州兰利空军基地的限制军事空域。前空军上将Mark Kelly于2023年12月首次获知这些目击。无人机群每晚在日落后约45分钟至1小时出现。据《华尔街日报》报道，无人机编队以精确模式沿相同路线飞行。Kelly描述第一个无人机约20英尺长，以超过100公里/小时速度飞行，高度约3000-4000英尺。随后有多达12架以上无人机跟随，在夜空中看起来像星座。由于无人机未构成直接威胁，且当时不确定是否用于恶意目的或只是迷路爱好者，军方被禁止击落。白宫与国防部、FBI和五角大楼UAP办公室以及外部专家会面讨论对策。兰利官员取消了夜间训练任务，并将F-22战斗机转移到其他基地。",
+      "confidence": "High",
+      "sensors": [
+        "目视",
+        "雷达"
+      ],
+      "physicalCharacteristics": [
+        "swarm-behavior",
+        "precise-pattern",
+        "20-feet-long",
+        "night-operation",
+        "12-plus-drones"
+      ],
+      "sources": [
+        {
+          "label": "Global News - Mystery drones swarm Langley AFB",
+          "url": "https://globalnews.ca/news/10812987/mysterious-drones-langley-air-force-base/"
+        },
+        {
+          "label": "DefenseScoop - AARO briefing mentions Langley",
+          "url": "https://defensescoop.com/2024/11/14/uap-aaro-chief-unveils-pentagon-annual-caseload-analysis-new-efforts/"
+        },
+        {
+          "label": "Newsweek - Drones over Langley",
+          "url": "https://www.newsweek.com/drones-langley-air-force-base-us-military-mystery-1968605"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "身份不明（可能是外国/爱好者）",
+        "未击落无法回收",
+        "未公开视频 footage"
+      ]
+    },
+    {
+      "id": "PILOT-NEARMISS-2024-09-17",
+      "date": "2024-09-17",
+      "location": "美国某机场附近，约60英里外",
+      "country": "美国",
+      "name": "国土安全部飞行员近距遭遇UAP",
+      "nameEn": "DHS Pilot Near-Miss UAP Encounter",
+      "shortDesc": "2024年9月17日，Beechcraft 350飞行员在20,000英尺高度目击足球大小深色圆柱形物体从机翼下方飞过",
+      "description": "2024年9月17日约14:30，一架国土安全部Beechcraft 350 C飞机在执行任务（可能是缉毒拦截）期间，在约20,000英尺高度发生UAP近距遭遇。飞行员报告看到一个深色、足球大小的圆柱形物体从飞机机翼下方飞过，距离约60英里。该物体被飞机雷达探测到。Ben Hansen（Discovery+节目'UFO Witness'主持人，前FBI探员）获得并分析了飞机音频记录。Hansen指出，该飞机配备了'非常敏感和复杂的雷达阵列'用于追踪毒贩。在受控空域且无报告的空中交通的区域，该物体的速度和高度表明不可能是无人机——它在两分钟内将超过Mach 2速度，超出大多数无人机能力。空中交通管制员后来向国家UFO报告中心报告了这一目击，称'之前有UFO报告，但现在已经处理完毕，你不必担心'。",
+      "confidence": "Medium",
+      "sensors": [
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "cylindrical",
+        "dark-color",
+        "football-sized",
+        "high-speed",
+        "near-miss"
+      ],
+      "sources": [
+        {
+          "label": "NewsNation - Military pilot UFO encounter",
+          "url": "https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/"
+        }
+      ],
+      "media": [
+        {
+          "type": "audio",
+          "url": "",
+          "caption": "Beechcraft 350 无线电通讯录音"
+        }
+      ],
+      "limitations": [
+        "仅单一飞行员目击",
+        "60英里距离描述可能有误",
+        "ATC回应暗示已知但无解释"
+      ]
+    },
+    {
+      "id": "EGLIN-SILVER-ORB-2024-06",
+      "date": "2024-06-04",
+      "location": "佛罗里达州埃格林空军基地",
+      "country": "美国",
+      "name": "埃格林空军基地银色光球",
+      "nameEn": "Eglin AFB Silver Orb Sightings",
+      "shortDesc": "2024年6月4日和12日，埃格林空军基地附近目击无声银色光球",
+      "description": "根据Enigma Labs Skywatching网络数据，2024年6月4日和12日，在佛罗里达州埃格林空军基地附近报告了无声银色光球目击。埃格林空军基地是美国空军重要的测试和训练设施，也是F-22等先进战机的驻地。这些目击被归入'球体/金属球体'类别，在2022年12月至2024年9月期间，Enigma Labs记录了6,226个球体目击，其中4,467个被确认，322个为金属球体。该基地在2024年11月国会听证会中被提及，前空军少将Tim Gallaudet等人指出该基地附近多次发生UAP活动。",
+      "confidence": "Medium",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "silver-orb",
+        "silent",
+        "low-altitude"
+      ],
+      "sources": [
+        {
+          "label": "GitHub 2024 UAP Wave - Rich Geldreich",
+          "url": "https://github.com/richgel999/2024_uap_wave/blob/main/README.md"
+        },
+        {
+          "label": "Ross Coulthart Reality Check Video",
+          "url": "https://youtu.be/sucrnlxq8CA"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "Enigma Labs为民间组织",
+        "缺乏官方传感器确认",
+        "可能为气球或无人机"
+      ]
+    },
+    {
+      "id": "BAKERSFIELD-RED-SPHERE-2024-09-24",
+      "date": "2024-09-24",
+      "location": "加利福尼亚州贝克斯菲尔德",
+      "country": "美国",
+      "name": "贝克斯菲尔德红色球体UAP",
+      "nameEn": "Bakersfield Red Sphere UAP",
+      "shortDesc": "2024年9月24日，贝克斯菲尔德上空目击红色球体，白色V形尾迹，改变方向后消失",
+      "description": "2024年9月24日21:00，加利福尼亚州贝克斯菲尔德，两名目击者在晴朗夜晚观察到UAP。最初目击者认为是一枚火箭，但物体随后消失，约5秒后重新出现，发出红色光芒。最初它看起来像带有典型烟雾尾迹的火箭，但随后红色物体向东移动穿越夜空，改变方向向南，似乎升入太空。周围可见白色V形尾迹。目击者检查了火箭发射、卫星或空间站报告，均无相关记录。该事件发生在贝克斯菲尔德上空，物体高度高于典型飞机航线。目击者排除了火箭、卫星和已知飞行器的可能性。",
+      "confidence": "Low",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "red-sphere",
+        "v-shaped-tail",
+        "direction-change",
+        "space-ascent"
+      ],
+      "sources": [
+        {
+          "label": "UAP Sightings Reporting System - Case 226",
+          "url": "https://uapsightings.org/california-2024-uapsrs-case-no-227/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "仅两名平民目击者",
+        "无照片或视频",
+        "可能是已知飞行器或大气现象"
+      ]
+    },
+    {
+      "id": "NJ-DRONE-ORB-WAVE-2024-12",
+      "date": "2024-12",
+      "location": "新泽西州及东海岸多地",
+      "country": "美国",
+      "name": "新泽西/东海岸无人机与光球浪潮",
+      "nameEn": "NJ/East Coast Drone and Orb Wave December 2024",
+      "shortDesc": "2024年12月，新泽西州及东海岸大规模无人机和光球目击，引发全国关注",
+      "description": "2024年12月，新泽西州及美国东海岸经历了一波大规模无人机和不明光球目击浪潮。12月3日，Florham Park时间流逝视频显示多个UAP'无人机'。12月5日，新泽西州报纸发布的30分钟时间流逝视频记录了大量UAP活动。12月8日，High Point NJ附近报告光球目击。12月11日，Barksdale AFB西大门目击。12月15日，新泽西州未知城镇报告群聚光球，与1952年Tremonton影片非常相似。一名摄影师使用Sony A7s和50mm F0.95镜头对准地平线3小时，记录到'天界舞蹈'般的光球活动。这些目击事件扩展至东海岸、中西部和西海岸，最终促使DHS、FBI、FAA和DoD于2024年12月发布联合声明。",
+      "confidence": "Low",
+      "sensors": [
+        "目视",
+        "摄影"
+      ],
+      "physicalCharacteristics": [
+        "orb-formation",
+        "flocking-behavior",
+        "glowing",
+        "variable-colors"
+      ],
+      "sources": [
+        {
+          "label": "GitHub 2024 UAP Wave Summary",
+          "url": "https://github.com/richgel999/2024_uap_wave/blob/main/README.md"
+        },
+        {
+          "label": "DHS/FBI/FAA/DoD Joint Statement",
+          "url": "https://www.defense.gov/News/Releases/Release/Article/4006538/dhs-fbi-faa-dod-joint-statement-on-ongoing-response-to-reported-drone-sightings/"
+        },
+        {
+          "label": "Ross Coulthart Reality Check",
+          "url": "https://youtu.be/sucrnlxq8CA"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://x.com/Tangledtitty/status/1864847397198664092",
+          "caption": "NJ Florham Park 12/3 time lapse"
+        }
+      ],
+      "limitations": [
+        "大规模浪潮中混杂大量无人机和已知飞行器",
+        "官方声明称大多数有合理解释",
+        "缺乏单一事件的详细传感器数据"
+      ]
+    },
+    {
+      "id": "AARO-21-UNRESOLVED-2024",
+      "date": "2024-05-01 to 2024-06-01",
+      "location": "美国国家安全地点附近",
+      "country": "美国",
+      "name": "AARO 2024财年21个未解决UAP案例",
+      "nameEn": "AARO FY2024 21 Unresolved UAP Cases",
+      "shortDesc": "AARO 2024年度报告指出21个发生在国家安全地点附近的案例无法解释，有视频、多目击者或传感器记录",
+      "description": "AARO 2024财年综合年度报告（覆盖2023年5月1日至2024年6月1日）于2024年11月14日发布。AARO在此期间收到757份UAP报告，其中485份发生在报告期内。AARO解决了118个案例，但约21个案例（AARO主任Jon Kosloski在新闻发布会上确认）无法解释。这些事件发生在国家安全地点附近，被视频记录、有多个目击者或被其他传感器捕获。Kosloski表示：'有一些有趣的案例，以我的物理学和工程背景以及我在情报界的经验，我无法理解，我也不认识其他理解它们的人。'他拒绝在批准发布前透露具体地点，但表示'这绝对是有趣的目击'，发生在过去一年半内。AARO表示未发现任何外星生物、活动或技术的证据，也未确认这些活动可归因于外国对手。",
+      "confidence": "High",
+      "sensors": [
+        "多传感器",
+        "视频",
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "near-national-security-sites",
+        "multi-sensor",
+        "video-recorded",
+        "multiple-witnesses"
+      ],
+      "sources": [
+        {
+          "label": "DoD FY24 UAP Annual Report",
+          "url": "https://www.war.gov/News/Releases/Release/Article/3964824/department-of-defense-releases-the-annual-report-on-unidentified-anomalous-phen/"
+        },
+        {
+          "label": "ABC7 News - Pentagon UFO report 21 unexplained",
+          "url": "https://abc7news.com/post/pentagon-ufo-report/15546396/"
+        },
+        {
+          "label": "DefenseScoop - AARO chief briefing",
+          "url": "https://defensescoop.com/2024/11/14/uap-aaro-chief-unveils-pentagon-annual-caseload-analysis-new-efforts/"
+        },
+        {
+          "label": "The Black Vault - Kosloski Transcript",
+          "url": "https://www.theblackvault.com/documentarchive/transcript-dr-jon-kosloski-director-aaro-media-roundtable-on-the-fy24-consolidated-annual-report-on-uap-november-14-2024/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "AARO未公开具体案例细节",
+        "地点和时间未公开",
+        "Kosloski拒绝透露具体信息"
+      ]
+    },
+    {
+      "id": "TIANJIN-UFO-2024-09-11",
+      "date": "2024-09-11",
+      "location": "中国天津滨海国际机场",
+      "country": "中国",
+      "name": "天津911不明飞行物事件",
+      "nameEn": "Tianjin 911 UFO Incident",
+      "shortDesc": "2024年9月11日起连续三晚，天津机场上空出现不明飞行物，导致航班大规模延误",
+      "description": "2024年9月11日晚开始，连续三个晚上在天津上空出现不明飞行物，导致天津滨海国际机场航班运营严重中断。航班延误影响了数千名乘客，引发广泛担忧。中国官方将这些事件归因于无人机入侵，但许多人对此解释表示怀疑，指出典型无人机无法连续飞行长达10小时。最著名的事件发生在9月11日，此后被称为'天津911事件'，引发了关于天津上空真实情况的辩论和谜团。",
+      "confidence": "Medium",
+      "sensors": [
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "drone-like",
+        "prolonged-flight",
+        "airport-disruption",
+        "multiple-nights"
+      ],
+      "sources": [
+        {
+          "label": "SFCrowsnest - UFO/UAP News Roundup Oct 2024",
+          "url": "https://sfcrowsnest.info/ufo-uap-news-roundup-13th-october-2024/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "中国官方归因于无人机",
+        "缺乏官方视频或照片",
+        "信息来源有限"
+      ]
+    },
+    {
+      "id": "NEVADA-NUCLEAR-SITE-DRONES-2024",
+      "date": "2024-09",
+      "location": "内华达州国家安全试验场（核试验场）",
+      "country": "美国",
+      "name": "内华达核试验场无人机入侵",
+      "nameEn": "Nevada National Security Site Drone Incursions",
+      "shortDesc": "五架神秘无人机闯入内华达州核试验场限制空域，四架被能源部探测到",
+      "description": "根据Fox News 2024年10月报道，在兰利空军基地无人机群出现两个月前（即2024年9月），五架神秘无人机据报道闯入了内华达州政府核试验场（Nevada National Security Site）的限制空域。其中四架被能源部在拉斯维加斯外探测到，第五架被员工目击。该地点是美国进行核武器试验和研究的敏感设施。国防部尚未公开说明这些无人机的来源。",
+      "confidence": "Medium",
+      "sensors": [
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "drone-swarm",
+        "nuclear-site",
+        "five-drones",
+        "restricted-airspace"
+      ],
+      "sources": [
+        {
+          "label": "Global News - Mystery drones Langley",
+          "url": "https://globalnews.ca/news/10812987/mysterious-drones-langley-air-force-base/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "来源为Fox News引用",
+        "DoD未正式确认",
+        "可能是已知无人机活动"
+      ]
+    },
+    {
+      "id": "CROATIA-DUBROVNIK-2024-02-26",
+      "date": "2024-02-26",
+      "location": "克罗地亚杜布罗夫尼克",
+      "country": "克罗地亚",
+      "name": "杜布罗夫尼克海岸多重UAP目击",
+      "nameEn": "Dubrovnik Coast Multiple UAP Sighting",
+      "shortDesc": "2024年2月26日，杜布罗夫尼克海岸照片中发现四个或以上不明飞行物",
+      "description": "2024年2月26日13:02，一名目击者在上行到杜布罗夫尼克要塞时无意中拍摄了一张海岸照片。照片中发现了四个或以上不明空中现象(UAP)。目击者表示：'我在上行到要塞时拍摄了这张照片，没有人注意到任何东西。当天晚些时候回到酒店后在照片中发现它们。那天我拍了几张照片，但这是唯一一张有异常现象的。'UAPSRS评估：在照片拍摄时未观察到物体的情况下需要谨慎。主要异常（右上角）的外观暗示为具有反射表面的物理物体，但框架中下方可见的其他较小物体可能倾向于摄影异常，可能与相机镜头上的光反射、附近海洋喷雾的水/湿气等有关。",
+      "confidence": "Low",
+      "sensors": [
+        "摄影"
+      ],
+      "physicalCharacteristics": [
+        "multiple-objects",
+        "oval-disc-triangular",
+        "metallic",
+        "grayish",
+        "glow"
+      ],
+      "sources": [
+        {
+          "label": "UAP Sightings Reporting System - Case 83",
+          "url": "https://uapsightings.org/croatia-2024-uapsrs-case-no-83/"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "",
+          "caption": "Dubrovnik photo showing 4+ UAPs"
+        }
+      ],
+      "limitations": [
+        "仅照片证据",
+        "拍摄时未目视确认",
+        "可能是镜头反射或水滴"
+      ]
+    },
+    {
+      "id": "CZECH-OSTRAVA-TRIANGULAR-2024-08",
+      "date": "2024-08-11",
+      "location": "捷克奥斯特拉发及周边",
+      "country": "捷克",
+      "name": "奥斯特拉发三角形UAP连续目击",
+      "nameEn": "Ostrava Triangular UAP Consecutive Sightings",
+      "shortDesc": "2024年8月11-12日连续两天，奥斯特拉发及周边目击深色三角形UAP",
+      "description": "2024年，捷克Projekt Záře（光之项目）团队恢复了UAP数据收集。在2024年的41份观察报告中，25份属于2024年评估期。所有报告均已结案，其中仅有两例被归类为'C'类即未解释。这是2024年8月11日和12日连续两天在奥斯特拉发及其周边地区对深色三角形物体的观察。项目负责人Martin Chlebovský具有电气工程硕士学位，在IT领域担任高级项目经理。",
+      "confidence": "Low",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "triangular",
+        "dark",
+        "consecutive-nights"
+      ],
+      "sources": [
+        {
+          "label": "UAP Check - 2024 Czech Reports",
+          "url": "https://www.uapcheck.com/news/id/2966/2024-uap-reports-from-czechia/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "仅平民报告",
+        "无传感器确认",
+        "缺乏具体细节"
+      ]
+    },
+    {
+      "id": "IMMACULATE-CONSTELLATION-SPHERE-2024",
+      "date": "未公开日期（约2024）",
+      "location": "东海岸某军事机场",
+      "country": "美国",
+      "name": "东海岸军事机场球形UAP入侵（Immaculate Constellation相关）",
+      "nameEn": "East Coast Military Airfield Spherical UAP Intrusion",
+      "shortDesc": "东海岸军事机场地面人员报告小型球形UAP长时间低空入侵，人员报告眼疲劳、头痛和不安感",
+      "description": "2024年11月13日国会听证会文件中提及的（与Immaculate Constellation项目相关）事件：在东海岸某军事机场，地面人员报告深夜一个小型球形UAP长时间低空入侵。该UAP显示视觉信号管理，呈现为一个模糊球体，周围光线被扭曲或'弯曲'；这种效果从中心球体向外辐射，给人一种热雾或扭曲光体积的外观。地面人员报告在观察这个'黑暗球体'时出现眼疲劳、头痛和不安或恐惧感。UAP最初被观察到缓慢穿越跑道，向敏感区域方向移动。穿过跑道后，UAP悬停在一组地面设备上方，然后进一步漂浮向敏感区域内的一栋建筑物。随后UAP漂浮过建筑物，然后突然消失。地面人员不确定遭遇持续时间，但估计观察持续了10至15分钟。",
+      "confidence": "Medium",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "spherical",
+        "dark",
+        "light-distortion",
+        "heat-haze-effect",
+        "signature-management",
+        "health-effects"
+      ],
+      "sources": [
+        {
+          "label": "Congress.gov - Hearing Document HHRG-118-GO12",
+          "url": "https://www.congress.gov/118/meeting/house/117721/documents/HHRG-118-GO12-20241113-SD003.pdf"
+        },
+        {
+          "label": "Rev.com - Nov 13 2024 Hearing Transcript",
+          "url": "https://www.rev.com/transcripts/house-hearing-on-unidentified-anomalous-phenomena"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "具体日期和地点未公开",
+        "单一来源（国会文件）",
+        "未获DoD确认"
+      ]
+    },
+    {
+      "id": "DOW-PR48-INDOPACOM-2024",
+      "date": "2024",
+      "location": "印太战区",
+      "country": "未知",
+      "name": "印太战区未解决UAP（1分39秒红外）",
+      "nameEn": "INDOPACOM Unresolved UAP (1min39sec IR)",
+      "shortDesc": "2024年印太战区，美军平台红外传感器记录1分39秒UAP视频",
+      "description": "2024年，美国印太司令部(INDOPACOM)向AARO提交了一份UAP报告，包含1分39秒的红外传感器视频，来自美军平台。报告者未提供任何口头或书面观察描述。视频描述：00:00-01:39时，传感器追踪一个对比区域，保持其在画面中心位置。该事件未提供更多细节，被归类为未解决。",
+      "confidence": "Low",
+      "sensors": [
+        "红外"
+      ],
+      "physicalCharacteristics": [
+        "thermal-contrast",
+        "stationary-relative-to-sensor"
+      ],
+      "sources": [
+        {
+          "label": "DVIDS - DOW-UAP-PR48 INDOPACOM 2024",
+          "url": "https://www.dvidshub.net/video/1006110/dow-uap-pr48-unresolved-uap-report-indopacom-2024"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.dvidshub.net/video/1006110",
+          "caption": "DOW-UAP-PR48 1min39sec IR footage"
+        }
+      ],
+      "limitations": [
+        "报告者无描述",
+        "仅红外传感器",
+        "对比区域可能是任何热源"
+      ]
+    },
+    {
+      "id": "FT-LAUDERDALE-ORBS-2024-12-21",
+      "date": "2024-12-21",
+      "location": "佛罗里达州劳德代尔堡",
+      "country": "美国",
+      "name": "劳德代尔堡直播摄像头光球变形",
+      "nameEn": "Fort Lauderdale Live Cam Orb Transformation",
+      "shortDesc": "2024年12月21日，劳德代尔堡直播摄像头捕捉到光球停止、发光增强后变形为无人机状",
+      "description": "2024年12月21日，UAP时间线网站(uap-timeline.cloud)发布的一帧来自劳德代尔堡直播摄像头的画面显示：光球在天空中停止，发光增强，然后变形为无人机形状。该事件被归类为'UfoUapUsoOrbDrones目击'。这是2024年12月新泽西/东海岸大规模UAP浪潮中的一个具体案例。",
+      "confidence": "Low",
+      "sensors": [
+        "视频"
+      ],
+      "physicalCharacteristics": [
+        "orb",
+        "transformation",
+        "glowing",
+        "drone-like"
+      ],
+      "sources": [
+        {
+          "label": "UAP Timeline 2025",
+          "url": "https://www.uap-timeline.cloud/"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "",
+          "caption": "Fort Lauderdale cam frame Dec 21 2024"
+        }
+      ],
+      "limitations": [
+        "仅单帧画面",
+        "可能是无人机或已知飞行器",
+        "缺乏专业分析"
+      ]
+    },
+    {
+      "id": "METALLIC-CYLINDER-2024-11",
+      "date": "2024-11",
+      "location": "美国政府设施附近",
+      "country": "美国",
+      "name": "政府设施附近大型金属圆柱UAP",
+      "nameEn": "Large Metallic Cylinder UAP near Government Facility",
+      "shortDesc": "2024年11月，政府承包商车辆中的人员目击大型金属圆柱形UAP，约商业飞机大小，静止后突然消失",
+      "description": "根据2024年11月五角大楼向国会提交的报告，2024年11月某日上午约9时，两辆属于政府承包商的车辆中的人员在离开美国政府设施时，目击了一个'大型金属圆柱形物体，约商业飞机大小'。该物体静止不动，背后或周围有'非常明亮的白光'。约15-20秒后，物体突然消失。由于其大小和消失得无影无踪的事实，该目击被归类为未解释或'异常'。",
+      "confidence": "Medium",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "large-metallic-cylinder",
+        "commercial-aircraft-size",
+        "bright-white-light",
+        "sudden-disappearance"
+      ],
+      "sources": [
+        {
+          "label": "SignalSCV - What newly released UFO reports reveal",
+          "url": "https://signalscv.com/2025/05/what-newly-released-ufo-reports-reveal/"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "仅平民目击者",
+        "无照片或视频",
+        "可能是已知飞行器或气球"
+      ]
+    },
+    {
+      "id": "PILOT-TRAILED-UAP-2024",
+      "date": "2024",
+      "location": "美国军事训练区域",
+      "country": "美国",
+      "name": "飞行员被UAP跟踪/尾随事件",
+      "nameEn": "Pilots Trailed or Shadowed by UAP",
+      "shortDesc": "AARO 2024报告提到三份飞行员被UAP跟踪或尾随的报告，两份涉及飞行安全",
+      "description": "根据AARO 2024财年综合年度报告，美军机组人员提供了两份涉及飞行安全担忧的UAP报告，以及三份描述飞行员被UAP跟踪或尾随的报告。AARO表示，到目前为止，没有迹象或确认这些活动可归因于外国对手。AARO继续与情报界(IC)协调，以确定这些活动是否可能是外国敌对活动的结果。这些事件的具体细节（日期、地点、飞行员身份）在公开报告中未披露。",
+      "confidence": "Medium",
+      "sensors": [
+        "雷达",
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "shadowing",
+        "trailing",
+        "flight-safety-concern"
+      ],
+      "sources": [
+        {
+          "label": "AARO FY2024 Annual Report",
+          "url": "https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "具体细节未公开",
+        "AARO未确认外国对手",
+        "可能是已知飞行器或无人机"
+      ]
+    },
+    {
+      "id": "DOW-PR43-AFRICA-2025",
+      "date": "2025",
+      "location": "非洲某地上空",
+      "country": "非洲",
+      "name": "非洲司令部未解决UAP（2秒红外）",
+      "nameEn": "AFRICOM Unresolved UAP (2-second IR)",
+      "shortDesc": "2025年，非洲司令部提交2秒红外视频，小型 barely distinguishable 对比区域穿过视野",
+      "description": "2025年，美国非洲司令部(AFRICOM)向AARO提交了一份UAP报告，包含2秒红外传感器视频，来自美军平台。报告者未提供任何口头或书面观察描述。视频描述：00:00-00:02时，一个小的、 barely distinguishable 的对比区域从传感器视野左侧移动到右侧，从屏幕右下四分之一处退出。为观看目的循环播放。",
+      "confidence": "Low",
+      "sensors": [
+        "红外"
+      ],
+      "physicalCharacteristics": [
+        "small-contrast",
+        "fast-moving"
+      ],
+      "sources": [
+        {
+          "label": "DVIDS - DOW-UAP-PR43 Africa 2025",
+          "url": "https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://www.dvidshub.net/video/1006159",
+          "caption": "DOW-UAP-PR43 2-second IR footage"
+        }
+      ],
+      "limitations": [
+        "仅2秒",
+        "报告者无描述",
+        "barely distinguishable"
+      ]
+    },
+    {
+      "id": "LIVERMORE-LLNL-2024-12-10",
+      "date": "2024-12-10",
+      "location": "加利福尼亚州利弗莫尔，劳伦斯利弗莫尔国家实验室附近",
+      "country": "美国",
+      "name": "利弗莫尔国家实验室附近无人机状UAP",
+      "nameEn": "Livermore LLNL Near Jet-Sized Drone",
+      "shortDesc": "2024年12月10日，利弗莫尔国家实验室附近目击小型喷气机大小的无人机状UAP",
+      "description": "根据2024 UAP Wave GitHub仓库记录，2024年12月10日，加利福尼亚州利弗莫尔，距离劳伦斯利弗莫尔国家实验室(LLNL)约3-4英里处，当地目击者报告：一个'小型喷气机大小的无人机在一个方向移动，高度低于飞机，速度比飞机慢，四个点有灯光包括一个红色闪烁灯'。LLNL是美国核武器设计实验室，属于高敏感设施。",
+      "confidence": "Low",
+      "sensors": [
+        "目视"
+      ],
+      "physicalCharacteristics": [
+        "jet-sized",
+        "four-lights",
+        "red-blinking",
+        "low-altitude"
+      ],
+      "sources": [
+        {
+          "label": "GitHub 2024 UAP Wave - Livermore",
+          "url": "https://github.com/richgel999/2024_uap_wave/blob/main/README.md"
+        }
+      ],
+      "media": [],
+      "limitations": [
+        "单一来源（GitHub/X）",
+        "未确认",
+        "可能是已知无人机"
+      ]
+    },
+    {
+      "id": "MIAMI-ORB-2024-12-12",
+      "date": "2024-12-12",
+      "location": "佛罗里达州迈阿密南海滩",
+      "country": "美国",
+      "name": "迈阿密南海滩发光光球",
+      "nameEn": "Miami South Beach Glowing Orb",
+      "shortDesc": "2024年12月12日，迈阿密南海滩阳台目击发光光球/无人机/UAP飞过",
+      "description": "2024年12月12日，据GitHub 2024 UAP Wave记录，迈阿密南海滩某阳台拍摄到发光光球/无人机/UAP飞过。目击者Jessica Leigh称：'An alleged Glowing orb /Drone /Uap flies by Miami South Beach, Miami balcony a few hours ago. It is hard to pull something like this. This is mind boggling.'",
+      "confidence": "Low",
+      "sensors": [
+        "视频"
+      ],
+      "physicalCharacteristics": [
+        "glowing-orb",
+        "low-altitude"
+      ],
+      "sources": [
+        {
+          "label": "GitHub 2024 UAP Wave - Miami",
+          "url": "https://github.com/richgel999/2024_uap_wave/blob/main/README.md"
+        }
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://x.com/Truthpolex/status/1867195871521034450",
+          "caption": "Miami South Beach orb footage"
+        }
+      ],
+      "limitations": [
+        "单一视频来源",
+        "可能是无人机或灯光",
+        "未经专业分析"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "aaro-annual-report-2024",
+    "date": "2024-11-14",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "AARO 2024年度UAP报告发布",
+    "nameEn": "AARO FY2024 Annual UAP Report Released",
+    "shortDesc": "五角大楼发布AARO 2024年度UAP报告，收录757起报告，21起需进一步分析",
+    "description": "2024年11月14日，美国国防部与ODNI向国会提交了AARO年度UAP报告，覆盖2023年5月1日至2024年6月1日期间。AARO收到757份UAP报告，其中485起发生在报告期内，272起为2021-2022年的积压报告。AARO在报告期内解决了118起案件，另有174起排队待结案。报告还指出21起案件'值得进一步分析'，包括2起涉及UAP接近碰撞事件，以及多起飞越敏感核设施的无人机入侵事件。截至2024年6月1日，AARO累计审查案件超过1,600起。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "DoD Official Release",
+        "url": "https://www.war.gov/News/Releases/Release/Article/3964824/department-of-defense-releases-the-annual-report-on-unidentified-anomalous-phen/"
+      },
+      {
+        "label": "The Hill - Pentagon UFO Office Reports",
+        "url": "https://thehill.com/policy/defense/4990769-pentagon-ufo-office-reports/"
+      },
+      {
+        "label": "AARO Annual Report PDF (via metabunk)",
+        "url": "https://www.metabunk.org/threads/aaro-2024-annual-report-on-uap.13762/"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "AARO FY2024 Annual UAP Report (Unclassified)",
+        "url": "https://www.aaro.mil/Portals/136/PDFs/FY23_Consolidated_Annual_Report_on_UAP-Oct_2023.pdf"
+      }
+    ],
+    "limitations": "报告为未分类版本，21起'值得进一步分析'案件的具体细节未完全公开；部分敏感军事数据已脱密处理"
+  },
+  {
+    "id": "aaro-historical-record-v1-2024",
+    "date": "2024-03-08",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "AARO历史记录报告第一卷",
+    "nameEn": "AARO Historical Record Report Volume 1",
+    "shortDesc": "AARO发布历史记录报告第一卷，审查1945年以来美国政府UAP调查历史",
+    "description": "2024年3月8日，美国国防部AARO发布《美国政府与UAP相关历史记录报告》第一卷。这份63页的报告根据2023财年国防授权法案第6802(j)条要求编制，审查了从1945年到2023年10月31日的UAP调查记录。报告采访了约30名声称了解美国政府非人类技术利用项目的人士。核心结论包括：未发现任何美国政府调查、学术研究或官方审查小组确认UAP目击代表地外技术的证据；未发现美国政府或私营公司逆向工程地外技术的实证证据；受访者提到的真实政府机密项目被错误关联为外星活动。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "DoD Official PDF",
+        "url": "https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF"
+      },
+      {
+        "label": "New Paradigm Institute - Analysis",
+        "url": "https://newparadigminstitute.org/learn/library/disinformation-series-aaro-and-2024-uap-report/"
+      },
+      {
+        "label": "UFO Transparency Archive",
+        "url": "https://ufotransparency.com/files/decade-2020s-aaro-historical-record-report-vol1-2024-aaro-historical-record-report-volume-1-2024"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "AARO Historical Record Report Vol.1 (PDF, 63 pages)",
+        "url": "https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-2024-0263-AARO-HISTORICAL-RECORD-REPORT-VOLUME-1-2024.PDF"
+      }
+    ],
+    "limitations": "报告仅覆盖至2023年10月31日；第二卷计划涵盖2023年11月1日至2024年4月15日期间的发现；报告结论与部分举报人的说法存在直接矛盾"
+  },
+  {
+    "id": "congress-uap-hearing-nov-2024",
+    "date": "2024-11-13",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "国会UAP听证会（2024年11月）",
+    "nameEn": "Congressional UAP Hearing November 2024",
+    "shortDesc": "众议院监督委员会举行UAP听证会，四名证人作证",
+    "description": "2024年11月13日，美国众议院监督与问责委员会下属网络安全、信息技术与政府创新小组委员会和国家安全、边境与外交事务小组委员会联合举行题为'Unidentified Anomalous Phenomena: Exposing the Truth'的听证会。证人为退役海军少将Tim Gallaudet、前国防部官员Luis Elizondo、前NASA副局长Michael Gold、记者Michael Shellenberger。关键证词包括：Elizondo确认美国存在UAP坠毁回收与逆向工程秘密项目；Gallaudet强调UAP对飞行员安全的威胁以及跨介质能力；Shellenberger披露了'Immaculate Constellation'秘密UAP数据收集项目的存在；Gold倡导NASA应主导UAP科学研究。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "New Paradigm Institute - Hearing Summary",
+        "url": "https://newparadigminstitute.org/learn/library/uap-disclosure-post-event-house-oversight-2024/"
+      },
+      {
+        "label": "Disclosure Diaries - Summary",
+        "url": "https://www.disclosurediaries.com/2024-joint-house-subcommittee-hearing-on-uap-a-summary/"
+      },
+      {
+        "label": "Podcast UFO - Inside Report",
+        "url": "https://podcastufo.com/inside-the-congressional-hearing-on-unidentified-anomalous-phenomena-uaps-november-13-2024/"
+      },
+      {
+        "label": "Space.com - AARO Criticism",
+        "url": "https://www.space.com/space-exploration/uap-witnesses-criticize-pentagon-ufo-office-in-congressional-hearing-for-using-science-and-coming-up-with-answers"
+      }
+    ],
+    "media": [
+      {
+        "type": "video",
+        "label": "Official House Oversight Hearing Video",
+        "url": "https://www.congress.gov/event/118th-congress/house-event/117583"
+      }
+    ],
+    "limitations": "听证会公开部分未包含机密附件；证人部分证词基于二手信息；AARO未被邀请在听证会上为自己辩护"
+  },
+  {
+    "id": "aaro-foc-2024",
+    "date": "2024-09-30",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "AARO达到全面作战能力",
+    "nameEn": "AARO Achieves Full Operational Capability",
+    "shortDesc": "AARO在2024财年末达到全面作战能力（FOC），人员超40人",
+    "description": "2024年1月10日，DefenseScoop确认AARO预计在2024财年结束（9月30日）前达到全面作战能力（FOC）。AARO于2022年7月由国防部副部长Kathleen Hicks正式设立，是美国国防部调查UAP的官方一站式中心。截至2024年12月，办公室雇用超过40名国防部人员。2024年AARO预算为数千万美元，人员编制持续扩充。AARO在2024年继续向公众网站添加新资源，包括气球和卫星追踪器、球形无人机和先进推进系统推荐研究论文。2024年8月，Jon Kosloski博士接替Sean Kirkpatrick成为AARO主任。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "DefenseScoop - AARO FOC Report",
+        "url": "https://defensescoop.com/2024/01/10/pentagons-uap-investigation-hub-works-to-reach-full-operational-capability/"
+      },
+      {
+        "label": "Aerospace Magazine - AARO Profile",
+        "url": "https://www.aerosociety.com/media/22582/aerospace-january-2024.pdf"
+      },
+      {
+        "label": "AARO Official Website",
+        "url": "https://www.aaro.mil/"
+      }
+    ],
+    "media": [],
+    "limitations": "FOC具体标准未公开；AARO人员具体规模和预算细节为机密信息；办公室运作透明度仍受国会质疑"
+  },
+  {
+    "id": "nara-uap-records-2025",
+    "date": "2025-04-24",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "国家档案馆发布UAP记录",
+    "nameEn": "National Archives Releases UAP Records",
+    "shortDesc": "NARA发布首批UAP记录，依据2024财年NDAA要求建立UAP记录库",
+    "description": "2025年4月24日，美国国家档案馆与记录管理局（NARA）发布与不明异常现象（UAP）相关的新记录。这些记录从ODNI、国防部长办公室、联邦航空管理局（FAA）和核管理委员会（NRC）移交至国家档案馆，依据2024财年国防授权法案（公法118-31）第1841-1843条。这些记录现已成为国家档案馆UAP收藏的一部分。NARA表示将继续从联邦机构接收UAP记录，并通过国家档案馆目录在线提供。此举是国会要求建立'UAP记录收藏'的法律要求的落实。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "NARA Official Press Release",
+        "url": "https://www.archives.gov/press/press-releases/2025/nr25-07"
+      },
+      {
+        "label": "NARA News Article",
+        "url": "https://www.archives.gov/news/articles/rfk-files-uap-records-april-2025"
+      },
+      {
+        "label": "NARA UAP Collection Portal",
+        "url": "https://www.archives.gov/uap"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "NARA UAP Records Collection",
+        "url": "https://www.archives.gov/uap"
+      }
+    ],
+    "limitations": "首批发布记录数量和具体覆盖范围未详细说明；记录可能仅为部分脱密文档；完整数字目录建设仍在进行中"
+  },
+  {
+    "id": "navy-foia-denial-uap-photos-2024",
+    "date": "2024-11-13",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "海军拒绝FOIA公开UAP照片上诉",
+    "nameEn": "Navy Denies FOIA Appeal for UAP Photographs",
+    "shortDesc": "海军最终拒绝The Black Vault关于78张UAP照片的FOIA上诉",
+    "description": "2024年11月13日，美国海军首席 naval operations（初始拒绝权当局）对The Black Vault于2022年9月8日提交的FOIA请求做出最终裁决，拒绝公开78张标记为'UAP'的美国海军存档照片。该请求寻求'美国海军存档的所有标记为不明异常现象或'UAP'的照片'。海军依据FOIA豁免条款(b)(1)完全拒绝，援引UAP安全分类指南。2025年11月14日，John Greenewald Jr.提出上诉，但2026年1月20日收到上诉拒绝通知。此案凸显了FOIA在获取UAP视觉证据方面的系统性障碍。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "The Black Vault - FOIA Appeal Document",
+        "url": "https://www.theblackvault.com/documentarchive/wp-content/uploads/2026/03/2026-NavyAPPEAL-000123.pdf"
+      },
+      {
+        "label": "New Paradigm Institute - FOIA Analysis",
+        "url": "https://content.newparadigminstitute.org/uploads/2025/New-Paradigm-Institute-2025-Confronting-UAP-Secrecy-Regime.pdf"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "Navy FOIA Appeal Denial Letter (2026-NavyAPPEAL-000123)",
+        "url": "https://www.theblackvault.com/documentarchive/wp-content/uploads/2026/03/2026-NavyAPPEAL-000123.pdf"
+      }
+    ],
+    "limitations": "78张照片被完全扣留，未公开任何样本；海军依据(b)(1)国家安全豁免；公众无法通过FOIA途径获取军事UAP图像证据"
+  },
+  {
+    "id": "congress-uap-hearing-sep-2025",
+    "date": "2025-09-09",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "国会UAP听证会（2025年9月）",
+    "nameEn": "Congressional UAP Hearing September 2025",
+    "shortDesc": "众议院首次有现役海军人员公开作证，披露MQ-9无人机也门UAP事件视频",
+    "description": "2025年9月9日，众议院监督与政府改革委员会'联邦机密解密工作组'举行UAP专题听证会。此次听证会的标志性进展是：首次有现役海军官员在国会公开作证——海军高级首席士官Alexandro Wiggins（服役23年）以个人身份陈述了2023年服役于USS Jackson时目击的UAP事件。他描述了一个'自发光Tic Tac形状物体从海洋中浮现，随后与三个类似物体汇合，然后以高度同步的近乎瞬时加速消失'。此外，众议员Eric Burlison首次公开了一段视频：2024年10月，美国军用MQ-9无人机在也门海岸向一个高速UAP发射了Hellfire导弹，UAP被击中但未被摧毁，'它继续前进，看起来碎片被它一起带走了'。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "DefenseScoop - Hearing Report",
+        "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+      },
+      {
+        "label": "Space.com - AARO Criticism",
+        "url": "https://www.space.com/space-exploration/uap-witnesses-criticize-pentagon-ufo-office-in-congressional-hearing-for-using-science-and-coming-up-with-answers"
+      }
+    ],
+    "media": [
+      {
+        "type": "video",
+        "label": "MQ-9 Drone Yemen UAP Footage (Unveiled in Congress)",
+        "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/"
+      }
+    ],
+    "limitations": "视频仅由议员在听证会上展示，未向公众完整发布；UAP身份未确认；国防部未正式确认该事件为异常现象"
+  },
+  {
+    "id": "aaro-2025-uap-workshop",
+    "date": "2025-08-01",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "AARO 2025 UAP研讨会",
+    "nameEn": "AARO 2025 UAP Workshop",
+    "shortDesc": "AARO与AUI、FSU联合举办UAP研讨会，发布叙事数据分析报告",
+    "description": "2025年8月，美国国防部AARO与Associated Universities Inc.（AUI）和Florida State University（FSU）在AUI总部联合举办UAP研讨会，40名来自政府、学术界和独立研究组织的参与者参加。会议聚焦于UAP叙事报告及相关数据源工作的挑战与机遇。随后发布的《2025 UAP Workshop: Narrative Data, Infrastructures, and Analysis》报告提出了关键建议：开发标准化元数据模板、在人工监督下使用AI进行数据分析、改进数据收集协作与保存机制。该研讨会建立在2024年NSF资助的'UAP：科学、公众参与与对话'研讨会基础上，后者探讨了如何帮助公众以科学视角看待UAP。",
+    "confidence": "medium",
+    "sources": [
+      {
+        "label": "AUI Official Report",
+        "url": "https://aui.edu/aaro-releases-report-on-unidentified-anomalous-phenomena-uap/"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "2025 UAP Workshop Report",
+        "url": "https://aui.edu/aaro-releases-report-on-unidentified-anomalous-phenomena-uap/"
+      }
+    ],
+    "limitations": "研讨会报告为学术合作成果，非官方政府调查结论；具体UAP案例数据未在报告中公开；AI分析方法仍处于探索阶段"
+  },
+  {
+    "id": "nuclear-site-drone-incursions-2024",
+    "date": "2024-11-14",
+    "location": "United States",
+    "country": "United States",
+    "name": "核设施上空UAP/无人机入侵报告",
+    "nameEn": "UAP Drone Incursions Near Nuclear Weapons Sites",
+    "shortDesc": "AARO 2024年报告确认18起核设施附近UAP目击，含长时间飞行事件",
+    "description": "根据2024年11月发布的AARO年度UAP报告，AARO识别了18起在美国核武器设施附近的UAP目击报告。其中10起涉及UAP在敏感区域上空飞行超过5分钟，2起涉及飞行时间接近1小时和近2小时。所有目击事件均只涉及1-2个UAP。AARO表示，目前没有迹象表明这些活动可归因于外国对手。此外，2024年12月Langley空军基地曾发生数十起UAP/不明无人机目击事件，五角大楼后来表示这些为不明无人机。这些核设施附近的持续入侵事件引发了对美国关键战略资产安全的严重关切。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "The Hill - Pentagon Report Details",
+        "url": "https://thehill.com/policy/defense/4990769-pentagon-ufo-office-reports/"
+      },
+      {
+        "label": "Interesting Engineering - Gremlin System",
+        "url": "https://interestingengineering.com/culture/worlds-first-alien-hunting-system"
+      }
+    ],
+    "media": [],
+    "limitations": "具体核设施位置和UAP特征未公开；18起案件中未解决案件的比例未披露；五角大楼倾向于将此类事件解释为无人机，但未能确认操作者身份"
+  },
+  {
+    "id": "noaa-foia-release-2024",
+    "date": "2024-09-26",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "NOAA响应FOIA发布UAP相关通信",
+    "nameEn": "NOAA Releases UAP Correspondence via FOIA",
+    "shortDesc": "NOAA在FOIA请求下发布与AARO和UAP工作组的往来通信",
+    "description": "2024年9月26日，美国国家海洋和大气管理局（NOAA）响应FOIA请求，发布了与AARO和UAP工作组相关的部分通信文件。其中一份文件包含邀请AARO人员访问NOAA Sterling Field Support Center的邀请，这是跨机构协调UAP目击复杂性更广泛努力的一部分。其他通信揭示了NOAA在UAP工作组时期与海军官员的会议，突显了该机构在支持UAP调查方面的长期角色。这次FOIA发布是民间组织持续推动UAP跨机构信息透明化的成果之一。",
+    "confidence": "medium",
+    "sources": [
+      {
+        "label": "The Black Vault - NOAA FOIA Release",
+        "url": "https://www.theblackvault.com/"
+      },
+      {
+        "label": "UFOs and Intelligence Timeline (CUFOS)",
+        "url": "https://cufos.org/PDFs/pdfs/UFOsandIntelligence.pdf"
+      }
+    ],
+    "media": [
+      {
+        "type": "document",
+        "label": "NOAA UAP Correspondence (FOIA Release)",
+        "url": "https://www.theblackvault.com/"
+      }
+    ],
+    "limitations": "发布的通信文件可能为节选版本；具体技术细节和会议内容未完全公开；NOAA在UAP调查中的角色仍不明确"
+  },
+  {
+    "id": "faa-foia-denial-2024",
+    "date": "2024-09-23",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "FAA以国家安全为由拒绝公开UAP通信",
+    "nameEn": "FAA Declines to Release UAP Communications Citing National Security",
+    "shortDesc": "FAA在三年后拒绝公开其向UAP工作组提供的电子邮件和文件",
+    "description": "2024年9月23日，联邦航空管理局（FAA）以国家安全为由，拒绝公开其向UAP工作组提供的电子邮件和其他文件。这一拒绝由John Greenewald通过The Black Vault披露，显示尽管FAA在公开的UAP报告中表示与工作组进行了协调，但具体的通信内容、频率和协调细节仍被归类为国家安全信息。FAA的拒绝进一步凸显了跨机构UAP信息分享的障碍，以及FOIA在获取涉及多机构UAP协调信息时的局限性。这一事件与2024年9月NOAA部分发布UAP通信形成对比，反映了不同机构对UAP信息透明度的不同态度。",
+    "confidence": "medium",
+    "sources": [
+      {
+        "label": "The Black Vault - FAA Denial",
+        "url": "https://www.theblackvault.com/"
+      },
+      {
+        "label": "UFOs and Intelligence Timeline (CUFOS)",
+        "url": "https://cufos.org/PDFs/pdfs/UFOsandIntelligence.pdf"
+      }
+    ],
+    "media": [],
+    "limitations": "FAA未提供拒绝的具体理由细节；涉及的具体通信数量和时间范围未公开；无法评估FAA与UAP工作组协调的真实程度"
+  },
+  {
+    "id": "aaro-leadership-transition-2024",
+    "date": "2024-08-01",
+    "location": "Washington, D.C.",
+    "country": "United States",
+    "name": "AARO领导层交接",
+    "nameEn": "AARO Leadership Transition: Kirkpatrick to Kosloski",
+    "shortDesc": "Jon Kosloski博士接任AARO主任，接替Sean Kirkpatrick",
+    "description": "2024年8月，Jon Kosloski博士正式接替Sean Kirkpatrick担任AARO主任。Kirkpatrick于2023年12月退休，此后Tim Phillips曾担任代理主任。Kosloski上任后首次发布AARO年度报告（2024年11月）。在2024年11月的媒体吹风会上，Kosloski表示AARO正在努力'尽可能降级那些材料的密级'，并正在实施增加解密工作的努力，但强调必须与合作伙伴一起处理案件，需要保护敏感来源、方法和漏洞。他还表示，约不到2.5%的案件在初步分析后仍具有可归因于'突破技术'的异常特征，AARO仍在研究这些案件。",
+    "confidence": "high",
+    "sources": [
+      {
+        "label": "The Hill - Pentagon Report",
+        "url": "https://thehill.com/policy/defense/4990769-pentagon-ufo-office-reports/"
+      },
+      {
+        "label": "Unknown Country - AARO Report Analysis",
+        "url": "https://unknowncountry.com/headline-news/aaro-has-released-the-unclassified-version-of-their-2024-annual-uap-report/"
+      }
+    ],
+    "media": [],
+    "limitations": "Kirkpatrick离职的具体原因未公开；Kosloski的完整履历和背景信息有限；AARO在领导层交接期间的案件处理连续性未受外部评估"
+  }
+]
