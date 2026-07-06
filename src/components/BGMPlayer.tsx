@@ -1,96 +1,50 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Music, VolumeX } from 'lucide-react'
-import { Midi } from '@tonejs/midi'
-import * as Tone from 'tone'
+import { assetUrl } from '../lib/utils'
 
 /**
- * Cornfield Chase MIDI 播放器
- * 使用 @tonejs/midi 解析 MIDI，Tone.js PolySynth 播放管风琴音色
- * 默认页面加载后自动播放，浏览器阻止时显示交互浮层
+ * Cornfield Chase 背景音乐播放器（原声 MP3）
+ * 页面加载后自动播放，浏览器策略阻止时显示首次交互浮层
  */
+const BGM_SRC = assetUrl('/music/cornfield-chase.mp3')
+// 背景音乐音量（0-1），原声录音无需衰减合成器那样的极小值
+const BGM_VOLUME = 0.5
+
 export default function BGMPlayer() {
   const [isPlaying, setIsPlaying] = useState(false)
-  const [isLoaded, setIsLoaded] = useState(false)
   const [needsInteraction, setNeedsInteraction] = useState(false)
-  const midiRef = useRef<Midi | null>(null)
-  const synthRef = useRef<Tone.PolySynth | null>(null)
-  const partsRef = useRef<Tone.Part[]>([])
+  const audioRef = useRef<HTMLAudioElement | null>(null)
   const autoStartedRef = useRef(false)
   const userStoppedRef = useRef(false)
 
-  const initAudio = useCallback(async () => {
-    await Tone.start()
-
-    const synth = new Tone.PolySynth(Tone.Synth, {
-      oscillator: { type: 'triangle' },
-      envelope: {
-        attack: 0.8,
-        decay: 0.3,
-        sustain: 0.9,
-        release: 3.0,
-      },
-    })
-
-    const masterGain = new Tone.Gain(0.06)
-    const reverb = new Tone.Reverb({ decay: 5, preDelay: 0.2, wet: 0.35 })
-    const delay = new Tone.FeedbackDelay('8n', 0.15)
-
-    synth.chain(delay, reverb, masterGain, Tone.Destination)
-    synthRef.current = synth
-
-    const response = await fetch('/music/cornfield-chase.mid')
-    const arrayBuffer = await response.arrayBuffer()
-    const midi = new Midi(arrayBuffer)
-    midiRef.current = midi
-
-    const parts: Tone.Part[] = []
-    const duration = midi.duration
-
-    midi.tracks.forEach((track) => {
-      if (track.notes.length === 0) return
-
-      const part = new Tone.Part((time: number, note: any) => {
-        synth.triggerAttackRelease(
-          note.name as string,
-          note.duration as number,
-          time,
-          (note.velocity as number) * 0.7
-        )
-      }, track.notes.map((n) => [n.time, n as any]))
-
-      part.loop = true
-      part.loopEnd = duration
-      parts.push(part)
-    })
-
-    partsRef.current = parts
-    setIsLoaded(true)
-    return true
+  // 创建 audio 元素，组件卸载时释放资源
+  useEffect(() => {
+    const audio = new Audio(BGM_SRC)
+    audio.loop = true
+    audio.volume = BGM_VOLUME
+    audioRef.current = audio
+    return () => {
+      audio.pause()
+      audio.src = ''
+      audioRef.current = null
+    }
   }, [])
 
   const startAudio = useCallback(async () => {
-    if (!isLoaded) {
-      const ok = await initAudio()
-      if (!ok) return
+    const audio = audioRef.current
+    if (!audio) return
+    try {
+      await audio.play()
+      setIsPlaying(true)
+      setNeedsInteraction(false)
+    } catch (err) {
+      // 浏览器阻止自动播放，显示交互浮层
+      setNeedsInteraction(true)
     }
-
-    Tone.Transport.stop()
-    Tone.Transport.position = 0
-    Tone.Transport.loop = true
-    Tone.Transport.loopEnd = midiRef.current?.duration ?? 0
-
-    partsRef.current.forEach((part) => {
-      part.start(0)
-    })
-
-    Tone.Transport.start()
-    setIsPlaying(true)
-    setNeedsInteraction(false)
-  }, [isLoaded, initAudio])
+  }, [])
 
   const stopAudio = useCallback(() => {
-    Tone.Transport.stop()
-    partsRef.current.forEach((part) => part.stop())
+    audioRef.current?.pause()
     setIsPlaying(false)
   }, [])
 
@@ -143,25 +97,17 @@ export default function BGMPlayer() {
   // 页面可见性变化时暂停/恢复
   useEffect(() => {
     const handler = () => {
-      if (document.hidden && isPlaying) {
-        Tone.Transport.pause()
-      } else if (!document.hidden && isPlaying) {
-        Tone.Transport.start()
+      const audio = audioRef.current
+      if (!audio) return
+      if (document.hidden) {
+        audio.pause()
+      } else if (isPlaying) {
+        audio.play().catch(() => {})
       }
     }
     document.addEventListener('visibilitychange', handler)
     return () => document.removeEventListener('visibilitychange', handler)
   }, [isPlaying])
-
-  // 组件卸载时清理
-  useEffect(() => {
-    return () => {
-      partsRef.current.forEach((p) => p.dispose())
-      synthRef.current?.dispose()
-      Tone.Transport.stop()
-      Tone.Transport.cancel()
-    }
-  }, [])
 
   return (
     <>
@@ -173,7 +119,7 @@ export default function BGMPlayer() {
           color: isPlaying ? '#30B0D0' : '#8A99A8',
           border: isPlaying ? '1px solid rgba(48, 176, 208, 0.25)' : '1px solid transparent',
         }}
-        title={isPlaying ? '点击暂停 Cornfield Chase' : '点击播放 Cornfield Chase（MIDI）'}
+        title={isPlaying ? '点击暂停 Cornfield Chase' : '点击播放 Cornfield Chase'}
       >
         <span className="relative flex items-center justify-center w-4 h-4">
           {isPlaying ? (
