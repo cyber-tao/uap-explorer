@@ -1,8 +1,9 @@
 import { useState, useMemo, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import { Search, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope } from 'lucide-react'
+import { Search, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope, ArrowUpDown } from 'lucide-react'
 import { events, confidenceColors, confidenceLabels, physicalCharLabels, regionLabels, searchEvents } from '../data/events'
 import type { UAPEvent, ConfidenceLevel } from '../data/events'
+import { assetUrl } from '../lib/utils'
 
 const confidenceOptions: { value: string; label: string }[] = [
   { value: '', label: '全部置信度' },
@@ -59,6 +60,7 @@ export default function TimelinePage() {
   const [regionFilter, setRegionFilter] = useState(searchParams.get('region') || '')
   const [charFilter, setCharFilter] = useState(searchParams.get('characteristic') || '')
   const [viewMode, setViewMode] = useState<'grid' | 'timeline'>('grid')
+  const [sortBy, setSortBy] = useState<'confidence' | 'date'>(searchParams.get('sort') as 'confidence' | 'date' || 'confidence')
 
   // Sync filters to URL params
   useEffect(() => {
@@ -67,8 +69,9 @@ export default function TimelinePage() {
     if (confidenceFilter) params.confidence = confidenceFilter
     if (regionFilter) params.region = regionFilter
     if (charFilter) params.characteristic = charFilter
+    if (sortBy !== 'confidence') params.sort = sortBy
     setSearchParams(params, { replace: true })
-  }, [searchQuery, confidenceFilter, regionFilter, charFilter, setSearchParams])
+  }, [searchQuery, confidenceFilter, regionFilter, charFilter, sortBy, setSearchParams])
 
   const filteredEvents = useMemo(() => {
     let result = [...events]
@@ -76,8 +79,20 @@ export default function TimelinePage() {
     if (confidenceFilter) result = result.filter((e) => e.confidence === confidenceFilter)
     if (regionFilter) result = result.filter((e) => e.region === regionFilter)
     if (charFilter) result = result.filter((e) => e.physicalCharacteristics.includes(charFilter))
+
+    // Sort
+    const confidenceWeight: Record<string, number> = { High: 4, Medium: 3, Low: 2, Speculative: 1 }
+    if (sortBy === 'confidence') {
+      result.sort((a, b) => confidenceWeight[b.confidence] - confidenceWeight[a.confidence])
+    } else {
+      result.sort((a, b) => {
+        const dateA = new Date(a.sortDate).getTime() || 0
+        const dateB = new Date(b.sortDate).getTime() || 0
+        return dateB - dateA
+      })
+    }
     return result
-  }, [searchQuery, confidenceFilter, regionFilter, charFilter])
+  }, [searchQuery, confidenceFilter, regionFilter, charFilter, sortBy])
 
   const activeFilters = Boolean(confidenceFilter || regionFilter || charFilter || searchQuery)
 
@@ -100,7 +115,7 @@ export default function TimelinePage() {
       >
         <div className="relative overflow-hidden" style={{ aspectRatio: '16/10' }}>
           <img
-            src={event.image}
+            src={assetUrl(event.image)}
             alt={event.name}
             className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
@@ -170,19 +185,13 @@ export default function TimelinePage() {
   }
 
   const renderTimeline = () => {
-    const sorted = [...filteredEvents].sort((a, b) => {
-      const yearA = parseInt(a.date.split('-')[0]) || 0
-      const yearB = parseInt(b.date.split('-')[0]) || 0
-      return yearA - yearB
-    })
-
     return (
       <div className="relative max-w-4xl mx-auto">
         <div
           className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 md:-ml-px"
           style={{ background: 'linear-gradient(to bottom, #30B0D0, transparent)' }}
         />
-        {sorted.map((event, idx) => {
+        {filteredEvents.map((event, idx) => {
           const confColor = confidenceColors[event.confidence]
           const isLeft = idx % 2 === 0
           return (
@@ -320,6 +329,35 @@ export default function TimelinePage() {
             )}
 
             <div className="flex-1" />
+
+            <div className="flex-1" />
+
+            {/* Sort toggle */}
+            <div className="flex items-center gap-1 mr-3">
+              <ArrowUpDown className="w-3.5 h-3.5 mr-1" style={{ color: '#8A99A8' }} />
+              <button
+                onClick={() => setSortBy('confidence')}
+                className="px-2.5 py-1.5 rounded text-xs font-medium transition-colors"
+                style={{
+                  background: sortBy === 'confidence' ? 'rgba(48, 176, 208, 0.15)' : 'transparent',
+                  color: sortBy === 'confidence' ? '#30B0D0' : '#8A99A8',
+                  border: sortBy === 'confidence' ? '1px solid rgba(48, 176, 208, 0.3)' : '1px solid transparent',
+                }}
+              >
+                可信度
+              </button>
+              <button
+                onClick={() => setSortBy('date')}
+                className="px-2.5 py-1.5 rounded text-xs font-medium transition-colors"
+                style={{
+                  background: sortBy === 'date' ? 'rgba(48, 176, 208, 0.15)' : 'transparent',
+                  color: sortBy === 'date' ? '#30B0D0' : '#8A99A8',
+                  border: sortBy === 'date' ? '1px solid rgba(48, 176, 208, 0.3)' : '1px solid transparent',
+                }}
+              >
+                时间
+              </button>
+            </div>
 
             {/* View toggle */}
             <div className="flex items-center rounded-md overflow-hidden" style={{ border: '1px solid rgba(138, 153, 168, 0.2)' }}>
