@@ -1,6 +1,7 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { Menu, X, Search, Globe } from 'lucide-react'
+import BGMPlayer from './BGMPlayer'
 
 const navLinks = [
   { label: '首页', path: '/' },
@@ -70,6 +71,7 @@ export default function Navigation() {
           </nav>
 
           <div className="flex items-center gap-3">
+            <BGMPlayer />
             <button
               onClick={() => navigate('/timeline')}
               className="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-md text-sm transition-colors"
