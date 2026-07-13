@@ -2,7 +2,9 @@
 
 > 一个科幻探索风格的动态响应式网站，展示全球 22 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
 
-[📅 事件时间线](https://uap-explorer.vercel.app/#/timeline) · [📊 分析](https://uap-explorer.vercel.app/#/analysis) · [🏛 机构](https://uap-explorer.vercel.app/#/institutions)
+[📅 事件时间线](https://cyber-tao.github.io/uap-explorer/#/timeline) · [📊 分析](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 机构](https://cyber-tao.github.io/uap-explorer/#/institutions)
+
+在线站点：[https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.io/uap-explorer/)
 
 ---
 
@@ -25,17 +27,18 @@
 | 🖼 **媒体画廊** | 图片悬停缩放、视频可点击播放，所有媒体资源经真实来源验证 |
 | 📱 **完全响应式** | 从 4K 到移动端的自适应布局，深色科幻风格 UI |
 | ⚡ **性能优化** | HashRouter 静态构建，IntersectionObserver 暂停非视口动画 |
+| 🎵 **可选 BGM** | 导航栏可开关 Cornfield Chase；无开场拦截层，直接进入站点 |
 
 ---
 
 ## 技术栈
 
 ```
-React 19 + TypeScript 5.7 + Vite 6 + Tailwind CSS 4
+React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ├── Three.js — 自定义 WebGL 流体着色器 (GLSL)
 ├── React Router DOM 7 — HashRouter 静态路由
 ├── Lucide React — 图标系统
-└── 无 UI 框架依赖 — 全自定义 CSS 设计系统
+└── 全自定义 CSS 设计系统（Radix 原语 + Tailwind）
 ```
 
 ---
@@ -51,7 +54,7 @@ React 19 + TypeScript 5.7 + Vite 6 + Tailwind CSS 4
 
 ```bash
 # 克隆项目
-git clone https://github.com/yourname/uap-explorer.git
+git clone https://github.com/cyber-tao/uap-explorer.git
 cd uap-explorer
 
 # 安装依赖
@@ -155,23 +158,26 @@ uap-explorer/
 
 ## 构建与部署
 
-### Vercel（推荐）
+本仓库通过 GitHub Actions 自动构建并发布到 GitHub Pages。
+
+- Workflow：[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
+- 触发：推送到 `main`，或在 Actions 页手动 `workflow_dispatch`
+- 产物：`npm install` → `npm run build` → 部署 `dist/`
+- 站点：https://cyber-tao.github.io/uap-explorer/
+
+首次启用时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
+
+### 本地构建
 
 ```bash
+npm install
 npm run build
-vercel --prod
-```
-
-### GitHub Pages
-
-```bash
-npm run build
-# 将 dist/ 推送到 gh-pages 分支
+# dist/ 为纯静态文件，可部署到任意静态托管
 ```
 
 ### 任意静态服务器
 
-`dist/` 目录包含纯静态文件，无需后端。
+`dist/` 目录包含纯静态文件，无需后端。`vite.config.ts` 使用 `base: './'`，配合 HashRouter，适合项目页路径托管。
 
 ---
 
