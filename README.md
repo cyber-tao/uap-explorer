@@ -1,6 +1,6 @@
 # UAP Explorer · 全球不明异常现象探索者
 
-> 一个科幻探索风格的动态响应式网站，展示全球 22 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
+> 一个科幻探索风格的动态响应式网站，展示全球 35 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
 
 [📅 事件时间线](https://cyber-tao.github.io/uap-explorer/#/timeline) · [📊 分析](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 机构](https://cyber-tao.github.io/uap-explorer/#/institutions)
 
@@ -12,7 +12,7 @@
 
 ![时间线](https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800)
 
-*全球 UAP 事件时间线 — 22 起高置信度事件按时间线编年，支持按置信度、地区、物理特征多维筛选。*
+*全球 UAP 事件时间线 — 35 起高置信度事件按时间线编年，支持按置信度、地区、物理特征多维筛选。*
 
 ---
 
@@ -80,7 +80,7 @@ npm run preview
 ```
 uap-explorer/
 ├── public/
-│   └── images/              # 22 张事件封面图片（本地 + 占位）
+│   └── images/              # 事件封面与媒体资源
 │       ├── event-nimitz.jpg
 │       ├── event-gimbal.jpg
 │       └── ...
@@ -90,8 +90,8 @@ uap-explorer/
 │   │   ├── Header.tsx             # 顶部导航 + 搜索
 │   │   └── Footer.tsx             # 页脚
 │   ├── data/
-│   │   ├── events.ts              # 22 个事件完整数据（含媒体、来源、描述）
-│   │   └── research_*.json        # 8 组研究子代理产出的原始数据
+│   │   ├── events.ts              # 35 个事件完整数据（含媒体、来源、描述）
+│   │   └── research_*.json        # 研究子代理产出的原始数据
 │   ├── pages/
 │   │   ├── HomePage.tsx           # 首页（Hero 流体 + 精选事件）
 │   │   ├── TimelinePage.tsx       # 时间线（搜索/筛选/双视图）
@@ -125,7 +125,7 @@ uap-explorer/
 | 阿波罗17号 | 1972 | 太空 | 中 | 4 | 10 |
 | 罗斯威尔 | 1947 | 北美 | 中 | 9 | 9 |
 | 华盛顿入侵 | 1952 | 北美 | 中 | 5 | 8 |
-| ... 共 **22 个事件** | | | | **100+** | **150+** |
+| ... 共 **35 个事件** | | | | **157** | **226** |
 
 ---
 
@@ -217,6 +217,7 @@ npm run build
 | v1.2 | 图片渲染修复、返回箭头修复 |
 | v1.3 | **AgentSwarm 研究**：8 组并行 Agent 搜索真实链接、媒体、扩充描述 |
 | v1.4 | 特征标签可点击、URL 参数筛选、媒体画廊 |
+| v1.5 | 事件扩充至 35 起（含 2024–2025 与 PURSUE 公开材料）；GitHub Pages Actions 部署 |
 
 ---
 
