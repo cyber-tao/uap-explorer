@@ -12,11 +12,11 @@ export default function ImmersiveGallery() {
   // 精选 6 个高置信度事件
   const featuredIds = [
     'nimitz-tic-tac',
-    'colares',
+    'sts-80-columbia-1996',
+    'yellow-sea-six-pointed-star-2025',
     'jal-1628',
     'belgium-ufo-wave',
     'xiaoshan-airport',
-    'guizhou-forest',
   ]
 
   const featured = featuredIds

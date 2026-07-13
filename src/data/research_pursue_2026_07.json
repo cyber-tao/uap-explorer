@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "title": "PURSUE Release 04 — July 10, 2026 UAP Materials",
+    "description": "Fourth tranche of the U.S. Department of War PURSUE archive: 40 records (14 documents, 19 videos, 4 audio, 3 images). Curated high-value cases for site integration.",
+    "generated": "2026-07-13",
+    "source_scope": "war.gov/UFO PURSUE Release 04, DVIDS/AARO video catalog, CBS News, The Debrief, UAP Logbook investigative summaries",
+    "release_date": "2026-07-10",
+    "total_release_files": 40,
+    "cumulative_archive": 334,
+    "total_events": 6
+  },
+  "release_summary": {
+    "official_statement": "https://www.war.gov/News/Releases/Release/Article/4539898/department-of-war-publishes-fourth-release-of-unidentified-anomalous-phenomena/",
+    "portal": "https://www.war.gov/UFO/",
+    "release_index": "https://www.war.gov/UFO/release/04/",
+    "disclaimer": "All materials are labeled unresolved UAP cases — a release category, not an official finding of anomalous, foreign, or non-human origin."
+  },
+  "events": [
+    {
+      "id": "sts-80-columbia-1996",
+      "date": "1996-11",
+      "location": "Low-Earth orbit (STS-80 / Space Shuttle Columbia)",
+      "country": "USA",
+      "name": "STS-80航天飞机轨道不明物照片",
+      "nameEn": "STS-80 Columbia Unidentified Object Images",
+      "shortDesc": "PURSUE Release 04首次以NASA原图形式公开1996年STS-80任务中三张低地球轨道不明物照片（NASA-UAP-D030/D031/D032）",
+      "description": "1996年11月19日至12月7日，NASA执行STS-80任务，航天飞机哥伦比亚号在约350公里低地球轨道运行17天。2026年7月10日，美国国防部在PURSUE Release 04中首次以高分辨率NASA源文件形式公开该任务的三张“unidentified object”照片，编号NASA-UAP-D030、D031、D032。此前公众所见多为压缩视频静帧或低质量转码版本。\n\n官方索引将三帧标注为低地球轨道中的不明物图像，但未附带配套调查备忘录、距离估算或物体识别结论。任务期间航天器处于相对太阳固定姿态的站保持状态，拍摄背景为Wake Shield Facility与ORFEUS-SPAS II望远镜操作。PURSUE将其归类为未解决（unresolved），不代表确认异常或地外来源。",
+      "confidence": "Medium",
+      "sensors": ["NASA任务相机", "目视（任务影像）"],
+      "physicalCharacteristics": ["space", "low-observability"],
+      "sources": [
+        { "label": "Department of War - PURSUE Release 04 Portal", "url": "https://www.war.gov/UFO/release/04/" },
+        { "label": "Department of War - Fourth PURSUE Release Statement, July 10, 2026", "url": "https://www.war.gov/News/Releases/Release/Article/4539898/department-of-war-publishes-fourth-release-of-unidentified-anomalous-phenomena/" },
+        { "label": "CBS News - Pentagon releases new batch of UFO files, July 10, 2026", "url": "https://www.cbsnews.com/news/ufo-files-4th-release-pentagon/" },
+        { "label": "UAP Logbook - NASA STS-80 unidentified object images analysis", "url": "https://uaplogbook.com/nasa-sts-80-unidentified-object-images/" }
+      ],
+      "media": [
+        { "type": "image", "url": "https://www.war.gov/UFO/release/04/?type=.img", "caption": "PURSUE Release 04 官方门户 — STS-80 三张 NASA 不明物原图（NASA-UAP-D030/D031/D032）" }
+      ],
+      "limitations": [
+        "官方仅提供图像与标签，无配套案件报告或分析备忘录",
+        "未提供距离、尺寸、速度或物体识别结论",
+        "unresolved 分类不代表确认异常或地外来源",
+        "历史上存在公众版压缩静帧，Release 04 为首次官方高清源文件公开"
+      ]
+    },
+    {
+      "id": "los-alamos-green-fireballs-1949",
+      "date": "1949-02",
+      "location": "Los Alamos Scientific Laboratory, New Mexico",
+      "country": "USA",
+      "name": "洛斯阿拉莫斯绿火球会议（1949）",
+      "nameEn": "Los Alamos Green Fireballs Conference 1949",
+      "shortDesc": "PURSUE Release 04公开1949年洛斯阿拉莫斯核实验室绿火球现象会议记录，含曼哈顿计划科学家讨论与Project Sign早期档案",
+      "description": "2026年7月10日PURSUE Release 04公开DOE-UAP-D004：1949年洛斯阿拉莫斯科学实验室关于“绿火球”（green fireballs）现象的会议记录。1948年12月至1949年间，新墨西哥州洛斯阿拉莫斯核实验室附近多次报告神秘绿色光球。会议参与者包括曾参与曼哈顿计划的科学家与物理学家。\n\n记录显示，Edward Teller倾向于若现象不涉及物质体则可能是“电子现象”；天文学家LaPaz表示在其所知范围内，陨石坠落观测中从未出现如此高度类比案例。与会者未能达成共识，主流假说仍为浅角度、高海拔进入大气层的流星，但缺乏即时解释并未被转化为“回收技术”叙事。\n\n同批Release还包含1948年Project Sign进展报告（DOW-UAP-D097，含1947–1948年100起目击摘要）及1949年空军《美国飞行物事件分析》（D093/D094），构成美国UAP调查早期 institutional 档案链。",
+      "confidence": "High",
+      "sensors": ["目视", "官方会议记录"],
+      "physicalCharacteristics": ["nuclear-association", "group-sighting", "green-fireball"],
+      "sources": [
+        { "label": "DOE-UAP-D004 - Los Alamos Conference on Aerial Phenomena, 1949 (PURSUE Release 04)", "url": "https://www.war.gov/UFO/release/04/?type=.pdf" },
+        { "label": "DOW-UAP-D097 - Project Sign Progress Report, 1948", "url": "https://www.war.gov/UFO/release/04/?type=.pdf" },
+        { "label": "UAP Logbook - PURSUE Release 04: Project Sign, Los Alamos analysis", "url": "https://uaplogbook.com/pursue-release-04-project-sign-los-alamos-ufo-files/" },
+        { "label": "CBS News - Green fireballs among newly released UFO files", "url": "https://www.cbsnews.com/news/ufo-files-4th-release-pentagon/" }
+      ],
+      "media": [],
+      "limitations": [
+        "历史档案反映当时技术条件下的讨论，非现代传感器证据",
+        "会议未达成共识，绿火球现象至今无单一权威解释",
+        "Project Sign 档案为早期调查记录，不等于现代 AARO 结论"
+      ]
+    },
+    {
+      "id": "yellow-sea-six-pointed-star-2025",
+      "date": "2025",
+      "location": "Yellow Sea",
+      "country": "International waters",
+      "name": "黄海六角星状红外UAP（PR104）",
+      "nameEn": "Yellow Sea Six-Pointed Star UAP (PR104)",
+      "shortDesc": "INDOPACOM 2025年向AARO提交18秒红外视频，传感器跟踪“ resembling a six-pointed star”的对比区域（DOW-UAP-PR104）",
+      "description": "DOW-UAP-PR104是PURSUE Release 04中媒体关注度最高的现代视频之一。美国印太司令部（INDOPACOM）向AARO提交2025年黄海区域报告，包含18秒美军平台红外 footage。官方描述：00:01–00:15期间，传感器 pan 跟踪一个“resembling a six-pointed star”（类似六角星）的对比区域，并使其保持在画面中心。\n\n公开记录未披露具体平台型号、坐标、距离、高度或分析结论。AARO标注为未解决（unresolved）；视频描述仅供信息参考，不应被解读为分析判断或事实认定。该文件与同期东海 PR105 等印太视频共同构成 Release 04 的现代传感器集群。",
+      "confidence": "Medium",
+      "sensors": ["红外"],
+      "physicalCharacteristics": ["star-shaped-contrast", "low-observability", "multi-sensor"],
+      "sources": [
+        { "label": "DVIDS - DOW-UAP-PR104, Yellow Sea, 2025", "url": "https://www.dvidshub.net/video/1014101/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025" },
+        { "label": "Department of War - PURSUE Release 04", "url": "https://www.war.gov/UFO/release/04/" },
+        { "label": "CBS News - Six-pointed star over Yellow Sea coverage", "url": "https://www.cbsnews.com/news/ufo-files-4th-release-pentagon/" }
+      ],
+      "media": [
+        { "type": "video", "url": "https://www.dvidshub.net/video/1014101/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025", "caption": "官方 DVIDS：DOW-UAP-PR104，18秒黄海红外 footage，六角星状对比区域（INDOPACOM/AARO，PURSUE Release 04）" }
+      ],
+      "limitations": [
+        "仅15–18秒公开视频，缺乏连续多传感器数据",
+        "未公开平台、坐标、距离、高度",
+        "“六角星”为对比区域形态描述，非官方物体识别",
+        "unresolved 不代表确认异常"
+      ],
+      "relatedEvents": ["east-china-sea-uap-2025", "dhs-pilot-football-object-2024"]
+    },
+    {
+      "id": "east-china-sea-uap-2025",
+      "date": "2025",
+      "location": "East China Sea",
+      "country": "International waters",
+      "name": "东海红外UAP跟踪（PR105）",
+      "nameEn": "East China Sea Infrared UAP Tracking (PR105)",
+      "shortDesc": "INDOPACOM 2025年提交近5分钟东海红外视频，传感器长时间跟踪间歇性失真的对比区域（DOW-UAP-PR105）",
+      "description": "DOW-UAP-PR105是PURSUE Release 04中时长最长的现代视频之一。INDOPACOM向AARO提交2025年东海区域约5分钟红外 footage。官方时间线：00:01–02:05为传感器 pan/zoom 跟踪对比区域，期间部分时段对比区间歇性失去与背景的区分度；00:15–00:19出现黑色矩形叠加；02:06–04:59标注为“No content”（无内容）。\n\nRelease 04 将 PR105 与 PR104（黄海）并列为2025年印太最新公开案例。公开描述未识别对比区域形状、距离或速度，案件状态为未解决。",
+      "confidence": "Medium",
+      "sensors": ["红外"],
+      "physicalCharacteristics": ["low-observability", "multi-sensor"],
+      "sources": [
+        { "label": "DVIDS - DOW-UAP-PR105, East China Sea, 2025", "url": "https://www.dvidshub.net/video/1014103/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025" },
+        { "label": "Department of War - PURSUE Release 04", "url": "https://www.war.gov/UFO/release/04/" },
+        { "label": "UAP Logbook - DOW-UAP-PR105 East China Sea analysis", "url": "https://uaplogbook.com/dow-uap-pr105-east-china-sea-2025/" }
+      ],
+      "media": [
+        { "type": "video", "url": "https://www.dvidshub.net/video/1014103/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025", "caption": "官方 DVIDS：DOW-UAP-PR105，近5分钟东海红外跟踪 footage（INDOPACOM/AARO，PURSUE Release 04）" }
+      ],
+      "limitations": [
+        "近3分钟 runtime 标注为 No content，有效观测约2分钟",
+        "对比区域间歇性失真，难以判断是否为物理实体",
+        "未公开平台与完整传感器参数",
+        "与 PR104 的地理/时间关联未获官方确认"
+      ],
+      "relatedEvents": ["yellow-sea-six-pointed-star-2025", "dhs-pilot-football-object-2024"]
+    },
+    {
+      "id": "east-us-rectangular-uap-2019",
+      "date": "2019",
+      "location": "Eastern United States",
+      "country": "USA",
+      "name": "美东矩形高速UAP（2019）",
+      "nameEn": "Eastern US Rectangular High-Speed UAP 2019",
+      "shortDesc": "海军飞行员在28年军旅中未见过的飞行特征：小型矩形物高速迎面飞过，附带Range Fouler Debrief与PR112视频（PURSUE Release 04）",
+      "description": "PURSUE Release 04公开DOW-UAP-D090（Range Fouler Debrief）与配套视频DOW-UAP-PR112，记录2019年美国东部一起未解决UAP报告。一名拥有28年空军与海军飞行经验的飞行员报告：注意到一个飞行特征“unlike anything I had seen”（与其28年经验中见过的任何物体不同）的小型物体，位于本机下方，以高速沿相反方向直线飞行。飞行员跟踪约10–15秒后开启录像；放大时物体因速度过快离开视场无法重新捕获。事后分析显示物体呈矩形外观，其他同等或更有经验的观察者也未能识别。\n\n美国海军向AARO提交该报告。公开材料包含标准化“Range Fouler”（训练空域入侵）汇报表与红外/传感器视频。案件标注为未解决，不代表确认异常或地外来源。",
+      "confidence": "High",
+      "sensors": ["红外/机载传感器", "目视", "Range Fouler Debrief"],
+      "physicalCharacteristics": ["rectangular", "high-speed", "multi-sensor"],
+      "sources": [
+        { "label": "DVIDS - DOW-UAP-PR112, Eastern United States, 2019", "url": "https://www.dvidshub.net/video/1014128/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019" },
+        { "label": "Department of War - PURSUE Release 04", "url": "https://www.war.gov/UFO/release/04/" },
+        { "label": "CBS News - Unlike anything I had seen in 28 years", "url": "https://www.cbsnews.com/news/ufo-files-4th-release-pentagon/" },
+        { "label": "The Debrief - Pentagon Release 04 coverage", "url": "https://thedebrief.org/pentagon-releases-new-batch-of-uap-videos-and-historical-files-but-clarity-remains-elusive/" }
+      ],
+      "media": [
+        { "type": "video", "url": "https://www.dvidshub.net/video/1014128/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019", "caption": "官方 DVIDS：DOW-UAP-PR112，2019年美东未解决UAP报告视频（U.S. Navy/AARO，PURSUE Release 04）" }
+      ],
+      "limitations": [
+        "具体日期、平台呼号与地理位置部分未公开",
+        "视频较短，缺乏雷达轨迹交叉验证的公开数据",
+        "飞行员证词不等于官方分析结论",
+        "矩形外观可能受传感器分辨率与运动模糊影响"
+      ]
+    },
+    {
+      "id": "pantex-intrusion-2015",
+      "date": "2015-09",
+      "location": "Pantex Plant, Amarillo, Texas",
+      "country": "USA",
+      "name": "Pantex核设施不明物入侵（2015）",
+      "nameEn": "Pantex Nuclear Facility UAP Intrusion 2015",
+      "shortDesc": "DOE完整六页事件报告：2015年9月不明物进入美国核武器组装/拆解主设施Pantex空域，警卫追逐、雷达跟踪、设施封锁（DOE-UAP-D005）",
+      "description": "PURSUE Release 04公开DOE-UAP-D005——Pantex不明物事件完整六页报告（2015年9月）。Pantex Plant near Amarillo, Texas 是美国核武器组装与拆解的主要设施。报告记录：雷达探测到不明物进入设施空域，核设施进入封锁状态；两名保护部队（Protective Force）官员驾车追逐，下车后用双筒望远镜观察约1–2分钟，报告物体未发出任何声音，且无法识别任何推进系统；物体随后继续向北离开场区。地面人员描述物体呈“diamond”（钻石/菱形）外形，顶部较圆。\n\nPantex将Bearcat摄像头视频送 Sandia National Laboratories 增强分析，但报告对影像分辨率限制保持坦诚。该完整报告补全了Release 02中仅两页的DOE-UAP-D001片段。文件标题日期为9月2日，正文叙事起始于9月1日07:10——存在日期不一致，公开记录应保留此 discrepancy。",
+      "confidence": "High",
+      "sensors": ["雷达", "地面监视摄像头", "目视", "双筒望远镜"],
+      "physicalCharacteristics": ["nuclear-association", "diamond-shaped", "silent", "low-observability"],
+      "sources": [
+        { "label": "DOE-UAP-D005 - Pantex Unidentified Object Incident Report, 2015 (PURSUE Release 04)", "url": "https://www.war.gov/UFO/release/04/?type=.pdf" },
+        { "label": "Department of War - PURSUE Release 04 Statement", "url": "https://www.war.gov/News/Releases/Release/Article/4539898/department-of-war-publishes-fourth-release-of-unidentified-anomalous-phenomena/" },
+        { "label": "CBS News - Pantex nuclear facility intrusion report", "url": "https://www.cbsnews.com/news/ufo-files-4th-release-pentagon/" },
+        { "label": "UAP Logbook - Pantex D005 incident report analysis", "url": "https://uaplogbook.com/pantex-d005-incident-report-2015/" }
+      ],
+      "media": [],
+      "limitations": [
+        "报告未识别物体，仅记录观测与响应流程",
+        "影像分辨率有限，Sandia 增强分析未提供公开识别结论",
+        "文件标题日期（9月2日）与正文检测时间（9月1日）不一致",
+        "未公开完整视频 footage 于 PURSUE 门户"
+      ]
+    }
+  ],
+  "not_integrated_as_events": {
+    "apollo_light_flash_audio": "Apollo 14/17 medical debrief on light flash phenomena — physiological effect, source link added to apollo17 event only",
+    "pr113_western_us_1996": "Digitally altered before UAPTF transfer — documented in research only, not standalone high-confidence event"
+  }
+}

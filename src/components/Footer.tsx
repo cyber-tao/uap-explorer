@@ -24,7 +24,7 @@ const footerLinks = [
   {
     heading: '声明',
     entries: [
-      { text: '数据截至 2026-07-02', href: '' },
+      { text: '数据截至 2026-07-10', href: '' },
       { text: '置信度框架：High / Medium / Low / Speculative', href: '' },
       { text: '参考文献：300+独立信息源', href: '' },
       { text: '覆盖范围：全球22国/地区', href: '' },
@@ -113,7 +113,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs" style={{ color: '#8A99A8' }}>
-            © 2026 UAP Explorer · 数据截至 2026-07-02
+            © 2026 UAP Explorer · 数据截至 2026-07-10
           </p>
         </div>
       </div>

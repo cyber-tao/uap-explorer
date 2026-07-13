@@ -281,7 +281,7 @@ export const mediumsConfig: MediumsConfig = {
     {
       cn: "PURSUE",
       en: "2026 DECRYPT",
-      description: "2026年5月解密162份UAP档案，含阿波罗任务。历史性透明度提升。",
+      description: "2026年5–7月四轮解密累计334份UAP档案；2026年7月10日Release 04新增40份（含STS-80、印太视频）。历史性透明度提升。",
     },
     {
       cn: "防卫省",
@@ -316,7 +316,7 @@ export const footerConfig: FooterConfig = {
     {
       heading: "LEGAL",
       entries: [
-        { text: "数据截至 2026-07-02" },
+        { text: "数据截至 2026-07-10" },
         { text: "300+ 独立信息源" },
         { text: "22 国/地区覆盖" },
       ],
