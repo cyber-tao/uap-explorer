@@ -23,6 +23,8 @@ export interface AgenciesPreviewConfig {
 export interface FooterEntry {
   text: string
   href?: string
+  /** In-page section id — use instead of hash href under HashRouter */
+  scrollTargetId?: string
 }
 
 export interface FooterColumn {
@@ -96,10 +98,10 @@ export const footerConfig: FooterConfig = {
     {
       heading: "NAVIGATION",
       entries: [
-        { text: "首页", href: "#hero-section" },
-        { text: "物理特征", href: "#observables" },
-        { text: "重点事件", href: "#gallery" },
-        { text: "官方机构", href: "#agencies-preview" },
+        { text: "首页", scrollTargetId: "hero-section" },
+        { text: "物理特征", scrollTargetId: "observables" },
+        { text: "重点事件", scrollTargetId: "gallery" },
+        { text: "官方机构", scrollTargetId: "agencies-preview" },
       ],
     },
     {

@@ -1,5 +1,6 @@
-import { footerConfig } from '../config';
-import { assetUrl } from '../lib/utils';
+import type { CSSProperties, MouseEvent } from 'react'
+import { footerConfig } from '../config'
+import { assetUrl } from '../lib/utils'
 
 export default function Footer() {
   if (!footerConfig.visionText && !footerConfig.brandName && footerConfig.columns.length === 0) {
@@ -91,29 +92,66 @@ export default function Footer() {
                   {col.heading}
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  {col.entries.map((entry, idx) =>
-                    entry.href ? (
-                      <a
-                        key={idx}
-                        href={entry.href}
-                        style={{
-                          color: '#EDE8E4',
-                          opacity: 0.6,
-                          fontSize: '15px',
-                          textDecoration: 'none',
-                          lineHeight: 1.8,
-                          transition: 'opacity 0.4s',
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.target as HTMLElement).style.opacity = '1';
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.target as HTMLElement).style.opacity = '0.6';
-                        }}
-                      >
-                        {entry.text}
-                      </a>
-                    ) : (
+                  {col.entries.map((entry, idx) => {
+                    const linkStyle: CSSProperties = {
+                      color: '#EDE8E4',
+                      opacity: 0.6,
+                      fontSize: '15px',
+                      textDecoration: 'none',
+                      lineHeight: 1.8,
+                      transition: 'opacity 0.4s',
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      fontFamily: 'inherit',
+                    }
+                    const hoverIn = (e: MouseEvent<HTMLElement>) => {
+                      e.currentTarget.style.opacity = '1'
+                    }
+                    const hoverOut = (e: MouseEvent<HTMLElement>) => {
+                      e.currentTarget.style.opacity = '0.6'
+                    }
+
+                    if (entry.scrollTargetId) {
+                      return (
+                        <button
+                          key={idx}
+                          type="button"
+                          style={linkStyle}
+                          onMouseEnter={hoverIn}
+                          onMouseLeave={hoverOut}
+                          onClick={() => {
+                            document
+                              .getElementById(entry.scrollTargetId!)
+                              ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                          }}
+                        >
+                          {entry.text}
+                        </button>
+                      )
+                    }
+
+                    if (entry.href) {
+                      const external = /^https?:\/\//.test(entry.href)
+                      return (
+                        <a
+                          key={idx}
+                          href={entry.href}
+                          {...(external
+                            ? { target: '_blank', rel: 'noopener noreferrer' }
+                            : {})}
+                          style={linkStyle}
+                          onMouseEnter={hoverIn}
+                          onMouseLeave={hoverOut}
+                        >
+                          {entry.text}
+                        </a>
+                      )
+                    }
+
+                    return (
                       <span
                         key={idx}
                         style={{
@@ -127,7 +165,7 @@ export default function Footer() {
                         {entry.text}
                       </span>
                     )
-                  )}
+                  })}
                 </div>
               </div>
             ))}

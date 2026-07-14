@@ -261,9 +261,8 @@ export default function EventDetailPage() {
                     { label: '地点', value: `${event.country} · ${event.location}`, color: '#30B0D0' },
                     { label: '置信度', value: confLabel, color: confColor },
                     { label: '传感器', value: event.sensors?.join(', ') || '目视目击', color: '#00D9A5' },
-                    { label: '状态', value: '未解释', color: '#F5A623' },
-                  ].map((item, idx) => (
-                    <div key={idx} className="flex items-center justify-between py-2" style={{ borderBottom: idx < 4 ? '1px solid rgba(138, 153, 168, 0.06)' : 'none' }}>
+                  ].map((item, idx, arr) => (
+                    <div key={idx} className="flex items-center justify-between py-2" style={{ borderBottom: idx < arr.length - 1 ? '1px solid rgba(138, 153, 168, 0.06)' : 'none' }}>
                       <span className="text-xs uppercase tracking-wider" style={{ color: 'rgba(138, 153, 168, 0.6)' }}>{item.label}</span>
                       <span className="text-sm font-medium" style={{ color: item.color }}>{item.value}</span>
                     </div>
