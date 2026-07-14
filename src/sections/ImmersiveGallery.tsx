@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { events, confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
+import { featuredEventIds } from '../data/featured'
 import { assetUrl } from '../lib/utils'
 
 /**
@@ -9,19 +10,9 @@ import { assetUrl } from '../lib/utils'
 export default function ImmersiveGallery() {
   const navigate = useNavigate()
 
-  // 精选 6 个高置信度事件
-  const featuredIds = [
-    'nimitz-tic-tac',
-    'sts-80-columbia-1996',
-    'yellow-sea-six-pointed-star-2025',
-    'jal-1628',
-    'belgium-ufo-wave',
-    'xiaoshan-airport',
-  ]
-
-  const featured = featuredIds
+  const featured = featuredEventIds
     .map((id) => events.find((e) => e.id === id))
-    .filter(Boolean) as typeof events
+    .filter((e): e is (typeof events)[number] => Boolean(e))
 
   return (
     <section className="relative z-10 py-24 md:py-32" style={{ background: 'transparent' }}>

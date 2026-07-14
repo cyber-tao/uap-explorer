@@ -1,14 +1,28 @@
 export interface Observable {
   id: string
+  index: string
   title: string
   titleEn: string
+  /** Short Chinese label for home carousel */
+  cn: string
   icon: string
+  metric: string
+  metricLabel: string
   consistency: '强' | '中等' | '弱'
   consistencyColor: string
+  /** Analysis page summary */
   description: string
+  /** Home carousel long-form description */
+  homeDescription: string
   examples: string[]
   eventIds: string[]
 }
+
+export const observablesSection = {
+  eyebrow: 'PHYSICAL CHARACTERISTICS / 物理特征',
+  title: '五类可观测特征',
+  body: '全球高可信度UAP案例在五个物理维度上显示出跨文化一致性：瞬时加速、低可观测性、跨介质能力、正升力/反重力、以及多传感器同步验证。这些特征构成了区分已知现象与真正异常的科学基准。',
+} as const
 
 export interface Hypothesis {
   id: string
@@ -40,56 +54,81 @@ export interface ResearchDirection {
 export const observables: Observable[] = [
   {
     id: 'instantaneous-acceleration',
+    index: '01',
     title: '瞬时加速 / 高超音速',
     titleEn: 'Instantaneous Acceleration / Hypersonic Velocity',
+    cn: '瞬时加速',
     icon: 'Zap',
+    metric: '> 5,000 g',
+    metricLabel: '估算峰值加速度',
     consistency: '强',
     consistencyColor: '#00D9A5',
     description: 'UAP能够在瞬间从静止状态加速到极高速度，或在极短时间内完成直角转弯，且不产生音爆。这是全球高可信度UAP中最一致的物理特征。',
+    homeDescription: '高可信度案例中，UAP 展现出远超已知飞行器与生物耐受极限的加速能力。Nimitz「Tic Tac」在数秒内完成大高度俯冲，多份雷达记录显示其瞬时速度变化对应数千 g 的加速度，却无可见推进羽流、音爆或热信号——这种近乎「无惯性」的运动，是区分真正异常与常规航空器的首要判据。',
     examples: ['Nimitz Tic Tac', 'Gimbal/GoFast', '上海虹桥', '比利时UFO波'],
     eventIds: ['nimitz-tic-tac', 'gimbal-gofast', 'shanghai-hongqiao', 'belgium-ufo-wave'],
   },
   {
     id: 'low-observability',
+    index: '02',
     title: '低可观测性 / 隐身性',
     titleEn: 'Low Observability / Stealth',
+    cn: '低可观测性',
     icon: 'EyeOff',
+    metric: '多波段隐身',
+    metricLabel: '跨光谱特征管理',
     consistency: '强',
     consistencyColor: '#00D9A5',
     description: 'UAP在雷达上表现为低可探测性，或仅在特定传感器上显示。部分案例中民航雷达完全无法探测，但机组目视确认。',
+    homeDescription: '部分目标仅在特定传感器波段可见。2024 年 Eglin 空军基地案例中的银色球体仅在短波红外（SWIR）中显现，可见光与雷达近乎无回波。目标可选择性地规避雷达、红外与目视探测，暗示其表面材质或场效应具备主动的多光谱管理能力，远超现役隐身技术的水平。',
     examples: ['Nimitz Tic Tac', '萧山机场', '贵州都溪', 'Condign报告'],
     eventIds: ['nimitz-tic-tac', 'xiaoshan-airport', 'guizhou-forest'],
   },
   {
     id: 'transmedium',
+    index: '03',
     title: '跨介质能力',
     titleEn: 'Transmedium Travel',
+    cn: '跨介质',
     icon: 'Waves',
+    metric: '空 ↔ 海 无减速',
+    metricLabel: '介质穿越能力',
     consistency: '弱',
     consistencyColor: '#FF6B35',
     description: 'UAP能够在不同介质（空中、水下、太空）之间自由移动而不减速或改变形态。目前仅美国2022年核潜艇事件获得官方确认。',
+    homeDescription: '跨介质指目标在空气、水体乃至临近真空之间自由穿行而不减速、不解体。Nimitz 事件中目标潜入海面下方仍保持高速；亚丁湾与潜艇声呐亦记录到水下高速运动体。空气与水的密度相差约 800 倍，常规载具无法承受这种介质突变——跨介质因此成为最具颠覆性的观测特征。',
     examples: ['2022核潜艇', 'Colares（民间报告）', '虚舟传说（推测性）'],
     eventIds: ['submarine-transmedium', 'colares'],
   },
   {
     id: 'anti-gravity',
+    index: '04',
     title: '正升力 / 反重力',
     titleEn: 'Positive Lift / Anti-Gravity',
+    cn: '正升力 / 反重力',
     icon: 'ArrowUp',
+    metric: '无翼面悬浮',
+    metricLabel: '未知升力机制',
     consistency: '中等',
     consistencyColor: '#F5A623',
     description: 'UAP表现出无可见推进系统的悬停和飞行能力，似乎违反已知的空气动力学和推进原理。部分案例中重物被逆向移动。',
+    homeDescription: '目标常在无任何可见气动翼面、旋翼或喷口的情况下静止悬停或垂直爬升，且不受强风扰动。这种「正升力」既无法用浮力解释，也不符合常规气动推进，研究者推测其可能涉及尚未被理解的场推进或质量—惯性调制机制，是 UAP 研究中最接近「新物理」的方向。',
     examples: ['贵州都溪（火车逆向位移）', 'Nimitz（海面悬停）', '比利时UFO波（低空慢速）', 'Colares（低空悬停）'],
     eventIds: ['guizhou-forest', 'nimitz-tic-tac', 'belgium-ufo-wave', 'colares'],
   },
   {
     id: 'multi-sensor',
+    index: '05',
     title: '多传感器同步探测',
     titleEn: 'Multi-Sensor Correlation',
+    cn: '多传感器验证',
     icon: 'Radar',
+    metric: '4+ 独立系统',
+    metricLabel: '同步交叉验证',
     consistency: '中等',
     consistencyColor: '#F5A623',
     description: 'UAP能够同时被多个独立传感器系统（雷达、红外、目视、电磁）同步捕获。这是区分真正异常与误判的黄金标准。',
+    homeDescription: '最高可信度的判据，是同一目标被多个相互独立的传感器同时捕获。Nimitz 事件由 SPY-1 宙斯盾雷达、E-2C 预警机、飞行员目视与 ATFLIR 红外四路同步锁定，排除了单一传感器伪影、光学错觉与软件故障的可能。多传感器一致性，将「个人目击」提升为可被科学检验的物理证据。',
     examples: ['Nimitz（黄金标准）', 'Gimbal', 'JAL 1628', '比利时'],
     eventIds: ['nimitz-tic-tac', 'gimbal-gofast', 'jal-1628', 'belgium-ufo-wave'],
   },

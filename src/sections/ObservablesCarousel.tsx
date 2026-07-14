@@ -1,33 +1,31 @@
-import { useEffect, useRef, useState } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { philosophyConfig } from '../config';
+import { useEffect, useRef, useState } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { observables, observablesSection } from '../data/analysis'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
-const ACCENT = '#30B0D0';
+const ACCENT = '#30B0D0'
 
 /**
  * Physical-characteristics section.
  *
- * The section pins to the viewport and, as the user scrolls, steps through the
- * five observable UAP characteristics one at a time. Each step reveals the full
- * description on the left and a large index + key metric on the right. Only
- * after all five have been shown does the page continue scrolling downward.
+ * Pins to the viewport and steps through the five observable UAP
+ * characteristics from analysis.ts (single content source).
  */
-
-export default function PhilosophyCarousel() {
-  const { eyebrow, title, features } = philosophyConfig;
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const fillRef = useRef<HTMLDivElement>(null);
-  const [active, setActive] = useState(0);
+export default function ObservablesCarousel() {
+  const { eyebrow, title } = observablesSection
+  const features = observables
+  const sectionRef = useRef<HTMLDivElement>(null)
+  const fillRef = useRef<HTMLDivElement>(null)
+  const [active, setActive] = useState(0)
 
   useEffect(() => {
-    const section = sectionRef.current;
-    const n = features.length;
-    if (!section || n === 0) return;
+    const section = sectionRef.current
+    const n = features.length
+    if (!section || n === 0) return
 
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
@@ -40,19 +38,19 @@ export default function PhilosophyCarousel() {
         invalidateOnRefresh: true,
         onUpdate: (self) => {
           if (fillRef.current) {
-            fillRef.current.style.transform = `scaleY(${self.progress})`;
+            fillRef.current.style.transform = `scaleY(${self.progress})`
           }
-          const idx = Math.min(n - 1, Math.floor(self.progress * n + 0.00001));
-          setActive((prev) => (prev === idx ? prev : idx));
+          const idx = Math.min(n - 1, Math.floor(self.progress * n + 0.00001))
+          setActive((prev) => (prev === idx ? prev : idx))
         },
-      });
-    }, section);
+      })
+    }, section)
 
-    return () => ctx.revert();
-  }, [features.length]);
+    return () => ctx.revert()
+  }, [features.length])
 
-  if (features.length === 0) return null;
-  const total = String(features.length).padStart(2, '0');
+  if (features.length === 0) return null
+  const total = String(features.length).padStart(2, '0')
 
   return (
     <section
@@ -61,7 +59,6 @@ export default function PhilosophyCarousel() {
       style={{ background: 'transparent' }}
     >
       <div className="absolute inset-0 flex flex-col justify-center px-[7vw] py-[10vh]">
-        {/* Header */}
         <div className="mb-6 md:mb-10 shrink-0">
           <p
             className="font-sans-body text-[11px] md:text-[13px] tracking-[0.28em] uppercase mb-3"
@@ -77,16 +74,14 @@ export default function PhilosophyCarousel() {
           </h2>
         </div>
 
-        {/* Body */}
         <div className="relative flex-1 grid grid-cols-1 md:grid-cols-[1.05fr_0.75fr] gap-10 items-center">
-          {/* LEFT — stacked detail panels */}
           <div className="relative min-h-[300px] md:h-[60vh]">
             {features.map((f, i) => {
-              const isActive = i === active;
-              const offset = isActive ? '0px' : i < active ? '-28px' : '28px';
+              const isActive = i === active
+              const offset = isActive ? '0px' : i < active ? '-28px' : '28px'
               return (
                 <div
-                  key={f.key}
+                  key={f.id}
                   className="absolute inset-0 flex flex-col justify-center transition-all duration-700 ease-out"
                   style={{
                     opacity: isActive ? 1 : 0,
@@ -107,22 +102,20 @@ export default function PhilosophyCarousel() {
                     {f.cn}
                   </h3>
                   <p className="font-sans-body text-xs md:text-sm tracking-[0.14em] uppercase mb-6" style={{ color: ACCENT }}>
-                    {f.en}
+                    {f.titleEn}
                   </p>
                   <p
                     className="font-sans-body max-w-[48ch]"
                     style={{ fontSize: 'clamp(14px,1.05vw,17px)', lineHeight: 1.9, color: 'rgba(255,255,255,0.78)', textShadow: '0 2px 18px rgba(0,0,0,0.5)' }}
                   >
-                    {f.description}
+                    {f.homeDescription}
                   </p>
                 </div>
-              );
+              )
             })}
           </div>
 
-          {/* RIGHT — progress rail + big index + metric */}
           <div className="relative hidden md:flex items-center h-[60vh]">
-            {/* vertical progress rail */}
             <div className="relative h-full w-px shrink-0" style={{ background: 'rgba(255,255,255,0.12)' }}>
               <div
                 ref={fillRef}
@@ -131,7 +124,7 @@ export default function PhilosophyCarousel() {
               />
               {features.map((f, i) => (
                 <span
-                  key={f.key}
+                  key={f.id}
                   className="absolute -left-[5px] w-2.5 h-2.5 rounded-full transition-all duration-500"
                   style={{
                     top: `${(i / (features.length - 1)) * 100}%`,
@@ -143,12 +136,11 @@ export default function PhilosophyCarousel() {
               ))}
             </div>
 
-            {/* big index + metric */}
             <div className="flex-1 flex flex-col items-center justify-center pl-8">
               <div className="relative w-full" style={{ height: 'clamp(120px,15vw,210px)' }}>
                 {features.map((f, i) => (
                   <span
-                    key={f.key}
+                    key={f.id}
                     className="absolute inset-0 flex items-center justify-center font-serif-display transition-all duration-700 ease-out"
                     style={{
                       fontSize: 'clamp(120px,15vw,210px)',
@@ -167,7 +159,7 @@ export default function PhilosophyCarousel() {
               <div className="relative w-full mt-4" style={{ height: '70px' }}>
                 {features.map((f, i) => (
                   <div
-                    key={f.key}
+                    key={f.id}
                     className="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700"
                     style={{ opacity: i === active ? 1 : 0 }}
                   >
@@ -184,11 +176,10 @@ export default function PhilosophyCarousel() {
           </div>
         </div>
 
-        {/* mobile progress dots */}
         <div className="flex md:hidden gap-2 mt-8 justify-center shrink-0">
           {features.map((f, i) => (
             <span
-              key={f.key}
+              key={f.id}
               className="h-1 rounded-full transition-all duration-500"
               style={{ width: i === active ? '26px' : '8px', background: i <= active ? ACCENT : 'rgba(255,255,255,0.2)' }}
             />
@@ -196,5 +187,5 @@ export default function PhilosophyCarousel() {
         </div>
       </div>
     </section>
-  );
+  )
 }

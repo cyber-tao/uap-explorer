@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope, ChevronDown, ChevronUp, Globe, Share2, Box, HeartPulse, Radio, BrainCircuit } from 'lucide-react'
-import { observables, hypotheses, infoGaps, researchDirections } from '../data/analysis'
+import { observables, observablesSection, hypotheses, infoGaps, researchDirections } from '../data/analysis'
 import { confidenceColors } from '../data/events'
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -53,7 +53,7 @@ export default function AnalysisPage() {
           <h2 className="font-serif-display text-3xl font-bold" style={{ color: '#EDE8E4' }}>五大可观测特征</h2>
         </div>
         <p className="mb-10 leading-relaxed" style={{ color: '#8A99A8' }}>
-          全球高可信度UAP案例在五个物理维度上显示出跨文化一致性。这些特征构成了区分已知现象与真正异常的科学基准。
+          {observablesSection.body}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

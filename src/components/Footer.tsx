@@ -1,35 +1,27 @@
+import { Link } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
 
-const footerLinks = [
-  {
-    heading: '数据来源',
-    entries: [
-      { text: 'GEIPAN', href: 'https://www.cnes-geipan.fr' },
-      { text: 'AARO', href: 'https://www.aaro.mil' },
-      { text: 'NASA UAP', href: 'https://science.nasa.gov/uap' },
-      { text: 'PURSUE', href: 'https://www.war.gov/UFO' },
-      { text: '巴西国家档案馆', href: 'https://www.arquivo.gov.br' },
-      { text: '英国国家档案馆', href: 'https://www.nationalarchives.gov.uk' },
-    ],
-  },
-  {
-    heading: '导航',
-    entries: [
-      { text: '首页', href: '/#' },
-      { text: '事件时间线', href: '/#/timeline' },
-      { text: '分析洞察', href: '/#/analysis' },
-      { text: '官方机构', href: '/#/agencies' },
-    ],
-  },
-  {
-    heading: '声明',
-    entries: [
-      { text: '数据截至 2026-07-10', href: '' },
-      { text: '置信度框架：High / Medium / Low / Speculative', href: '' },
-      { text: '参考文献：300+独立信息源', href: '' },
-      { text: '覆盖范围：全球22国/地区', href: '' },
-    ],
-  },
+const externalLinks = [
+  { text: 'GEIPAN', href: 'https://www.cnes-geipan.fr' },
+  { text: 'AARO', href: 'https://www.aaro.mil' },
+  { text: 'NASA UAP', href: 'https://science.nasa.gov/uap' },
+  { text: 'PURSUE', href: 'https://www.war.gov/UFO' },
+  { text: '巴西国家档案馆', href: 'https://www.arquivo.gov.br' },
+  { text: '英国国家档案馆', href: 'https://www.nationalarchives.gov.uk' },
+]
+
+const navLinks = [
+  { text: '首页', to: '/' },
+  { text: '事件时间线', to: '/timeline' },
+  { text: '分析洞察', to: '/analysis' },
+  { text: '官方机构', to: '/agencies' },
+]
+
+const legalEntries = [
+  '数据截至 2026-07-10',
+  '置信度框架：High / Medium / Low / Speculative',
+  '参考文献：300+独立信息源',
+  '覆盖范围：全球22国/地区',
 ]
 
 export default function Footer() {
@@ -41,7 +33,6 @@ export default function Footer() {
         borderTop: '1px solid rgba(138, 153, 168, 0.15)',
       }}
     >
-      {/* Data stream decoration */}
       <div
         className="h-px w-full"
         style={{
@@ -50,7 +41,6 @@ export default function Footer() {
       />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-20">
-        {/* Vision text */}
         <div className="max-w-3xl mb-16">
           <p
             className="font-serif-display text-lg md:text-xl leading-relaxed"
@@ -61,45 +51,73 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-          {footerLinks.map((col) => (
-            <div key={col.heading}>
-              <h4
-                className="text-xs font-bold tracking-widest uppercase mb-6"
-                style={{ color: '#8A99A8' }}
-              >
-                {col.heading}
-              </h4>
-              <ul className="space-y-3">
-                {col.entries.map((entry, i) => (
-                  <li key={i}>
-                    {entry.href ? (
-                      <a
-                        href={entry.href}
-                        target={entry.href.startsWith('http') ? '_blank' : undefined}
-                        rel={entry.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-[#30B0D0]"
-                        style={{ color: '#EDE8E4' }}
-                      >
-                        {entry.text}
-                        {entry.href.startsWith('http') && (
-                          <ExternalLink className="w-3 h-3 opacity-50" />
-                        )}
-                      </a>
-                    ) : (
-                      <span className="text-sm" style={{ color: '#8A99A8' }}>
-                        {entry.text}
-                      </span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <div>
+            <h4
+              className="text-xs font-bold tracking-widest uppercase mb-6"
+              style={{ color: '#8A99A8' }}
+            >
+              数据来源
+            </h4>
+            <ul className="space-y-3">
+              {externalLinks.map((entry) => (
+                <li key={entry.text}>
+                  <a
+                    href={entry.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-[#30B0D0]"
+                    style={{ color: '#EDE8E4' }}
+                  >
+                    {entry.text}
+                    <ExternalLink className="w-3 h-3 opacity-50" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              className="text-xs font-bold tracking-widest uppercase mb-6"
+              style={{ color: '#8A99A8' }}
+            >
+              导航
+            </h4>
+            <ul className="space-y-3">
+              {navLinks.map((entry) => (
+                <li key={entry.to}>
+                  <Link
+                    to={entry.to}
+                    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-[#30B0D0]"
+                    style={{ color: '#EDE8E4' }}
+                  >
+                    {entry.text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              className="text-xs font-bold tracking-widest uppercase mb-6"
+              style={{ color: '#8A99A8' }}
+            >
+              声明
+            </h4>
+            <ul className="space-y-3">
+              {legalEntries.map((text) => (
+                <li key={text}>
+                  <span className="text-sm" style={{ color: '#8A99A8' }}>
+                    {text}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        {/* Bottom bar */}
         <div
           className="mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
           style={{ borderTop: '1px solid rgba(138, 153, 168, 0.1)' }}

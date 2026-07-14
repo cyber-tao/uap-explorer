@@ -92,14 +92,15 @@ uap-explorer/
 │   │   └── Footer.tsx            # 内页页脚
 │   ├── sections/                 # 首页区块
 │   │   ├── HeroField.tsx
-│   │   ├── PhilosophyCarousel.tsx
+│   │   ├── ObservablesCarousel.tsx
 │   │   ├── ImmersiveGallery.tsx
-│   │   ├── MediumsGlossary.tsx
+│   │   ├── AgenciesGlossary.tsx
 │   │   └── Footer.tsx
 │   ├── data/
 │   │   ├── events.ts             # 35 个事件完整数据
-│   │   ├── analysis.ts           # 分析页领域数据
-│   │   └── agencies.ts           # 机构数据
+│   │   ├── analysis.ts           # 分析/首页可观测特征单一来源
+│   │   ├── agencies.ts           # 机构数据
+│   │   └── featured.ts           # 首页精选事件 ID
 │   ├── pages/
 │   │   ├── HomePage.tsx
 │   │   ├── TimelinePage.tsx

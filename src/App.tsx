@@ -1,11 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, type ReactNode } from 'react'
 import Layout from './components/Layout'
+import ErrorBoundary from './components/ErrorBoundary'
 import HomePage from './pages/HomePage'
 
-// Route-level code splitting: only the home page (and its heavy 3D / scroll
-// dependencies) ships in the initial bundle; the remaining pages — including
-// the chart-heavy analysis page — load on demand.
 const TimelinePage = lazy(() => import('./pages/TimelinePage'))
 const AnalysisPage = lazy(() => import('./pages/AnalysisPage'))
 const AgenciesPage = lazy(() => import('./pages/AgenciesPage'))
@@ -22,6 +20,14 @@ function PageFallback() {
   )
 }
 
+function LazyPage({ children }: { children: ReactNode }) {
+  return (
+    <ErrorBoundary>
+      <Suspense fallback={<PageFallback />}>{children}</Suspense>
+    </ErrorBoundary>
+  )
+}
+
 function App() {
   return (
     <Routes>
@@ -30,33 +36,33 @@ function App() {
         <Route
           path="/timeline"
           element={
-            <Suspense fallback={<PageFallback />}>
+            <LazyPage>
               <TimelinePage />
-            </Suspense>
+            </LazyPage>
           }
         />
         <Route
           path="/analysis"
           element={
-            <Suspense fallback={<PageFallback />}>
+            <LazyPage>
               <AnalysisPage />
-            </Suspense>
+            </LazyPage>
           }
         />
         <Route
           path="/agencies"
           element={
-            <Suspense fallback={<PageFallback />}>
+            <LazyPage>
               <AgenciesPage />
-            </Suspense>
+            </LazyPage>
           }
         />
         <Route
           path="/event/:id"
           element={
-            <Suspense fallback={<PageFallback />}>
+            <LazyPage>
               <EventDetailPage />
-            </Suspense>
+            </LazyPage>
           }
         />
       </Route>

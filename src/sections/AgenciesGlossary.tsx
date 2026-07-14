@@ -1,9 +1,9 @@
 import { useEffect, useRef, useCallback, useState } from 'react';
 import gsap from 'gsap';
-import { mediumsConfig } from '../config';
-import type { MediumItem } from '../config';
+import { agenciesPreviewConfig } from '../config';
+import type { AgencyPreviewItem } from '../config';
 
-function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: MediumItem; filterId: string; onHover: () => void; onLeaveHover: () => void }) {
+function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyPreviewItem; filterId: string; onHover: () => void; onLeaveHover: () => void }) {
   const rowRef = useRef<HTMLDivElement>(null);
   const text1Ref = useRef<SVGTextElement>(null);
   const text2Ref = useRef<SVGTextElement>(null);
@@ -173,18 +173,18 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: MediumI
   );
 }
 
-export default function MediumsGlossary() {
+export default function AgenciesGlossary() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const mediums = mediumsConfig.items;
-  const hovered = hoveredIndex !== null ? mediums[hoveredIndex] : null;
+  const agencies = agenciesPreviewConfig.items;
+  const hovered = hoveredIndex !== null ? agencies[hoveredIndex] : null;
 
-  if (mediums.length === 0) {
+  if (agencies.length === 0) {
     return null;
   }
 
   return (
     <section
-      id="mediums"
+      id="agencies-preview"
       style={{
         position: 'relative',
         width: '100%',
@@ -208,10 +208,10 @@ export default function MediumsGlossary() {
             marginBottom: '48px',
           }}
         >
-          {mediumsConfig.sectionLabel}
+          {agenciesPreviewConfig.sectionLabel}
         </p>
         <div>
-          {mediums.map((item, idx) => (
+          {agencies.map((item, idx) => (
             <GooeyTextRow
               key={idx}
               item={item}
