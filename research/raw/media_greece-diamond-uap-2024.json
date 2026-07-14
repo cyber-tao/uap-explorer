@@ -1,5 +1,7 @@
 {
   "eventId": "greece-diamond-uap-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",
@@ -12,11 +14,6 @@
       "caption": "Thumbnail of the declassified mission report DOW-UAP-D25 detailing the Greece January 2024 UAP encounter: diamond-shaped object, ~434 knots, SWIR-only detection (USCENTCOM/AARO)."
     },
     {
-      "type": "image",
-      "url": "https://unexplainable.com/assets/previews/173.jpg?v=609696",
-      "caption": "Preview image for DOW-UAP-PR28: first reported case of a UAP detectable only via short-wave infrared (SWIR) sensor, recorded aboard a U.S. military platform over Greece."
-    },
-    {
       "type": "video",
       "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688954/DOD_111688954.mp4",
       "caption": "Direct DoD video file (1m05s): DOW-UAP-PR28 multi-sensor footage (EO + SWIR) of the diamond-shaped UAP over Greece, January 2024. Object visible only in SWIR; lost when switching to visible spectrum."
@@ -24,7 +21,7 @@
     {
       "type": "video",
       "url": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024",
-      "caption": "Official DVIDS page for DOW-UAP-PR28: unresolved UAP report submitted by USCENTCOM to AARO. Includes video description of sensor modality switches and timeline of the encounter."
+      "caption": "Official DVIDS page for DOW-UAP-PR28: unresolved UAP report submitted by USCENTCOM to AARO."
     }
   ]
 }

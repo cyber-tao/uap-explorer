@@ -1,5 +1,7 @@
 {
   "eventId": "mq-9-yemen-hellfire-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",

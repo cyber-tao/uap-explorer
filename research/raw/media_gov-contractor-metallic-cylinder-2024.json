@@ -1,72 +1,37 @@
 {
   "eventId": "gov-contractor-metallic-cylinder-2024",
-  "note": "该事件本身在 AARO 公开影像库中暂无直接发布的图片或视频。AARO 主任 Jon Kosloski 仅在 2024 年 11 月 19 日国会听证会上口头描述此案。以下为该事件相关的一手关联媒体资源（国会听证会、新闻报道、AARO 官方影像库中类似形态案例）。",
-  "eventSummary": {
-    "date": "2024 年（具体日期未公开）",
-    "location": "美国东南部（southeastern United States）",
-    "witnesses": "两名政府承包商（government contractors），驾车离开一处设施时目击",
-    "description": "一个大型金属圆柱体（large metallic cylinder），约商业飞机大小，在空中静止悬停 15-20 秒后消失。AARO 正在积极调查中，尚未解决。",
-    "source": "AARO 主任 Jon Kosloski 在 2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会听证会口头披露。",
-    "sourceUrl": "https://www.cbsnews.com/news/pentagon-solves-1-ufo-mystery-still-probing-other-cases/"
-  },
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",
       "url": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg",
-      "caption": "CBS News 报道截图：2024 年 11 月 19 日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。",
-      "source": "CBS News / AARO",
-      "sourcePage": "https://www.cbsnews.com/news/pentagon-solves-1-ufo-mystery-still-probing-other-cases/"
+      "caption": "CBS News 报道截图：2024年11月19日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。"
     },
     {
       "type": "image",
       "url": "https://media.cnn.com/api/v1/images/stellar/prod/mg-0035-3-e-20241119133505974.jpg",
-      "caption": "CNN 报道图片：AARO 国会听证会现场，Jon Kosloski 作证披露 21 份尚无法解释的 UAP 目击报告，包括球形、圆柱形和三角形物体。",
-      "source": "CNN / U.S. Congress",
-      "sourcePage": "https://www.cnn.com/2024/11/19/politics/ufo-hearing-congress-aaro/index.html"
+      "caption": "CNN 报道图片：AARO 国会听证会现场，Jon Kosloski 作证披露 21 份尚无法解释的 UAP 目击报告，包括球形、圆柱形和三角形物体。"
     },
     {
       "type": "image",
       "url": "https://imagecloud.thepaper.cn/thepaper/image/329/926/267.jpg",
-      "caption": "澎湃新闻转载报道：美国防部发布UFO年度报告，AARO 负责人承认有21份目击报告尚无法解释，物体形态包括圆柱形。",
-      "source": "澎湃新闻 / 中新网",
-      "sourcePage": "https://www.thepaper.cn/newsDetail_forward_29355582"
+      "caption": "澎湃新闻转载报道：美国防部发布UFO年度报告，AARO 负责人承认有21份目击报告尚无法解释，物体形态包括圆柱形。"
     },
     {
       "type": "video",
       "url": "https://www.c-span.org/video/?542535-1/oversight-hearing-domain-anomaly-resolution-office-uapsufos",
-      "caption": "C-SPAN 官方完整视频：2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会——AARO 与 UAP 监督听证会。Jon Kosloski 主任在此听证会上口头披露政府承包商金属圆柱体目击事件（约 2:30:00 前后提及）。",
-      "source": "C-SPAN / U.S. Senate",
-      "duration": "约 3 小时",
-      "date": "2024-11-19"
+      "caption": "C-SPAN 官方完整视频：2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会——AARO 与 UAP 监督听证会。Jon Kosloski 主任在此听证会上口头披露政府承包商金属圆柱体目击事件。"
     },
     {
       "type": "video",
       "url": "https://www.aaro.mil/UAP-Cases/Official-UAP-Imagery/",
-      "caption": "AARO 官方 UAP 影像库主页（持续更新）。该事件本身尚未公开视频，但影像库中收录了多个类似形态（圆柱/球体）的已发布案例，包括中东、欧洲、非洲等地区的未解决 UAP 视频。",
-      "source": "All-domain Anomaly Resolution Office (AARO) / U.S. Department of Defense",
-      "note": "该事件原始视频/照片若存在，目前尚未被 AARO 解密并公开发布。"
+      "caption": "AARO 官方 UAP 影像库主页（持续更新）。该事件本身尚未公开视频，但影像库中收录了多个类似形态（圆柱/球体）的已发布案例。"
     },
     {
       "type": "video",
       "url": "https://www.dvidshub.net/unit/AARO",
-      "caption": "DVIDS（Defense Visual Information Distribution Service）AARO 官方频道。收录 AARO 公开发布的 UAP 视频档案，包括中东金属球体、欧洲未解决视频等关联案例。",
-      "source": "DVIDS / AARO / DoD",
-      "note": "可通过此频道检索 AARO 编号案例（如 PR-018、PR-003 等）的公开视频。"
-    }
-  ],
-  "relatedOfficialDocuments": [
-    {
-      "title": "AARO FY2024 Consolidated Annual Report on UAP",
-      "url": "https://www.aaro.mil/",
-      "date": "2024-11-14",
-      "publisher": "All-domain Anomaly Resolution Office (AARO)"
-    },
-    {
-      "title": "AARO Case-Resolution Briefing Slides (Senate SASC, 19 Nov 2024)",
-      "url": "https://ufotransparency.com/files/2024-11-19-aaro-sasc-case-slides-aaro-sasc-case-slides-2024-11-19",
-      "date": "2024-11-19",
-      "publisher": "AARO / U.S. Senate Committee on Armed Services",
-      "note": "包含 UAP 报告趋势统计（圆柱体占比 5%）"
+      "caption": "DVIDS（Defense Visual Information Distribution Service）AARO 官方频道。收录 AARO 公开发布的 UAP 视频档案，包括中东金属球体、欧洲未解决视频等关联案例。"
     }
   ]
 }

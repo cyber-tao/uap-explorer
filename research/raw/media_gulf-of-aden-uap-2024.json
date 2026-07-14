@@ -1,5 +1,7 @@
 {
   "eventId": "gulf-of-aden-uap-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",
@@ -7,29 +9,9 @@
       "caption": "DOW-UAP-D75 官方任务报告封面：2024年7月14日美军ISR平台在亚丁湾记录UAP事件的MISREP文档，由第124攻击中队提交至USCENTCOM/AARO"
     },
     {
-      "type": "image",
-      "url": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
-      "caption": "USA Today报道：2024年10月30日也门沿海，MQ-9 Reaper锁定不明球体，AGM-114 Hellfire导弹即将接触目标前的红外画面（来源：U.S. military via Congress）"
-    },
-    {
-      "type": "image",
-      "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
-      "caption": "Yahoo News/USA Today：MQ-9 Reaper在亚丁湾/也门海岸跟踪高速飞行球体，导弹击中后物体继续飞行轨迹，未受明显损伤"
-    },
-    {
-      "type": "video",
-      "url": "https://www.cbsnews.com/news/video-house-ufo-hearing-us-missile-strikes-unidentified-object/",
-      "caption": "CBS News报道视频：2024年10月30日MQ-9 Reaper在也门沿海跟踪不明球体，Hellfire导弹击中后物体未被摧毁继续飞行（2025年9月9日国会听证会公开）"
-    },
-    {
       "type": "video",
       "url": "https://www.dvidshub.net/video/962722/unresolved-uap-report-middle-east-2024",
-      "caption": "DVIDS/AARO官方视频：2024年中东地区6分41秒红外传感器未解决UAP报告，由美军平台记录，AARO发布用于分析（DVIDS官方分发渠道）"
-    },
-    {
-      "type": "video",
-      "url": "https://abcnews.com/Politics/congressman-shows-video-military-ufo-hearing/story?id=125413475",
-      "caption": "ABC News报道视频：Rep. Eric Burlison在2025年9月9日众议院监督委员会听证会上首次公开2024年10月30日也门沿海UAP遭遇视频，显示Hellfire导弹击中球体后未引爆"
+      "caption": "DVIDS/AARO官方视频：2024年中东地区红外传感器未解决UAP报告（与D75同区域作战语境，非Hellfire专属画面）"
     }
   ]
 }
