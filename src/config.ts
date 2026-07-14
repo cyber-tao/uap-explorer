@@ -1,19 +1,3 @@
-export interface SiteConfig {
-  language: string
-  siteTitle: string
-  siteDescription: string
-}
-
-export interface NavLink {
-  label: string
-  targetId: string
-}
-
-export interface NavigationConfig {
-  brandMark: string
-  links: NavLink[]
-}
-
 export interface HeroConfig {
   wordmarkText: string
   eyebrow: string
@@ -40,28 +24,6 @@ export interface PhilosophyConfig {
   title: string
   body: string
   features: PhilosophyFeature[]
-}
-
-export interface ProjectMeta {
-  label: string
-  value: string
-}
-
-export interface ProjectData {
-  id: string
-  title: string
-  location: string
-  year: string
-  image: string
-  subtitle: string
-  meta: ProjectMeta[]
-  paragraphs: string[]
-}
-
-export interface GalleryConfig {
-  sectionLabel: string
-  title: string
-  projects: ProjectData[]
 }
 
 export interface MediumItem {
@@ -91,26 +53,6 @@ export interface FooterConfig {
   columns: FooterColumn[]
   copyright: string
   videoPath: string
-}
-
-export interface ProjectDetailConfig {
-  backLabel: string
-}
-
-export const siteConfig: SiteConfig = {
-  language: "zh-CN",
-  siteTitle: "UAP Explorer · 不明异常现象探索者",
-  siteDescription: "基于全球22国、10个研究维度、300+独立信息源的UAP/UFO科学评估。追踪高置信度事件，探索未知现象的物理证据。",
-}
-
-export const navigationConfig: NavigationConfig = {
-  brandMark: "UAP",
-  links: [
-    { label: "首页", targetId: "hero-section" },
-    { label: "特征", targetId: "philosophy" },
-    { label: "事件", targetId: "gallery" },
-    { label: "机构", targetId: "mediums" },
-  ],
 }
 
 export const heroConfig: HeroConfig = {
@@ -173,89 +115,6 @@ export const philosophyConfig: PhilosophyConfig = {
       metric: "4+ 独立系统",
       metricLabel: "同步交叉验证",
       description: "最高可信度的判据，是同一目标被多个相互独立的传感器同时捕获。Nimitz 事件由 SPY-1 宙斯盾雷达、E-2C 预警机、飞行员目视与 ATFLIR 红外四路同步锁定，排除了单一传感器伪影、光学错觉与软件故障的可能。多传感器一致性，将「个人目击」提升为可被科学检验的物理证据。",
-    },
-  ],
-}
-
-export const galleryConfig: GalleryConfig = {
-  sectionLabel: "FEATURED EVENTS / 重点事件",
-  title: "高置信度案例",
-  projects: [
-    {
-      id: "nimitz-tic-tac",
-      title: "Nimitz Tic Tac",
-      location: "美国 · 圣地亚哥海岸",
-      year: "2004",
-      image: "images/event-nimitz.jpg",
-      subtitle: "多传感器同步捕获的标杆案例",
-      meta: [
-        { label: "DATE", value: "2004-11-14" },
-        { label: "LOCATION", value: "圣地亚哥海岸, 美国" },
-        { label: "CONFIDENCE", value: "高置信度" },
-        { label: "SENSORS", value: "雷达, FLIR, 目视, EW" },
-      ],
-      paragraphs: [
-        "VF-41中队F/A-18F飞行员使用AN/ASQ-228 ATFLIR吊舱捕获了著名的\"Tic Tac\"视频。UAP被描述为白色椭圆形物体，约40英尺长，无可见推进系统。",
-        "在8万英尺高空瞬间降至海面，并在海面上方以超音速飞行，无音爆。E-2C预警机雷达、SPY-1宙斯盾雷达、飞行员目视和FLIR红外同步捕获。",
-        "2017年《纽约时报》/TTSA首次披露；2019年美国海军官方确认视频真实性；2024年AARO年度报告确认21起\"真正异常\"之一。"
-      ],
-    },
-    {
-      id: "colares",
-      title: "Colares事件",
-      location: "巴西 · 帕拉州",
-      year: "1977",
-      image: "images/event-colares.jpg",
-      subtitle: "军方调查，平民受伤，大规模目击",
-      meta: [
-        { label: "DATE", value: "1977-07" },
-        { label: "LOCATION", value: "Colares, 巴西" },
-        { label: "CONFIDENCE", value: "高置信度" },
-        { label: "SENSORS", value: "军方雷达, 目视, 医疗记录" },
-      ],
-      paragraphs: [
-        "1977年7月至1978年初，巴西空军正式启动Operação Prato（飞碟行动），由Uyrangê Hollanda上尉指挥，记录数百次目击与伤情报告。",
-        "科拉雷斯及周边居民报告低空发光物体与光束照射伤害。空军调查小组拍摄大量照片与胶片，但未能拦截目标。",
-        "物理样本未被保存于可靠证据链中，部分平民报告可能受社会心理因素影响；档案后经解密部分公开。"
-      ],
-    },
-    {
-      id: "jal-1628",
-      title: "JAL 1628",
-      location: "日本 · 阿拉斯加上空",
-      year: "1986",
-      image: "images/event-jal1628.jpg",
-      subtitle: "巨型UAP，雷达确认，FAA介入",
-      meta: [
-        { label: "DATE", value: "1986-11-17" },
-        { label: "LOCATION", value: "阿拉斯加上空" },
-        { label: "CONFIDENCE", value: "高置信度" },
-        { label: "SENSORS", value: "雷达, 目视, FAA调查" },
-      ],
-      paragraphs: [
-        "机长Kenju Terauchi报告目击两个小型UAP和一个巨型UAP（暗灰色，矩形，表面有灯光），描述为\"两倍于航空母舰大小\"。",
-        "Anchorage空管在雷达上确认飞机附近存在不明目标。美国联邦航空管理局（FAA）正式介入调查，事件被FAA列为\"未解释\"。",
-        "FAA未公开完整调查报告，雷达记录仅显示\"目标存在\"，未确认物体的物理特征。无其他航班同时目击。"
-      ],
-    },
-    {
-      id: "guizhou-forest",
-      title: "空中怪车",
-      location: "中国 · 贵州都溪",
-      year: "1994",
-      image: "images/event-guizhou.jpg",
-      subtitle: "400亩树木截断，火车逆向位移",
-      meta: [
-        { label: "DATE", value: "1994-12-01" },
-        { label: "LOCATION", value: "贵州都溪林场" },
-        { label: "CONFIDENCE", value: "高置信度" },
-        { label: "SENSORS", value: "目视, 物理痕迹, 气象记录" },
-      ],
-      paragraphs: [
-        "数百名目击者被巨大轰鸣声惊醒，目击空中出现发红、绿色强光的不明物体。都溪林场约400亩马尾松被成片拦腰截断。",
-        "相距5公里的贵阳车辆厂，50-70吨重火车车厢在略上坡轨道上逆向位移20余米。钢管柱被切断、砖砌围墙被推倒。",
-        "现场无人员、牲畜伤亡，高压线、电话线、电缆完好。无军方传感器记录，无金属残骸或物理样本回收。"
-      ],
     },
   ],
 }
@@ -324,12 +183,4 @@ export const footerConfig: FooterConfig = {
   ],
   copyright: "© 2026 UAP Explorer",
   videoPath: "",
-}
-
-export const projectDetailConfig: ProjectDetailConfig = {
-  backLabel: "← 返回",
-}
-
-export function getProjectById(id: string): ProjectData | undefined {
-  return galleryConfig.projects.find((p) => p.id === id)
 }
