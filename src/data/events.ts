@@ -140,6 +140,9 @@ export const events: UAPEvent[] = [
     image: '/images/event-nimitz.jpg',
     figures: [
       { src: '/images/events/nimitz-tic-tac/01.jpg', caption: 'Nimitz Tic Tac事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/nimitz-tic-tac/02.jpg', caption: 'Nimitz Tic Tac事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/nimitz-tic-tac/03.jpg', caption: 'Nimitz Tic Tac事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/nimitz-tic-tac/04.webp', caption: 'Nimitz Tic Tac事件——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=nd7K5LafDF8', caption: 'FLIR1（Nimitz/Tic-Tac）官方视频——2004年尼米兹事件红外 footage' },
@@ -176,6 +179,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-gimbal.jpg',
     figures: [
       { src: '/images/events/gimbal-gofast/01.jpg', caption: '东海岸Gimbal/GoFast事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/gimbal-gofast/02.jpg', caption: '东海岸Gimbal/GoFast事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/gimbal-gofast/03.jpg', caption: '东海岸Gimbal/GoFast事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=oCt837R2Sbs', caption: 'Gimbal——官方海军红外视频（2015年罗斯福号东海岸）' },
@@ -213,6 +218,8 @@ export const events: UAPEvent[] = [
       { src: '/images/events/colares/01.jpg', caption: 'Colares事件（Operação Prato）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/colares/02.jpg', caption: 'Colares 1977 UFO事件相关分析图与历史记录', credit: 'images.squarespace-cdn.com', sourceUrl: 'https://images.squarespace-cdn.com/content/v1/654d055f3f0ea73d1b9a2810/2726eda8-bcee-431f-9807-bc02c1fc4c7d/v2-fnpdm-6lv2g.jpg', layout: 'pair' },
       { src: '/images/events/colares/03.jpg', caption: '科拉雷斯夜空中的不明光球目击示意图', credit: 'images.squarespace-cdn.com', sourceUrl: 'https://images.squarespace-cdn.com/content/v1/67d20fce28210702b779a752/bdcc99c5-682e-4316-9e36-35abed43ec71/1.jpg', layout: 'pair' },
+      { src: '/images/events/colares/04.webp', caption: 'Colares事件（Operação Prato）——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
+      { src: '/images/events/colares/05.webp', caption: 'Colares事件（Operação Prato）——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://youtu.be/7hdaW6a9CbY', caption: 'Operação Prato - Entrevista com Coronel Uyrangê Hollanda (1997 interview)' },
@@ -249,6 +256,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-jal1628.jpg',
     figures: [
       { src: '/images/events/jal-1628/01.jpg', caption: 'JAL 1628号班机UFO事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/jal-1628/02.jpg', caption: 'JAL 1628号班机UFO事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/jal-1628/03.jpg', caption: 'JAL 1628号班机UFO事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=beCAZVCpwrc', caption: 'Pilots & JAL 1628 UFO Event - 飞行员讨论与FAA文件分析' },
@@ -285,6 +294,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-malmstrom.jpg',
     figures: [
       { src: '/images/events/malmstrom-icbm/01.jpg', caption: 'Malmstrom空军基地ICBM失效——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/malmstrom-icbm/02.jpg', caption: 'Malmstrom空军基地ICBM失效——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/malmstrom-icbm/03.jpg', caption: 'Malmstrom空军基地ICBM失效——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=xNxHrGLvsMk', caption: 'Robert Salas 关于1967年马尔姆斯特罗姆UFO/导弹事件的证词访谈' },
@@ -321,6 +332,7 @@ export const events: UAPEvent[] = [
     figures: [
       { src: '/images/events/belgium-ufo-wave/01.jpg', caption: '比利时UFO波——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/belgium-ufo-wave/02.jpg', caption: 'Belgian UFO Wave 1989-1990 目击者绘制的三角形飞行器合成图', credit: 'i0.wp.com', sourceUrl: 'https://i0.wp.com/unidentifiedphenomena.com/wp-content/uploads/2023/02/belgian-ufo-wave-1-jpg.webp?resize=657%2C581&ssl=1', layout: 'pair' },
+      { src: '/images/events/belgium-ufo-wave/03.webp', caption: '比利时UFO波——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=wkm3KxIyZDE', caption: 'The Longstanding Mystery of BLACK TRIANGLE UFOs (YouTube documentary referencing Belgian Wave)' },
@@ -357,6 +369,9 @@ export const events: UAPEvent[] = [
     image: '/images/event-xiaoshan.jpg',
     figures: [
       { src: '/images/events/xiaoshan-airport/01.jpg', caption: '杭州萧山机场UFO事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/xiaoshan-airport/02.jpg', caption: '杭州萧山机场UFO事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/xiaoshan-airport/03.jpg', caption: '杭州萧山机场UFO事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/xiaoshan-airport/04.jpg', caption: '杭州萧山机场UFO事件——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=BSKkS2WlX9I', caption: 'CCTV新闻频道关于杭州萧山机场UFO事件的报道（中文）' },
@@ -393,6 +408,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-guizhou.jpg',
     figures: [
       { src: '/images/events/guizhou-forest/01.jpg', caption: '贵州都溪"空中怪车"事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/guizhou-forest/02.jpg', caption: '贵州都溪"空中怪车"事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/guizhou-forest/03.jpg', caption: '贵州都溪"空中怪车"事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'http://www.cntv.cn/program/zoujinkexue/topic/science/C14443/20050728/101898.shtml', caption: 'CCTV《走近科学》纪录片：寻迹空中怪车（上）— 2005年专题调查节目，深入都溪林场现场采访目击者和专家' },
@@ -433,6 +450,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-shanghai.jpg',
     figures: [
       { src: '/images/events/shanghai-hongqiao/01.jpg', caption: '上海虹桥机场UFO追踪——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/shanghai-hongqiao/02.jpg', caption: '上海虹桥机场UFO追踪——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/shanghai-hongqiao/03.jpg', caption: '上海虹桥机场UFO追踪——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.bilibili.com/video/BV125411T77U/', caption: 'Bilibili视频：1991年上海虹桥机场UFO事件录音公开（卡兰巴扎上传，播放量超25万次），包含飞行员朱兆元与虹桥塔台约26分钟的完整通话录音' },
@@ -470,6 +489,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-kofu.jpg',
     figures: [
       { src: '/images/events/kofu-incident/01.jpg', caption: '甲府UFO事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/kofu-incident/02.jpg', caption: '甲府UFO事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/kofu-incident/03.jpg', caption: '甲府UFO事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=GjDMmaxmvOo', caption: 'UFO Files: Japan\'s Enigmatic Triangle - 甲府事件纪录片' },
@@ -505,6 +526,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-imphal.jpg',
     figures: [
       { src: '/images/events/imphal-airport/01.jpg', caption: '英帕尔机场UFO事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/imphal-airport/02.webp', caption: '英帕尔机场UFO事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/imphal-airport/03.jpg', caption: '英帕尔机场UFO事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=8T7dP3g3w0w', caption: 'YouTube: India Today报道 - 因帕尔机场UFO目击及Rafale出动新闻片段' },
@@ -544,6 +567,8 @@ export const events: UAPEvent[] = [
       { src: '/images/events/submarine-transmedium/01.jpg', caption: '核潜艇跨介质球形物体——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/submarine-transmedium/02.png', caption: 'USS Omaha事件——2019年7月15日球形物体红外图像', credit: 'ufoweekly.com', sourceUrl: 'https://ufoweekly.com/wp-content/uploads/2023/06/111-USS-Omaha.png', layout: 'pair' },
       { src: '/images/events/submarine-transmedium/03.jpg', caption: '太平洋舰队2019年多起UAP事件官方档案插图', credit: 'nowdeclassified.com', sourceUrl: 'https://www.nowdeclassified.com/api/incident-image/pacific-fleet-2019', layout: 'pair' },
+      { src: '/images/events/submarine-transmedium/04.png', caption: '核潜艇跨介质球形物体——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
+      { src: '/images/events/submarine-transmedium/05.jpg', caption: '核潜艇跨介质球形物体——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=8U9vZfJNHLQ', caption: 'USS Omaha球形UAP视频——跨介质事件，物体入水（Jeremy Corbell发布）' },
@@ -580,6 +605,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-salyut6.jpg',
     figures: [
       { src: '/images/events/salyut6/01.jpg', caption: '礼炮6号宇航员目击——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/salyut6/02.png', caption: '礼炮6号宇航员目击——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/salyut6/03.jpg', caption: '礼炮6号宇航员目击——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
 
     sensors: ['目视', '地面雷达'],
@@ -612,6 +639,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-salyut7.jpg',
     figures: [
       { src: '/images/events/salyut7-angels/01.jpg', caption: '礼炮7号"太空天使"事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/salyut7-angels/02.jpg', caption: '礼炮7号"太空天使"事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/salyut7-angels/03.jpg', caption: '礼炮7号"太空天使"事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
 
     sensors: ['目视', '群体目击'],
@@ -645,6 +674,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-apollo17.jpg',
     figures: [
       { src: '/images/events/apollo17/01.jpg', caption: '阿波罗17号月球照片三个光点——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/apollo17/02.jpg', caption: '阿波罗17号月球照片三个光点——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/apollo17/03.jpg', caption: '阿波罗17号月球照片三个光点——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
 
     sensors: ['照片', '宇航员目视'],
@@ -680,7 +711,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-gemini4.jpg',
     figures: [
       { src: '/images/events/gemini4-mcdivitt/01.jpg', caption: '双子座4号McDivitt目击——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/gemini4-mcdivitt/02.png', caption: 'McDivitt拍摄的原始不明物体照片，来自ASU月球与行星实验室档案', credit: 'tothemoon.ser.asu.edu', sourceUrl: 'http://tothemoon.ser.asu.edu/data_g/G04/Unidentified/full/GT4-37149-039_G04-U_f.png', layout: 'pair' },
+      { src: '/images/events/gemini4-mcdivitt/02.jpg', caption: '双子座4号McDivitt目击——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/gemini4-mcdivitt/03.jpg', caption: '双子座4号McDivitt目击——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=Mb7Gtufrc1E', caption: 'YouTube: Gemini 4 Astronaut James McDivitt UFO Sighting 原始影像与解说' },
@@ -718,6 +750,8 @@ export const events: UAPEvent[] = [
       { src: '/images/events/rendelsham-forest/01.jpg', caption: 'Rendelsham Forest事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/rendelsham-forest/02.jpg', caption: '1981年2月林务员Vince Thurkettle绘制的所谓UFO着陆痕迹草图，显示三个压痕呈三角形排列', credit: 'ianridpath.com', sourceUrl: 'http://www.ianridpath.com/ufo/images/s/landingmarks-570.jpg', layout: 'pair' },
       { src: '/images/events/rendelsham-forest/03.png', caption: 'Rendlesham Forest事件示意图，展示RAF基地与森林位置关系', credit: 'unidentifiedphenomena.com', sourceUrl: 'https://unidentifiedphenomena.com/wp-content/uploads/2023/02/the-rendlesham-forest-incident-1980.png', layout: 'pair' },
+      { src: '/images/events/rendelsham-forest/04.jpg', caption: 'Rendelsham Forest事件——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
+      { src: '/images/events/rendelsham-forest/05.png', caption: 'Rendelsham Forest事件——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'http://terrygroff.com/dfwmufon/audio/halt%20tape.mp3', caption: 'Charles Halt中校现场录音\'Halt Tape\'（MP3音频）：1980年12月28日现场录制的约18分钟原始录音，记录了军方调查人员在森林中追踪不明光团的全过程' },
@@ -760,6 +794,7 @@ export const events: UAPEvent[] = [
       { src: '/images/events/roswell/03.jpg', caption: '1947年7月8日《Roswell Daily Record》报纸头版："RAAF捕获了罗斯威尔地区牧场上的飞碟"', credit: 'ufoevidence.org', sourceUrl: 'http://ufoevidence.org/cases/pictures/RoswellRecord3.jpg', layout: 'pair' },
       { src: '/images/events/roswell/04.jpg', caption: 'Glenn Dennis，当地殡仪馆工作人员，声称目睹了1947年罗斯威尔基地医院内的非人类生物解剖', credit: 'ufoevidence.org', sourceUrl: 'http://ufoevidence.org/cases/pictures/GlennDennis.jpg', layout: 'inset' },
       { src: '/images/events/roswell/05.jpg', caption: '据称由罗斯威尔基地医院护士在餐巾纸上手绘的外星人形象素描（由Glenn Dennis保存）', credit: 'ufoevidence.org', sourceUrl: 'http://ufoevidence.org/cases/pictures/NurseSketch1.jpg', layout: 'inset' },
+      { src: '/images/events/roswell/06.jpg', caption: '罗斯威尔事件——档案影像 06', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=mwUSctoPo0A', caption: '纪录片：The Roswell UFO Crash - 1947年事件的完整历史回顾与证人分析' },
@@ -798,6 +833,9 @@ export const events: UAPEvent[] = [
     image: '/images/event-washington.jpg',
     figures: [
       { src: '/images/events/washington-invasion/01.jpg', caption: '华盛顿入侵——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/washington-invasion/02.jpg', caption: '华盛顿入侵——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/washington-invasion/03.jpg', caption: '华盛顿入侵——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/washington-invasion/04.jpg', caption: '华盛顿入侵——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=H07x82S6jU4', caption: '纪录片：1952年华盛顿特区不明飞行物入侵事件的历史回顾与证人访谈' },
@@ -834,6 +872,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-sts75.jpg',
     figures: [
       { src: '/images/events/sts75-tether/01.jpg', caption: 'STS-75系绳事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/sts75-tether/02.jpg', caption: 'STS-75系绳事件——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/sts75-tether/03.jpg', caption: 'STS-75系绳事件——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.bilibili.com/video/BV17s411V7f8', caption: 'B站转载：完整未剪辑版NASA STS-75 Tether UFO目击影片 (FULL Uncut NASA STS-75 Tether UFO Sightings)' },
@@ -867,6 +907,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-chile.jpg',
     figures: [
       { src: '/images/events/chile-san-clemente/01.jpg', caption: '智利San Clemente空军基地——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/chile-san-clemente/02.jpg', caption: '智利San Clemente空军基地——档案影像 02', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/chile-san-clemente/03.jpg', caption: '智利San Clemente空军基地——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://youtu.be/RO-LA1Z6usM', caption: 'Chile\'s Roswell: The UFO Crash NASA Tried to Hide (podcast/video covering 1998 Las Mollacas & 2010 El Bosque)' },
@@ -903,6 +945,8 @@ export const events: UAPEvent[] = [
     figures: [
       { src: '/images/events/oumuamua/01.jpg', caption: 'Oumuamua——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/oumuamua/02.jpg', caption: 'ʻOumuamua艺术家印象与实际图像合成：插图显示其穿越太阳系，内嵌图为Gemini South望远镜在2017年10月27日拍摄的彩色合成影像。Credit: ESA/Hubble, NASA, ESO/M. Kornmesser, Gemini Observatory/AURA/NSF', credit: 'mediasvc.eurekalert.org', sourceUrl: 'https://mediasvc.eurekalert.org/Api/v1/Multimedia/68039e3c-bf0b-47f2-b29c-e0cc343f393a/Rendition/low-res/Content/Public', layout: 'pair' },
+      { src: '/images/events/oumuamua/03.jpg', caption: 'Oumuamua——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
+      { src: '/images/events/oumuamua/04.jpg', caption: 'Oumuamua——档案影像 04', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.jpl.nasa.gov/videos/first-interstellar-asteroid-wows-scientists/', caption: 'NASA JPL官方视频：首个星际小行星令科学家惊叹（2017），包含发现过程与科学家访谈。Duration: 约3分钟' },
@@ -956,6 +1000,9 @@ export const events: UAPEvent[] = [
     figures: [
       { src: '/images/events/mq-9-yemen-hellfire-2024/01.jpg', caption: 'MQ-9也门地狱火导弹UAP事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/mq-9-yemen-hellfire-2024/02.jpg', caption: 'MQ-9 Reaper 无人机 HUD 画面：AGM-114 Hellfire 导弹接近也门外海不明球形物体，来源：USA Today / 国会听证会公布', credit: 'gannett-cdn.com', sourceUrl: 'https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0', layout: 'pair' },
+      { src: '/images/events/mq-9-yemen-hellfire-2024/03.webp', caption: 'CBS News 报道画面：Hellfire 导弹击中 UAP 后偏转，球形物体继续飞行，来源：Yahoo News / USA Today Network', credit: 's.yimg.com', sourceUrl: 'https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5', layout: 'pair' },
+      { src: '/images/events/mq-9-yemen-hellfire-2024/04.webp', caption: 'MQ-9 红外画面截图：LRD LASE DES 标记证实 buddy lasing 协同照射，来源：163.com / ABC News 转播', credit: 'nimg.ws.126.net', sourceUrl: 'https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0910%2Fcd425c90j00t2d4mo006pd200pc00cwg00it009k.jpg&thumbnail=660x2147483647&quality=80&type=jpg', layout: 'inset' },
+      { src: '/images/events/mq-9-yemen-hellfire-2024/05.jpg', caption: 'MQ-9也门地狱火导弹UAP事件——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://x.com/RepEricBurlison/status/1833206615078801519', caption: 'Rep. Eric Burlison 官方推文：2024年10月30日 MQ-9 也门外海 UAP 交战原始视频，众议院监督委员会听证会首次公开' },
@@ -988,6 +1035,8 @@ export const events: UAPEvent[] = [
       { src: '/images/events/dhs-pilot-football-object-2024/01.jpg', caption: 'DHS飞行员深色足球形/圆柱形UAP近遇——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/dhs-pilot-football-object-2024/02.jpg', caption: 'Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage', credit: 'theaustraliatoday.com.au', sourceUrl: 'https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg', layout: 'pair' },
       { src: '/images/events/dhs-pilot-football-object-2024/03.jpg', caption: 'CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage', credit: 'assets3.cbsnewsstatic.com', sourceUrl: 'https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg', layout: 'pair' },
+      { src: '/images/events/dhs-pilot-football-object-2024/04.jpg', caption: 'CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage', credit: 'assets3.cbsnewsstatic.com', sourceUrl: 'https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg', layout: 'inset' },
+      { src: '/images/events/dhs-pilot-football-object-2024/05.webp', caption: 'DHS飞行员深色足球形/圆柱形UAP近遇——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024', caption: 'Official DVIDS video: DOW-UAP-PR46, 9-second infrared footage of a football-shaped UAP with three radial projections over the East China Sea, 2024 (INDOPACOM / AARO)' },
@@ -1018,6 +1067,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-ny-commercial-cylinder-near-miss-2024.jpg',
     figures: [
       { src: '/images/events/ny-commercial-cylinder-near-miss-2024/01.jpg', caption: '纽约商业航班圆柱体近撞事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/ny-commercial-cylinder-near-miss-2024/02.jpg', caption: 'AARO FY2024 Consolidated Annual Report on UAP (封面页) — DoD官方发布，2024年11月14日。该报告第18页记录了纽约海岸外商业航班与圆柱形物体近距离错失事件。', credit: 'media.defense.gov', sourceUrl: 'https://media.defense.gov/2024/Nov/14/2003577632/-1/-1/1/ANNUAL-REPORT-ON-UAP-2024.PDF', layout: 'pair' },
+      { src: '/images/events/ny-commercial-cylinder-near-miss-2024/03.jpg', caption: 'All-domain Anomaly Resolution Office (AARO) 官方标志 — 五角大楼UAP调查办公室，该事件的官方调查机构。', credit: 'upload.wikimedia.org', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/All-domain_Anomaly_Resolution_Office_logo.jpg/600px-All-domain_Anomaly_Resolution_Office_logo.jpg', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=DP7Nwb-z1_o', caption: 'AARO FY2024年度报告媒体圆桌会议相关视频 — 2024年11月14日，AARO主任Jon Kosloski在五角大楼举行的媒体圆桌会议，讨论年度报告中包括纽约近距离错失事件在内的757份UAP报告。' },
@@ -1049,6 +1100,9 @@ export const events: UAPEvent[] = [
     figures: [
       { src: '/images/events/gov-contractor-metallic-cylinder-2024/01.jpg', caption: '政府承包商金属圆柱体悬浮事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/gov-contractor-metallic-cylinder-2024/02.jpg', caption: 'CBS News 报道截图：2024年11月19日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。', credit: 'assets1.cbsnewsstatic.com', sourceUrl: 'https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg', layout: 'pair' },
+      { src: '/images/events/gov-contractor-metallic-cylinder-2024/03.webp', caption: 'CNN 报道图片：AARO 国会听证会现场，Jon Kosloski 作证披露 21 份尚无法解释的 UAP 目击报告，包括球形、圆柱形和三角形物体。', credit: 'media.cnn.com', sourceUrl: 'https://media.cnn.com/api/v1/images/stellar/prod/mg-0035-3-e-20241119133505974.jpg', layout: 'pair' },
+      { src: '/images/events/gov-contractor-metallic-cylinder-2024/04.jpg', caption: '澎湃新闻转载报道：美国防部发布UFO年度报告，AARO 负责人承认有21份目击报告尚无法解释，物体形态包括圆柱形。', credit: 'imagecloud.thepaper.cn', sourceUrl: 'https://imagecloud.thepaper.cn/thepaper/image/329/926/267.jpg', layout: 'inset' },
+      { src: '/images/events/gov-contractor-metallic-cylinder-2024/05.jpg', caption: '政府承包商金属圆柱体悬浮事件——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://www.c-span.org/video/?542535-1/oversight-hearing-domain-anomaly-resolution-office-uapsufos', caption: 'C-SPAN 官方完整视频：2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会——AARO 与 UAP 监督听证会。Jon Kosloski 主任在此听证会上口头披露政府承包商金属圆柱体目击事件。' },
@@ -1080,6 +1134,9 @@ export const events: UAPEvent[] = [
     image: '/images/event-greece-diamond-uap-2024.jpg',
     figures: [
       { src: '/images/events/greece-diamond-uap-2024/01.jpg', caption: '希腊钻石形UAP多传感器事件——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
+      { src: '/images/events/greece-diamond-uap-2024/02.webp', caption: 'DVIDS frame capture from DOW-UAP-PR28: SWIR sensor footage showing the inverted-teardrop/diamond-shaped area of contrast over Greece, January 2024 (DoD/AARO via DVIDS).', credit: 'd1ldvf68ux039x.cloudfront.net', sourceUrl: 'https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg', layout: 'pair' },
+      { src: '/images/events/greece-diamond-uap-2024/03.jpg', caption: 'Thumbnail of the declassified mission report DOW-UAP-D25 detailing the Greece January 2024 UAP encounter: diamond-shaped object, ~434 knots, SWIR-only detection (USCENTCOM/AARO).', credit: 'uapdisclosurefiles.com', sourceUrl: 'https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d25-mission-report-greece-january-2024.jpg', layout: 'pair' },
+      { src: '/images/events/greece-diamond-uap-2024/04.jpg', caption: 'Preview image for DOW-UAP-PR28: first reported case of a UAP detectable only via short-wave infrared (SWIR) sensor, recorded aboard a U.S. military platform over Greece.', credit: 'unexplainable.com', sourceUrl: 'https://unexplainable.com/assets/previews/173.jpg?v=609696', layout: 'inset' },
     ],
     media: [
       { type: 'video', url: 'https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688954/DOD_111688954.mp4', caption: 'Direct DoD video file (1m05s): DOW-UAP-PR28 multi-sensor footage (EO + SWIR) of the diamond-shaped UAP over Greece, January 2024. Object visible only in SWIR; lost when switching to visible spectrum.' },
@@ -1145,7 +1202,7 @@ export const events: UAPEvent[] = [
     figures: [
       { src: '/images/events/eglin-afb-silver-orbs-2024/01.jpg', caption: '埃格林空军基地静默银色光球目击——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
       { src: '/images/events/eglin-afb-silver-orbs-2024/02.webp', caption: 'AARO官方发布的EO/IR传感器图像：Eglin AFB战斗机飞行员于2023年1月26日在16,000英尺高度拍摄的UAP对象，可见灰色面板表面和中心橙红色区域。来源：AARO/DoD via BroBible报道', credit: 'brobible.com', sourceUrl: 'https://brobible.com/wp-content/uploads/2024/04/UFO-sensor-imagery-captured-by-the-Eglin-based-fighter-pilot.jpg', layout: 'pair' },
-      { src: '/images/events/eglin-afb-silver-orbs-2024/03.jpg', caption: '埃格林空军基地——银色球体目击相关地点', credit: 'U.S. Air Force / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Eglin_Air_Force_Base.jpg/1280px-Eglin_Air_Force_Base.jpg', layout: 'inset' },
+      { src: '/images/events/eglin-afb-silver-orbs-2024/03.jpg', caption: '埃格林空军基地——银色球体目击相关地点', credit: 'U.S. Air Force / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Eglin_Air_Force_Base.jpg/1280px-Eglin_Air_Force_Base.jpg', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.youtube.com/watch?v=KQ7Dw-739VY', caption: '2023年7月26日国会UAP听证会视频（C-SPAN/YouTube）：佛罗里达州众议员Matt Gaetz在作证时段首次公开披露Eglin AFB UAP事件细节，包括四机编队雷达数据和飞行员手动拍摄的图像。来源：美国众议院监督与问责委员会' },
@@ -1217,7 +1274,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-los-alamos-green-fireballs-1949.jpg',
     figures: [
       { src: '/images/events/los-alamos-green-fireballs-1949/01.jpg', caption: '洛斯阿拉莫斯绿火球会议（1949）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/los-alamos-green-fireballs-1949/02.jpg', caption: '洛斯阿拉莫斯实验室鸟瞰——绿色火球事件发生地背景', credit: 'DOE / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Los_Alamos_aerial_view.jpg/1280px-Los_Alamos_aerial_view.jpg', layout: 'inset' },
+      { src: '/images/events/los-alamos-green-fireballs-1949/02.jpg', caption: '洛斯阿拉莫斯实验室鸟瞰——绿色火球事件发生地背景', credit: 'DOE / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Los_Alamos_aerial_view.jpg/1280px-Los_Alamos_aerial_view.jpg', layout: 'pair' },
+      { src: '/images/events/los-alamos-green-fireballs-1949/03.jpg', caption: '洛斯阿拉莫斯绿火球会议（1949）——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
 
     sensors: ['目视', '官方会议记录'],
@@ -1246,7 +1304,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-yellow-sea-six-pointed-star-2025.jpg',
     figures: [
       { src: '/images/events/yellow-sea-six-pointed-star-2025/01.jpg', caption: '黄海六角星状红外UAP（PR104）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/yellow-sea-six-pointed-star-2025/02.jpg', caption: '黄海海域示意图——六角星状 UAP 目击相关海域', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Yellow_Sea_map.png/800px-Yellow_Sea_map.png', layout: 'inset' },
+      { src: '/images/events/yellow-sea-six-pointed-star-2025/02.jpg', caption: '黄海海域示意图——六角星状 UAP 目击相关海域', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Yellow_Sea_map.png/800px-Yellow_Sea_map.png', layout: 'pair' },
+      { src: '/images/events/yellow-sea-six-pointed-star-2025/03.jpg', caption: '黄海六角星状红外UAP（PR104）——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.dvidshub.net/video/1014101/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025', caption: '官方 DVIDS：DOW-UAP-PR104，18秒黄海红外 footage，六角星状对比区域（INDOPACOM/AARO，PURSUE Release 04）' },
@@ -1279,7 +1338,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-east-china-sea-uap-2025.jpg',
     figures: [
       { src: '/images/events/east-china-sea-uap-2025/01.jpg', caption: '东海红外UAP跟踪（PR105）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/east-china-sea-uap-2025/02.jpg', caption: '中国东部海域区位示意——东海 UAP 目击相关地理背景', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/China_edcp_location_map.svg/800px-China_edcp_location_map.svg.png', layout: 'inset' },
+      { src: '/images/events/east-china-sea-uap-2025/02.jpg', caption: '中国东部海域区位示意——东海 UAP 目击相关地理背景', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/China_edcp_location_map.svg/800px-China_edcp_location_map.svg.png', layout: 'pair' },
+      { src: '/images/events/east-china-sea-uap-2025/03.jpg', caption: '东海红外UAP跟踪（PR105）——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.dvidshub.net/video/1014103/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025', caption: '官方 DVIDS：DOW-UAP-PR105，近5分钟东海红外跟踪 footage（INDOPACOM/AARO，PURSUE Release 04）' },
@@ -1312,7 +1372,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-east-us-rectangular-uap-2019.jpg',
     figures: [
       { src: '/images/events/east-us-rectangular-uap-2019/01.jpg', caption: '美东矩形高速UAP（2019）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/east-us-rectangular-uap-2019/02.jpg', caption: '大西洋区位示意——美东矩形 UAP 目击相关海域背景', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Atlantic_Ocean_-_en.png/800px-Atlantic_Ocean_-_en.png', layout: 'inset' },
+      { src: '/images/events/east-us-rectangular-uap-2019/02.jpg', caption: '大西洋区位示意——美东矩形 UAP 目击相关海域背景', credit: 'Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Atlantic_Ocean_-_en.png/800px-Atlantic_Ocean_-_en.png', layout: 'pair' },
+      { src: '/images/events/east-us-rectangular-uap-2019/03.jpg', caption: '美东矩形高速UAP（2019）——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
       { type: 'video', url: 'https://www.dvidshub.net/video/1014128/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019', caption: '官方 DVIDS：DOW-UAP-PR112，2019年美东未解决UAP报告视频（U.S. Navy/AARO，PURSUE Release 04）' },
@@ -1345,7 +1406,8 @@ export const events: UAPEvent[] = [
     image: '/images/event-pantex-intrusion-2015.jpg',
     figures: [
       { src: '/images/events/pantex-intrusion-2015/01.jpg', caption: 'Pantex核设施不明物入侵（2015）——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/pantex-intrusion-2015/02.jpg', caption: 'Pantex 工厂——核武部件组装设施背景', credit: 'NNSA / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pantex_Plant.jpg/1280px-Pantex_Plant.jpg', layout: 'inset' },
+      { src: '/images/events/pantex-intrusion-2015/02.jpg', caption: 'Pantex 工厂——核武部件组装设施背景', credit: 'NNSA / Wikimedia Commons', sourceUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pantex_Plant.jpg/1280px-Pantex_Plant.jpg', layout: 'pair' },
+      { src: '/images/events/pantex-intrusion-2015/03.jpg', caption: 'Pantex核设施不明物入侵（2015）——档案影像 03', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
 
     sensors: ['雷达', '地面监视摄像头', '目视', '双筒望远镜'],

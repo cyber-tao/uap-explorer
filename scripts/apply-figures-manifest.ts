@@ -18,16 +18,53 @@ interface Manifest {
   events: Record<string, ManifestFigure[]>
 }
 
-function formatFigure(f: ManifestFigure, indent: string, i: number): string {
-  const layout = f.layout ?? (i === 0 ? 'full' : i < 3 ? 'pair' : 'inset')
-  const parts = [
-    `src: '${escapeTsString(f.src)}'`,
-    `caption: '${escapeTsString(f.caption)}'`,
-  ]
-  if (f.credit) parts.push(`credit: '${escapeTsString(f.credit)}'`)
-  if (f.sourceUrl) parts.push(`sourceUrl: '${escapeTsString(f.sourceUrl)}'`)
-  parts.push(`layout: '${layout}'`)
-  return `${indent}  { ${parts.join(', ')} }`
+function formatFiguresBlock(figures: ManifestFigure[], indent: string): string {
+  const lines = figures.map((f, i) => {
+    const layout = f.layout ?? (i === 0 ? 'full' : i < 3 ? 'pair' : 'inset')
+    const parts = [
+      `src: '${escapeTsString(f.src)}'`,
+      `caption: '${escapeTsString(f.caption)}'`,
+    ]
+    if (f.credit) parts.push(`credit: '${escapeTsString(f.credit)}'`)
+    if (f.sourceUrl) parts.push(`sourceUrl: '${escapeTsString(f.sourceUrl)}'`)
+    parts.push(`layout: '${layout}'`)
+    return `${indent}  { ${parts.join(', ')} },`
+  })
+  return `${indent}figures: [\n${lines.join('\n')}\n${indent}],`
+}
+
+function formatVideosBlock(
+  videos: Array<{ url: string; caption: string }>,
+  indent: string,
+): string {
+  if (videos.length === 0) return ''
+  const lines = videos.map(
+    (v) =>
+      `${indent}  { type: 'video', url: '${escapeTsString(v.url)}', caption: '${escapeTsString(v.caption)}' },`,
+  )
+  return `${indent}media: [\n${lines.join('\n')}\n${indent}],`
+}
+
+/** Remove a top-level array property `name: [ ... ],` with nested brackets. */
+function stripArrayProp(block: string, name: string): string {
+  const startRe = new RegExp(`\\n\\s*${name}:\\s*\\[`)
+  const start = block.search(startRe)
+  if (start < 0) return block
+  const openIdx = block.indexOf('[', start)
+  let depth = 0
+  for (let i = openIdx; i < block.length; i++) {
+    const ch = block[i]
+    if (ch === '[') depth++
+    else if (ch === ']') {
+      depth--
+      if (depth === 0) {
+        let end = i + 1
+        if (block[end] === ',') end++
+        return block.slice(0, start) + block.slice(end)
+      }
+    }
+  }
+  return block
 }
 
 function main() {
@@ -53,15 +90,8 @@ function main() {
     const blockEnd = next?.index != null ? idIdx + idToken.length + next.index : text.length
     let block = text.slice(idIdx, blockEnd)
 
-    // Strip existing figures / media (keep following field indentation)
-    block = block.replace(/\n\s*figures:\s*\[[\s\S]*?\n\s*\],?/m, '\n')
-    block = block.replace(/\n\s*media:\s*\[[\s\S]*?\n\s*\],?/m, '\n')
-    // Normalize bare field keys that lost indent after prior applies
-    block = block.replace(/\nlimitations:/g, '\n    limitations:')
-    block = block.replace(/\nsensors:/g, '\n    sensors:')
-    block = block.replace(/\nphysicalCharacteristics:/g, '\n    physicalCharacteristics:')
-    block = block.replace(/\nsources:/g, '\n    sources:')
-    block = block.replace(/\nrelatedEvents:/g, '\n    relatedEvents:')
+    block = stripArrayProp(block, 'figures')
+    block = stripArrayProp(block, 'media')
 
     const imageMatch = block.match(/\n(\s*)image:\s*'[^']*',?/)
     if (!imageMatch || imageMatch.index == null) {
@@ -71,23 +101,17 @@ function main() {
     const indent = imageMatch[1]
     const insertAt = imageMatch.index + imageMatch[0].length
 
-    let insert = `\n${indent}figures: [\n${figures
-      .map((f, i) => formatFigure(f, indent, i))
-      .join(',\n')},\n${indent}]`
+    const figuresBlock = formatFiguresBlock(figures, indent)
+    const videosBlock = formatVideosBlock(ev.videos, indent)
+    const insert = `\n${figuresBlock}${videosBlock ? `\n${videosBlock}` : ''}`
 
-    if (ev.videos.length > 0) {
-      insert += `,\n${indent}media: [\n${ev.videos
-        .map(
-          (v) =>
-            `${indent}  { type: 'video', url: '${escapeTsString(v.url)}', caption: '${escapeTsString(v.caption)}' }`,
-        )
-        .join(',\n')},\n${indent}]`
-    }
-
-    // Ensure comma after inserted block before following property
-    const after = block.slice(insertAt)
-    const needsComma = !after.trimStart().startsWith(',')
-    block = block.slice(0, insertAt) + insert + (needsComma ? ',' : '') + after
+    block = block.slice(0, insertAt) + insert + block.slice(insertAt)
+    // Normalize bare keys
+    block = block.replace(/\nlimitations:/g, '\n    limitations:')
+    block = block.replace(/\nsensors:/g, '\n    sensors:')
+    block = block.replace(/\nphysicalCharacteristics:/g, '\n    physicalCharacteristics:')
+    block = block.replace(/\nsources:/g, '\n    sources:')
+    block = block.replace(/\nrelatedEvents:/g, '\n    relatedEvents:')
 
     text = text.slice(0, idIdx) + block + text.slice(blockEnd)
     console.log(`Applied ${figures.length} figures + ${ev.videos.length} videos → ${ev.id}`)
