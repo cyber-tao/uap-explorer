@@ -71,6 +71,9 @@ npm run build
 # 预览构建产物
 npm run preview
 # → http://localhost:4173
+
+# 数据完整性测试
+npm test
 ```
 
 ---
@@ -87,31 +90,39 @@ uap-explorer/
 ├── src/
 │   ├── components/
 │   │   ├── GalaxyBackground.tsx  # Three.js 星系粒子背景
-│   │   ├── Navigation.tsx        # 顶部导航 + BGM
+│   │   ├── Navigation.tsx        # 顶部导航 + BGMPlayer
 │   │   ├── Layout.tsx            # 布局壳
-│   │   └── Footer.tsx            # 内页页脚
+│   │   ├── Footer.tsx            # 统一页脚（home / default）
+│   │   ├── EventCard.tsx
+│   │   ├── ErrorBoundary.tsx
+│   │   └── characteristicIcons.tsx
 │   ├── sections/                 # 首页区块
 │   │   ├── HeroField.tsx
 │   │   ├── ObservablesCarousel.tsx
 │   │   ├── ImmersiveGallery.tsx
-│   │   ├── AgenciesGlossary.tsx
-│   │   └── Footer.tsx
+│   │   └── AgenciesGlossary.tsx
 │   ├── data/
 │   │   ├── events.ts             # 35 个事件完整数据
 │   │   ├── analysis.ts           # 分析/首页可观测特征单一来源
 │   │   ├── agencies.ts           # 机构数据
-│   │   └── featured.ts           # 首页精选事件 ID
+│   │   ├── featured.ts           # 首页精选事件 ID
+│   │   └── integrity.test.ts     # 引用完整性护栏
+│   ├── lib/
+│   │   ├── utils.ts              # assetUrl（对齐 Vite base）
+│   │   └── theme.ts              # 设计 token（对齐 --uap-*）
 │   ├── pages/
 │   │   ├── HomePage.tsx
 │   │   ├── TimelinePage.tsx
 │   │   ├── EventDetailPage.tsx
-│   │   ├── AnalysisPage.tsx      # 结构化分析卡片
+│   │   ├── AnalysisPage.tsx
 │   │   └── AgenciesPage.tsx
-│   ├── config.ts                 # 首页营销文案配置
+│   ├── config.ts                 # 首页营销文案 / Footer / 机构预览匹配
 │   ├── App.tsx
-│   └── main.tsx
+│   ├── main.tsx
+│   └── index.css
 ├── index.html
 ├── vite.config.ts
+├── vitest.config.ts
 ├── tsconfig.json
 └── package.json
 ```
@@ -195,28 +206,30 @@ npm run build
 
 ## 设计系统
 
-### 颜色
+### 颜色（`src/index.css` / `src/lib/theme.ts`）
 
 ```css
-/* 主色 */
---primary: #30B0D0;        /* 天蓝 — 交互、链接、高亮 */
---accent: #00D9A5;           /* 翠绿 — 高置信度 */
+--uap-cyan: #30B0D0;           /* 交互、链接、高亮 */
+--uap-high: #00D9A5;           /* 高置信度 */
+--uap-amber: #F5A623;          /* 中置信度 / 强调 */
+--uap-low: #FF6B35;            /* 低置信度 */
+--uap-speculative: #B8B8B8;    /* 推测性 */
 
-/* 背景 */
---bg-dark: #050A0F;          /* 深空黑 */
---bg-card: #0A1117;          /* 卡片 */
---bg-surface: #0F1923;       /* 表面 */
+--uap-base: #050A0F;           /* 深空黑背景 */
+--uap-surface: #0A1117;        /* 卡片 */
+--uap-surface-elevated: #0F1923; /* 表面 */
 
-/* 文字 */
---text-primary: #EDE8E4;       /* 暖白 */
---text-secondary: #8A99A8;   /* 灰蓝 */
+--uap-ivory: #EDE8E4;          /* 主文字 */
+--uap-muted: #8A99A8;          /* 次级文字 */
 ```
+
+Tailwind 映射：`colors.uap.*`（见 `tailwind.config.js`）。
 
 ### 字体
 
-- 标题：`font-serif-display`（衬线展示字体）
-- 数据：`font-mono-data`（等宽数据字体）
-- 正文：系统无衬线字体
+- 标题：`font-serif-display`（Noto Serif SC）
+- 数据：`font-mono-data`（JetBrains Mono）
+- 正文：`font-sans-body`（Noto Sans SC）
 
 ---
 
@@ -231,6 +244,7 @@ npm run build
 | v1.4 | 特征标签可点击、URL 参数筛选、媒体画廊 |
 | v1.5 | 事件扩充至 35 起；GitHub Pages Actions 部署 |
 | v1.6 | 清理模板残留、对齐文档与领域模型、数据完整性护栏 |
+| v1.7 | Lenis/Hash 导航修复、统一 Footer 与机构预览、清理 shadcn 残留、设计 token 落地 |
 
 ---
 
