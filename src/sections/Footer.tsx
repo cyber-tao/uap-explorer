@@ -1,6 +1,5 @@
 import type { CSSProperties, MouseEvent } from 'react'
 import { footerConfig } from '../config'
-import { assetUrl } from '../lib/utils'
 
 export default function Footer() {
   if (!footerConfig.visionText && !footerConfig.brandName && footerConfig.columns.length === 0) {
@@ -18,31 +17,6 @@ export default function Footer() {
         overflow: 'hidden',
       }}
     >
-      {footerConfig.videoPath && (
-        <div
-          style={{
-            position: 'absolute',
-            inset: 0,
-            opacity: 0.15,
-            zIndex: 0,
-          }}
-        >
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          >
-            <source src={assetUrl(footerConfig.videoPath)} type="video/mp4" />
-          </video>
-        </div>
-      )}
-
       <div
         style={{
           position: 'relative',

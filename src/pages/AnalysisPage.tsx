@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope, ChevronDown, ChevronUp, Globe, Share2, Box, HeartPulse, Radio, BrainCircuit } from 'lucide-react'
 import { observables, observablesSection, hypotheses, infoGaps, researchDirections } from '../data/analysis'
-import { confidenceColors } from '../data/events'
+import { confidenceColors, getEventById } from '../data/events'
 
 const iconMap: Record<string, React.ReactNode> = {
   'Zap': <Zap className="w-6 h-6" />,
@@ -79,7 +80,7 @@ export default function AnalysisPage() {
               <p className="text-sm leading-relaxed mb-4" style={{ color: '#8A99A8' }}>
                 {obs.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mb-3">
                 {obs.examples.map((ex) => (
                   <span
                     key={ex}
@@ -90,6 +91,27 @@ export default function AnalysisPage() {
                   </span>
                 ))}
               </div>
+              {obs.eventIds.length > 0 && (
+                <div className="flex flex-wrap items-center gap-2 pt-3" style={{ borderTop: '1px solid rgba(138, 153, 168, 0.08)' }}>
+                  <span className="text-[11px] uppercase tracking-wider" style={{ color: 'rgba(138, 153, 168, 0.6)' }}>
+                    相关事件
+                  </span>
+                  {obs.eventIds.map((id) => {
+                    const ev = getEventById(id)
+                    if (!ev) return null
+                    return (
+                      <Link
+                        key={id}
+                        to={`/event/${id}`}
+                        className="px-2 py-1 rounded text-xs transition-colors hover:opacity-100"
+                        style={{ background: 'rgba(48, 176, 208, 0.1)', color: '#30B0D0', opacity: 0.9 }}
+                      >
+                        {ev.name}
+                      </Link>
+                    )
+                  })}
+                </div>
+              )}
             </div>
           ))}
         </div>

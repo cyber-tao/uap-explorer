@@ -32,7 +32,7 @@ export default function ImmersiveGallery() {
             高置信度案例
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed" style={{ color: '#8A99A8' }}>
-            从 {events.length} 起全球事件中精选的 6 个标杆案例，每个均有多传感器验证、官方记录或大规模目击证据。
+            从 {events.length} 起全球事件中精选的 {featured.length} 个标杆案例，每个均有多传感器验证、官方记录或大规模目击证据。
           </p>
         </div>
 

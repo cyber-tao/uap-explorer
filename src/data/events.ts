@@ -1233,18 +1233,6 @@ export function getEventById(id: string): UAPEvent | undefined {
   return events.find((e) => e.id === id)
 }
 
-export function getEventsByConfidence(level: ConfidenceLevel): UAPEvent[] {
-  return events.filter((e) => e.confidence === level)
-}
-
-export function getEventsByRegion(region: string): UAPEvent[] {
-  return events.filter((e) => e.region === region)
-}
-
-export function getEventsByCharacteristic(char: PhysicalCharacteristic): UAPEvent[] {
-  return events.filter((e) => e.physicalCharacteristics.includes(char))
-}
-
 export function searchEvents(query: string): UAPEvent[] {
   const q = query.toLowerCase()
   return events.filter(

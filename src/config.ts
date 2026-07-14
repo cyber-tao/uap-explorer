@@ -37,7 +37,6 @@ export interface FooterConfig {
   brandName: string
   columns: FooterColumn[]
   copyright: string
-  videoPath: string
 }
 
 export const heroConfig: HeroConfig = {
@@ -114,5 +113,4 @@ export const footerConfig: FooterConfig = {
     },
   ],
   copyright: "© 2026 UAP Explorer",
-  videoPath: "",
 }

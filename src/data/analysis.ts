@@ -289,12 +289,3 @@ export const researchDirections: ResearchDirection[] = [
   },
 ]
 
-export const globalDistribution = [
-  { region: '北美洲', regionEn: 'North America', high: 5, medium: 3, low: 0, speculative: 0 },
-  { region: '南美洲', regionEn: 'South America', high: 1, medium: 2, low: 0, speculative: 0 },
-  { region: '欧洲', regionEn: 'Europe', high: 2, medium: 3, low: 0, speculative: 0 },
-  { region: '亚洲', regionEn: 'Asia', high: 3, medium: 3, low: 0, speculative: 0 },
-  { region: '大洋洲', regionEn: 'Oceania', high: 0, medium: 1, low: 0, speculative: 0 },
-  { region: '非洲', regionEn: 'Africa', high: 0, medium: 1, low: 0, speculative: 0 },
-  { region: '太空/月球', regionEn: 'Space/Moon', high: 0, medium: 6, low: 0, speculative: 0 },
-]
