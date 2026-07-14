@@ -1,0 +1,554 @@
+{
+  "generatedAt": "2026-07-14T10:43:40.441Z",
+  "min": 3,
+  "max": 6,
+  "events": {
+    "nimitz-tic-tac": [
+      {
+        "src": "/images/events/nimitz-tic-tac/01.jpg",
+        "caption": "Nimitz Tic Tac事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\nimitz-tic-tac\\01.jpg"
+      }
+    ],
+    "gimbal-gofast": [
+      {
+        "src": "/images/events/gimbal-gofast/01.jpg",
+        "caption": "东海岸Gimbal/GoFast事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gimbal-gofast\\01.jpg"
+      }
+    ],
+    "colares": [
+      {
+        "src": "/images/events/colares/01.jpg",
+        "caption": "Colares事件（Operação Prato）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\colares\\01.jpg"
+      },
+      {
+        "src": "/images/events/colares/02.jpg",
+        "caption": "Colares 1977 UFO事件相关分析图与历史记录",
+        "credit": "images.squarespace-cdn.com",
+        "sourceUrl": "https://images.squarespace-cdn.com/content/v1/654d055f3f0ea73d1b9a2810/2726eda8-bcee-431f-9807-bc02c1fc4c7d/v2-fnpdm-6lv2g.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\colares\\02.jpg"
+      },
+      {
+        "src": "/images/events/colares/03.jpg",
+        "caption": "科拉雷斯夜空中的不明光球目击示意图",
+        "credit": "images.squarespace-cdn.com",
+        "sourceUrl": "https://images.squarespace-cdn.com/content/v1/67d20fce28210702b779a752/bdcc99c5-682e-4316-9e36-35abed43ec71/1.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\colares\\03.jpg"
+      }
+    ],
+    "jal-1628": [
+      {
+        "src": "/images/events/jal-1628/01.jpg",
+        "caption": "JAL 1628号班机UFO事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\jal-1628\\01.jpg"
+      }
+    ],
+    "malmstrom-icbm": [
+      {
+        "src": "/images/events/malmstrom-icbm/01.jpg",
+        "caption": "Malmstrom空军基地ICBM失效——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\malmstrom-icbm\\01.jpg"
+      }
+    ],
+    "belgium-ufo-wave": [
+      {
+        "src": "/images/events/belgium-ufo-wave/01.jpg",
+        "caption": "比利时UFO波——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\belgium-ufo-wave\\01.jpg"
+      },
+      {
+        "src": "/images/events/belgium-ufo-wave/02.jpg",
+        "caption": "Belgian UFO Wave 1989-1990 目击者绘制的三角形飞行器合成图",
+        "credit": "i0.wp.com",
+        "sourceUrl": "https://i0.wp.com/unidentifiedphenomena.com/wp-content/uploads/2023/02/belgian-ufo-wave-1-jpg.webp?resize=657%2C581&ssl=1",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\belgium-ufo-wave\\02.jpg"
+      }
+    ],
+    "xiaoshan-airport": [
+      {
+        "src": "/images/events/xiaoshan-airport/01.jpg",
+        "caption": "杭州萧山机场UFO事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\xiaoshan-airport\\01.jpg"
+      }
+    ],
+    "guizhou-forest": [
+      {
+        "src": "/images/events/guizhou-forest/01.jpg",
+        "caption": "贵州都溪\"空中怪车\"事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\guizhou-forest\\01.jpg"
+      }
+    ],
+    "shanghai-hongqiao": [
+      {
+        "src": "/images/events/shanghai-hongqiao/01.jpg",
+        "caption": "上海虹桥机场UFO追踪——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\shanghai-hongqiao\\01.jpg"
+      }
+    ],
+    "kofu-incident": [
+      {
+        "src": "/images/events/kofu-incident/01.jpg",
+        "caption": "甲府UFO事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\kofu-incident\\01.jpg"
+      }
+    ],
+    "imphal-airport": [
+      {
+        "src": "/images/events/imphal-airport/01.jpg",
+        "caption": "英帕尔机场UFO事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\imphal-airport\\01.jpg"
+      }
+    ],
+    "submarine-transmedium": [
+      {
+        "src": "/images/events/submarine-transmedium/01.jpg",
+        "caption": "核潜艇跨介质球形物体——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\submarine-transmedium\\01.jpg"
+      },
+      {
+        "src": "/images/events/submarine-transmedium/02.png",
+        "caption": "USS Omaha事件——2019年7月15日球形物体红外图像",
+        "credit": "ufoweekly.com",
+        "sourceUrl": "https://ufoweekly.com/wp-content/uploads/2023/06/111-USS-Omaha.png",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\submarine-transmedium\\02.png"
+      },
+      {
+        "src": "/images/events/submarine-transmedium/03.jpg",
+        "caption": "太平洋舰队2019年多起UAP事件官方档案插图",
+        "credit": "nowdeclassified.com",
+        "sourceUrl": "https://www.nowdeclassified.com/api/incident-image/pacific-fleet-2019",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\submarine-transmedium\\03.jpg"
+      }
+    ],
+    "salyut6": [
+      {
+        "src": "/images/events/salyut6/01.jpg",
+        "caption": "礼炮6号宇航员目击——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\salyut6\\01.jpg"
+      }
+    ],
+    "salyut7-angels": [
+      {
+        "src": "/images/events/salyut7-angels/01.jpg",
+        "caption": "礼炮7号\"太空天使\"事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\salyut7-angels\\01.jpg"
+      }
+    ],
+    "apollo17": [
+      {
+        "src": "/images/events/apollo17/01.jpg",
+        "caption": "阿波罗17号月球照片三个光点——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\apollo17\\01.jpg"
+      }
+    ],
+    "gemini4-mcdivitt": [
+      {
+        "src": "/images/events/gemini4-mcdivitt/01.jpg",
+        "caption": "双子座4号McDivitt目击——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gemini4-mcdivitt\\01.jpg"
+      },
+      {
+        "src": "/images/events/gemini4-mcdivitt/02.png",
+        "caption": "McDivitt拍摄的原始不明物体照片，来自ASU月球与行星实验室档案",
+        "credit": "tothemoon.ser.asu.edu",
+        "sourceUrl": "http://tothemoon.ser.asu.edu/data_g/G04/Unidentified/full/GT4-37149-039_G04-U_f.png",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gemini4-mcdivitt\\02.png"
+      }
+    ],
+    "rendelsham-forest": [
+      {
+        "src": "/images/events/rendelsham-forest/01.jpg",
+        "caption": "Rendelsham Forest事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\rendelsham-forest\\01.jpg"
+      },
+      {
+        "src": "/images/events/rendelsham-forest/02.jpg",
+        "caption": "1981年2月林务员Vince Thurkettle绘制的所谓UFO着陆痕迹草图，显示三个压痕呈三角形排列",
+        "credit": "ianridpath.com",
+        "sourceUrl": "http://www.ianridpath.com/ufo/images/s/landingmarks-570.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\rendelsham-forest\\02.jpg"
+      },
+      {
+        "src": "/images/events/rendelsham-forest/03.png",
+        "caption": "Rendlesham Forest事件示意图，展示RAF基地与森林位置关系",
+        "credit": "unidentifiedphenomena.com",
+        "sourceUrl": "https://unidentifiedphenomena.com/wp-content/uploads/2023/02/the-rendlesham-forest-incident-1980.png",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\rendelsham-forest\\03.png"
+      }
+    ],
+    "roswell": [
+      {
+        "src": "/images/events/roswell/01.jpg",
+        "caption": "罗斯威尔事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\roswell\\01.jpg"
+      },
+      {
+        "src": "/images/events/roswell/02.jpg",
+        "caption": "Jesse Marcel少校在1947年7月9日的新闻发布会上展示被官方解释为气象气球的残骸材料",
+        "credit": "ufoevidence.org",
+        "sourceUrl": "http://ufoevidence.org/cases/pictures/JesseMarcelSr1.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\roswell\\02.jpg"
+      },
+      {
+        "src": "/images/events/roswell/03.jpg",
+        "caption": "1947年7月8日《Roswell Daily Record》报纸头版：\"RAAF捕获了罗斯威尔地区牧场上的飞碟\"",
+        "credit": "ufoevidence.org",
+        "sourceUrl": "http://ufoevidence.org/cases/pictures/RoswellRecord3.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\roswell\\03.jpg"
+      },
+      {
+        "src": "/images/events/roswell/04.jpg",
+        "caption": "Glenn Dennis，当地殡仪馆工作人员，声称目睹了1947年罗斯威尔基地医院内的非人类生物解剖",
+        "credit": "ufoevidence.org",
+        "sourceUrl": "http://ufoevidence.org/cases/pictures/GlennDennis.jpg",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\roswell\\04.jpg"
+      },
+      {
+        "src": "/images/events/roswell/05.jpg",
+        "caption": "据称由罗斯威尔基地医院护士在餐巾纸上手绘的外星人形象素描（由Glenn Dennis保存）",
+        "credit": "ufoevidence.org",
+        "sourceUrl": "http://ufoevidence.org/cases/pictures/NurseSketch1.jpg",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\roswell\\05.jpg"
+      }
+    ],
+    "washington-invasion": [
+      {
+        "src": "/images/events/washington-invasion/01.jpg",
+        "caption": "华盛顿入侵——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\washington-invasion\\01.jpg"
+      }
+    ],
+    "sts75-tether": [
+      {
+        "src": "/images/events/sts75-tether/01.jpg",
+        "caption": "STS-75系绳事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\sts75-tether\\01.jpg"
+      }
+    ],
+    "chile-san-clemente": [
+      {
+        "src": "/images/events/chile-san-clemente/01.jpg",
+        "caption": "智利San Clemente空军基地——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\chile-san-clemente\\01.jpg"
+      }
+    ],
+    "oumuamua": [
+      {
+        "src": "/images/events/oumuamua/01.jpg",
+        "caption": "Oumuamua——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\oumuamua\\01.jpg"
+      },
+      {
+        "src": "/images/events/oumuamua/02.jpg",
+        "caption": "ʻOumuamua艺术家印象与实际图像合成：插图显示其穿越太阳系，内嵌图为Gemini South望远镜在2017年10月27日拍摄的彩色合成影像。Credit: ESA/Hubble, NASA, ESO/M. Kornmesser, Gemini Observatory/AURA/NSF",
+        "credit": "mediasvc.eurekalert.org",
+        "sourceUrl": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/68039e3c-bf0b-47f2-b29c-e0cc343f393a/Rendition/low-res/Content/Public",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\oumuamua\\02.jpg"
+      }
+    ],
+    "mq-9-yemen-hellfire-2024": [
+      {
+        "src": "/images/events/mq-9-yemen-hellfire-2024/01.jpg",
+        "caption": "MQ-9也门地狱火导弹UAP事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\mq-9-yemen-hellfire-2024\\01.jpg"
+      },
+      {
+        "src": "/images/events/mq-9-yemen-hellfire-2024/02.jpg",
+        "caption": "MQ-9 Reaper 无人机 HUD 画面：AGM-114 Hellfire 导弹接近也门外海不明球形物体，来源：USA Today / 国会听证会公布",
+        "credit": "gannett-cdn.com",
+        "sourceUrl": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\mq-9-yemen-hellfire-2024\\02.jpg"
+      }
+    ],
+    "dhs-pilot-football-object-2024": [
+      {
+        "src": "/images/events/dhs-pilot-football-object-2024/01.jpg",
+        "caption": "DHS飞行员深色足球形/圆柱形UAP近遇——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\dhs-pilot-football-object-2024\\01.jpg"
+      },
+      {
+        "src": "/images/events/dhs-pilot-football-object-2024/02.jpg",
+        "caption": "Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage",
+        "credit": "theaustraliatoday.com.au",
+        "sourceUrl": "https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\dhs-pilot-football-object-2024\\02.jpg"
+      },
+      {
+        "src": "/images/events/dhs-pilot-football-object-2024/03.jpg",
+        "caption": "CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage",
+        "credit": "assets3.cbsnewsstatic.com",
+        "sourceUrl": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\dhs-pilot-football-object-2024\\03.jpg"
+      }
+    ],
+    "ny-commercial-cylinder-near-miss-2024": [
+      {
+        "src": "/images/events/ny-commercial-cylinder-near-miss-2024/01.jpg",
+        "caption": "纽约商业航班圆柱体近撞事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\ny-commercial-cylinder-near-miss-2024\\01.jpg"
+      }
+    ],
+    "gov-contractor-metallic-cylinder-2024": [
+      {
+        "src": "/images/events/gov-contractor-metallic-cylinder-2024/01.jpg",
+        "caption": "政府承包商金属圆柱体悬浮事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gov-contractor-metallic-cylinder-2024\\01.jpg"
+      },
+      {
+        "src": "/images/events/gov-contractor-metallic-cylinder-2024/02.jpg",
+        "caption": "CBS News 报道截图：2024年11月19日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。",
+        "credit": "assets1.cbsnewsstatic.com",
+        "sourceUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gov-contractor-metallic-cylinder-2024\\02.jpg"
+      }
+    ],
+    "greece-diamond-uap-2024": [
+      {
+        "src": "/images/events/greece-diamond-uap-2024/01.jpg",
+        "caption": "希腊钻石形UAP多传感器事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\greece-diamond-uap-2024\\01.jpg"
+      }
+    ],
+    "gulf-of-aden-uap-2024": [
+      {
+        "src": "/images/events/gulf-of-aden-uap-2024/01.jpg",
+        "caption": "亚丁湾UAP高速目击事件——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gulf-of-aden-uap-2024\\01.jpg"
+      },
+      {
+        "src": "/images/events/gulf-of-aden-uap-2024/02.jpg",
+        "caption": "DOW-UAP-D75 官方任务报告封面：2024年7月14日美军ISR平台在亚丁湾记录UAP事件的MISREP文档，由第124攻击中队提交至USCENTCOM/AARO",
+        "credit": "uapdisclosurefiles.com",
+        "sourceUrl": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gulf-of-aden-uap-2024\\02.jpg"
+      },
+      {
+        "src": "/images/events/gulf-of-aden-uap-2024/03.webp",
+        "caption": "USA Today报道：2024年10月30日也门沿海，MQ-9 Reaper锁定不明球体，AGM-114 Hellfire导弹即将接触目标前的红外画面（来源：U.S. military via Congress）",
+        "credit": "gannett-cdn.com",
+        "sourceUrl": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gulf-of-aden-uap-2024\\03.webp"
+      },
+      {
+        "src": "/images/events/gulf-of-aden-uap-2024/04.webp",
+        "caption": "Yahoo News/USA Today：MQ-9 Reaper在亚丁湾/也门海岸跟踪高速飞行球体，导弹击中后物体继续飞行轨迹，未受明显损伤",
+        "credit": "s.yimg.com",
+        "sourceUrl": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\gulf-of-aden-uap-2024\\04.webp"
+      }
+    ],
+    "eglin-afb-silver-orbs-2024": [
+      {
+        "src": "/images/events/eglin-afb-silver-orbs-2024/01.jpg",
+        "caption": "埃格林空军基地静默银色光球目击——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\eglin-afb-silver-orbs-2024\\01.jpg"
+      },
+      {
+        "src": "/images/events/eglin-afb-silver-orbs-2024/02.webp",
+        "caption": "AARO官方发布的EO/IR传感器图像：Eglin AFB战斗机飞行员于2023年1月26日在16,000英尺高度拍摄的UAP对象，可见灰色面板表面和中心橙红色区域。来源：AARO/DoD via BroBible报道",
+        "credit": "brobible.com",
+        "sourceUrl": "https://brobible.com/wp-content/uploads/2024/04/UFO-sensor-imagery-captured-by-the-Eglin-based-fighter-pilot.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\eglin-afb-silver-orbs-2024\\02.webp"
+      },
+      {
+        "src": "/images/events/eglin-afb-silver-orbs-2024/03.jpg",
+        "caption": "埃格林空军基地——银色球体目击相关地点",
+        "credit": "U.S. Air Force / Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Eglin_Air_Force_Base.jpg/1280px-Eglin_Air_Force_Base.jpg",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\eglin-afb-silver-orbs-2024\\03.jpg"
+      }
+    ],
+    "sts-80-columbia-1996": [
+      {
+        "src": "/images/events/sts-80-columbia-1996/01.jpg",
+        "caption": "STS-80航天飞机轨道不明物照片——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\sts-80-columbia-1996\\01.jpg"
+      },
+      {
+        "src": "/images/events/sts-80-columbia-1996/02.jpg",
+        "caption": "STS-80 任务：航天飞机哥伦比亚号运抵 39B 发射台（1996年10月16日，NASA / 公有领域）",
+        "credit": "upload.wikimedia.org",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4a/STS-80_Roll_Out_01.jpg",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\sts-80-columbia-1996\\02.jpg"
+      },
+      {
+        "src": "/images/events/sts-80-columbia-1996/03.jpg",
+        "caption": "PURSUE Release 04 官方门户 — STS-80 三张 NASA 不明物原图（NASA-UAP-D030/D031/D032）可在此查看与下载",
+        "credit": "war.gov",
+        "sourceUrl": "https://www.war.gov/UFO/release/04/",
+        "layout": "pair",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\sts-80-columbia-1996\\03.jpg"
+      }
+    ],
+    "los-alamos-green-fireballs-1949": [
+      {
+        "src": "/images/events/los-alamos-green-fireballs-1949/01.jpg",
+        "caption": "洛斯阿拉莫斯绿火球会议（1949）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\los-alamos-green-fireballs-1949\\01.jpg"
+      },
+      {
+        "src": "/images/events/los-alamos-green-fireballs-1949/02.jpg",
+        "caption": "洛斯阿拉莫斯实验室鸟瞰——绿色火球事件发生地背景",
+        "credit": "DOE / Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Los_Alamos_aerial_view.jpg/1280px-Los_Alamos_aerial_view.jpg",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\los-alamos-green-fireballs-1949\\02.jpg"
+      }
+    ],
+    "yellow-sea-six-pointed-star-2025": [
+      {
+        "src": "/images/events/yellow-sea-six-pointed-star-2025/01.jpg",
+        "caption": "黄海六角星状红外UAP（PR104）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\yellow-sea-six-pointed-star-2025\\01.jpg"
+      },
+      {
+        "src": "/images/events/yellow-sea-six-pointed-star-2025/02.jpg",
+        "caption": "黄海海域示意图——六角星状 UAP 目击相关海域",
+        "credit": "Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Yellow_Sea_map.png/800px-Yellow_Sea_map.png",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\yellow-sea-six-pointed-star-2025\\02.jpg"
+      }
+    ],
+    "east-china-sea-uap-2025": [
+      {
+        "src": "/images/events/east-china-sea-uap-2025/01.jpg",
+        "caption": "东海红外UAP跟踪（PR105）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\east-china-sea-uap-2025\\01.jpg"
+      },
+      {
+        "src": "/images/events/east-china-sea-uap-2025/02.jpg",
+        "caption": "中国东部海域区位示意——东海 UAP 目击相关地理背景",
+        "credit": "Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/China_edcp_location_map.svg/800px-China_edcp_location_map.svg.png",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\east-china-sea-uap-2025\\02.jpg"
+      }
+    ],
+    "east-us-rectangular-uap-2019": [
+      {
+        "src": "/images/events/east-us-rectangular-uap-2019/01.jpg",
+        "caption": "美东矩形高速UAP（2019）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\east-us-rectangular-uap-2019\\01.jpg"
+      },
+      {
+        "src": "/images/events/east-us-rectangular-uap-2019/02.jpg",
+        "caption": "大西洋区位示意——美东矩形 UAP 目击相关海域背景",
+        "credit": "Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Atlantic_Ocean_-_en.png/800px-Atlantic_Ocean_-_en.png",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\east-us-rectangular-uap-2019\\02.jpg"
+      }
+    ],
+    "pantex-intrusion-2015": [
+      {
+        "src": "/images/events/pantex-intrusion-2015/01.jpg",
+        "caption": "Pantex核设施不明物入侵（2015）——事件封面影像",
+        "credit": "UAP Explorer archive",
+        "layout": "full",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\pantex-intrusion-2015\\01.jpg"
+      },
+      {
+        "src": "/images/events/pantex-intrusion-2015/02.jpg",
+        "caption": "Pantex 工厂——核武部件组装设施背景",
+        "credit": "NNSA / Wikimedia Commons",
+        "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Pantex_Plant.jpg/1280px-Pantex_Plant.jpg",
+        "layout": "inset",
+        "localPath": "D:\\WorkDir\\global-uap-report\\uap-explorer-website\\public\\images\\events\\pantex-intrusion-2015\\02.jpg"
+      }
+    ]
+  }
+}

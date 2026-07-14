@@ -51,4 +51,24 @@ describe('event data integrity', () => {
     expect(hits.some((e) => e.id === 'nimitz-tic-tac')).toBe(true)
     expect(searchEvents('zzzz-no-match-zzzz')).toHaveLength(0)
   })
+
+  it('requires 3–6 local figures per event', () => {
+    for (const event of events) {
+      expect(event.figures?.length, `${event.id} figures`).toBeGreaterThanOrEqual(3)
+      expect(event.figures.length, `${event.id} figures`).toBeLessThanOrEqual(6)
+      expect(event.image.startsWith('/images/'), `${event.id} cover`).toBe(true)
+      for (const fig of event.figures) {
+        expect(fig.src.startsWith('/images/'), `${event.id} → ${fig.src}`).toBe(true)
+        expect(fig.caption.length, `${event.id} caption`).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it('keeps media as video-only when present', () => {
+    for (const event of events) {
+      for (const item of event.media ?? []) {
+        expect(item.type, `${event.id} media type`).toBe('video')
+      }
+    }
+  })
 })

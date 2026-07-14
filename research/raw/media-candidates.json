@@ -1,0 +1,937 @@
+{
+  "generatedAt": "2026-07-14T10:28:02.294Z",
+  "eventCount": 35,
+  "candidateCount": 109,
+  "directLikely": 90,
+  "events": [
+    {
+      "id": "nimitz-tic-tac",
+      "cover": "/images/event-nimitz.jpg",
+      "imageCandidates": 3,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "nimitz-tic-tac",
+          "url": "https://ufofiles.app/assets/official-media/dvids-flir-uap.jpg",
+          "caption": "FLIR1官方视频截图——Tic Tac形状UAP，由DVIDS/国防部发布",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "nimitz-tic-tac",
+          "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg",
+          "caption": "FLIR1红外视频中Tic Tac形状物体的截图",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "nimitz-tic-tac",
+          "url": "https://s.yimg.com/lo/mysterio/api/018fe59f1ae089896464364546ec80fe793fee18bde3ebd442f5fb70c51beeed/lightyear_networkapi/resizefill_w722_h686;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fkswb_articles_601%2F771a1ffc366588ca7165d1bdf062157e",
+          "caption": "FLIR UAP视频官方截图——国防部/海军航空系统司令部",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "gimbal-gofast",
+      "cover": "/images/event-gimbal.jpg",
+      "imageCandidates": 3,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "gimbal-gofast",
+          "url": "https://keithmayerson.com/works/uss-roosevelt-gimbal-ufo-still-from-the-declassified-jan-2015-video/",
+          "caption": "Gimbal视频截图——2015年罗斯福号事件红外画面（纽约时报2017年封面）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gimbal-gofast",
+          "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg",
+          "caption": "Gimbal红外视频截图——旋转的圆盘形物体",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gimbal-gofast",
+          "url": "https://spookyvalley.com/events/2015-gimbal-ufo-video/",
+          "caption": "Gimbal UFO事件档案页面",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "colares",
+      "cover": "/images/event-colares.jpg",
+      "imageCandidates": 2,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "colares",
+          "url": "https://images.squarespace-cdn.com/content/v1/654d055f3f0ea73d1b9a2810/2726eda8-bcee-431f-9807-bc02c1fc4c7d/v2-fnpdm-6lv2g.jpg",
+          "caption": "Colares 1977 UFO事件相关分析图与历史记录",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "colares",
+          "url": "https://images.squarespace-cdn.com/content/v1/67d20fce28210702b779a752/bdcc99c5-682e-4316-9e36-35abed43ec71/1.jpg",
+          "caption": "科拉雷斯夜空中的不明光球目击示意图",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "jal-1628",
+      "cover": "/images/event-jal1628.jpg",
+      "imageCandidates": 3,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "jal-1628",
+          "url": "https://www.theblackvault.com/casefiles/wp-content/uploads/2025/08/jal1628-radar.jpg",
+          "caption": "FAA发布的JAL 1628雷达模拟数据照片，显示间歇性雷达回波",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "jal-1628",
+          "url": "https://ufologie.patrickgross.org/htm/jal1628draw.jpg",
+          "caption": "寺内机长手绘的UFO目击图，显示'母舰'和两个小飞行器的排列",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "jal-1628",
+          "url": "https://en.tocana.jp/wp-content/uploads/2025/09/Flight1628_1.jpeg",
+          "caption": "基于寺内机长描述和FAA文件重建的JAL 1628遭遇UFO概念图",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "malmstrom-icbm",
+      "cover": "/images/event-malmstrom.jpg",
+      "imageCandidates": 2,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "malmstrom-icbm",
+          "url": "https://www.earthfiles.com/wp-content/uploads/2021/10/Robert-L.-Salas-USAF-Captain-Ret.-graduated-in-1964-from-the-Air-Force-Academy.jpg",
+          "caption": "Robert L. Salas, 美国空军退役上尉，1967年Oscar Flight事件亲历者，2010年国家新闻俱乐部新闻发布会宣誓人之一",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "malmstrom-icbm",
+          "url": "https://www.nicap.org/malmstrom67-2.jpg",
+          "caption": "NICAP档案中的341st SMW单位历史记录封面（经FOIA解密）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "belgium-ufo-wave",
+      "cover": "/images/event-belgium.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "belgium-ufo-wave",
+          "url": "https://www.thegalacticmind.com/content/images/size/w30/2025/09/ep538.jpg",
+          "caption": "Petit-Rechain 三角形UFO照片（1990年4月，后被拍摄者自承为伪造）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "belgium-ufo-wave",
+          "url": "https://i0.wp.com/unidentifiedphenomena.com/wp-content/uploads/2023/02/belgian-ufo-wave-1-jpg.webp?resize=657%2C581&ssl=1",
+          "caption": "Belgian UFO Wave 1989-1990 目击者绘制的三角形飞行器合成图",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "belgium-ufo-wave",
+          "url": "https://www.bibliotecapleyades.net/ciencia/ufo_briefingdocument/1990.htm",
+          "caption": "SOBEPS提供的目击者手绘三角形UFO重建图集（1989-1993）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "xiaoshan-airport",
+      "cover": "/images/event-xiaoshan.jpg",
+      "imageCandidates": 3,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "xiaoshan-airport",
+          "url": "https://www.ghosttheory.com/wp-content/uploads/2010/07/ChinaHangzhou070710Image1.jpg",
+          "caption": "2010年7月7日杭州居民拍摄的不明飞行物照片，显示发光的彗星状物体",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "xiaoshan-airport",
+          "url": "https://theufodatabase.com/media/photos/gallery/hangzhou-china-incident-1.jpg?240118",
+          "caption": "杭州UFO视频截图，显示长条状光迹",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "xiaoshan-airport",
+          "url": "https://fearoflanding.com/wp-content/uploads/2010/07/ufo+china-300x222.jpg",
+          "caption": "人民日报在线发布的据称是萧山机场UFO的照片",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "guizhou-forest",
+      "cover": "/images/event-guizhou.jpg",
+      "imageCandidates": 6,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "guizhou-forest",
+          "url": "https://sixuo.oss-cn-hangzhou.aliyuncs.com/pic/put5tm1jotc.jpg",
+          "caption": "1994年都溪林场空中怪车事件现场照片：400亩松树林被拦腰截断后的惨状",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "guizhou-forest",
+          "url": "https://sixuo.oss-cn-hangzhou.aliyuncs.com/pic/tyb53beplp4.jpg",
+          "caption": "空中怪车事件现场：被整齐切断的松树和钢管切口",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "guizhou-forest",
+          "url": "https://www.tansuo.in/wp-content/uploads/2016/02/11.jpg",
+          "caption": "都溪林场被毁林区俯瞰照片，显示带状破坏区域",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "guizhou-forest",
+          "url": "https://www.tansuo.in/wp-content/uploads/2016/01/1-15120410034OL-300x225.jpg",
+          "caption": "都溪林场空中怪车事件现场调查照片",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "guizhou-forest",
+          "url": "http://www.guizhoulanglaile.com/upfiles/2021517/20210517082042194219.jpg",
+          "caption": "都溪林场空中怪车遗址指路牌（贵州旅游网站）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "guizhou-forest",
+          "url": "http://www.guizhoulanglaile.com//upfiles/file/201304/20130416163338732.jpg",
+          "caption": "都溪林场现貌全貌照片，可见当年破坏区域仅呈带状分布",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "shanghai-hongqiao",
+      "cover": "/images/event-shanghai.jpg",
+      "imageCandidates": 2,
+      "videoCount": 1,
+      "candidates": [
+        {
+          "eventId": "shanghai-hongqiao",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0415%2F79f162b3j00rt44ws002dd200ey006dg00ey006d.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "1991年上海虹桥机场UFO事件新闻报道配图（网易163图片源）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "shanghai-hongqiao",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0415%2F2904e61dj00rt44wu002rd200d0006dg00d0006d.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "上海虹桥机场UFO事件飞行员目击示意图",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "kofu-incident",
+      "cover": "/images/event-kofu.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "kofu-incident",
+          "url": "https://www.ufoevidence.org/cases/case443.jpg",
+          "caption": "1975年甲府事件着陆现场照片，显示葡萄园中的痕迹",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "kofu-incident",
+          "url": "https://i.gzn.jp/img/2025/02/09/kofu-incident-alien-wf2025w/00_m.jpg",
+          "caption": "基于目击者描述创作的甲府外星人模型展示",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "kofu-incident",
+          "url": "https://otakupapa.net/en/wp-content/uploads/2022/02/kofu-map.jpg",
+          "caption": "1975年甲府市日之出住宅区附近地图，显示男孩目击路径",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "imphal-airport",
+      "cover": "/images/event-imphal.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "imphal-airport",
+          "url": "https://cdn1.img.sputniknews.in/img/07e7/0b/14/5492199_0:320:3072:2048_1920x0_80_0_0_708e004b6c24d085e310b7ce91f3c2c7.jpg.webp",
+          "caption": "Sputnik India新闻报道配图：因帕尔机场UFO事件及IAF Rafale响应",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "imphal-airport",
+          "url": "https://e-pao.net/GP.asp?src=1..201123.nov23",
+          "caption": "E-Pao新闻：机场航班延误现场报道",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "imphal-airport",
+          "url": "https://in.mashable.com/science/64182/mysterious-ufo-sighting-sparks-panic-near-imphal-airport-iaf-launches-rapid-response-with-rafale-jet",
+          "caption": "Mashable India报道：印度空军Rafale战机紧急出动调查UFO",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "submarine-transmedium",
+      "cover": "/images/event-submarine.jpg",
+      "imageCandidates": 3,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "submarine-transmedium",
+          "url": "https://ufoweekly.com/wp-content/uploads/2023/06/111-USS-Omaha.png",
+          "caption": "USS Omaha事件——2019年7月15日球形物体红外图像",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "submarine-transmedium",
+          "url": "https://www.nowdeclassified.com/api/incident-image/pacific-fleet-2019",
+          "caption": "太平洋舰队2019年多起UAP事件官方档案插图",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "submarine-transmedium",
+          "url": "https://www.popularmechanics.com/military/a65709166/navy-officer-says-underwater-ufos-are-legitimate-threats-the-evidence-is-hard-to-ignore/",
+          "caption": "Popular Mechanics——2019年奥马哈号视频截图，球形物体消失于海平面",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "salyut6",
+      "cover": "/images/event-salyut6.jpg",
+      "imageCandidates": 3,
+      "videoCount": 0,
+      "candidates": [
+        {
+          "eventId": "salyut6",
+          "url": "https://www.howandwhys.com/wp-content/uploads/2021/07/Screen-shot-2011-04-23-at-11.43.47-AM.png",
+          "caption": "科瓦廖诺克手绘的1981年5月5日太空目击物体素描图（Michael Hesemann提供）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "salyut6",
+          "url": "https://www.howandwhys.com/wp-content/uploads/2021/07/kovalyonok_vladimir_3-200x300.jpg",
+          "caption": "退役苏联宇航员弗拉基米尔·科瓦廖诺克照片",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "salyut6",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Salyut_6.jpg/640px-Salyut_6.jpg",
+          "caption": "礼炮6号空间站艺术概念图（NASA/公有领域）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "salyut7-angels",
+      "cover": "/images/event-salyut7.jpg",
+      "imageCandidates": 3,
+      "videoCount": 0,
+      "candidates": [
+        {
+          "eventId": "salyut7-angels",
+          "url": "https://conexaoufo.com/wp-content/uploads/conexao_UFO_salyut-3.jpg",
+          "caption": "1984年7月礼炮7号空间站上的六名苏联宇航员（第一次和第二次目击事件的全体乘员）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "salyut7-angels",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Salyut_7_%28DOS-6%29.jpg/640px-Salyut_7_%28DOS-6%29.jpg",
+          "caption": "礼炮7号空间站（苏联/俄罗斯公有领域）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "salyut7-angels",
+          "url": "https://static.thisdayinaviation.com/wp-content/uploads/tdia//2019/07/cosmonaut-svetlana-savitskaya-female-spacewalk-eva.jpeg",
+          "caption": "斯维特兰娜·萨维茨卡娅在1984年7月25日进行人类首次女性太空行走（Sovfoto/UIG via Getty Images）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "apollo17",
+      "cover": "/images/event-apollo17.jpg",
+      "imageCandidates": 4,
+      "videoCount": 0,
+      "candidates": [
+        {
+          "eventId": "apollo17",
+          "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",
+          "caption": "NASA阿波罗17号任务1972年12月拍摄的照片，显示月球天空中三个点呈三角阵型（PURSUE 2026年解密）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "apollo17",
+          "url": "https://pub-d7148e2b49114a8ab87e9305c11533cf.r2.dev/image/nasa-uap-d2-apollo-17-transcript-1972.jpg",
+          "caption": "阿波罗17号任务解密文件记录封面（UFO Declassified Archive）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "apollo17",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Apollo_17_Cernan_on_moon.jpg/640px-Apollo_17_Cernan_on_moon.jpg",
+          "caption": "尤金·塞尔南在月球表面插旗，1972年12月（NASA/公有领域）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "apollo17",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Earth_as_seen_from_Apollo_17.jpg/640px-The_Earth_as_seen_from_Apollo_17.jpg",
+          "caption": "阿波罗17号拍摄的著名'蓝色弹珠'地球照片（NASA）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "gemini4-mcdivitt",
+      "cover": "/images/event-gemini4.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "gemini4-mcdivitt",
+          "url": "http://tothemoon.ser.asu.edu/data_g/G04/Unidentified/full/GT4-37149-039_G04-U_f.png",
+          "caption": "McDivitt拍摄的原始不明物体照片，来自ASU月球与行星实验室档案",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gemini4-mcdivitt",
+          "url": "https://images.nasa.gov/details-S65-30428",
+          "caption": "NASA官方图片：Ed White在Gemini 4任务中首次美国太空行走",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gemini4-mcdivitt",
+          "url": "https://www.gettyimages.com/photos/gemini-iv",
+          "caption": "Getty Images Gemini 4任务历史照片集",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "rendelsham-forest",
+      "cover": "/images/event-rendelsham.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "rendelsham-forest",
+          "url": "http://www.ianridpath.com/ufo/images/s/landingmarks-570.jpg",
+          "caption": "1981年2月林务员Vince Thurkettle绘制的所谓UFO着陆痕迹草图，显示三个压痕呈三角形排列",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "rendelsham-forest",
+          "url": "https://unidentifiedphenomena.com/wp-content/uploads/2023/02/the-rendlesham-forest-incident-1980.png",
+          "caption": "Rendlesham Forest事件示意图，展示RAF基地与森林位置关系",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "rendelsham-forest",
+          "url": "https://www.greatbritishlife.co.uk/magazines/suffolk/25172487.story-behind-1980-ufo-sightings-rendlesham-forest/",
+          "caption": "Getty Images照片：军事人员目击Rendlesham Forest事件的档案照片",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "roswell",
+      "cover": "/images/event-roswell.jpg",
+      "imageCandidates": 6,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "roswell",
+          "url": "http://ufoevidence.org/cases/pictures/JesseMarcelSr1.jpg",
+          "caption": "Jesse Marcel少校在1947年7月9日的新闻发布会上展示被官方解释为气象气球的残骸材料",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "roswell",
+          "url": "http://ufoevidence.org/cases/pictures/RoswellRecord3.jpg",
+          "caption": "1947年7月8日《Roswell Daily Record》报纸头版：\"RAAF捕获了罗斯威尔地区牧场上的飞碟\"",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "roswell",
+          "url": "http://ufoevidence.org/cases/pictures/GlennDennis.jpg",
+          "caption": "Glenn Dennis，当地殡仪馆工作人员，声称目睹了1947年罗斯威尔基地医院内的非人类生物解剖",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "roswell",
+          "url": "http://ufoevidence.org/cases/pictures/NurseSketch1.jpg",
+          "caption": "据称由罗斯威尔基地医院护士在餐巾纸上手绘的外星人形象素描（由Glenn Dennis保存）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "roswell",
+          "url": "https://c1.vgtstatic.com/thumb/9/5/9542-v1-half/1947-roswell-crash-site-ufo.jpg",
+          "caption": "1947年罗斯威尔坠毁/残骸地点的卫星定位图（Corona, NM附近）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "roswell",
+          "url": "https://www.conspiracies.net/wp-content/uploads/2017/01/Roswell-Daily-Record-Newspaper-on-UFO-Crash-Site-656x348.png",
+          "caption": "Roswell Daily Record关于UFO坠毁事件的详细新闻报道版面",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "washington-invasion",
+      "cover": "/images/event-washington.jpg",
+      "imageCandidates": 3,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "washington-invasion",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fa24ab15aj00rshqpl0019c000go00egm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "1952年7月29日五角大楼UFO新闻发布会上，Project Blue Book负责人Edward Ruppelt（站立者）与空军情报总监Samford少将",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "washington-invasion",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fd37208e2j00rshqpl000wc000dw00dwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "1952年新闻报道《拦截机在华盛顿特区上空追逐飞碟》的报纸版面",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "washington-invasion",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2F3bf01c8bj00rshqpl000tc000hs00bwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "1952年华盛顿雷达事件期间的新闻报道与照片资料",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "sts75-tether",
+      "cover": "/images/event-sts75.jpg",
+      "imageCandidates": 1,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "sts75-tether",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/03/STS-75-TSS-1R.jpg",
+          "caption": "NASA: STS-75任务中TSS-1R系留卫星系统从哥伦比亚号部署的示意图",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "chile-san-clemente",
+      "cover": "/images/event-chile.jpg",
+      "imageCandidates": 2,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "chile-san-clemente",
+          "url": "http://www.spyghana.com/wp-content/uploads/wpid-The-object-flies-so-fast-that-assuming-it-is-not-a-camera-defect-it-is-travelling-an-estimated-6000mph.jpg",
+          "caption": "El Bosque 2010航展UFO高速掠过战机编队的视频截图",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "chile-san-clemente",
+          "url": "https://openminds.tv/wp-content/uploads/2012/02/CEFAA-El-Bosque-UFO-Frame.jpg",
+          "caption": "CEFAA发布的El Bosque UFO最佳帧图像（圆顶金属物体）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "oumuamua",
+      "cover": "/images/event-oumuamua.jpg",
+      "imageCandidates": 6,
+      "videoCount": 5,
+      "candidates": [
+        {
+          "eventId": "oumuamua",
+          "url": "https://esahubble.org/images/heic1813a/",
+          "caption": "ESA/Hubble艺术家印象：ʻOumuamua在太阳加热下从表面释放气体物质，展示其非引力加速现象。Credit: ESA/Hubble, NASA, ESO, M. Kornmesser",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "oumuamua",
+          "url": "https://www.eso.org/public/images/eso1737a/",
+          "caption": "ESO艺术家印象：ʻOumuamua呈现为暗红色、高度拉长的金属或岩石天体，长约400米，与太阳系任何已知天体截然不同。Credit: ESO/M. Kornmesser",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "oumuamua",
+          "url": "https://science.nasa.gov/resource/telescope-image-of-oumuamua/",
+          "caption": "实际望远镜深空合成图像：ʻOumuamua位于中心（蓝色圆圈标记），周围是因望远镜追踪移动而拖曳的暗淡星轨。Credit: ESO/K. Meech et al.",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "oumuamua",
+          "url": "https://apod.nasa.gov/apod/image/1711/OumuamuaDrawing_ESO_960.jpg",
+          "caption": "NASA APOD 每日天文图：ʻOumuamua穿越太阳系的示意图，展示了其独特的双曲线轨道。Credit: NASA, JPL, Caltech",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "oumuamua",
+          "url": "https://cdn.sci.news/images/2018/06/image_6145_1-Oumuamua.jpg",
+          "caption": "ʻOumuamua亮度变化示意图：由于极端长条形形态，当它长轴对准地球时最亮，端点对准地球时最暗。Credit: NASA/JPL-Caltech",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "oumuamua",
+          "url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/68039e3c-bf0b-47f2-b29c-e0cc343f393a/Rendition/low-res/Content/Public",
+          "caption": "ʻOumuamua艺术家印象与实际图像合成：插图显示其穿越太阳系，内嵌图为Gemini South望远镜在2017年10月27日拍摄的彩色合成影像。Credit: ESA/Hubble, NASA, ESO/M. Kornmesser, Gemini Observatory/AURA/NSF",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "mq-9-yemen-hellfire-2024",
+      "cover": "/images/event-mq-9-yemen-hellfire-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+          "caption": "MQ-9 Reaper 无人机 HUD 画面：AGM-114 Hellfire 导弹接近也门外海不明球形物体，来源：USA Today / 国会听证会公布",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+          "caption": "CBS News 报道画面：Hellfire 导弹击中 UAP 后偏转，球形物体继续飞行，来源：Yahoo News / USA Today Network",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0910%2Fcd425c90j00t2d4mo006pd200pc00cwg00it009k.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "MQ-9 红外画面截图：LRD LASE DES 标记证实 buddy lasing 协同照射，来源：163.com / ABC News 转播",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+          "caption": "MQ-9 Reaper 无人机 HUD 画面：AGM-114 Hellfire 导弹接近也门外海不明球形物体，来源：USA Today / 国会听证会公布",
+          "source": "research"
+        },
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+          "caption": "CBS News 报道画面：Hellfire 导弹击中 UAP 后偏转，球形物体继续飞行，来源：Yahoo News / USA Today Network",
+          "source": "research"
+        },
+        {
+          "eventId": "mq-9-yemen-hellfire-2024",
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0910%2Fcd425c90j00t2d4mo006pd200pc00cwg00it009k.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "caption": "MQ-9 红外画面截图：LRD LASE DES 标记证实 buddy lasing 协同照射，来源：163.com / ABC News 转播",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "dhs-pilot-football-object-2024",
+      "cover": "/images/event-dhs-pilot-football-object-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://www.war.gov/portals/1/Interactive/2026/UFO/Slideshow/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024.jpg",
+          "caption": "Pentagon PURSUE 2026 release: still from DOW-UAP-PR46, a football-shaped UAP with three radial projections recorded by INDOPACOM over the East China Sea in 2024",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg",
+          "caption": "Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg",
+          "caption": "CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://www.war.gov/portals/1/Interactive/2026/UFO/Slideshow/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024.jpg",
+          "caption": "Pentagon PURSUE 2026 release: still from DOW-UAP-PR46, a football-shaped UAP with three radial projections recorded by INDOPACOM over the East China Sea in 2024",
+          "source": "research"
+        },
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg",
+          "caption": "Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage",
+          "source": "research"
+        },
+        {
+          "eventId": "dhs-pilot-football-object-2024",
+          "url": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg",
+          "caption": "CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "ny-commercial-cylinder-near-miss-2024",
+      "cover": "/images/event-ny-commercial-cylinder-near-miss-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://media.defense.gov/2024/Nov/14/2003577632/-1/-1/1/ANNUAL-REPORT-ON-UAP-2024.PDF",
+          "caption": "AARO FY2024 Consolidated Annual Report on UAP (封面页) — DoD官方发布，2024年11月14日。该报告第18页记录了纽约海岸外商业航班与圆柱形物体近距离错失事件。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/All-domain_Anomaly_Resolution_Office_logo.jpg/600px-All-domain_Anomaly_Resolution_Office_logo.jpg",
+          "caption": "All-domain Anomaly Resolution Office (AARO) 官方标志 — 五角大楼UAP调查办公室，该事件的官方调查机构。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://www.war.gov/News/Releases/Release/Article/3964824/department-of-defense-releases-the-annual-report-on-unidentified-anomalous-phen/",
+          "caption": "DoD新闻发布页面 — 国防部2024年11月14日发布AARO年度报告的官方新闻页面，包含事件摘要和报告链接。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://media.defense.gov/2024/Nov/14/2003577632/-1/-1/1/ANNUAL-REPORT-ON-UAP-2024.PDF",
+          "caption": "AARO FY2024 Consolidated Annual Report on UAP (封面页) — DoD官方发布，2024年11月14日。该报告第18页记录了纽约海岸外商业航班与圆柱形物体近距离错失事件。",
+          "source": "research"
+        },
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/All-domain_Anomaly_Resolution_Office_logo.jpg/600px-All-domain_Anomaly_Resolution_Office_logo.jpg",
+          "caption": "All-domain Anomaly Resolution Office (AARO) 官方标志 — 五角大楼UAP调查办公室，该事件的官方调查机构。",
+          "source": "research"
+        },
+        {
+          "eventId": "ny-commercial-cylinder-near-miss-2024",
+          "url": "https://www.war.gov/News/Releases/Release/Article/3964824/department-of-defense-releases-the-annual-report-on-unidentified-anomalous-phen/",
+          "caption": "DoD新闻发布页面 — 国防部2024年11月14日发布AARO年度报告的官方新闻页面，包含事件摘要和报告链接。",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "gov-contractor-metallic-cylinder-2024",
+      "cover": "/images/event-gov-contractor-metallic-cylinder-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg",
+          "caption": "CBS News 报道截图：2024年11月19日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://media.cnn.com/api/v1/images/stellar/prod/mg-0035-3-e-20241119133505974.jpg",
+          "caption": "CNN 报道图片：AARO 国会听证会现场，Jon Kosloski 作证披露 21 份尚无法解释的 UAP 目击报告，包括球形、圆柱形和三角形物体。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://imagecloud.thepaper.cn/thepaper/image/329/926/267.jpg",
+          "caption": "澎湃新闻转载报道：美国防部发布UFO年度报告，AARO 负责人承认有21份目击报告尚无法解释，物体形态包括圆柱形。",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg",
+          "caption": "CBS News 报道截图：2024 年 11 月 19 日 AARO 主任 Jon Kosloski 在国会参议院听证会上披露，正在调查包括政府承包商目击金属圆柱体在内的多起未解决 UAP 案件。",
+          "source": "research"
+        },
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://media.cnn.com/api/v1/images/stellar/prod/mg-0035-3-e-20241119133505974.jpg",
+          "caption": "CNN 报道图片：AARO 国会听证会现场，Jon Kosloski 作证披露 21 份尚无法解释的 UAP 目击报告，包括球形、圆柱形和三角形物体。",
+          "source": "research"
+        },
+        {
+          "eventId": "gov-contractor-metallic-cylinder-2024",
+          "url": "https://imagecloud.thepaper.cn/thepaper/image/329/926/267.jpg",
+          "caption": "澎湃新闻转载报道：美国防部发布UFO年度报告，AARO 负责人承认有21份目击报告尚无法解释，物体形态包括圆柱形。",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "greece-diamond-uap-2024",
+      "cover": "/images/event-greece-diamond-uap-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 2,
+      "candidates": [
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg",
+          "caption": "DVIDS frame capture from DOW-UAP-PR28: SWIR sensor footage showing the inverted-teardrop/diamond-shaped area of contrast over Greece, January 2024 (DoD/AARO via DVIDS).",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d25-mission-report-greece-january-2024.jpg",
+          "caption": "Thumbnail of the declassified mission report DOW-UAP-D25 detailing the Greece January 2024 UAP encounter: diamond-shaped object, ~434 knots, SWIR-only detection (USCENTCOM/AARO).",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://unexplainable.com/assets/previews/173.jpg?v=609696",
+          "caption": "Preview image for DOW-UAP-PR28: first reported case of a UAP detectable only via short-wave infrared (SWIR) sensor, recorded aboard a U.S. military platform over Greece.",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg",
+          "caption": "DVIDS frame capture from DOW-UAP-PR28: SWIR sensor footage showing the inverted-teardrop/diamond-shaped area of contrast over Greece, January 2024 (DoD/AARO via DVIDS).",
+          "source": "research"
+        },
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d25-mission-report-greece-january-2024.jpg",
+          "caption": "Thumbnail of the declassified mission report DOW-UAP-D25 detailing the Greece January 2024 UAP encounter: diamond-shaped object, ~434 knots, SWIR-only detection (USCENTCOM/AARO).",
+          "source": "research"
+        },
+        {
+          "eventId": "greece-diamond-uap-2024",
+          "url": "https://unexplainable.com/assets/previews/173.jpg?v=609696",
+          "caption": "Preview image for DOW-UAP-PR28: first reported case of a UAP detectable only via short-wave infrared (SWIR) sensor, recorded aboard a U.S. military platform over Greece.",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "gulf-of-aden-uap-2024",
+      "cover": "/images/event-gulf-of-aden-uap-2024.jpg",
+      "imageCandidates": 6,
+      "videoCount": 3,
+      "candidates": [
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
+          "caption": "DOW-UAP-D75 官方任务报告封面：2024年7月14日美军ISR平台在亚丁湾记录UAP事件的MISREP文档，由第124攻击中队提交至USCENTCOM/AARO",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+          "caption": "USA Today报道：2024年10月30日也门沿海，MQ-9 Reaper锁定不明球体，AGM-114 Hellfire导弹即将接触目标前的红外画面（来源：U.S. military via Congress）",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+          "caption": "Yahoo News/USA Today：MQ-9 Reaper在亚丁湾/也门海岸跟踪高速飞行球体，导弹击中后物体继续飞行轨迹，未受明显损伤",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
+          "caption": "DOW-UAP-D75 官方任务报告封面：2024年7月14日美军ISR平台在亚丁湾记录UAP事件的MISREP文档，由第124攻击中队提交至USCENTCOM/AARO",
+          "source": "research"
+        },
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://www.gannett-cdn.com/authoring/authoring-images/2025/09/10/USAT/86074279007-missile.jpg?crop=1919,1079,x0,y0",
+          "caption": "USA Today报道：2024年10月30日也门沿海，MQ-9 Reaper锁定不明球体，AGM-114 Hellfire导弹即将接触目标前的红外画面（来源：U.S. military via Congress）",
+          "source": "research"
+        },
+        {
+          "eventId": "gulf-of-aden-uap-2024",
+          "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+          "caption": "Yahoo News/USA Today：MQ-9 Reaper在亚丁湾/也门海岸跟踪高速飞行球体，导弹击中后物体继续飞行轨迹，未受明显损伤",
+          "source": "research"
+        }
+      ]
+    },
+    {
+      "id": "eglin-afb-silver-orbs-2024",
+      "cover": "/images/event-eglin-afb-silver-orbs-2024.jpg",
+      "imageCandidates": 1,
+      "videoCount": 1,
+      "candidates": [
+        {
+          "eventId": "eglin-afb-silver-orbs-2024",
+          "url": "https://brobible.com/wp-content/uploads/2024/04/UFO-sensor-imagery-captured-by-the-Eglin-based-fighter-pilot.jpg",
+          "caption": "AARO官方发布的EO/IR传感器图像：Eglin AFB战斗机飞行员于2023年1月26日在16,000英尺高度拍摄的UAP对象，可见灰色面板表面和中心橙红色区域。来源：AARO/DoD via BroBible报道",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "sts-80-columbia-1996",
+      "cover": "/images/event-sts-80-columbia-1996.jpg",
+      "imageCandidates": 2,
+      "videoCount": 0,
+      "candidates": [
+        {
+          "eventId": "sts-80-columbia-1996",
+          "url": "https://www.war.gov/UFO/release/04/",
+          "caption": "PURSUE Release 04 官方门户 — STS-80 三张 NASA 不明物原图（NASA-UAP-D030/D031/D032）可在此查看与下载",
+          "source": "events.ts"
+        },
+        {
+          "eventId": "sts-80-columbia-1996",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/STS-80_Roll_Out_01.jpg",
+          "caption": "STS-80 任务：航天飞机哥伦比亚号运抵 39B 发射台（1996年10月16日，NASA / 公有领域）",
+          "source": "events.ts"
+        }
+      ]
+    },
+    {
+      "id": "los-alamos-green-fireballs-1949",
+      "cover": "/images/event-los-alamos-green-fireballs-1949.jpg",
+      "imageCandidates": 0,
+      "videoCount": 0,
+      "candidates": []
+    },
+    {
+      "id": "yellow-sea-six-pointed-star-2025",
+      "cover": "/images/event-yellow-sea-six-pointed-star-2025.jpg",
+      "imageCandidates": 0,
+      "videoCount": 1,
+      "candidates": []
+    },
+    {
+      "id": "east-china-sea-uap-2025",
+      "cover": "/images/event-east-china-sea-uap-2025.jpg",
+      "imageCandidates": 0,
+      "videoCount": 1,
+      "candidates": []
+    },
+    {
+      "id": "east-us-rectangular-uap-2019",
+      "cover": "/images/event-east-us-rectangular-uap-2019.jpg",
+      "imageCandidates": 0,
+      "videoCount": 1,
+      "candidates": []
+    },
+    {
+      "id": "pantex-intrusion-2015",
+      "cover": "/images/event-pantex-intrusion-2015.jpg",
+      "imageCandidates": 0,
+      "videoCount": 0,
+      "candidates": []
+    }
+  ]
+}
