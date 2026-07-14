@@ -11,10 +11,10 @@ const EventDetailPage = lazy(() => import('./pages/EventDetailPage'))
 
 function PageFallback() {
   return (
-    <div className="grid place-items-center" style={{ minHeight: '100dvh', background: '#050A0F' }}>
+    <div className="grid place-items-center" style={{ minHeight: '100dvh', background: 'var(--uap-base)' }}>
       <div
         className="animate-spin rounded-full"
-        style={{ width: 40, height: 40, border: '2px solid rgba(48,176,208,0.2)', borderTopColor: '#30B0D0' }}
+        style={{ width: 40, height: 40, border: '2px solid rgba(48,176,208,0.2)', borderTopColor: 'var(--uap-cyan)' }}
       />
     </div>
   )

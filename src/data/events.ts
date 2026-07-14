@@ -48,6 +48,20 @@ export const physicalCharLabels = {
 
 export type PhysicalCharacteristic = keyof typeof physicalCharLabels
 
+/** Core observables shown in timeline filters; descriptive tags remain on event detail */
+export const corePhysicalCharacteristics = [
+  'instantaneous-acceleration',
+  'low-observability',
+  'transmedium',
+  'anti-gravity',
+  'multi-sensor',
+  'electromagnetic',
+  'physical-traces',
+  'nuclear-association',
+  'group-sighting',
+  'space',
+] as const satisfies readonly PhysicalCharacteristic[]
+
 export interface UAPEvent {
   id: string
   date: string

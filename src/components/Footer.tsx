@@ -1,42 +1,223 @@
 import { Link } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
+import { footerConfig } from '../config'
+import { theme } from '../lib/theme'
 
-const externalLinks = [
-  { text: 'GEIPAN', href: 'https://www.cnes-geipan.fr' },
-  { text: 'AARO', href: 'https://www.aaro.mil' },
-  { text: 'NASA UAP', href: 'https://science.nasa.gov/uap' },
-  { text: 'PURSUE', href: 'https://www.war.gov/UFO' },
-  { text: '巴西国家档案馆', href: 'https://www.arquivo.gov.br' },
-  { text: '英国国家档案馆', href: 'https://www.nationalarchives.gov.uk' },
-]
+export type FooterVariant = 'home' | 'default'
 
-const navLinks = [
-  { text: '首页', to: '/' },
-  { text: '事件时间线', to: '/timeline' },
-  { text: '分析洞察', to: '/analysis' },
-  { text: '官方机构', to: '/agencies' },
-]
+function scrollToSection(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 
-const legalEntries = [
-  '数据截至 2026-07-10',
-  '置信度框架：High / Medium / Low / Speculative',
-  '参考文献：300+独立信息源',
-  '覆盖范围：全球22国/地区',
-]
+function ExternalSourceList({ links }: { links: { text: string; href: string }[] }) {
+  return (
+    <ul className="space-y-3">
+      {links.map((entry) => (
+        <li key={entry.text}>
+          <a
+            href={entry.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm transition-colors hover:opacity-100"
+            style={{ color: theme.ivory, opacity: 0.85 }}
+          >
+            {entry.text}
+            <ExternalLink className="w-3 h-3 opacity-50" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}
 
-export default function Footer() {
+export default function Footer({ variant = 'default' }: { variant?: FooterVariant }) {
+  if (variant === 'home') {
+    return (
+      <footer
+        id="footer"
+        style={{
+          position: 'relative',
+          width: '100%',
+          background: theme.base,
+          zIndex: 4,
+          overflow: 'hidden',
+        }}
+      >
+        <div style={{ position: 'relative', zIndex: 1, padding: '20vh 8vw 8vh' }}>
+          <div style={{ maxWidth: '720px', marginBottom: '120px' }}>
+            <p
+              className="font-serif-display"
+              style={{
+                fontSize: '17px',
+                fontWeight: 300,
+                lineHeight: 2.2,
+                color: 'rgba(237,232,228,0.75)',
+                letterSpacing: '0.02em',
+              }}
+            >
+              {footerConfig.visionText}
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+              gap: '48px',
+              paddingBottom: '60px',
+              borderBottom: '1px solid rgba(255,255,255,0.06)',
+            }}
+          >
+            <div>
+              <p
+                className="font-sans-body"
+                style={{
+                  fontSize: '11px',
+                  letterSpacing: '0.25em',
+                  color: 'rgba(237,232,228,0.3)',
+                  textTransform: 'uppercase',
+                  marginBottom: '16px',
+                }}
+              >
+                SOURCES
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {footerConfig.sources.map((entry) => (
+                  <a
+                    key={entry.text}
+                    href={entry.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: theme.ivory,
+                      opacity: 0.6,
+                      fontSize: '15px',
+                      textDecoration: 'none',
+                      lineHeight: 1.8,
+                    }}
+                  >
+                    {entry.text}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p
+                className="font-sans-body"
+                style={{
+                  fontSize: '11px',
+                  letterSpacing: '0.25em',
+                  color: 'rgba(237,232,228,0.3)',
+                  textTransform: 'uppercase',
+                  marginBottom: '16px',
+                }}
+              >
+                NAVIGATION
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {footerConfig.homeNav.map((entry) => (
+                  <button
+                    key={entry.scrollTargetId}
+                    type="button"
+                    onClick={() => scrollToSection(entry.scrollTargetId)}
+                    style={{
+                      color: theme.ivory,
+                      opacity: 0.6,
+                      fontSize: '15px',
+                      lineHeight: 1.8,
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      fontFamily: 'inherit',
+                    }}
+                  >
+                    {entry.text}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <p
+                className="font-sans-body"
+                style={{
+                  fontSize: '11px',
+                  letterSpacing: '0.25em',
+                  color: 'rgba(237,232,228,0.3)',
+                  textTransform: 'uppercase',
+                  marginBottom: '16px',
+                }}
+              >
+                LEGAL
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {footerConfig.legal.slice(0, 3).map((text) => (
+                  <span
+                    key={text}
+                    style={{
+                      color: theme.ivory,
+                      opacity: 0.6,
+                      fontSize: '15px',
+                      lineHeight: 1.8,
+                    }}
+                  >
+                    {text}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              paddingTop: '32px',
+            }}
+          >
+            <p
+              className="font-serif-display"
+              style={{
+                fontSize: '16px',
+                letterSpacing: '0.15em',
+                color: 'rgba(237,232,228,0.5)',
+              }}
+            >
+              {footerConfig.brandName}
+            </p>
+            <p
+              className="font-sans-body"
+              style={{
+                fontSize: '12px',
+                color: 'rgba(237,232,228,0.25)',
+              }}
+            >
+              {footerConfig.copyright}
+            </p>
+          </div>
+        </div>
+      </footer>
+    )
+  }
+
+  const sourceLinks = [...footerConfig.sources, ...footerConfig.archiveLinks]
+
   return (
     <footer
       className="relative"
       style={{
-        background: '#050A0F',
-        borderTop: '1px solid rgba(138, 153, 168, 0.15)',
+        background: theme.base,
+        borderTop: `1px solid ${theme.muted}26`,
       }}
     >
       <div
         className="h-px w-full"
         style={{
-          background: 'linear-gradient(90deg, transparent, rgba(48, 176, 208, 0.4), transparent)',
+          background: `linear-gradient(90deg, transparent, ${theme.cyan}66, transparent)`,
         }}
       />
 
@@ -44,10 +225,9 @@ export default function Footer() {
         <div className="max-w-3xl mb-16">
           <p
             className="font-serif-display text-lg md:text-xl leading-relaxed"
-            style={{ color: '#8A99A8', lineHeight: 1.75 }}
+            style={{ color: theme.muted, lineHeight: 1.75 }}
           >
-            UAP是真实存在的物理现象，但截至2026年7月，全球没有任何国家公开独立验证过外星技术碎片。
-            约2-5%的案例仍无法解释——这不是"是否真实"的问题，而是"是什么"的问题。
+            {footerConfig.visionText}
           </p>
         </div>
 
@@ -55,42 +235,27 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-bold tracking-widest uppercase mb-6"
-              style={{ color: '#8A99A8' }}
+              style={{ color: theme.muted }}
             >
               数据来源
             </h4>
-            <ul className="space-y-3">
-              {externalLinks.map((entry) => (
-                <li key={entry.text}>
-                  <a
-                    href={entry.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-[#30B0D0]"
-                    style={{ color: '#EDE8E4' }}
-                  >
-                    {entry.text}
-                    <ExternalLink className="w-3 h-3 opacity-50" />
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <ExternalSourceList links={sourceLinks} />
           </div>
 
           <div>
             <h4
               className="text-xs font-bold tracking-widest uppercase mb-6"
-              style={{ color: '#8A99A8' }}
+              style={{ color: theme.muted }}
             >
               导航
             </h4>
             <ul className="space-y-3">
-              {navLinks.map((entry) => (
+              {footerConfig.pageNav.map((entry) => (
                 <li key={entry.to}>
                   <Link
                     to={entry.to}
-                    className="inline-flex items-center gap-1.5 text-sm transition-colors hover:text-[#30B0D0]"
-                    style={{ color: '#EDE8E4' }}
+                    className="inline-flex items-center gap-1.5 text-sm transition-colors"
+                    style={{ color: theme.ivory }}
                   >
                     {entry.text}
                   </Link>
@@ -102,14 +267,14 @@ export default function Footer() {
           <div>
             <h4
               className="text-xs font-bold tracking-widest uppercase mb-6"
-              style={{ color: '#8A99A8' }}
+              style={{ color: theme.muted }}
             >
               声明
             </h4>
             <ul className="space-y-3">
-              {legalEntries.map((text) => (
+              {footerConfig.legal.map((text) => (
                 <li key={text}>
-                  <span className="text-sm" style={{ color: '#8A99A8' }}>
+                  <span className="text-sm" style={{ color: theme.muted }}>
                     {text}
                   </span>
                 </li>
@@ -120,18 +285,18 @@ export default function Footer() {
 
         <div
           className="mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-4"
-          style={{ borderTop: '1px solid rgba(138, 153, 168, 0.1)' }}
+          style={{ borderTop: `1px solid ${theme.muted}1a` }}
         >
           <div className="flex items-center gap-2">
-            <span className="font-serif-display font-bold" style={{ color: '#EDE8E4' }}>
-              UAP Explorer
+            <span className="font-serif-display font-bold" style={{ color: theme.ivory }}>
+              {footerConfig.brandName}
             </span>
-            <span className="text-xs" style={{ color: '#8A99A8' }}>
-              · 不明异常现象探索者
+            <span className="text-xs" style={{ color: theme.muted }}>
+              · {footerConfig.brandTagline}
             </span>
           </div>
-          <p className="text-xs" style={{ color: '#8A99A8' }}>
-            © 2026 UAP Explorer · 数据截至 2026-07-10
+          <p className="text-xs" style={{ color: theme.muted }}>
+            {footerConfig.copyright} · 数据截至 2026-07-10
           </p>
         </div>
       </div>

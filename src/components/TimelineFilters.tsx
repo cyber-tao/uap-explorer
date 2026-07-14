@@ -1,5 +1,11 @@
 import { Search, X, LayoutGrid, AlignVerticalJustifyCenter, ArrowUpDown } from 'lucide-react'
-import { confidenceColors, confidenceLabels, physicalCharLabels, regionLabels } from '../data/events'
+import {
+  confidenceColors,
+  confidenceLabels,
+  physicalCharLabels,
+  regionLabels,
+  corePhysicalCharacteristics,
+} from '../data/events'
 import type { ConfidenceLevel } from '../data/events'
 
 const confidenceOptions: { value: string; label: string }[] = [
@@ -23,16 +29,10 @@ const regionOptions: { value: string; label: string }[] = [
 
 const charOptions: { value: string; label: string }[] = [
   { value: '', label: '全部特征' },
-  { value: 'instantaneous-acceleration', label: '瞬时加速' },
-  { value: 'low-observability', label: '低可观测性' },
-  { value: 'transmedium', label: '跨介质' },
-  { value: 'anti-gravity', label: '正升力/反重力' },
-  { value: 'multi-sensor', label: '多传感器' },
-  { value: 'electromagnetic', label: '电磁效应' },
-  { value: 'physical-traces', label: '物理痕迹' },
-  { value: 'nuclear-association', label: '核关联' },
-  { value: 'group-sighting', label: '群体目击' },
-  { value: 'space', label: '太空目击' },
+  ...corePhysicalCharacteristics.map((value) => ({
+    value,
+    label: physicalCharLabels[value].label,
+  })),
 ]
 
 interface TimelineFiltersProps {

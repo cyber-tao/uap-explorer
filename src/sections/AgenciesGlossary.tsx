@@ -1,7 +1,23 @@
-import { useEffect, useRef, useCallback, useState } from 'react';
+import { useEffect, useRef, useCallback, useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { agenciesPreviewConfig } from '../config';
-import type { AgencyPreviewItem } from '../config';
+import { agencies } from '../data/agencies';
+
+interface AgencyPreviewItem {
+  cn: string;
+  en: string;
+  description: string;
+}
+
+function toPreviewItem(agencyName: string, countryEn: string, description: string): AgencyPreviewItem {
+  const cn = agencyName.replace(/（.*?）/g, '').split(/[\s/]/)[0] || agencyName;
+  return {
+    cn,
+    en: `${countryEn}`.toUpperCase(),
+    description,
+  };
+}
 
 function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyPreviewItem; filterId: string; onHover: () => void; onLeaveHover: () => void }) {
   const rowRef = useRef<HTMLDivElement>(null);
@@ -175,10 +191,18 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
 
 export default function AgenciesGlossary() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const agencies = agenciesPreviewConfig.items;
-  const hovered = hoveredIndex !== null ? agencies[hoveredIndex] : null;
+  const previewItems = useMemo(() => {
+    return agenciesPreviewConfig.previewAgencyMatchers
+      .map((matcher) => {
+        const agency = agencies.find((a) => a.agency.includes(matcher));
+        if (!agency) return null;
+        return toPreviewItem(agency.agency, agency.countryEn, agency.description);
+      })
+      .filter((item): item is AgencyPreviewItem => Boolean(item));
+  }, []);
+  const hovered = hoveredIndex !== null ? previewItems[hoveredIndex] : null;
 
-  if (agencies.length === 0) {
+  if (previewItems.length === 0) {
     return null;
   }
 
@@ -211,15 +235,29 @@ export default function AgenciesGlossary() {
           {agenciesPreviewConfig.sectionLabel}
         </p>
         <div>
-          {agencies.map((item, idx) => (
+          {previewItems.map((item, idx) => (
             <GooeyTextRow
-              key={idx}
+              key={item.cn}
               item={item}
               filterId={`goo-suliu-${idx}`}
               onHover={() => setHoveredIndex(idx)}
               onLeaveHover={() => setHoveredIndex(null)}
             />
           ))}
+          <div style={{ marginTop: '40px' }}>
+            <Link
+              to="/agencies"
+              className="font-sans-body"
+              style={{
+                fontSize: '13px',
+                letterSpacing: '0.12em',
+                color: '#30B0D0',
+                textDecoration: 'none',
+              }}
+            >
+              查看全部官方机构 →
+            </Link>
+          </div>
         </div>
       </div>
 

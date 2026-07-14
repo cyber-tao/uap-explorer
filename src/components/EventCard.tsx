@@ -1,21 +1,23 @@
+import { Link } from 'react-router-dom'
 import { confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
 import type { UAPEvent } from '../data/events'
 import { assetUrl } from '../lib/utils'
+import { theme } from '../lib/theme'
 import { characteristicIconMap } from './characteristicIcons'
 
 interface EventCardProps {
   event: UAPEvent
-  onSelect: (id: string) => void
 }
 
-export default function EventCard({ event, onSelect }: EventCardProps) {
+export default function EventCard({ event }: EventCardProps) {
   const confColor = confidenceColors[event.confidence]
   const confLabel = confidenceLabels[event.confidence]
 
   return (
-    <div
-      className="uap-card cursor-pointer group overflow-hidden"
-      onClick={() => onSelect(event.id)}
+    <Link
+      to={`/event/${event.id}`}
+      className="uap-card group overflow-hidden block"
+      style={{ textDecoration: 'none', color: 'inherit' }}
     >
       <div className="relative overflow-hidden" style={{ aspectRatio: '16/10' }}>
         <img
@@ -27,9 +29,9 @@ export default function EventCard({ event, onSelect }: EventCardProps) {
         />
         <div
           className="absolute inset-0 flex items-center justify-center -z-10"
-          style={{ background: 'linear-gradient(135deg, #0A1117, #0F1923)' }}
+          style={{ background: `linear-gradient(135deg, ${theme.surface}, ${theme.elevated})` }}
         >
-          <span className="font-serif-display text-2xl opacity-20" style={{ color: '#30B0D0' }}>
+          <span className="font-serif-display text-2xl opacity-20" style={{ color: theme.cyan }}>
             {event.name[0]}
           </span>
         </div>
@@ -48,16 +50,16 @@ export default function EventCard({ event, onSelect }: EventCardProps) {
       </div>
       <div className="p-5">
         <div className="flex items-center gap-3 mb-2">
-          <span className="font-mono-data text-xs" style={{ color: '#8A99A8' }}>{event.date}</span>
-          <span className="text-xs" style={{ color: '#8A99A8' }}>·</span>
-          <span className="text-sm font-semibold" style={{ color: '#EDE8E4' }}>
+          <span className="font-mono-data text-xs" style={{ color: theme.muted }}>{event.date}</span>
+          <span className="text-xs" style={{ color: theme.muted }}>·</span>
+          <span className="text-sm font-semibold" style={{ color: theme.ivory }}>
             {event.country} · {event.location}
           </span>
         </div>
-        <h3 className="font-serif-display text-lg font-bold mb-2" style={{ color: '#EDE8E4' }}>
+        <h3 className="font-serif-display text-lg font-bold mb-2" style={{ color: theme.ivory }}>
           {event.name}
         </h3>
-        <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: '#8A99A8' }}>
+        <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: theme.muted }}>
           {event.shortDesc}
         </p>
         <div className="flex flex-wrap gap-1.5 mb-3">
@@ -65,7 +67,7 @@ export default function EventCard({ event, onSelect }: EventCardProps) {
             <span
               key={char}
               className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-medium"
-              style={{ background: 'rgba(48,176,208,0.1)', color: '#30B0D0', border: '1px solid rgba(48,176,208,0.2)' }}
+              style={{ background: 'rgba(48,176,208,0.1)', color: theme.cyan, border: '1px solid rgba(48,176,208,0.2)' }}
             >
               {characteristicIconMap[char]}
               {physicalCharLabels[char]?.label || char}
@@ -73,14 +75,14 @@ export default function EventCard({ event, onSelect }: EventCardProps) {
           ))}
         </div>
         <div className="flex items-center justify-between">
-          <span className="text-sm font-medium" style={{ color: '#30B0D0' }}>
+          <span className="text-sm font-medium" style={{ color: theme.cyan }}>
             查看详情 →
           </span>
-          <span className="text-xs font-mono-data" style={{ color: '#8A99A8' }}>
+          <span className="text-xs font-mono-data" style={{ color: theme.muted }}>
             {event.sensors?.join(' / ') || '目视目击'}
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

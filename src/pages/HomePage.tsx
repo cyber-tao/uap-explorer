@@ -7,7 +7,6 @@ import HeroField from '../sections/HeroField'
 import ObservablesCarousel from '../sections/ObservablesCarousel'
 import ImmersiveGallery from '../sections/ImmersiveGallery'
 import AgenciesGlossary from '../sections/AgenciesGlossary'
-import Footer from '../sections/Footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -75,9 +74,6 @@ export default function HomePage() {
       </div>
       <div style={{ position: 'relative', zIndex: 50 }}>
         <AgenciesGlossary />
-        <div id="footer">
-          <Footer />
-        </div>
       </div>
     </div>
   )
