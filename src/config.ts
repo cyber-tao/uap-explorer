@@ -204,19 +204,19 @@ export const galleryConfig: GalleryConfig = {
       id: "colares",
       title: "Colares事件",
       location: "巴西 · 帕拉州",
-      year: "1986",
+      year: "1977",
       image: "images/event-colares.jpg",
       subtitle: "军方调查，平民受伤，大规模目击",
       meta: [
-        { label: "DATE", value: "1986-05-19" },
+        { label: "DATE", value: "1977-07" },
         { label: "LOCATION", value: "Colares, 巴西" },
         { label: "CONFIDENCE", value: "高置信度" },
         { label: "SENSORS", value: "军方雷达, 目视, 医疗记录" },
       ],
       paragraphs: [
-        "巴西空军正式启动Operação Prato（飞碟行动），由Uyrangê Hollanda上尉指挥。1986年5月19日大规模事件中，21名平民和5名军人受伤。",
-        "超过2000名目击者报告低空发光物体。巴西空军部署F-5E和F-103战斗机，但未能拦截目标。2022年巴西国家档案馆正式公开档案。",
-        "被光束照射导致烧伤、脱发、低血压等。物理样本未被保存于可靠证据链中，部分平民报告可能受社会心理因素影响。"
+        "1977年7月至1978年初，巴西空军正式启动Operação Prato（飞碟行动），由Uyrangê Hollanda上尉指挥，记录数百次目击与伤情报告。",
+        "科拉雷斯及周边居民报告低空发光物体与光束照射伤害。空军调查小组拍摄大量照片与胶片，但未能拦截目标。",
+        "物理样本未被保存于可靠证据链中，部分平民报告可能受社会心理因素影响；档案后经解密部分公开。"
       ],
     },
     {

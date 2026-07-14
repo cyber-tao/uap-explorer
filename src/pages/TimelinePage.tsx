@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Search, LayoutGrid, AlignVerticalJustifyCenter, X, Radar, Zap, EyeOff, Waves, ArrowUp, Footprints, Users, Telescope, ArrowUpDown } from 'lucide-react'
 import { events, confidenceColors, confidenceLabels, physicalCharLabels, regionLabels, searchEvents } from '../data/events'
@@ -51,36 +51,44 @@ const iconMap: Record<string, React.ReactNode> = {
   'space': <Telescope className="w-3 h-3" />,
 }
 
+type SortBy = 'confidence' | 'date'
+
+function parseSort(value: string | null): SortBy {
+  return value === 'date' ? 'date' : 'confidence'
+}
+
 export default function TimelinePage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const navigate = useNavigate()
 
-  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '')
-  const [confidenceFilter, setConfidenceFilter] = useState(searchParams.get('confidence') || '')
-  const [regionFilter, setRegionFilter] = useState(searchParams.get('region') || '')
-  const [charFilter, setCharFilter] = useState(searchParams.get('characteristic') || '')
+  const searchQuery = searchParams.get('search') || ''
+  const confidenceFilter = searchParams.get('confidence') || ''
+  const regionFilter = searchParams.get('region') || ''
+  const charFilter = searchParams.get('characteristic') || ''
+  const sortBy = parseSort(searchParams.get('sort'))
   const [viewMode, setViewMode] = useState<'grid' | 'timeline'>('grid')
-  const [sortBy, setSortBy] = useState<'confidence' | 'date'>(searchParams.get('sort') as 'confidence' | 'date' || 'confidence')
 
-  // Sync filters to URL params
-  useEffect(() => {
-    const params: Record<string, string> = {}
-    if (searchQuery) params.search = searchQuery
-    if (confidenceFilter) params.confidence = confidenceFilter
-    if (regionFilter) params.region = regionFilter
-    if (charFilter) params.characteristic = charFilter
-    if (sortBy !== 'confidence') params.sort = sortBy
-    setSearchParams(params, { replace: true })
-  }, [searchQuery, confidenceFilter, regionFilter, charFilter, sortBy, setSearchParams])
+  const updateFilters = (updates: Record<string, string | null>) => {
+    const next = new URLSearchParams(searchParams)
+    for (const [key, value] of Object.entries(updates)) {
+      if (value) next.set(key, value)
+      else next.delete(key)
+    }
+    if (parseSort(next.get('sort')) === 'confidence') next.delete('sort')
+    setSearchParams(next, { replace: true })
+  }
 
   const filteredEvents = useMemo(() => {
     let result = [...events]
     if (searchQuery) result = searchEvents(searchQuery)
     if (confidenceFilter) result = result.filter((e) => e.confidence === confidenceFilter)
     if (regionFilter) result = result.filter((e) => e.region === regionFilter)
-    if (charFilter) result = result.filter((e) => e.physicalCharacteristics.includes(charFilter))
+    if (charFilter) {
+      result = result.filter((e) =>
+        e.physicalCharacteristics.includes(charFilter as typeof e.physicalCharacteristics[number])
+      )
+    }
 
-    // Sort
     const confidenceWeight: Record<string, number> = { High: 4, Medium: 3, Low: 2, Speculative: 1 }
     if (sortBy === 'confidence') {
       result.sort((a, b) => confidenceWeight[b.confidence] - confidenceWeight[a.confidence])
@@ -97,10 +105,12 @@ export default function TimelinePage() {
   const activeFilters = Boolean(confidenceFilter || regionFilter || charFilter || searchQuery)
 
   const clearFilters = () => {
-    setSearchQuery('')
-    setConfidenceFilter('')
-    setRegionFilter('')
-    setCharFilter('')
+    updateFilters({
+      search: null,
+      confidence: null,
+      region: null,
+      characteristic: null,
+    })
   }
 
   const renderCard = (event: UAPEvent) => {
@@ -264,7 +274,7 @@ export default function TimelinePage() {
                 type="text"
                 placeholder="搜索事件、地点..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => updateFilters({ search: e.target.value || null })}
                 className="w-full pl-9 pr-4 py-2 rounded-md text-sm outline-none focus:ring-2 transition-all"
                 style={{
                   background: '#0F1923',
@@ -274,7 +284,7 @@ export default function TimelinePage() {
               />
               {searchQuery && (
                 <button
-                  onClick={() => setSearchQuery('')}
+                  onClick={() => updateFilters({ search: null })}
                   className="absolute right-3 top-1/2 -translate-y-1/2"
                 >
                   <X className="w-3.5 h-3.5" style={{ color: '#8A99A8' }} />
@@ -285,7 +295,7 @@ export default function TimelinePage() {
             {/* Confidence */}
             <select
               value={confidenceFilter}
-              onChange={(e) => setConfidenceFilter(e.target.value)}
+              onChange={(e) => updateFilters({ confidence: e.target.value || null })}
               className="px-3 py-2 rounded-md text-sm outline-none cursor-pointer"
               style={{ background: '#0F1923', border: '1px solid rgba(138, 153, 168, 0.2)', color: '#EDE8E4' }}
             >
@@ -297,7 +307,7 @@ export default function TimelinePage() {
             {/* Region */}
             <select
               value={regionFilter}
-              onChange={(e) => setRegionFilter(e.target.value)}
+              onChange={(e) => updateFilters({ region: e.target.value || null })}
               className="px-3 py-2 rounded-md text-sm outline-none cursor-pointer"
               style={{ background: '#0F1923', border: '1px solid rgba(138, 153, 168, 0.2)', color: '#EDE8E4' }}
             >
@@ -309,7 +319,7 @@ export default function TimelinePage() {
             {/* Characteristic */}
             <select
               value={charFilter}
-              onChange={(e) => setCharFilter(e.target.value)}
+              onChange={(e) => updateFilters({ characteristic: e.target.value || null })}
               className="px-3 py-2 rounded-md text-sm outline-none cursor-pointer"
               style={{ background: '#0F1923', border: '1px solid rgba(138, 153, 168, 0.2)', color: '#EDE8E4' }}
             >
@@ -336,7 +346,7 @@ export default function TimelinePage() {
             <div className="flex items-center gap-1 mr-3">
               <ArrowUpDown className="w-3.5 h-3.5 mr-1" style={{ color: '#8A99A8' }} />
               <button
-                onClick={() => setSortBy('confidence')}
+                onClick={() => updateFilters({ sort: null })}
                 className="px-2.5 py-1.5 rounded text-xs font-medium transition-colors"
                 style={{
                   background: sortBy === 'confidence' ? 'rgba(48, 176, 208, 0.15)' : 'transparent',
@@ -347,7 +357,7 @@ export default function TimelinePage() {
                 可信度
               </button>
               <button
-                onClick={() => setSortBy('date')}
+                onClick={() => updateFilters({ sort: 'date' })}
                 className="px-2.5 py-1.5 rounded text-xs font-medium transition-colors"
                 style={{
                   background: sortBy === 'date' ? 'rgba(48, 176, 208, 0.15)' : 'transparent',
@@ -384,25 +394,25 @@ export default function TimelinePage() {
               {searchQuery && (
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded text-xs" style={{ background: 'rgba(48,176,208,0.1)', color: '#30B0D0', border: '1px solid rgba(48,176,208,0.2)' }}>
                   搜索: {searchQuery}
-                  <X className="w-3 h-3 cursor-pointer" onClick={() => setSearchQuery('')} />
+                  <X className="w-3 h-3 cursor-pointer" onClick={() => updateFilters({ search: null })} />
                 </span>
               )}
               {confidenceFilter && (
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded text-xs" style={{ background: `${confidenceColors[confidenceFilter as ConfidenceLevel]}15`, color: confidenceColors[confidenceFilter as ConfidenceLevel], border: `1px solid ${confidenceColors[confidenceFilter as ConfidenceLevel]}30` }}>
                   {confidenceLabels[confidenceFilter as ConfidenceLevel]}
-                  <X className="w-3 h-3 cursor-pointer" onClick={() => setConfidenceFilter('')} />
+                  <X className="w-3 h-3 cursor-pointer" onClick={() => updateFilters({ confidence: null })} />
                 </span>
               )}
               {regionFilter && (
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded text-xs" style={{ background: 'rgba(245,166,35,0.1)', color: '#F5A623', border: '1px solid rgba(245,166,35,0.2)' }}>
                   {regionLabels[regionFilter]}
-                  <X className="w-3 h-3 cursor-pointer" onClick={() => setRegionFilter('')} />
+                  <X className="w-3 h-3 cursor-pointer" onClick={() => updateFilters({ region: null })} />
                 </span>
               )}
               {charFilter && (
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded text-xs" style={{ background: 'rgba(255,46,99,0.1)', color: '#FF2E63', border: '1px solid rgba(255,46,99,0.2)' }}>
-                  {physicalCharLabels[charFilter]?.label}
-                  <X className="w-3 h-3 cursor-pointer" onClick={() => setCharFilter('')} />
+                  {physicalCharLabels[charFilter as keyof typeof physicalCharLabels]?.label}
+                  <X className="w-3 h-3 cursor-pointer" onClick={() => updateFilters({ characteristic: null })} />
                 </span>
               )}
             </div>

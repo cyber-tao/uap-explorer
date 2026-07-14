@@ -5,6 +5,7 @@ import Footer from './Footer'
 
 export default function Layout() {
   const location = useLocation()
+  const isHome = location.pathname === '/'
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -16,7 +17,8 @@ export default function Layout() {
       <main>
         <Outlet />
       </main>
-      <Footer />
+      {/* HomePage renders sections/Footer with footerConfig; avoid duplicate */}
+      {!isHome && <Footer />}
     </div>
   )
 }

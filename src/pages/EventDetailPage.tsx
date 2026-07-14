@@ -42,7 +42,7 @@ function FormattedDescription({ text }: { text: string }) {
     <div className="space-y-6">
       {paragraphs.map((para, idx) => {
         const isFirst = idx === 0
-        const isHighlight = para.length < 80 || para.includes('年') && para.includes('月')
+        const isHighlight = para.length < 80 || (para.includes('年') && para.includes('月'))
 
         if (isHighlight && !isFirst) {
           return (
