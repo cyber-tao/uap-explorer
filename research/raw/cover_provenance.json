@@ -1,0 +1,141 @@
+{
+  "generated": "2026-07-14",
+  "policy": "Prefer official sensor/news stills or unique primary artifacts. No ARCHIVAL ENTRY template cards. No cross-event sensor reuse.",
+  "covers": {
+    "nimitz-tic-tac": {
+      "file": "event-nimitz.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/FLIR1_Official_UAP_Footage_from_the_USG_for_Public_Release.webm/1280px--FLIR1_Official_UAP_Footage_from_the_USG_for_Public_Release.webm.jpg",
+      "note": "Official FLIR1 (Nimitz/Tic Tac) USG public-release poster"
+    },
+    "gimbal-gofast": {
+      "file": "event-gimbal.jpg",
+      "sourceUrl": "local-retained",
+      "note": "Verified Gimbal ATFLIR still; retained after audit"
+    },
+    "yellow-sea-six-pointed-star-2025": {
+      "file": "event-yellow-sea-six-pointed-star-2025.jpg",
+      "sourceUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014101/DOD_111830027.0000001/1000w_q95.jpg",
+      "note": "DVIDS DOW-UAP-PR104"
+    },
+    "east-china-sea-uap-2025": {
+      "file": "event-east-china-sea-uap-2025.jpg",
+      "sourceUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014103/DOD_111830030.0000001/1000w_q95.jpg",
+      "note": "DVIDS DOW-UAP-PR105"
+    },
+    "east-us-rectangular-uap-2019": {
+      "file": "event-east-us-rectangular-uap-2019.jpg",
+      "sourceUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2607/1014128/DOD_111830201.0000001/1000w_q95.jpg",
+      "note": "DVIDS DOW-UAP-PR112"
+    },
+    "greece-diamond-uap-2024": {
+      "file": "event-greece-diamond-uap-2024.jpg",
+      "sourceUrl": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg",
+      "note": "DVIDS DOW-UAP-PR28"
+    },
+    "eglin-afb-silver-orbs-2024": {
+      "file": "event-eglin-afb-silver-orbs-2024.jpg",
+      "sourceUrl": "https://brobible.com/wp-content/uploads/2024/04/UFO-sensor-imagery-captured-by-the-Eglin-based-fighter-pilot.jpg",
+      "note": "AARO/Eglin EO-IR still via BroBible"
+    },
+    "gov-contractor-metallic-cylinder-2024": {
+      "file": "event-gov-contractor-metallic-cylinder-2024.jpg",
+      "sourceUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2024/11/19/e6772a09-00c0-4c5f-bae6-61a7d3ead351/thumbnail/1200x630/2d5131bae451a6c4ee325c1e39a6e37d/screenshot-2024-11-19-at-6-14-40-pm.jpg",
+      "note": "CBS AARO hearing coverage still; no public cylinder body photo"
+    },
+    "submarine-transmedium": {
+      "file": "event-submarine.jpg",
+      "sourceUrl": "https://ufoweekly.com/wp-content/uploads/2023/06/111-USS-Omaha.png",
+      "note": "USS Omaha 2019 sphere IR still"
+    },
+    "oumuamua": {
+      "file": "event-oumuamua.jpg",
+      "sourceUrl": "https://cdn.eso.org/images/screen/eso1737b.jpg",
+      "note": "ESO/K. Meech real telescope composite (not artist impression)"
+    },
+    "gemini4-mcdivitt": {
+      "file": "event-gemini4.jpg",
+      "sourceUrl": "http://tothemoon.ser.asu.edu/data_g/G04/Unidentified/full/GT4-37149-039_G04-U_f.png",
+      "note": "ASU McDivitt unidentified plate GT4-37149-039"
+    },
+    "belgium-ufo-wave": {
+      "file": "event-belgium.jpg",
+      "sourceUrl": "https://i0.wp.com/unidentifiedphenomena.com/wp-content/uploads/2023/02/belgian-ufo-wave-1-jpg.webp",
+      "note": "Witness-composite triangular craft illustration for Belgian wave"
+    },
+    "colares": {
+      "file": "event-colares.jpg",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/654d055f3f0ea73d1b9a2810/2726eda8-bcee-431f-9807-bc02c1fc4c7d/v2-fnpdm-6lv2g.jpg",
+      "note": "Colares / Operação Prato archival analysis figure"
+    },
+    "jal-1628": {
+      "file": "event-jal1628.jpg",
+      "sourceUrl": "https://documents.theblackvault.com/documents/ufos/jal1628/733667-001-022.pdf",
+      "note": "FAA regenerated radar CRT photo from FOIA packet (page render)"
+    },
+    "imphal-airport": {
+      "file": "event-imphal.jpg",
+      "sourceUrl": "https://cdn1.img.sputniknews.in/img/07e7/0b/14/5492199_0:320:3072:2048_1920x0_80_0_0_708e004b6c24d085e310b7ce91f3c2c7.jpg.webp",
+      "note": "Sputnik India news photo for Imphal/IAF response coverage"
+    },
+    "apollo17": {
+      "file": "event-apollo17.jpg",
+      "sourceUrl": "https://pub-d7148e2b49114a8ab87e9305c11533cf.r2.dev/image/nasa-uap-d2-apollo-17-transcript-1972.jpg",
+      "note": "Apollo 17 UAP-related declassified record cover"
+    },
+    "dhs-pilot-football-object-2024": {
+      "file": "event-dhs-pilot-football-object-2024.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/2017-09-20_Norlandair_Super_King_Air_B200_%28TF-NLB%29%2C_at_Nuuk_Ai",
+      "note": "Beechcraft Super King Air type photo; no public UAP body still for Troy21. Must NOT use PR46."
+    },
+    "sts-80-columbia-1996": {
+      "file": "event-sts-80-columbia-1996.jpg",
+      "sourceUrl": "https://uaplogbook.com/content/images/size/w1200/2026/07/pursue-release-04/nasa-uap-d030-sts-80.jpg",
+      "note": "NASA-UAP-D030 STS-80 unidentified object frame"
+    },
+    "chile-san-clemente": {
+      "file": "event-chile.jpg",
+      "sourceUrl": "https://images.huffingtonpost.com/2012-03-13-Screenshot20120313at4.11.53PM.png",
+      "note": "CEFAA El Bosque analysis still via HuffPost coverage"
+    },
+    "guizhou-forest": {
+      "file": "event-guizhou.jpg",
+      "sourceUrl": "http://www.uux.cn/attachments/2013/07/1_201307241217161J9z1.jpg",
+      "note": "Duxi forest damage site photo from uux.cn feature"
+    },
+    "washington-invasion": {
+      "file": "event-washington.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/1952_UFO_Flap_-_Air_Force_frequency_graph_of_UFO_reports.png/1280px-1952_UFO_Flap_-_Air_Force_frequency_graph_of_UFO_reports.png",
+      "note": "1952 UFO flap Air Force report frequency graph"
+    },
+    "sts75-tether": {
+      "file": "event-sts75.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/STS075-760-000_-_STS-075_-_DPLA_-_0bf21d02de4141ebfe5ffc36bab7a5b9.jpg/1280px-STS075-760-000_-_STS-075_-_DPLA_-_0bf21d02de4141ebfe5ffc36bab7a5b9.jpg",
+      "note": "STS-75 TSS tether mission still"
+    },
+    "pantex-intrusion-2015": {
+      "file": "event-pantex-intrusion-2015.jpg",
+      "sourceUrl": "https://uaplogbook.com/content/images/size/w1200/2026/07/pantex-d005-incident-report/pantex-d005-radar-tower-image.png",
+      "note": "Pantex D005 report radar/tower image"
+    },
+    "los-alamos-green-fireballs-1949": {
+      "file": "event-los-alamos-green-fireballs-1949.jpg",
+      "sourceUrl": "https://ufotransparency.com/files/doe-uap-d004-los-alamos-conference-on-aerial-phenomena-1949/opengraph-image",
+      "note": "DOE-UAP-D004 primary-source card; no contemporaneous fireball photo"
+    },
+    "ny-commercial-cylinder-near-miss-2024": {
+      "file": "event-ny-commercial-cylinder-near-miss-2024.jpg",
+      "sourceUrl": "https://cdn.abcotvs.com/dip/images/15546386_pentagon-file-img.jpg",
+      "note": "ABC7 Pentagon/AARO report coverage still for FY2024 commercial near-miss context"
+    },
+    "shanghai-hongqiao": {
+      "file": "event-shanghai.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Airport_Shanghai-Hongqiao_1.jpg/960px-Airport_Shanghai-Hongqiao_1.jpg",
+      "note": "Shanghai Hongqiao Airport photo; no stable public UAP still"
+    },
+    "kofu-incident": {
+      "file": "event-kofu.jpg",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kofu_montage.jpg/960px-Kofu_montage.jpg",
+      "note": "Kofu location montage; prefer over toy/model exhibits"
+    }
+  }
+}
