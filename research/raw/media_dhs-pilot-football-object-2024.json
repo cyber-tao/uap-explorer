@@ -1,30 +1,22 @@
 {
   "eventId": "dhs-pilot-football-object-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",
-      "url": "https://www.war.gov/portals/1/Interactive/2026/UFO/Slideshow/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024.jpg",
-      "caption": "Pentagon PURSUE 2026 release: still from DOW-UAP-PR46, a football-shaped UAP with three radial projections recorded by INDOPACOM over the East China Sea in 2024"
-    },
-    {
-      "type": "image",
-      "url": "https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg",
-      "caption": "Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage"
-    },
-    {
-      "type": "image",
-      "url": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg",
-      "caption": "CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage"
-    },
-    {
-      "type": "video",
-      "url": "https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024",
-      "caption": "Official DVIDS video: DOW-UAP-PR46, 9-second infrared footage of a football-shaped UAP with three radial projections over the East China Sea, 2024 (INDOPACOM / AARO)"
+      "url": "https://nuforc.org/wp-content/uploads/2025/04/S183084_2.jpg",
+      "caption": "NUFORC Troy21 case graphic for the Sept 17, 2024 DHS Beechcraft near-miss (no public UAP body photograph)"
     },
     {
       "type": "video",
       "url": "https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/",
-      "caption": "NewsNation Banfield report featuring leaked air-traffic-control audio of the DHS pilot (call sign Troy 21) describing a football-sized object passing under his wing on Sept 17, 2024"
+      "caption": "NewsNation Banfield report featuring leaked ATC audio of DHS pilot Troy 21 describing a football-sized object under his wing on Sept 17, 2024"
+    },
+    {
+      "type": "video",
+      "url": "https://nuforc.org/troy21/",
+      "caption": "NUFORC Troy21 investigation page with FOIA ATC audio and case write-up"
     }
   ]
 }

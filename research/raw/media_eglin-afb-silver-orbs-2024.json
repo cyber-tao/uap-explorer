@@ -1,5 +1,7 @@
 {
   "eventId": "eglin-afb-silver-orbs-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
   "media": [
     {
       "type": "image",
@@ -9,7 +11,7 @@
     {
       "type": "image",
       "url": "https://brobible.com/wp-content/uploads/2024/04/pentagon-lighting-balloon-aaro-ufo.jpg",
-      "caption": "AARO商业照明气球对比图像：AARO用于与Eglin UAP图像进行形态对比分析的商业氦气照明气球，作为其'中等信心'结论的参考依据。来源：AARO/DoD via BroBible报道""中等信心"结论的参考依据。来源：AARO/DoD via BroBible报道"
+      "caption": "AARO商业照明气球对比图像：AARO用于与Eglin UAP图像进行形态对比分析的商业氦气照明气球，作为其'中等信心'结论的参考依据。来源：AARO/DoD via BroBible报道"
     },
     {
       "type": "video",
@@ -19,7 +21,7 @@
     {
       "type": "video",
       "url": "https://youtu.be/sucrnlxq8CA",
-      "caption": "NewsNation 'Reality Check' 节目（Ross Coulthart，2024年12月）：报道2024年UAP wave，包括Eglin AFB附近2024年6月4日和12日报告的"无声银球编队"目击事件（Enigma Labs案例#294660）。来源：NewsNation"
+      "caption": "NewsNation 'Reality Check' 节目（Ross Coulthart，2024年12月）：报道2024年UAP wave，包括Eglin AFB附近2024年6月4日和12日报告的'无声银球编队'目击事件（Enigma Labs案例#294660）。来源：NewsNation"
     }
   ]
 }

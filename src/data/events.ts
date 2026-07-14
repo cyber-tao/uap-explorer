@@ -1032,24 +1032,23 @@ export const events: UAPEvent[] = [
     confidence: 'High',
     image: '/images/event-dhs-pilot-football-object-2024.jpg',
     figures: [
-      { src: '/images/events/dhs-pilot-football-object-2024/01.jpg', caption: 'DHS飞行员深色足球形/圆柱形UAP近遇——事件封面影像', credit: 'UAP Explorer archive', layout: 'full' },
-      { src: '/images/events/dhs-pilot-football-object-2024/02.jpg', caption: 'Higher-resolution version of the official 2024 football-shaped UAP image released by the Department of War (PURSUE), as featured in international press coverage', credit: 'theaustraliatoday.com.au', sourceUrl: 'https://www.theaustraliatoday.com.au/wp-content/uploads/2026/05/DOW-UAP-PR46-Unresolved-UAP-Report-INDOPACOM-2024-1024x683.jpg', layout: 'pair' },
-      { src: '/images/events/dhs-pilot-football-object-2024/03.jpg', caption: 'CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage', credit: 'assets3.cbsnewsstatic.com', sourceUrl: 'https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg', layout: 'pair' },
-      { src: '/images/events/dhs-pilot-football-object-2024/04.jpg', caption: 'CBS News thumbnail of the DOW-UAP-PR46 football-shaped UAP still, part of the May 2026 Pentagon declassified release coverage', credit: 'assets3.cbsnewsstatic.com', sourceUrl: 'https://assets3.cbsnewsstatic.com/hub/i/r/2026/05/08/be16d4fa-f081-483e-8d16-7978fd6be40f/thumbnail/640x360/d4a95389201b045699fd393e52cbd734/dow-uap-pr46-unresolved-uap-report-indopacom-2024.jpg', layout: 'inset' },
-      { src: '/images/events/dhs-pilot-football-object-2024/05.webp', caption: 'DHS飞行员深色足球形/圆柱形UAP近遇——档案影像 05', credit: 'UAP Explorer archive', layout: 'inset' },
+      { src: '/images/events/dhs-pilot-football-object-2024/01.jpg', caption: 'Beechcraft Super King Air 机型参考图——DHS Troy21 任务机型（无公开 UAP 本体照片）', credit: 'Wikimedia Commons', layout: 'full' },
+      { src: '/images/events/dhs-pilot-football-object-2024/02.jpg', caption: 'NUFORC Troy21 案件配图（2024-09-17 DHS 近距遭遇；无公开 UAP 静帧）', credit: 'nuforc.org', sourceUrl: 'https://nuforc.org/troy21/', layout: 'pair' },
+      { src: '/images/events/dhs-pilot-football-object-2024/03.jpg', caption: 'King Air 任务机型细节裁切——用于详情页插图（本案无公开 UAP 本体静帧）', credit: 'UAP Explorer archive', layout: 'pair' },
     ],
     media: [
-      { type: 'video', url: 'https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024', caption: 'Official DVIDS video: DOW-UAP-PR46, 9-second infrared footage of a football-shaped UAP with three radial projections over the East China Sea, 2024 (INDOPACOM / AARO)' },
-      { type: 'video', url: 'https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/', caption: 'NewsNation Banfield report featuring leaked air-traffic-control audio of the DHS pilot (call sign Troy 21) describing a football-sized object passing under his wing on Sept 17, 2024' },
+      { type: 'video', url: 'https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/', caption: 'NewsNation Banfield：DHS 飞行员 Troy 21 空管录音与近距遭遇报道（2024-09-17）' },
+      { type: 'video', url: 'https://nuforc.org/troy21/', caption: 'NUFORC Troy21 调查页（含 FOIA 空管音频）' },
     ],
 
     sensors: ["雷达", "目视"],
     physicalCharacteristics: ["dark-colored", "football-sized", "cylindrical", "high-speed", "mach-2+", "transited-under-wing"],
     sources: [
-      { label: 'NewsNation - US military pilot UFO encounter', url: 'https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/' }
+      { label: 'NewsNation - US military pilot UFO encounter', url: 'https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/' },
+      { label: 'NUFORC - Troy21 case', url: 'https://nuforc.org/troy21/' },
     ],
 
-    limitations: ["未公开视频或雷达图像", "空管声明\\'已处理\\'但未解释具体是什么", "仅单一飞机报告，缺乏其他机组或地面目击交叉验证", "具体地理位置未披露（仅知约60英里外）", "速度估算基于飞行员/分析师推测"],
+    limitations: ["未公开视频或雷达图像——不得借用印太 PR46 传感器静帧", "空管声明'已处理'但未解释具体是什么", "仅单一飞机报告，缺乏其他机组或地面目击交叉验证", "具体地理位置未完全披露", "速度估算基于飞行员/分析师推测"],
   },
 
   {
