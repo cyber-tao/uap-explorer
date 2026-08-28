@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Disclosed UAP Events Batch — August 2026 weekly curation (week 2)",
+    "description": "Six additional officially disclosed PURSUE/DVIDS UAP cases: FBI northeastern cluster PR001/PR002, CENTCOM Greece PR35, CENTCOM UAE PR27, USAF Gulf of America PR115, and AFSOC Gulf of Oman cold-orbs PR117 (Release 05).",
+    "generated": "2026-08-10",
+    "source_scope": "DVIDS/AARO PURSUE videos FBI-UAP-PR001/PR002, DOW-UAP-PR35/PR27/PR115/PR117 plus companion mission/IIR notes",
+    "total_events": 6
+  },
+  "events": [
+    {
+      "id": "fbi-triangle-orbs-2021",
+      "date": "2021-11",
+      "location": "Northeastern United States (sparsely populated)",
+      "country": "USA",
+      "name": "FBI三角光球集群（PR001）",
+      "nameEn": "FBI Triangle Orbs Cluster (PR001)",
+      "shortDesc": "2021年11月美东北地平线强光分解为多光源并相对不规则旋转；FBI评估目击者高度可信（FBI-UAP-PR001）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-PR001", "FBI-UAP-D004", "FBI-UAP-D008"],
+      "dvids": "https://www.dvidshub.net/video/1010263/fbi-uap-pr001-triangle-orbs-2021"
+    },
+    {
+      "id": "fbi-red-orb-rotation-2022",
+      "date": "2022-03",
+      "location": "Northeastern United States (sparsely populated)",
+      "country": "USA",
+      "name": "FBI红球相对旋转（PR002）",
+      "nameEn": "FBI Red Orb Rotation (PR002)",
+      "shortDesc": "2022年3月美东北地平线两颗红色发光体悬停，下方光源相对上方由约6点钟缓慢旋至略过9点钟；FBI评估高度可信（FBI-UAP-PR002）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-PR002", "FBI-UAP-D004", "FBI-UAP-D008"],
+      "dvids": "https://www.dvidshub.net/video/1010264/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022"
+    },
+    {
+      "id": "greece-circular-ocean-2023",
+      "date": "2023-10",
+      "location": "Greece (near ocean surface; exact location classified)",
+      "country": "Greece",
+      "name": "希腊近海圆形UAP（PR35）",
+      "nameEn": "Greece Near-Ocean Circular UAP (PR35)",
+      "shortDesc": "USCENTCOM提交24秒红外视频；任务报告称小型圆形物贴近海面以约30 mph飞向陆地后丢失（DOW-UAP-PR35）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR35", "DoW-UAP-D35"],
+      "dvids": "https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023"
+    },
+    {
+      "id": "uae-ir-track-2023",
+      "date": "2023-10",
+      "location": "United Arab Emirates",
+      "country": "UAE",
+      "name": "阿联酋红外跟踪UAP（PR27）",
+      "nameEn": "UAE Infrared Track UAP (PR27)",
+      "shortDesc": "USCENTCOM提交4分57秒红外视频，传感器长时间跟踪对比区域并因平台运动反复失锁重获（DOW-UAP-PR27）",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR27", "DoW-UAP-D23"],
+      "dvids": "https://www.dvidshub.net/video/1006067/dow-uap-pr27-unresolved-uap-report-united-arab-emirates-october-2023"
+    },
+    {
+      "id": "gulf-of-america-flicker-2019",
+      "date": "2019",
+      "location": "Gulf of America (Gulf of Mexico)",
+      "country": "USA",
+      "name": "墨西哥湾自动增益闪烁UAP（PR115）",
+      "nameEn": "Gulf of America Auto-Gain Flicker UAP (PR115)",
+      "shortDesc": "美国空军提交8秒红外视频；AARO注明闪烁可能由自动增益造成，案件仍标未解决（DOW-UAP-PR115）",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR115"],
+      "dvids": "https://www.dvidshub.net/video/1014123/dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019"
+    },
+    {
+      "id": "gulf-of-oman-cold-orbs-2021",
+      "date": "2021-09-08",
+      "location": "Gulf of Oman",
+      "country": "International waters",
+      "name": "阿曼湾AC-130冷球群（PR117）",
+      "nameEn": "Gulf of Oman AC-130 Cold Orbs (PR117)",
+      "shortDesc": "2021年9月8日AFSOC AC-130J实弹训练中报告约25次红外冷球实例；PURSUE Release 05公开IIR与手机二次录像（DOW-UAP-PR117/D101）",
+      "confidence": "High",
+      "officialIds": ["DOW-UAP-PR117", "DOW-UAP-D101"],
+      "dvids": "https://www.dvidshub.net/video/1017793/dow-uap-pr117-unresolved-uap-report-gulf-oman-2021"
+    }
+  ]
+}

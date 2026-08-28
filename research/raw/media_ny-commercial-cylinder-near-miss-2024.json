@@ -1,0 +1,22 @@
+{
+  "eventId": "ny-commercial-cylinder-near-miss-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
+  "media": [
+    {
+      "type": "image",
+      "url": "https://cdn.abcotvs.com/dip/images/15546386_pentagon-file-img.jpg",
+      "caption": "ABC7：AARO FY2024 年报相关报道配图（覆盖纽约商业航班圆柱体近撞记录的公开语境）"
+    },
+    {
+      "type": "image",
+      "url": "https://cdn.abcotvs.com/dip/images/15544790_111424-wpvi-n1-ufo-hearing-pkg-video-vid.jpg",
+      "caption": "ABC7：与 AARO/UAP 年报听证会相关的新闻画面"
+    },
+    {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=DP7Nwb-z1_o",
+      "caption": "AARO FY2024年度报告媒体圆桌会议相关视频 — 2024年11月14日，AARO主任Jon Kosloski讨论年度报告中的757份UAP报告。"
+    }
+  ]
+}

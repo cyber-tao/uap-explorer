@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Disclosed UAP Events Batch — August 2026 weekly curation (week 3)",
+    "description": "Six additional officially disclosed PURSUE/FBI UAP cases: FBI western slow-moving black-hot pair PR007, CENTCOM Middle East EO/IR PR134, CENTCOM Middle East reticle PR136, CENTCOM Middle East dual-contrast PR024, FBI Bagram triangle D024/D025, and FBI Colorado Springs red-lit triangle D030/D031.",
+    "generated": "2026-08-17",
+    "source_scope": "DVIDS/AARO PURSUE Release 05 videos FBI-UAP-PR007 and DOW-UAP-PR134/PR136, Release 04 leftover DOW-UAP-PR024, plus FBI FD-302/renderings D024/D025/D030/D031",
+    "total_events": 6
+  },
+  "events": [
+    {
+      "id": "fbi-slow-moving-objects-2026",
+      "date": "2026-03",
+      "location": "Western United States (exact location undisclosed)",
+      "country": "USA",
+      "name": "FBI西部慢速黑体（PR007）",
+      "nameEn": "FBI Western Slow-Moving Objects (PR007)",
+      "shortDesc": "2026年3月联邦特工在射频告警后用手持热成像记录两枚同速同向的“黑热”对比体（FBI-UAP-PR007/D032）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-PR007", "FBI-UAP-D032"],
+      "dvids": "https://www.dvidshub.net/video/1017801/fbi-uap-pr007-slow-moving-objects-2026"
+    },
+    {
+      "id": "middle-east-eoir-2025",
+      "date": "2025",
+      "location": "Middle East (exact location classified)",
+      "country": "International / Middle East",
+      "name": "中东光电红外跟踪UAP（PR134）",
+      "nameEn": "Middle East EO/IR Track UAP (PR134)",
+      "shortDesc": "USCENTCOM提交1分39秒光电/红外视频，传感器跟踪对比区域并多次切换模式与倍率（DOW-UAP-PR134）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR134"],
+      "dvids": "https://www.dvidshub.net/video/1017792/dow-uap-pr134-unresolved-uap-report-middle-east-2025"
+    },
+    {
+      "id": "middle-east-reticle-2023",
+      "date": "2023",
+      "location": "Middle East (exact location classified)",
+      "country": "International / Middle East",
+      "name": "中东十字线锁定UAP（PR136）",
+      "nameEn": "Middle East Reticle Lock UAP (PR136)",
+      "shortDesc": "USCENTCOM提交约30秒红外视频；传感器跟踪对比区域并短暂套上十字线，期间被平台构件遮挡（DOW-UAP-PR136）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR136"],
+      "dvids": "https://www.dvidshub.net/video/1017796/dow-uap-pr136-unresolved-uap-report-middle-east-2023"
+    },
+    {
+      "id": "middle-east-dual-contrast-2023",
+      "date": "2023",
+      "location": "Middle East (exact location classified)",
+      "country": "International / Middle East",
+      "name": "中东双亮对比区UAP（PR024）",
+      "nameEn": "Middle East Dual Bright Contrast UAP (PR024)",
+      "shortDesc": "USCENTCOM提交18秒红外视频：两处明亮对比区穿越视场，传感器同时锁定暗对比区（DOW-UAP-PR024）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR024"],
+      "dvids": "https://www.dvidshub.net/video/1014100/dow-uap-pr024-unresolved-uap-report-middle-east-2023"
+    },
+    {
+      "id": "bagram-triangle-2002",
+      "date": "2002-06",
+      "location": "Bagram Airfield, Afghanistan",
+      "country": "Afghanistan",
+      "name": "巴格拉姆等边三角UAP（2002）",
+      "nameEn": "Bagram Equilateral Triangle UAP (2002)",
+      "shortDesc": "2002年6月两名美军飞行员目击无声等边三角形；2024年FD-302与FBI复原图于Release 05公开（FBI-UAP-D024/D025）",
+      "confidence": "Medium",
+      "officialIds": ["FBI-UAP-D024", "FBI-UAP-D025"],
+      "disclosure": "PURSUE Release 05, 2026-08-07"
+    },
+    {
+      "id": "colorado-springs-triangle-2023",
+      "date": "2023-10",
+      "location": "Colorado Springs, Colorado",
+      "country": "USA",
+      "name": "科罗拉多泉红灯三角UAP（2023）",
+      "nameEn": "Colorado Springs Red-Lit Triangle UAP (2023)",
+      "shortDesc": "2023年10月两名目击者看到带红灯的黑三角几乎瞬间加速并作90度转弯，通话出现电磁干扰（FBI-UAP-D030/D031）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-D030", "FBI-UAP-D031"],
+      "disclosure": "PURSUE Release 05, 2026-08-07"
+    }
+  ],
+  "not_promoted": {
+    "pr117_siblings": "DOW-UAP-PR118–PR122 remain the same Gulf of Oman AC-130 sortie as PR117; kept as related clips, not standalone catalog events.",
+    "pacific_2019": "DOW-UAP-PR123–PR127 are contemporaneous handheld/secondary captures that AARO says were digitally altered before UAPTF transfer — research-only unless framed as a provenance-caveat case.",
+    "pr142": "DOW-UAP-PR142 is a 14-second Middle East transit with only ~4 seconds of content.",
+    "pr149": "DOW-UAP-PR149 is a 51-second generic IR track; deferred in favor of the more distinctive PR024 dual-contrast clip.",
+    "pr106_pr109": "Digitally altered before AARO/UAPTF receipt.",
+    "fbi_pr005": "Artistic digital recreation of a 2023 western US narrative — Speculative if promoted.",
+    "bahia_1963": "State/EOP/FBIS chain closed a viral Brazilian radio crash claim in eleven days; not an unresolved sensor case.",
+    "cia_puerto_rico_1964": "CIA-UAP-D022 resolved the contact as an OXCART-program YF-12A."
+  }
+}

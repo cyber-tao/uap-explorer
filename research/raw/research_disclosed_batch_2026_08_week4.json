@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Disclosed UAP Events Batch — August 2026 weekly curation (week 4)",
+    "description": "Six officially disclosed PURSUE Release 05 cases not yet in the runtime catalog: Navy NPIC 1953 film analysis D098, FBI triangle/thermal FD-302s D028/D033/D037-D040/D026, and CENTCOM Middle East IR PR149.",
+    "generated": "2026-08-24",
+    "source_scope": "PURSUE Release 05 (2026-08-07) documents and DVIDS videos; official catalog text via war.gov/AARO/DVIDS",
+    "total_events": 6,
+    "skipped": [
+      "FBI-UAP-PR007 / D032 and CENTCOM PR134/PR136/PR024 plus Bagram D024 and Colorado Springs D030 remain in draft PR #5 — not re-promoted here",
+      "PR117–PR122 Oman clips already represented by gulf-of-oman-cold-orbs-2021",
+      "Digitally altered Pacific PR123–PR127",
+      "Short PR142 (~4s)",
+      "Resolved CIA-UAP-D022 Puerto Rico YF-12A",
+      "Closed 1963 Bahia radio-crash chain",
+      "DOW-UAP-D099 ghost-rocket review (mostly meteor conclusion; deferred)"
+    ]
+  },
+  "events": [
+    {
+      "id": "tremonton-great-falls-1952",
+      "date": "1952-07-02",
+      "location": "Tremonton, Utah / Great Falls, Montana",
+      "country": "USA",
+      "name": "海军NPIC胶片分析（特雷蒙顿与大瀑布城）",
+      "nameEn": "Navy NPIC Film Analysis (Tremonton & Great Falls)",
+      "shortDesc": "1953 Naval Photographic Interpretation Center analysis of 1950 Montana and 1952 Utah 16mm films (DOW-UAP-D098)",
+      "confidence": "High",
+      "officialIds": ["DOW-UAP-D098"]
+    },
+    {
+      "id": "fbi-isosceles-triangle-2011",
+      "date": "2011-06",
+      "location": "United States (undisclosed)",
+      "country": "USA",
+      "name": "FBI等腰三角三灯目击（D028）",
+      "nameEn": "FBI Isosceles Triangle with Corner Lights (D028)",
+      "shortDesc": "Two former service members reported a massive black isosceles triangle with car-sized white corner lights (FBI-UAP-D028/D029)",
+      "confidence": "Medium",
+      "officialIds": ["FBI-UAP-D028", "FBI-UAP-D029"]
+    },
+    {
+      "id": "fbi-blackhawk-thermal-2026",
+      "date": "2026-06-11",
+      "location": "Western United States",
+      "country": "USA",
+      "name": "FBI特工人黑鹰热对比参照（D033）",
+      "nameEn": "FBI Special Agent Black Hawk Thermal Comparison (D033)",
+      "shortDesc": "Special Agent compared a thermally elevated object to a UH-60 Black Hawk (FBI-UAP-D033)",
+      "confidence": "Medium",
+      "officialIds": ["FBI-UAP-D033"]
+    },
+    {
+      "id": "fbi-western-red-lights-2026",
+      "date": "2026",
+      "location": "Western United States ridgeline",
+      "country": "USA",
+      "name": "FBI美西红光集群与手表异常（D037/D040）",
+      "nameEn": "FBI Western Red-Light Cluster and Watch Anomaly (D037/D040)",
+      "shortDesc": "Paired FD-302s of dash/orb red lights plus a 25-minute mechanical-watch discrepancy (FBI-UAP-D037–D042)",
+      "confidence": "Medium",
+      "officialIds": ["FBI-UAP-D037", "FBI-UAP-D038", "FBI-UAP-D039", "FBI-UAP-D040", "FBI-UAP-D041", "FBI-UAP-D042"]
+    },
+    {
+      "id": "colorado-springs-translucent-2023",
+      "date": "2023-10",
+      "location": "Colorado Springs, Colorado",
+      "country": "USA",
+      "name": "科罗拉多斯普林斯半透明三角（D026）",
+      "nameEn": "Colorado Springs Translucent Triangle (D026)",
+      "shortDesc": "Former DoW employee and spouse reported a translucent triangle with underwater-like distortion (FBI-UAP-D026/D027)",
+      "confidence": "Medium",
+      "officialIds": ["FBI-UAP-D026", "FBI-UAP-D027"]
+    },
+    {
+      "id": "middle-east-ir-track-2023",
+      "date": "2023",
+      "location": "Middle East (undisclosed)",
+      "country": "International waters",
+      "name": "中东红外跟踪UAP（PR149）",
+      "nameEn": "Middle East Infrared Track UAP (PR149)",
+      "shortDesc": "USCENTCOM 51-second IR track of a contrast area (DOW-UAP-PR149)",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR149"],
+      "dvids": "https://www.dvidshub.net/video/1017799/dow-uap-pr149-unresolved-uap-report-middle-east-2023"
+    }
+  ]
+}

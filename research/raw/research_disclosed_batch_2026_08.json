@@ -1,0 +1,81 @@
+{
+  "metadata": {
+    "title": "Disclosed UAP Events Batch — August 2026 curation",
+    "description": "Six additional officially disclosed / congressional-testimony UAP cases promoted from research_2024_2025 archives into the runtime catalog.",
+    "generated": "2026-08-02",
+    "source_scope": "DVIDS/AARO PURSUE unresolved video releases (PR29/PR32/PR43/PR48), House UAP hearing Sep 2025 (USS Jackson), WSJ/DoD reporting on Langley AFB drone swarm",
+    "total_events": 6
+  },
+  "events": [
+    {
+      "id": "uae-inverted-teardrop-2024",
+      "date": "2024-06",
+      "location": "Near Al Dhafra Air Base, UAE",
+      "country": "UAE",
+      "name": "阿联酋倒泪滴形UAP事件",
+      "nameEn": "UAE Inverted Teardrop UAP Event",
+      "shortDesc": "美军平台红外传感器在阿联酋上空捕获带垂直柱状附体的倒泪滴形对比区域（DOW-UAP-PR29）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR29", "DOW-UAP-D8"],
+      "dvids": "https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024"
+    },
+    {
+      "id": "syria-white-light-orb-2024",
+      "date": "2024-10",
+      "location": "Syria (exact location classified)",
+      "country": "Syria",
+      "name": "叙利亚白色不规则光球UAP事件",
+      "nameEn": "Syria Misshapen White Light Orb UAP Event",
+      "shortDesc": "美军FMV相机在叙利亚上空捕获6秒不规则白色光球，伴随光晕/眩光（DOW-UAP-PR32）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR32", "DOW-UAP-D32"],
+      "dvids": "https://www.dvidshub.net/video/1006078/dow-uap-pr32-unresolved-uap-report-syria-october-2024"
+    },
+    {
+      "id": "uss-jackson-tictac-2023",
+      "date": "2023-02-15",
+      "location": "Whiskey-291 warning area, Southern California coast",
+      "country": "USA",
+      "name": "USS Jackson Tic Tac跨介质UAP",
+      "nameEn": "USS Jackson Tic Tac Transmedium UAP",
+      "shortDesc": "2023年2月15日USS Jackson船员多传感器目击自发光Tic Tac从海面冒出并与同类物体同步加速消失；2025年9月国会作证披露",
+      "confidence": "High",
+      "disclosure": "House Oversight UAP hearing, 2025-09-09 (Alexandro Wiggins)"
+    },
+    {
+      "id": "langley-afb-drone-swarm-2023",
+      "date": "2023-12",
+      "location": "Joint Base Langley-Eustis, Virginia",
+      "country": "USA",
+      "name": "兰利空军基地无人机群入侵",
+      "nameEn": "Langley Air Force Base Drone Swarm Incursion",
+      "shortDesc": "不明无人机群连续约17夜闯入兰利AFB限制空域，F-22训练受影响并转移",
+      "confidence": "High",
+      "disclosure": "DoD/FBI/White House response; WSJ and subsequent AARO annual caseload briefings"
+    },
+    {
+      "id": "indopacom-ir-uap-2024",
+      "date": "2024",
+      "location": "INDOPACOM area of responsibility",
+      "country": "International waters",
+      "name": "印太战区红外UAP（PR48）",
+      "nameEn": "INDOPACOM Infrared UAP (PR48)",
+      "shortDesc": "INDOPACOM向AARO提交1分39秒红外视频，传感器持续跟踪对比区域（DOW-UAP-PR48）",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR48"],
+      "dvids": "https://www.dvidshub.net/video/1006110/dow-uap-pr48-unresolved-uap-report-indopacom-2024"
+    },
+    {
+      "id": "africa-uap-2025",
+      "date": "2025",
+      "location": "Africa (exact location classified)",
+      "country": "Africa",
+      "name": "非洲2025年UAP红外事件",
+      "nameEn": "Africa 2025 UAP Infrared Event",
+      "shortDesc": "AFRICOM向AARO提交2秒红外视频，小面积对比物体快速穿过视场（DOW-UAP-PR43）",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR43"],
+      "dvids": "https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025"
+    }
+  ]
+}

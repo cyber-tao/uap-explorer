@@ -1,0 +1,17 @@
+{
+  "eventId": "gulf-of-aden-uap-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
+  "media": [
+    {
+      "type": "image",
+      "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d75-mission-report-gulf-of-aden-july-2024.jpg",
+      "caption": "DOW-UAP-D75 官方任务报告封面：2024年7月14日美军ISR平台在亚丁湾记录UAP事件的MISREP文档，由第124攻击中队提交至USCENTCOM/AARO"
+    },
+    {
+      "type": "video",
+      "url": "https://www.dvidshub.net/video/962722/unresolved-uap-report-middle-east-2024",
+      "caption": "DVIDS/AARO官方视频：2024年中东地区红外传感器未解决UAP报告（与D75同区域作战语境，非Hellfire专属画面）"
+    }
+  ]
+}

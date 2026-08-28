@@ -1,0 +1,147 @@
+{
+  "events": [
+    {
+      "id": "oumuamua",
+      "expandedDescription": "2017年10月19日，夏威夷大学茂纳凯亚天文台的Pan-STARRS1（全景巡天望远镜与快速反应系统）望远镜在进行近地天体巡天时，首次捕捉到了一个异常天体。天文学家Rob Weryk在复查数据时注意到这个天体运动轨迹极为特殊，无法被归类为小行星或彗星的太阳系内轨道。随后，ESO加那利群岛望远镜的独立观测数据交叉验证后确认：这是一个来自太阳系外的星际访客。国际天文学联合会（IAU）将其正式命名为1I/2017 U1，并赋予夏威夷语名称ʻOumuamua，意为\"来自远方的第一位信使\"。\n\nʻOumuamua的物理特征极为罕见。它呈现出极端的长条形（雪茄状或薄饼状），长轴约400米，长宽比高达10:1，远超太阳系内任何已知小行星或彗星。其表面呈暗红色，光谱特征与太阳系外缘天体类似，表明它已在星际空间中漂流数亿年，表面受到宇宙射线长期辐照。更令人困惑的是，它完全没有彗星活动特征——既无彗尾也无尘埃喷发现象，却在2018年被Micheli等人在《Nature》发表的研究证实存在非引力加速（30σ显著性），速度比纯引力预测更快。\n\n这一异常加速引发了激烈科学争议。2018年10月，哈佛大学天文学家Avi Loeb与博士后Shmuel Bialy在《The Astrophysical Journal Letters》发表论文，提出ʻOumuamua可能是一个人造\"光帆\"（Lightsail），由太阳辐射压推动。该假说认为其极薄表面、异常形状和无彗发特征均符合光帆特性。然而，多数天文学家持反对意见，认为证据不足。2019年7月，由14位国际专家组成的团队在《Nature Astronomy》发表共识，认为ʻOumuamua具有自然起源，其加速可能由隐藏冰层释放氢气导致。2023年，Bergner和Seligman进一步提出分子氢冰假说来解释其无可见彗尾却有加速的矛盾。SETI（搜寻地外文明计划）也对该天体进行了无线电信号监测，但一无所获。\n\nʻOumuamua于2017年9月9日通过近日点（距太阳0.25 AU），最接近地球时约2420万公里（10月15日）。NASA的哈勃和斯皮策空间望远镜对其进行了持续追踪。它正以约38.3 km/s的速度离开太阳系，轨道倾角约122°，朝向飞马座方向。预计2019年1月越过土星轨道，2022年越过海王星轨道，永不再返。此发现开创了\"星际天体学\"新领域，此后2019年发现2I/Borisov，2025年发现3I/ATLAS，但ʻOumuamua始终是唯一呈现如此极端形态且无法被完全解释的首个星际访客。",
+      "sources": [
+        {
+          "label": "NASA Science - Oumuamua Overview",
+          "url": "https://science.nasa.gov/solar-system/comets/oumuamua/"
+        },
+        {
+          "label": "NASA News - First Interstellar Object Discovery (2017-10-26)",
+          "url": "https://www.nasa.gov/solar-system/small-asteroid-or-comet-visits-from-beyond-the-solar-system/"
+        },
+        {
+          "label": "Nature - Non-gravitational acceleration in trajectory (Micheli et al. 2018)",
+          "url": "https://www.nature.com/articles/s41586-018-0254-4"
+        },
+        {
+          "label": "NASA JPL - Solar System's First Interstellar Visitor (2017-11-20)",
+          "url": "https://www.jpl.nasa.gov/news/solar-systems-first-interstellar-visitor-dazzles-scientists/"
+        },
+        {
+          "label": "NASA JPL - First Interstellar Asteroid Video",
+          "url": "https://www.jpl.nasa.gov/videos/first-interstellar-asteroid-wows-scientists/"
+        },
+        {
+          "label": "NASA Science - What We Know and Don't Know About Oumuamua",
+          "url": "https://science.nasa.gov/solar-system/what-we-knowand-dont-knowabout-oumuamua/"
+        },
+        {
+          "label": "NASA Hubble - Unexpected Speed Boost",
+          "url": "https://science.nasa.gov/missions/hubble/our-solar-systems-first-known-interstellar-object-gets-unexpected-speed-boost/"
+        },
+        {
+          "label": "NASA Science - Telescope Image of Oumuamua",
+          "url": "https://science.nasa.gov/resource/telescope-image-of-oumuamua/"
+        },
+        {
+          "label": "arXiv - Could Solar Radiation Pressure Explain Oumuamua's Peculiar Acceleration (Bialy & Loeb 2018)",
+          "url": "https://arxiv.org/abs/1810.11490"
+        },
+        {
+          "label": "arXiv - Discovery Paper (Meech et al. 2017)",
+          "url": "https://arxiv.org/pdf/1711.03558v2"
+        },
+        {
+          "label": "Nature Astronomy - Natural Origin Consensus (Jedicke et al. 2019)",
+          "url": "https://www.nature.com/articles/s41550-019-0816-2"
+        },
+        {
+          "label": "Space.com - Alien Light Sail Theory",
+          "url": "https://www.space.com/42352-oumuamua-interstellar-object-alien-light-sail.html"
+        },
+        {
+          "label": "Sci.News - Hydrogen Ice Explanation (Bergner & Seligman 2023)",
+          "url": "https://www.sci.news/astronomy/oumuamua-hydrogen-11769.html"
+        },
+        {
+          "label": "NASA APOD - Unexpected Trajectory (2018-11-20)",
+          "url": "https://apod.nasa.gov/apod/ap181120.html"
+        },
+        {
+          "label": "ESA/Hubble - Oumuamua Gets a Boost",
+          "url": "https://esahubble.org/images/heic1813a/"
+        },
+        {
+          "label": "ESO - First Interstellar Asteroid Artist Impression",
+          "url": "https://www.eso.org/public/images/eso1737a/"
+        },
+        {
+          "label": "NASA SVS - Oumuamua Visualizations",
+          "url": "https://svs.gsfc.nasa.gov/search/?search=oumuamua"
+        },
+        {
+          "label": "NASA Goddard - Hubblecast 111: Oumuamua Getting a Boost",
+          "url": "https://science.nasa.gov/asset/hubble/oumuamua-video-feature-narrated/"
+        },
+        {
+          "label": "ESA/Hubble - Animation Passing Through Solar System",
+          "url": "https://esahubble.org/videos/heic1813d/"
+        },
+        {
+          "label": "ESA/Hubble - Expected vs Measured Trajectory Animation",
+          "url": "https://esahubble.org/videos/heic1813f/"
+        }
+      ],
+      "media": [
+        {
+          "type": "image",
+          "url": "https://esahubble.org/images/heic1813a/",
+          "caption": "ESA/Hubble艺术家印象：ʻOumuamua在太阳加热下从表面释放气体物质，展示其非引力加速现象。Credit: ESA/Hubble, NASA, ESO, M. Kornmesser"
+        },
+        {
+          "type": "image",
+          "url": "https://www.eso.org/public/images/eso1737a/",
+          "caption": "ESO艺术家印象：ʻOumuamua呈现为暗红色、高度拉长的金属或岩石天体，长约400米，与太阳系任何已知天体截然不同。Credit: ESO/M. Kornmesser"
+        },
+        {
+          "type": "image",
+          "url": "https://science.nasa.gov/resource/telescope-image-of-oumuamua/",
+          "caption": "实际望远镜深空合成图像：ʻOumuamua位于中心（蓝色圆圈标记），周围是因望远镜追踪移动而拖曳的暗淡星轨。Credit: ESO/K. Meech et al."
+        },
+        {
+          "type": "image",
+          "url": "https://apod.nasa.gov/apod/image/1711/OumuamuaDrawing_ESO_960.jpg",
+          "caption": "NASA APOD 每日天文图：ʻOumuamua穿越太阳系的示意图，展示了其独特的双曲线轨道。Credit: NASA, JPL, Caltech"
+        },
+        {
+          "type": "image",
+          "url": "https://cdn.sci.news/images/2018/06/image_6145_1-Oumuamua.jpg",
+          "caption": "ʻOumuamua亮度变化示意图：由于极端长条形形态，当它长轴对准地球时最亮，端点对准地球时最暗。Credit: NASA/JPL-Caltech"
+        },
+        {
+          "type": "image",
+          "url": "https://mediasvc.eurekalert.org/Api/v1/Multimedia/68039e3c-bf0b-47f2-b29c-e0cc343f393a/Rendition/low-res/Content/Public",
+          "caption": "ʻOumuamua艺术家印象与实际图像合成：插图显示其穿越太阳系，内嵌图为Gemini South望远镜在2017年10月27日拍摄的彩色合成影像。Credit: ESA/Hubble, NASA, ESO/M. Kornmesser, Gemini Observatory/AURA/NSF"
+        },
+        {
+          "type": "video",
+          "url": "https://www.jpl.nasa.gov/videos/first-interstellar-asteroid-wows-scientists/",
+          "caption": "NASA JPL官方视频：首个星际小行星令科学家惊叹（2017），包含发现过程与科学家访谈。Duration: 约3分钟"
+        },
+        {
+          "type": "video",
+          "url": "https://esahubble.org/videos/heic1813a/",
+          "caption": "ESA/Hubble Hubblecast 111：ʻOumuamua获得意外加速。专业天文纪录片，解释非引力加速观测与理论。Duration: 6分16秒"
+        },
+        {
+          "type": "video",
+          "url": "https://science.nasa.gov/asset/hubble/oumuamua-video-feature-narrated/",
+          "caption": "NASA Goddard narration视频：哈勃等望远镜发现ʻOumuamua获得额外速度提升，可能来自类彗星气体喷射。Duration: 约1分钟"
+        },
+        {
+          "type": "video",
+          "url": "https://esahubble.org/videos/heic1813d/",
+          "caption": "ESA/Hubble动画：ʻOumuamua穿越太阳系的路径，展示其不受太阳引力束缚的双曲线轨道。Duration: 1分19秒"
+        },
+        {
+          "type": "video",
+          "url": "https://esahubble.org/videos/heic1813f/",
+          "caption": "ESA/Hubble动画：ʻOumuamua预期与实测轨迹对比，显示其偏离纯引力预测的异常加速。Duration: 17秒"
+        }
+      ]
+    }
+  ]
+}

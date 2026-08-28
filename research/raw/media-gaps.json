@@ -1,0 +1,854 @@
+{
+  "generatedAt": "2026-07-14T10:43:40.441Z",
+  "gaps": [
+    {
+      "eventId": "nimitz-tic-tac",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://ufofiles.app/assets/official-media/dvids-flir-uap.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://s.yimg.com/lo/mysterio/api/018fe59f1ae089896464364546ec80fe793fee18bde3ebd442f5fb70c51beeed/lightyear_networkapi/resizefill_w722_h686;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fkswb_articles_601%2F771a1ffc366588ca7165d1bdf062157e",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/USS_Nimitz_%28CVN-68%29.jpg/1280px-USS_Nimitz_%28CVN-68%29.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "gimbal-gofast",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://keithmayerson.com/works/uss-roosevelt-gimbal-ufo-still-from-the-declassified-jan-2015-video/",
+          "reason": "not image content-type: text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://spookyvalley.com/events/2015-gimbal-ufo-video/",
+          "reason": "not image content-type: text/html; charset=utf-8"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/USS_Theodore_Roosevelt_%28CVN-71%29.jpg/1280px-USS_Theodore_Roosevelt_%28CVN-71%29.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "jal-1628",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.theblackvault.com/casefiles/wp-content/uploads/2025/08/jal1628-radar.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://ufologie.patrickgross.org/htm/jal1628draw.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://en.tocana.jp/wp-content/uploads/2025/09/Flight1628_1.jpeg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Boeing_747-200_JAL.jpg/1280px-Boeing_747-200_JAL.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "malmstrom-icbm",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.earthfiles.com/wp-content/uploads/2021/10/Robert-L.-Salas-USAF-Captain-Ret.-graduated-in-1964-from-the-Air-Force-Academy.jpg",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://www.nicap.org/malmstrom67-2.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Minuteman_III_missile.jpg/800px-Minuteman_III_missile.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "belgium-ufo-wave",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://www.thegalacticmind.com/content/images/size/w30/2025/09/ep538.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://www.bibliotecapleyades.net/ciencia/ufo_briefingdocument/1990.htm",
+          "reason": "not image content-type: text/html"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Atomium_Belgium.jpg/800px-Atomium_Belgium.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "xiaoshan-airport",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.ghosttheory.com/wp-content/uploads/2010/07/ChinaHangzhou070710Image1.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://theufodatabase.com/media/photos/gallery/hangzhou-china-incident-1.jpg?240118",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://fearoflanding.com/wp-content/uploads/2010/07/ufo+china-300x222.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Hangzhou_Xiaoshan_International_Airport.jpg/1280px-Hangzhou_Xiaoshan_International_Airport.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "guizhou-forest",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://sixuo.oss-cn-hangzhou.aliyuncs.com/pic/put5tm1jotc.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://sixuo.oss-cn-hangzhou.aliyuncs.com/pic/tyb53beplp4.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://www.tansuo.in/wp-content/uploads/2016/02/11.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://www.tansuo.in/wp-content/uploads/2016/01/1-15120410034OL-300x225.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "http://www.guizhoulanglaile.com/upfiles/2021517/20210517082042194219.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "http://www.guizhoulanglaile.com//upfiles/file/201304/20130416163338732.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Location_of_Guizhou_Province.png/800px-Location_of_Guizhou_Province.png",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "shanghai-hongqiao",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0415%2F79f162b3j00rt44ws002dd200ey006dg00ey006d.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0415%2F2904e61dj00rt44wu002rd200d0006dg00d0006d.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Shanghai_Hongqiao_International_Airport.jpg/1280px-Shanghai_Hongqiao_International_Airport.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "kofu-incident",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.ufoevidence.org/cases/case443.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://i.gzn.jp/img/2025/02/09/kofu-incident-alien-wf2025w/00_m.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://otakupapa.net/en/wp-content/uploads/2022/02/kofu-map.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Kofu_City_Hall.jpg/1280px-Kofu_City_Hall.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "imphal-airport",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://cdn1.img.sputniknews.in/img/07e7/0b/14/5492199_0:320:3072:2048_1920x0_80_0_0_708e004b6c24d085e310b7ce91f3c2c7.jpg.webp",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://e-pao.net/GP.asp?src=1..201123.nov23",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://in.mashable.com/science/64182/mysterious-ufo-sighting-sparks-panic-near-imphal-airport-iaf-launches-rapid-response-with-rafale-jet",
+          "reason": "not image content-type: text/html; charset=utf-8"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Imphal_Airport.jpg/1280px-Imphal_Airport.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "salyut6",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.howandwhys.com/wp-content/uploads/2021/07/Screen-shot-2011-04-23-at-11.43.47-AM.png",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://www.howandwhys.com/wp-content/uploads/2021/07/kovalyonok_vladimir_3-200x300.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Salyut_6.jpg/640px-Salyut_6.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "salyut7-angels",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://conexaoufo.com/wp-content/uploads/conexao_UFO_salyut-3.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Salyut_7_%28DOS-6%29.jpg/640px-Salyut_7_%28DOS-6%29.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://static.thisdayinaviation.com/wp-content/uploads/tdia//2019/07/cosmonaut-svetlana-savitskaya-female-spacewalk-eva.jpeg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Salyut_7_from_Soyuz_T-13.jpg/800px-Salyut_7_from_Soyuz_T-13.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "apollo17",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.war.gov/medialink/ufo/release_1/nasa-uap-vm6-apollo-17-1972.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://pub-d7148e2b49114a8ab87e9305c11533cf.r2.dev/image/nasa-uap-d2-apollo-17-transcript-1972.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Apollo_17_Cernan_on_moon.jpg/640px-Apollo_17_Cernan_on_moon.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Earth_as_seen_from_Apollo_17.jpg/640px-The_Earth_as_seen_from_Apollo_17.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/AS17-134-20384.jpg/800px-AS17-134-20384.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "gemini4-mcdivitt",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://images.nasa.gov/details-S65-30428",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://www.gettyimages.com/photos/gemini-iv",
+          "reason": "HTTP 503"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Gemini_4_spacecraft.jpg/800px-Gemini_4_spacecraft.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "washington-invasion",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fa24ab15aj00rshqpl0019c000go00egm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2Fd37208e2j00rshqpl000wc000dw00dwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0402%2F3bf01c8bj00rshqpl000tc000hs00bwm.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Capitol_Building_Full_View.jpg/1280px-Capitol_Building_Full_View.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "sts75-tether",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/03/STS-75-TSS-1R.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/STS-75_launch.jpg/800px-STS-75_launch.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "chile-san-clemente",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "http://www.spyghana.com/wp-content/uploads/wpid-The-object-flies-so-fast-that-assuming-it-is-not-a-camera-defect-it-is-travelling-an-estimated-6000mph.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://openminds.tv/wp-content/uploads/2012/02/CEFAA-El-Bosque-UFO-Frame.jpg",
+          "reason": "HTTP 404"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Chile_relief_location_map.jpg/800px-Chile_relief_location_map.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "oumuamua",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://apod.nasa.gov/apod/image/1711/OumuamuaDrawing_ESO_960.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://cdn.sci.news/images/2018/06/image_6145_1-Oumuamua.jpg",
+          "reason": "HTTP 403"
+        },
+        {
+          "url": "https://esahubble.org/images/heic1813a/",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://www.eso.org/public/images/eso1737a/",
+          "reason": "not image content-type: text/html; charset=utf-8"
+        },
+        {
+          "url": "https://science.nasa.gov/resource/telescope-image-of-oumuamua/",
+          "reason": "not image content-type: text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Oumuamua_artist_impression.png/800px-Oumuamua_artist_impression.png",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "mq-9-yemen-hellfire-2024",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://s.yimg.com/ny/api/res/1.2/qX3_rvdi.xoqAOGlL2LP2g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTU0MDtjZj13ZWJw/https://media.zenfs.com/en/usa_today_news_641/ad58e5b22fdf46e7a94b834de8f731d5",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0910%2Fcd425c90j00t2d4mo006pd200pc00cwg00it009k.jpg&thumbnail=660x2147483647&quality=80&type=jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/MQ-9_Reaper_in_flight_%28cropped%29.jpg/1280px-MQ-9_Reaper_in_flight_%28cropped%29.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "ny-commercial-cylinder-near-miss-2024",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/All-domain_Anomaly_Resolution_Office_logo.jpg/600px-All-domain_Anomaly_Resolution_Office_logo.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://media.defense.gov/2024/Nov/14/2003577632/-1/-1/1/ANNUAL-REPORT-ON-UAP-2024.PDF",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://www.war.gov/News/Releases/Release/Article/3964824/department-of-defense-releases-the-annual-report-on-unidentified-anomalous-phen/",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/New_York_City_skyline.jpg/1280px-New_York_City_skyline.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "gov-contractor-metallic-cylinder-2024",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://media.cnn.com/api/v1/images/stellar/prod/mg-0035-3-e-20241119133505974.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://imagecloud.thepaper.cn/thepaper/image/329/926/267.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Cylindrical_pressure_vessel.jpg/800px-Cylindrical_pressure_vessel.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "greece-diamond-uap-2024",
+      "have": 1,
+      "need": 2,
+      "failures": [
+        {
+          "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/frames/video/2605/1006073/DOD_111688954.0000001/1000w_q95.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://uapdisclosurefiles.com/data/files/thumb/dow-uap-d25-mission-report-greece-january-2024.jpg",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://unexplainable.com/assets/previews/173.jpg?v=609696",
+          "reason": "The socket connection was closed unexpectedly. For more information, pass `verbose: true` in the second argument to fetch()"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Greece_%28orthographic_projection%29.svg/800px-Greece_%28orthographic_projection%29.svg.png",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "los-alamos-green-fireballs-1949",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "yellow-sea-six-pointed-star-2025",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "east-china-sea-uap-2025",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "east-us-rectangular-uap-2019",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    },
+    {
+      "eventId": "pantex-intrusion-2015",
+      "have": 2,
+      "need": 1,
+      "failures": [
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/US_Navy_040115-N-0000X-001_An_F-A-18F_Super_Hornet_assigned_to_the_Be_Devilers_of_Strike_Fighter_Squadron_One_Zero_Two_%28VFA-102%29_flies_over_the_Pacific_Ocean.jpg/1280px-thumbnail.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Radar_antenna.jpg/800px-Radar_antenna.jpg",
+          "reason": "unknown certificate verification error"
+        },
+        {
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Infrared_portrait.jpg/800px-Infrared_portrait.jpg",
+          "reason": "unknown certificate verification error"
+        }
+      ]
+    }
+  ]
+}

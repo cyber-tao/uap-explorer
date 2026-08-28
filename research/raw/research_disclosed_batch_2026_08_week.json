@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "title": "Disclosed UAP Events Batch — August 2026 weekly curation",
+    "description": "Six additional officially disclosed PURSUE/DVIDS UAP cases promoted into the runtime catalog: CENTCOM Greece PR34, INDOPACOM PR46, Army PR49, FBI northeastern orb cluster PR003/PR004, and NORTHCOM Western US PR108.",
+    "generated": "2026-08-04",
+    "source_scope": "DVIDS/AARO PURSUE unresolved video releases (PR34/PR46/PR49/PR108) and FBI PURSUE Release 03 orb videos (PR003/PR004)",
+    "total_events": 6
+  },
+  "events": [
+    {
+      "id": "greece-ocean-90deg-2023",
+      "date": "2023-10",
+      "location": "Greece (near ocean surface; exact location classified)",
+      "country": "Greece",
+      "name": "希腊近海直角转弯UAP（PR34）",
+      "nameEn": "Greece Near-Ocean 90-Degree Turn UAP (PR34)",
+      "shortDesc": "USCENTCOM向AARO提交2分57秒红外视频；任务报告称物体贴近海面并以约80 mph完成多次直角转弯（DOW-UAP-PR34）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR34", "DoW-UAP-D33"],
+      "dvids": "https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023"
+    },
+    {
+      "id": "indopacom-football-radial-2024",
+      "date": "2024",
+      "location": "INDOPACOM area of responsibility",
+      "country": "International waters",
+      "name": "印太足球形径向突起UAP（PR46）",
+      "nameEn": "INDOPACOM Football-Shaped Radial Projection UAP (PR46)",
+      "shortDesc": "INDOPACOM提交9秒红外视频：对比区域呈足球形主体并带三个径向突起（DOW-UAP-PR46）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR46"],
+      "dvids": "https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024"
+    },
+    {
+      "id": "army-ir-dual-contrast-2026",
+      "date": "2026",
+      "location": "Undisclosed (Department of the Army platform)",
+      "country": "USA",
+      "name": "陆军双对比区红外UAP（PR49）",
+      "nameEn": "Army Dual Contrast Infrared UAP (PR49)",
+      "shortDesc": "美国陆军向AARO提交1分49秒红外视频，传感器先后跟踪一个再跟踪两个对比区域（DOW-UAP-PR49）",
+      "confidence": "Low",
+      "officialIds": ["DOW-UAP-PR49"],
+      "dvids": "https://www.dvidshub.net/video/1006111/dow-uap-pr49-unresolved-uap-report-department-army-2026"
+    },
+    {
+      "id": "fbi-orbs-over-pond-2024",
+      "date": "2024-10",
+      "location": "Northeastern United States (sparsely populated)",
+      "country": "USA",
+      "name": "FBI池塘上空光球（PR003）",
+      "nameEn": "FBI Orbs Over the Pond (PR003)",
+      "shortDesc": "2024年10月美东北池塘上空类等离子体光球悬停约45分钟；FBI评估目击者为高度可信（FBI-UAP-PR003）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-PR003", "FBI-UAP-D004", "FBI-UAP-D008"],
+      "dvids": "https://www.dvidshub.net/video/1010267/fbi-uap-pr003-orbs-over-pond-2024"
+    },
+    {
+      "id": "fbi-northeastern-orb-2025",
+      "date": "2025-07",
+      "location": "Northeastern United States backyard (~25 miles from pond cluster)",
+      "country": "USA",
+      "name": "FBI东北红球合并目击（PR004）",
+      "nameEn": "FBI Northeastern Red Orb Merge Sighting (PR004)",
+      "shortDesc": "2025年7月后院约25英尺高度红色等离子体光球，第二球汇合后静音西移并看似合并；FBI评估目击者可信（FBI-UAP-PR004）",
+      "confidence": "High",
+      "officialIds": ["FBI-UAP-PR004", "FBI-UAP-D009", "FBI-UAP-D010"],
+      "dvids": "https://www.dvidshub.net/video/1010269/fbi-uap-pr004-northeastern-orb-sighting-2025"
+    },
+    {
+      "id": "western-us-autotrack-2020",
+      "date": "2020",
+      "location": "Western United States",
+      "country": "USA",
+      "name": "美西自动跟踪红外UAP（PR108）",
+      "nameEn": "Western US Auto-Track Infrared UAP (PR108)",
+      "shortDesc": "USNORTHCOM向AARO提交红外视频，传感器以自动跟踪十字线持续锁定对比区域（DOW-UAP-PR108）",
+      "confidence": "Medium",
+      "officialIds": ["DOW-UAP-PR108"],
+      "dvids": "https://www.dvidshub.net/video/1014106/dow-uap-pr108-unresolved-uap-report-western-united-states-2020"
+    }
+  ]
+}

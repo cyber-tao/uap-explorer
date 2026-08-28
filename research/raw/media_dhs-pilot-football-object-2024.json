@@ -1,0 +1,22 @@
+{
+  "eventId": "dhs-pilot-football-object-2024",
+  "syncedFrom": "src/data/events.ts",
+  "note": "Archival mirror of runtime media after image audit (2026-07-14).",
+  "media": [
+    {
+      "type": "image",
+      "url": "https://nuforc.org/wp-content/uploads/2025/04/S183084_2.jpg",
+      "caption": "NUFORC Troy21 case graphic for the Sept 17, 2024 DHS Beechcraft near-miss (no public UAP body photograph)"
+    },
+    {
+      "type": "video",
+      "url": "https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/",
+      "caption": "NewsNation Banfield report featuring leaked ATC audio of DHS pilot Troy 21 describing a football-sized object under his wing on Sept 17, 2024"
+    },
+    {
+      "type": "video",
+      "url": "https://nuforc.org/troy21/",
+      "caption": "NUFORC Troy21 investigation page with FOIA ATC audio and case write-up"
+    }
+  ]
+}

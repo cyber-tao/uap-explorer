@@ -1,0 +1,65 @@
+{
+  "events": [
+    {
+      "id": "nimitz-tic-tac",
+      "expandedDescription": "2004年11月14日，美国海军尼米兹航母战斗群在加利福尼亚州圣迭戈海岸约100英里处进行训练演习时，发生了现代UAP历史上最著名的事件之一。事件的起点是普林斯顿号导弹巡洋舰（USS Princeton）的AN/SPY-1B宙斯盾雷达系统，该舰在事发前两周就开始探测到异常空中目标——这些物体出现在80,000英尺以上的高空，然后以极快速度下降至海平面附近，速度约100节，且没有敌我识别信号（IFF）。\n\n当天上午，普林斯顿号雷达引导两架F/A-18F超级大黄蜂战斗机前往调查一个位于约20,000英尺高度、60英里外的雷达接触。指挥官大卫·弗拉沃尔（David Fravor，绰号'黑桃A'中队指挥官）和副驾驶亚历克斯·迪特里希（Alex Dietrich）以及他们的武器系统官共同目击了异常现象。他们首先看到海面上有一个剧烈的白色扰动区域，面积约相当于一架波音737大小，仿佛水面下有什么巨大的物体。在这个扰动上方约50英尺处，悬浮着一个白色、光滑、无翼的椭圆形物体，长约40英尺，形状酷似'薄荷糖'（Tic Tac），没有可见的控制面、发动机或排气尾迹。\n\n当弗拉沃尔以顺时针螺旋下降接近时，该物体竟然镜像般地模仿他的飞行轨迹，以同等速率上升。当弗拉沃尔试图以约半英里的距离进行正面拦截时，该物体在不到一秒内以远超马赫3的速度加速消失。随后，普林斯顿号雷达报告称该物体在不到一分钟内重新出现在战斗机预定的战斗巡逻点（CAP点），距离约60英里远。这种瞬间位移意味着加速度超过45,000英里/小时。\n\n第二架由查德·安德伍德（Chad Underwood）驾驶的F/A-18F随后起飞，携带了前视红外瞄准吊舱（ATFLIR/FLIR），拍摄了被称为'FLIR1'或'Nimitz视频'的影像。这段视频显示一个椭圆形物体在红外画面中以异常方式移动，最终在屏幕左侧突然加速消失。\n\n该事件在2017年12月16日由《纽约时报》的调查显示了AATIP（先进航空航天威胁识别计划）的存在而进入公众视野。2019年9月，美国海军正式确认视频的真实性。2020年4月27日，美国国防部正式发布了FLIR1视频，并声明该现象仍被归类为'未识别'。2023年7月，弗拉沃尔和迪特里希在国会公开作证。物理学家Kevin Knuth和SCU研究人员在2023年发表的同行评审论文中估算，该物体的加速度可能达到5,400至46,500 g，远超任何已知航空航天技术的承受能力。",
+      "sources": [
+        {"label": "The New York Times - Glowing Auras and 'Black Money' (2017)", "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"},
+        {"label": "U.S. Department of Defense - Official Pentagon Release (2020)", "url": "https://www.defense.gov/News/News-Stories/Article/Article/2199898/dod-releases-videos-of-unidentified-aerial-phenomena/"},
+        {"label": "Naval Air Systems Command - Official FOIA Documents", "url": "https://www.navair.navy.mil/foia/documents"},
+        {"label": "Scientific Coalition for UAP Studies - Kinematic Analysis (2023)", "url": "https://www.explorescu.org/"},
+        {"label": "The Exclusion Zone - Declassified Evidence (2026)", "url": "https://www.theexclusionzone.com/uss-nimitz-2004-tic-tac-uap-encounter/"},
+        {"label": "CUFOS - UFOs and Intelligence: A Timeline (PDF)", "url": "https://cufos.org/PDFs/pdfs/UFOsandIntelligence.pdf"}
+      ],
+      "media": [
+        {"type": "image", "url": "https://ufofiles.app/assets/official-media/dvids-flir-uap.jpg", "caption": "FLIR1官方视频截图——Tic Tac形状UAP，由DVIDS/国防部发布"},
+        {"type": "image", "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg", "caption": "FLIR1红外视频中Tic Tac形状物体的截图"},
+        {"type": "image", "url": "https://s.yimg.com/lo/mysterio/api/018fe59f1ae089896464364546ec80fe793fee18bde3ebd442f5fb70c51beeed/lightyear_networkapi/resizefill_w722_h686;quality_80;format_webp/https:%2F%2Fmedia.zenfs.com%2Fen%2Fkswb_articles_601%2F771a1ffc366588ca7165d1bdf062157e", "caption": "FLIR UAP视频官方截图——国防部/海军航空系统司令部"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=nd7K5LafDF8", "caption": "FLIR1（Nimitz/Tic-Tac）官方视频——2004年尼米兹事件红外 footage"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=pmNNj8qi8Ms", "caption": "60 Minutes报道——海军飞行员描述UFO遭遇（含Alex Dietrich）"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=7r8E4JyIqhk", "caption": "Joe Rogan Experience #1361——指挥官David Fravor讲述尼米兹事件"}
+      ]
+    },
+    {
+      "id": "gimbal-gofast",
+      "expandedDescription": "2014年至2015年间，部署在大西洋上的西奥多·罗斯福号航空母舰（USS Theodore Roosevelt）战斗群的F/A-18超级大黄蜂战斗机飞行员报告了一系列持续近一年的UAP遭遇事件。飞行员瑞安·格雷夫斯（Ryan Graves）表示，这些物体'几乎每天'都会出现，持续至少两年。这些遭遇发生在从美国东海岸弗吉尼亚到佛罗里达的训练任务中，最终产生了两段最著名的现代UAP视频：'Gimbal'和'GoFast'。\n\n'Gimbal'视频拍摄于2015年1月21日，显示了一个在红外画面中呈现为圆盘形状的黑暗物体，似乎在飞行中旋转。视频中飞行员的声音充满震惊：'看那东西，伙计！'、'它在旋转！'、'它们都在逆风飞行，风速是120节从西边吹来。'物体还展示了一个从底部突出的小突起。一些分析师认为这可能是传感器伪影（红外眩光或万向节锁定效应），而飞行员坚称他们看到的是真实物体。\n\n'GoFast'视频则显示了一个在海面上方快速移动的物体。战斗机飞行员试图用红外传感器锁定它，但仪器无法跟上。视频中一名飞行员惊呼：'伙计，这他妈是一架无人机。'另一名补充道：'看看那东西，伙计！'虽然一些分析师认为该物体的速度可能源于视差效应，但该视频仍被列为五角大楼正式确认的未识别现象。\n\n这些2014-2015年的东海岸事件与2004年尼米兹事件一样，成为AATIP（先进航空航天威胁识别计划）调查的核心案例。该计划由前参议员哈里·里德资助，耗资2200万美元。这些事件的频繁性和一致性促使美国海军在2019年正式更新了UAP报告指南，建立了标准化协议，允许飞行员在不担心职业污名的情况下记录UAP遭遇。2019年6月，五角大楼向国会成员提供了关于这些遭遇的机密简报。2020年4月27日，美国国防部正式发布了'Gimbal.wmv'和'GoFast.wmv'两段视频，与FLIR1视频一起被确认为真实记录。2022年5月，众议院情报委员会举行了50年来首次公开UAP听证会，海军情报副总监斯科特·布雷展示了这些视频。",
+      "sources": [
+        {"label": "The New York Times - AATIP Investigation (2017)", "url": "https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html"},
+        {"label": "U.S. Department of Defense - Official Pentagon Release (2020)", "url": "https://www.defense.gov/News/News-Stories/Article/Article/2199898/dod-releases-videos-of-unidentified-aerial-phenomena/"},
+        {"label": "Naval Air Systems Command - Official FOIA Video Files", "url": "https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/2%20-%20GIMBAL.wmv"},
+        {"label": "Global News - Pentagon Officially Releases UFO Videos (2020)", "url": "https://globalnews.ca/news/6873561/ufo-videos-pentagon-declassified/"},
+        {"label": "Wikidisc - AATIP East Coast Incident Reports", "url": "https://www.wikidisc.org/wiki/Advanced_Aerospace_Threat_Identification_Program_(AATIP)"},
+        {"label": "IFLScience - Pentagon Officially Releases Three UFO Videos", "url": "https://www.iflscience.com/the-pentagon-has-officially-released-three-ufo-videos-55853"}
+      ],
+      "media": [
+        {"type": "image", "url": "https://keithmayerson.com/works/uss-roosevelt-gimbal-ufo-still-from-the-declassified-jan-2015-video/", "caption": "Gimbal视频截图——2015年罗斯福号事件红外画面（纽约时报2017年封面）"},
+        {"type": "image", "url": "https://theufodatabase.com/media/photos/gallery/uss-nimitz-tic-tac-screenshot.jpg", "caption": "Gimbal红外视频截图——旋转的圆盘形物体"},
+        {"type": "image", "url": "https://spookyvalley.com/events/2015-gimbal-ufo-video/", "caption": "Gimbal UFO事件档案页面"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=oCt837R2Sbs", "caption": "Gimbal——官方海军红外视频（2015年罗斯福号东海岸）"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=u4hQTFVU8wE", "caption": "GoFast——官方海军视频，快速移动的海上UAP"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=nd7K5LafDF8", "caption": "Pentagon三段官方UAP视频合集（FLIR1/Gimbal/GoFast）"}
+      ]
+    },
+    {
+      "id": "submarine-transmedium",
+      "expandedDescription": "2019年7月14日至15日，在加利福尼亚州圣迭戈海岸附近进行训练的美国海军独立级濒海战斗舰奥马哈号（USS Omaha, LCS-12）及其编队遭遇了一系列极为异常的UAP事件。这次事件被认为是目前公开档案中最充分记录的'跨介质'（transmedium）UAP案例之一——即物体能够在空气和水之间无缝转换。\n\n事件在独立日假期期间发生，持续约两小时。奥马哈号的船员通过舰载雷达和红外传感器探测到多个球形物体，数量最多时达到14个。这些物体在船只编队周围以'蜂群'（swarm）方式活动，表现出协调行为。它们的速度从40节到138节不等，飞行时间超过一小时，且自身发出光亮。船员无法确定其发射点或降落点。\n\n最关键的一刻被奥马哈号上的AN/KAX-2电光传感器（一种稳定传感器转塔，包含数字视频摄像头、夜视摄像头和激光测距仪）记录下来。夜视红外画面显示一个球形物体在太平洋海面上方移动，然后停止悬停，接着缓缓下降并进入水中。船员可以听到有人说'它溅落了'（It splashed）。然而，没有任何残骸、碎片或明显的尾迹被发现。P-8波塞冬海上巡逻机被派遣到下降区域进行搜索，寻找潜艇残骸或异常水下接触——但没有发现任何常规潜艇或水下物体。\n\n这次事件并非孤立现象。在同一区域，驱逐舰基德号（USS Kidd）、拉斐尔·佩拉尔塔号（USS Rafael Peralta）和约翰·芬恩号（USS John Finn）也观测到具有相似特征的物体。拉塞尔号（USS Russell）则在夜间记录了一组金字塔形物体。\n\n2021年5月，纪录片制作人杰里米·科尔贝尔（Jeremy Corbell）通过其网站和Instagram发布了奥马哈号的视频，称其为跨介质事件。几天后，五角大楼发言人苏珊·高夫（Susan Gough）确认了视频的真实性，并表示国防部的不明空中现象工作组（UAPTF）正在审查。\n\n退役海军少将蒂姆·加洛德（Tim Gallaudet，曾任海军首席海洋学家和NOAA代理署长）在2024年3月为索尔基金会（Sol Foundation）撰写的报告中指出，奥马哈号录像中捕捉到的行为代表了美国海上感知能力的未解决缺口。'它看起来完全不像任何已知飞机，'加洛德表示。在2023年国会作证后，一名曾在奥马哈号桥上的水手联系了他，称该物体只是众多之一，并报告在2023年杰克逊号（USS Jackson）上目睹了类似事件。2021年6月，美国国家情报总监办公室（ODNI）发布的初步评估报告检查了144起2004-2021年UAP事件，其中18起展示了'异常飞行特征'——包括高速、转弯率和明显的推进方式缺失。",
+      "sources": [
+        {"label": "Popular Mechanics - Navy Officer Says Underwater UFOs Are Legitimate Threats (2025)", "url": "https://www.popularmechanics.com/military/a65709166/navy-officer-says-underwater-ufos-are-legitimate-threats-the-evidence-is-hard-to-ignore/"},
+        {"label": "The Debrief - Pentagon Confirms Authenticity (2021)", "url": "https://thedebrief.org/pentagon-confirms-leaked-uap-images-and-video-are-real/"},
+        {"label": "Mystery Wire / Extraordinary Beliefs - Jeremy Corbell Original Release", "url": "https://www.extraordinarybeliefs.com/news4/navy-filmed-spherical-ufos"},
+        {"label": "Mungo Mash - Pentagon UAP Videos Archive (2026)", "url": "https://mungomash.com/data/pentagon-uap-videos/"},
+        {"label": "AOL - World-Changing Underwater UFO (2024)", "url": "https://www.aol.com/world-changing-underwater-ufo-caught-130000571.html"},
+        {"label": "FOX 2 Now - USS Omaha UFO Lights Video (2021)", "url": "https://fox2now.com/news/national/u-s-s-omaha-ufo-lights-video-adds-to-body-of-evidence/amp/"},
+        {"label": "UFO Weekly - Declassified Documents and UFOs (2023)", "url": "https://ufoweekly.com/2023/06/declassified-documents-and-ufos-a-closer-look/"}
+      ],
+      "media": [
+        {"type": "image", "url": "https://ufoweekly.com/wp-content/uploads/2023/06/111-USS-Omaha.png", "caption": "USS Omaha事件——2019年7月15日球形物体红外图像"},
+        {"type": "image", "url": "https://www.nowdeclassified.com/api/incident-image/pacific-fleet-2019", "caption": "太平洋舰队2019年多起UAP事件官方档案插图"},
+        {"type": "image", "url": "https://www.popularmechanics.com/military/a65709166/navy-officer-says-underwater-ufos-are-legitimate-threats-the-evidence-is-hard-to-ignore/", "caption": "Popular Mechanics——2019年奥马哈号视频截图，球形物体消失于海平面"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=8U9vZfJNHLQ", "caption": "USS Omaha球形UAP视频——跨介质事件，物体入水（Jeremy Corbell发布）"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=6VBCfR5-1kQ", "caption": "奥马哈号UAP群事件雷达画面——多目标追踪"},
+        {"type": "video", "url": "https://www.youtube.com/watch?v=PM0HqmH6Q00", "caption": "2019年USS Omaha UAP事件综合报道"}
+      ]
+    }
+  ]
+}
