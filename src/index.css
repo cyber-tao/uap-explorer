@@ -67,37 +67,7 @@
     transform: translateY(-4px);
   }
 
-  .uap-badge-high {
-    background: rgba(0, 217, 165, 0.15);
-    color: #00D9A5;
-    border: 1px solid rgba(0, 217, 165, 0.4);
-  }
 
-  .uap-badge-medium {
-    background: rgba(245, 166, 35, 0.15);
-    color: #F5A623;
-    border: 1px solid rgba(245, 166, 35, 0.4);
-  }
-
-  .uap-badge-low {
-    background: rgba(255, 107, 53, 0.15);
-    color: #FF6B35;
-    border: 1px solid rgba(255, 107, 53, 0.4);
-  }
-
-  .uap-badge-speculative {
-    background: rgba(184, 184, 184, 0.15);
-    color: #B8B8B8;
-    border: 1px solid rgba(184, 184, 184, 0.4);
-  }
-
-  .uap-glow-cyan {
-    box-shadow: 0 0 24px rgba(48, 176, 208, 0.15);
-  }
-
-  .uap-text-shadow {
-    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
-  }
 
   .uap-scrollbar::-webkit-scrollbar {
     width: 6px;
