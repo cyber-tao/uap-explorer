@@ -245,6 +245,8 @@ Tailwind 映射：`colors.uap.*`（见 `tailwind.config.js`）。
 | v1.5 | 事件扩充至 35 起；GitHub Pages Actions 部署 |
 | v1.6 | 清理模板残留、对齐文档与领域模型、数据完整性护栏 |
 | v1.7 | Lenis/Hash 导航修复、统一 Footer 与机构预览、清理 shadcn 残留、设计 token 落地 |
+| v1.8 | 全球事件扩充至 65 起；多媒体多源管线建立，279 张本地影像 100% 完整校验 |
+| v1.9 | 杂志化图文混排 (Figure 穿插排版)、移动端响应式重构、代码分包性能优化与 CI 质量门禁 |
 
 ---
 
