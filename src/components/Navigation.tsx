@@ -136,7 +136,7 @@ export default function Navigation() {
                         }}
                       >
                         <div className="flex flex-col">
-                          <span>{lang.nativeName}</span>
+                          <span>{lang.nativeLabel}</span>
                           <span className="text-[10px] opacity-60 font-mono-data">{lang.label}</span>
                         </div>
                         {isCurrent && <Check className="w-3.5 h-3.5" style={{ color: '#30B0D0' }} />}
@@ -214,14 +214,14 @@ export default function Navigation() {
                       setLanguage(lang.code)
                       setMobileOpen(false)
                     }}
-                    className="px-3 py-2 rounded-md text-xs font-medium transition-all"
+                    className="px-3 py-2 rounded-md text-xs font-medium transition-all cursor-pointer"
                     style={{
                       background: lang.code === language ? 'rgba(48, 176, 208, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                       color: lang.code === language ? '#30B0D0' : '#EDE8E4',
                       border: lang.code === language ? '1px solid rgba(48, 176, 208, 0.4)' : '1px solid rgba(138, 153, 168, 0.1)',
                     }}
                   >
-                    {lang.nativeName}
+                    {lang.nativeLabel}
                   </button>
                 ))}
               </div>

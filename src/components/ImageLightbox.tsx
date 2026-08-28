@@ -12,7 +12,7 @@ interface ImageLightboxProps {
 }
 
 export default function ImageLightbox({ figures, index, onClose, onNavigate }: ImageLightboxProps) {
-  const { t } = useI18n()
+  const { language, t } = useI18n()
   const figure = figures[index]
   const hasPrev = index > 0
   const hasNext = index < figures.length - 1
@@ -50,6 +50,9 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
   }, [onClose, goPrev, goNext])
 
   if (!figure) return null
+
+  const caption = language === 'en' && figure.captionEn ? figure.captionEn : figure.caption
+  const credit = language === 'en' && figure.creditEn ? figure.creditEn : figure.credit
 
   return (
     <div
@@ -89,7 +92,7 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
         )}
         <img
           src={assetUrl(figure.src)}
-          alt={figure.caption}
+          alt={caption}
           className="max-w-full max-h-[min(72vh,720px)] object-contain rounded-lg"
         />
         {hasNext && (
@@ -106,10 +109,10 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
       </div>
 
       <div className="px-6 py-4 shrink-0 max-w-3xl mx-auto w-full" onClick={(e) => e.stopPropagation()}>
-        <p className="text-sm leading-relaxed" style={{ color: '#EDE8E4' }}>{figure.caption}</p>
-        {(figure.credit || figure.sourceUrl) && (
+        <p className="text-sm leading-relaxed" style={{ color: '#EDE8E4' }}>{caption}</p>
+        {(credit || figure.sourceUrl) && (
           <p className="text-xs mt-2 flex items-center gap-2 flex-wrap" style={{ color: '#8A99A8' }}>
-            {figure.credit && <span>{figure.credit}</span>}
+            {credit && <span>{credit}</span>}
             {figure.sourceUrl && (
               <a
                 href={figure.sourceUrl}

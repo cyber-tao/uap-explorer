@@ -1,16 +1,14 @@
-export type Language = 'zh' | 'en' | 'ja' | 'fr'
+export type Language = 'zh' | 'en'
 
 export interface LanguageOption {
   code: Language
   label: string
-  nativeName: string
+  nativeLabel: string
 }
 
 export const SUPPORTED_LANGUAGES: LanguageOption[] = [
-  { code: 'zh', label: '中文', nativeName: '简体中文' },
-  { code: 'en', label: 'English', nativeName: 'English' },
-  { code: 'ja', label: 'Japanese', nativeName: '日本語' },
-  { code: 'fr', label: 'French', nativeName: 'Français' },
+  { code: 'zh', label: '中文', nativeLabel: '简体中文' },
+  { code: 'en', label: 'English', nativeLabel: 'English' },
 ]
 
 export interface TranslationDictionary {

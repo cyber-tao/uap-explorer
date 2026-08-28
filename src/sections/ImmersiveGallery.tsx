@@ -41,7 +41,8 @@ export default function ImmersiveGallery() {
             const confColor = confidenceColors[event.confidence]
             const confLabel = getConfidenceLabel(event.confidence)
             const isLarge = i === 0 || i === 3
-            const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
+            const displayName = language === 'en' && event.nameEn ? event.nameEn : event.name
+            const displayShortDesc = language === 'en' && event.shortDescEn ? event.shortDescEn : event.shortDesc
 
             return (
               <Link
@@ -127,7 +128,7 @@ export default function ImmersiveGallery() {
                       className="text-xs leading-relaxed line-clamp-2 mb-3"
                       style={{ color: 'rgba(138, 153, 168, 0.8)' }}
                     >
-                      {event.shortDesc}
+                      {displayShortDesc}
                     </p>
 
                     <div className="flex flex-wrap gap-1.5">

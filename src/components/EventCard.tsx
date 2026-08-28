@@ -14,7 +14,10 @@ export default function EventCard({ event }: EventCardProps) {
   const { language, t, getConfidenceLabel, getCharLabel } = useI18n()
   const confColor = confidenceColors[event.confidence]
   const confLabel = getConfidenceLabel(event.confidence)
-  const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
+  const displayName = language === 'en' && event.nameEn ? event.nameEn : event.name
+  const displayCountry = language === 'en' && event.countryEn ? event.countryEn : event.country
+  const displayLocation = language === 'en' && event.locationEn ? event.locationEn : event.location
+  const displayShortDesc = language === 'en' && event.shortDescEn ? event.shortDescEn : event.shortDesc
 
   return (
     <Link
@@ -55,15 +58,15 @@ export default function EventCard({ event }: EventCardProps) {
         <div className="flex items-center gap-3 mb-2">
           <span className="font-mono-data text-xs" style={{ color: theme.muted }}>{event.date}</span>
           <span className="text-xs" style={{ color: theme.muted }}>·</span>
-          <span className="text-sm font-semibold" style={{ color: theme.ivory }}>
-            {event.country} · {event.location}
+          <span className="text-sm font-semibold truncate" style={{ color: theme.ivory }}>
+            {displayCountry} · {displayLocation}
           </span>
         </div>
         <h3 className="font-serif-display text-lg font-bold mb-2" style={{ color: theme.ivory }}>
           {displayName}
         </h3>
         <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: theme.muted }}>
-          {event.shortDesc}
+          {displayShortDesc}
         </p>
         <div className="flex flex-wrap gap-1.5 mb-3">
           {event.physicalCharacteristics.slice(0, 3).map((char) => (

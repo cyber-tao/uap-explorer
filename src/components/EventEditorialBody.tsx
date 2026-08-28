@@ -6,16 +6,16 @@ import ImageLightbox from './ImageLightbox'
 import { useI18n } from '../i18n'
 
 function splitParagraphs(text: string): string[] {
-  const byBreak = text.split(/\n\n/).map((p) => p.trim()).filter(Boolean)
+  const byBreak = text.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
   if (byBreak.length > 1) return byBreak
 
-  const sentences = text.split(/(?<=[。！？])\s*/).filter(Boolean)
+  const sentences = text.split(/(?<=[。！？.!?])\s+/).filter(Boolean)
   const chunks: string[] = []
   let current: string[] = []
   sentences.forEach((s, i) => {
     current.push(s)
     if (current.length >= 4 || i === sentences.length - 1) {
-      chunks.push(current.join(''))
+      chunks.push(current.join(' '))
       current = []
     }
   })
@@ -29,6 +29,10 @@ function FigureCard({
   figure: EventFigure
   onOpen: () => void
 }) {
+  const { language } = useI18n()
+  const caption = language === 'en' && figure.captionEn ? figure.captionEn : figure.caption
+  const credit = language === 'en' && figure.creditEn ? figure.creditEn : figure.credit
+
   return (
     <button
       type="button"
@@ -39,7 +43,7 @@ function FigureCard({
       <div className="relative w-full" style={{ aspectRatio: figure.layout === 'inset' ? '4/3' : '16/10' }}>
         <img
           src={assetUrl(figure.src)}
-          alt={figure.caption}
+          alt={caption}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
           onError={(e) => {
@@ -52,11 +56,11 @@ function FigureCard({
         />
         <div className="absolute bottom-0 left-0 right-0 z-20 p-3">
           <p className="text-xs leading-relaxed line-clamp-2" style={{ color: '#B0C0D0' }}>
-            {figure.caption}
+            {caption}
           </p>
-          {figure.credit && (
+          {credit && (
             <p className="text-[10px] mt-1 font-mono-data" style={{ color: 'rgba(138, 153, 168, 0.7)' }}>
-              {figure.credit}
+              {credit}
             </p>
           )}
         </div>

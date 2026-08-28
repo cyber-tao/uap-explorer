@@ -2,14 +2,10 @@ import { createContext, useContext } from 'react'
 import type { Language, TranslationDictionary } from './types'
 import { zh } from './locales/zh'
 import { en } from './locales/en'
-import { ja } from './locales/ja'
-import { fr } from './locales/fr'
 
 export const dictionaries: Record<Language, TranslationDictionary> = {
   zh,
   en,
-  ja,
-  fr,
 }
 
 export const STORAGE_KEY = 'uap_language'
@@ -17,7 +13,7 @@ export const STORAGE_KEY = 'uap_language'
 export function detectSystemLanguage(): Language {
   try {
     const saved = localStorage.getItem(STORAGE_KEY) as Language | null
-    if (saved && (saved === 'zh' || saved === 'en' || saved === 'ja' || saved === 'fr')) {
+    if (saved && (saved === 'zh' || saved === 'en')) {
       return saved
     }
   } catch {
@@ -35,8 +31,6 @@ export function detectSystemLanguage(): Language {
     if (!lang) continue
     const lower = lang.toLowerCase()
     if (lower.startsWith('zh')) return 'zh'
-    if (lower.startsWith('ja')) return 'ja'
-    if (lower.startsWith('fr')) return 'fr'
     if (lower.startsWith('en')) return 'en'
   }
 

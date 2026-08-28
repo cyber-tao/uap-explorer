@@ -138,7 +138,8 @@ export default function TimelinePage() {
             {filteredEvents.map((event, idx) => {
               const confColor = confidenceColors[event.confidence]
               const isLeft = idx % 2 === 0
-              const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
+              const displayName = language === 'en' && event.nameEn ? event.nameEn : event.name
+              const displayShortDesc = language === 'en' && event.shortDescEn ? event.shortDescEn : event.shortDesc
               return (
                 <div
                   key={event.id}
@@ -167,7 +168,7 @@ export default function TimelinePage() {
                           {displayName}
                         </h4>
                         <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>
-                          {event.shortDesc}
+                          {displayShortDesc}
                         </p>
                       </div>
                     </div>

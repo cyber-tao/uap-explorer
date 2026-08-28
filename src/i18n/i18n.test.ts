@@ -1,15 +1,13 @@
 import { describe, it, expect } from 'vitest'
 import { zh } from './locales/zh'
 import { en } from './locales/en'
-import { ja } from './locales/ja'
-import { fr } from './locales/fr'
 import { SUPPORTED_LANGUAGES } from './types'
 
 describe('i18n dictionaries integrity', () => {
-  const locales = { zh, en, ja, fr }
+  const locales = { zh, en }
 
-  it('supports all 4 required languages', () => {
-    expect(SUPPORTED_LANGUAGES.map((l) => l.code)).toEqual(['zh', 'en', 'ja', 'fr'])
+  it('supports Chinese and English languages', () => {
+    expect(SUPPORTED_LANGUAGES.map((l) => l.code)).toEqual(['zh', 'en'])
   })
 
   it('has identical top-level structure in all locales', () => {

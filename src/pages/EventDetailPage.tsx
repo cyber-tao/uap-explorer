@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import { ArrowLeft, ExternalLink, MapPin, AlertTriangle, Link2, Share2, Film, Clock, Sparkles, FileText, ChevronRight, ImageIcon } from 'lucide-react'
 import { getEventById, confidenceColors } from '../data/events'
-import { events } from '../data/events'
 import { assetUrl } from '../lib/utils'
 import SourceList from '../components/SourceList'
 import EventEditorialBody from '../components/EventEditorialBody'
@@ -28,12 +27,14 @@ export default function EventDetailPage() {
 
   const confColor = confidenceColors[event.confidence]
   const confLabel = getConfidenceLabel(event.confidence)
-  const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
-  const related = event.relatedEvents?.map((rid) => events.find((e) => e.id === rid)).filter(Boolean) || []
-  const videos = event.media?.filter((m) => m.type === 'video') ?? []
-
-  const mapsQuery = encodeURIComponent(`${event.location}, ${event.country}`)
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`
+  const displayName = language === 'en' && event.nameEn ? event.nameEn : event.name
+  const displayCountry = language === 'en' && event.countryEn ? event.countryEn : event.country
+  const displayLocation = language === 'en' && event.locationEn ? event.locationEn : event.location
+  const displayDescription = language === 'en' && event.descriptionEn ? event.descriptionEn : event.description
+  const displayLimitations = language === 'en' && event.limitationsEn && event.limitationsEn.length > 0 ? event.limitationsEn : event.limitations
+  const related = (event.relatedEvents || []).map(getEventById).filter(Boolean)
+  const videos = event.media?.filter((m) => m.type === 'video') || []
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${event.location}, ${event.country}`)}`
 
   const navItems = [
     { label: t('eventDetail.description'), icon: FileText, id: 'section-description' },
@@ -81,7 +82,7 @@ export default function EventDetailPage() {
             <div className="flex flex-wrap items-center gap-3 mb-8">
               <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-colors hover:bg-[rgba(48,176,208,0.1)]" style={{ background: 'rgba(48, 176, 208, 0.06)', border: '1px solid rgba(48, 176, 208, 0.12)', color: '#8A99A8' }}>
                 <MapPin className="w-3.5 h-3.5" style={{ color: '#30B0D0' }} />
-                {event.country} · {event.location}
+                {displayCountry} · {displayLocation}
                 <ExternalLink className="w-3 h-3 opacity-50" />
               </a>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm" style={{ background: 'rgba(48, 176, 208, 0.06)', border: '1px solid rgba(48, 176, 208, 0.12)', color: '#8A99A8' }}>
@@ -96,7 +97,7 @@ export default function EventDetailPage() {
                 <h2 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.description')}</h2>
               </div>
               <div className="rounded-xl p-6" style={{ background: 'rgba(10, 17, 23, 0.6)', border: '1px solid rgba(138, 153, 168, 0.06)' }}>
-                <EventEditorialBody description={event.description} figures={event.figures} />
+                <EventEditorialBody description={displayDescription} figures={event.figures} />
               </div>
             </div>
 
@@ -120,7 +121,7 @@ export default function EventDetailPage() {
                 <h2 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.limitations')}</h2>
               </div>
               <div className="space-y-3">
-                {event.limitations.map((lim, i) => (
+                {displayLimitations.map((lim, i) => (
                   <div key={i} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: 'rgba(245, 166, 35, 0.03)', border: '1px solid rgba(245, 166, 35, 0.08)' }}>
                     <span className="mt-0.5 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0" style={{ background: 'rgba(245, 166, 35, 0.15)', color: '#F5A623' }}>{i + 1}</span>
                     <p className="text-sm leading-relaxed" style={{ color: '#8A99A8' }}>{lim}</p>
@@ -171,7 +172,8 @@ export default function EventDetailPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {related.map((rel) => {
                     if (!rel) return null
-                    const relName = language !== 'zh' && rel.nameEn ? rel.nameEn : rel.name
+                    const relName = language === 'en' && rel.nameEn ? rel.nameEn : rel.name
+                    const relShortDesc = language === 'en' && rel.shortDescEn ? rel.shortDescEn : rel.shortDesc
                     return (
                       <Link key={rel.id} to={`/event/${rel.id}`} className="group flex items-center gap-4 p-4 rounded-lg transition-all duration-300 hover:-translate-y-0.5" style={{ background: 'rgba(10, 17, 23, 0.6)', border: '1px solid rgba(138, 153, 168, 0.06)' }}>
                         <div className="w-16 h-16 rounded-lg overflow-hidden shrink-0" style={{ background: 'linear-gradient(135deg, #0F1923, #0A1117)' }}>
@@ -180,7 +182,7 @@ export default function EventDetailPage() {
                         <div className="flex-1 min-w-0">
                           <span className="font-mono-data text-[10px]" style={{ color: '#8A99A8' }}>{rel.date}</span>
                           <h4 className="font-serif-display font-bold text-sm mt-0.5 truncate" style={{ color: '#EDE8E4' }}>{relName}</h4>
-                          <p className="text-xs line-clamp-1 mt-1" style={{ color: 'rgba(138, 153, 168, 0.7)' }}>{rel.shortDesc}</p>
+                          <p className="text-xs line-clamp-1 mt-1" style={{ color: 'rgba(138, 153, 168, 0.7)' }}>{relShortDesc}</p>
                         </div>
                         <ChevronRight className="w-4 h-4 shrink-0 opacity-30 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" style={{ color: '#30B0D0' }} />
                       </Link>
@@ -198,7 +200,7 @@ export default function EventDetailPage() {
                 <div className="space-y-3">
                   {[
                     { label: t('eventDetail.date'), value: event.date, color: '#30B0D0' },
-                    { label: t('eventDetail.location'), value: `${event.country} · ${event.location}`, color: '#30B0D0' },
+                    { label: t('eventDetail.location'), value: `${displayCountry} · ${displayLocation}`, color: '#30B0D0' },
                     { label: t('eventDetail.confidence'), value: confLabel, color: confColor },
                     { label: t('eventDetail.sensors'), value: event.sensors?.join(', ') || t('eventDetail.visualWitness'), color: '#00D9A5' },
                   ].map((item, idx, arr) => (
