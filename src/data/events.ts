@@ -112,8 +112,10 @@ export interface UAPEvent {
   /** Detail-page figures (3–6). Local paths under /images/events/{id}/ */
   figures: EventFigure[]
   sensors?: string[]
+  sensorsEn?: string[]
   physicalCharacteristics: PhysicalCharacteristic[]
   sources: { label: string; url: string }[]
+  sourcesEn?: { label: string; url: string }[]
   limitations: string[]
   limitationsEn?: string[]
   relatedEvents?: string[]
@@ -264,6 +266,12 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "The object was never intercepted or physical wreckage recovered",
       "Underlying propulsion mechanism remains unexplained by conventional physics"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "FLIR (Infrared)",
+      "Visual Observation",
+      "Electronic Warfare"
     ]
   },
   {
@@ -368,6 +376,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Some skeptics argue Gimbal rotation could involve IR optical glare rotation in gimbal mounts",
       "GoFast speed estimates depend heavily on calculated target altitude and parallax angles"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "FLIR (Infrared)",
+      "Visual Observation"
     ]
   },
   {
@@ -495,6 +508,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "A substantial portion of the original 16mm film footage remains withheld in classified military archives",
       "Captain Hollanda gave extensive whistleblowing interviews in 1997 before dying under tragic circumstances"
+    ],
+    "sensorsEn": [
+      "Military Radar",
+      "Visual Observation",
+      "Medical Records"
     ]
   },
   {
@@ -605,6 +623,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Radar data exhibited intermittent dropouts across certain civilian secondary transponder channels",
       "CSICOP proposed Jupiter and Mars reflections, which the FAA radar recordings and cockpit heat sensations strongly contradict"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Visual Observation",
+      "FAA Investigation"
     ]
   },
   {
@@ -709,6 +732,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Official Air Force logs classified the incident for decades under Project Blue Book exemptions",
       "No physical trace of weapon tampering was left on the underground silos themselves"
+    ],
+    "sensorsEn": [
+      "Missile Launch Systems",
+      "Visual Observation",
+      "Official Reports"
     ]
   },
   {
@@ -818,6 +846,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "Starting in November 1989 and continuing through mid-1991, Belgium witnessed one of the most extensive and well-documented UAP waves in European history. Thousands of citizens, including gendarmerie officers, military pilots, and civil engineers, reported large, silent triangular craft with bright white lights at each vertex and a pulsating red light in the center flying at low altitudes.\n\nThe climax occurred on the night of March 30–31, 1990, when civilian police reported an anomalous aerial object near Glons. Two Belgian Air Force F-16 Fighting Falcons were scrambled from Beauvechain Air Base. Over an intense 60-minute pursuit, the F-16s' onboard Westinghouse APG-66 Doppler radars achieved multiple hard lock-ons on the target.\n\nFlight recorder data showed the object accelerated from 280 km/h to over 1,800 km/h while instantaneously altering its altitude from 3,000 meters to 1,500 meters in two seconds—equivalent to an acceleration exceeding 40 Gs, far beyond the physiological limit of any human pilot or structural limits of conventional aircraft.\n\nBelgian Air Force Chief of Operations Colonel (later Major General) Wilfried De Brouwer conducted unprecedented public press conferences detailing the radar telemetry and openly cooperating with the civilian research organization SOBEPS.",
     "limitationsEn": [
       "The famous Petit-Rechain photograph was confessed to be a hoax decades later, though thousands of witness reports and military radar telemetry remain validated"
+    ],
+    "sensorsEn": [
+      "F-16 Fire-Control Radar",
+      "Visual Observation",
+      "Mass Witness Sighting"
     ]
   },
   {
@@ -933,6 +966,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Civil aviation radar raw data was withheld from public release by air defense authorities",
       "Several viral photos circulated on social media were later identified as long-exposure helicopter shots from other events"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Official Confirmation"
     ]
   },
   {
@@ -1058,6 +1095,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "No optical imaging of the phenomenon was captured during the 3 AM event",
       "Academic debate remains divided between complex atmospheric vortexes and anomalous electromagnetic lift mechanisms"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Physical Trace Evidence",
+      "Meteorological Data"
     ]
   },
   {
@@ -1170,6 +1212,11 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Military radar records over the East China Sea corridor remain restricted",
       "No long-duration optical video exists due to vintage 1991 equipment constraints"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "ATC Tower Audio",
+      "US Navy Video"
     ]
   },
   {
@@ -1272,6 +1319,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On the afternoon of February 23, 1975, around 6:30 PM in Kofu City, Yamanashi Prefecture, two seven-year-old boys (Masato Kawano and Katsuhiro Yamashiro) observed two glowing orange disc-shaped craft in the twilight sky. One craft landed in a nearby vineyard. The boys approached the craft and witnessed a 1.3-meter-tall humanoid entity clad in silver clothing with corrugated brown skin, three-toed feet, and fangs, who placed a hand on one boy's shoulder.\n\nTeriified, the boys fled home to summon their mothers, who arrived at the vineyard and observed a pulsating orange light hovering above the vines before taking off with intense wind.\n\nThe following morning, local high school science teachers and researchers inspected the vineyard, finding multiple crushed concrete pillars, circular ground depressions, and elevated radioactivity on the soil surface using Geiger counters. The Kofu Incident remains Japan's most famous close encounter of the third kind with physical trace evidence.",
     "limitationsEn": [
       "Primary direct witnesses were elementary school children, though adult corroboration of lights and soil radiation was established"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Physical Trace Evidence"
     ]
   },
   {
@@ -1382,6 +1433,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "IAF classified its radar and optoelectronic sensor data recordings following the scramble",
       "No recovered debris or direct physical wreckage was identified"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Military Response"
     ]
   },
   {
@@ -1513,6 +1568,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Submarine active sonar search logs following the splashdown remain classified",
       "Visual estimation of size is constrained by the sensor focal length"
+    ],
+    "sensorsEn": [
+      "Sonar Buoys",
+      "Electro-Optical System"
     ]
   },
   {
@@ -1607,6 +1666,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On May 14, 1981, Soviet cosmonauts Vladimir Kovalyonok and Viktor Savinykh aboard the Salyut 6 orbital space station observed a brilliant metallic spherical object shadowing their orbital path at an altitude of 350 kilometers. Cosmonaut Kovalyonok witnessed the object maneuvering synchronously with the station.\n\nKovalyonok grabbed a high-resolution 35mm handheld camera and captured several clear photographs through the station porthole. As the cosmonauts watched, the spherical object emitted a bright flash of light, split into two interconnected conical components, and accelerated out of orbital view at extraordinary velocity.\n\nUpon returning to Baikonur, the photographic film was analyzed by the Soviet Academy of Sciences Institute of Space Research (IKI) and the secret military research commission 'Setka-MO'. The incident was officially declassified during the post-Soviet era and discussed openly by Major General Kovalyonok in television interviews.",
     "limitationsEn": [
       "Some skeptics argued the object could have been an ejection fairing or space debris, though the observed synchronized maneuvers and shape change contradict passive debris"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Ground-Based Radar"
     ]
   },
   {
@@ -1705,6 +1768,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "No confirmed high-resolution external sensor video was publicly released by the Soviet military",
       "The highly surreal nature of the report makes it one of the most enigmatic space sightings on record"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Mass Witness Sighting"
     ]
   },
   {
@@ -1812,6 +1879,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In December 1972, during NASA's Apollo 17 lunar landing mission, Commander Eugene Cernan, Lunar Module Pilot Harrison Schmitt, and Command Module Pilot Ronald Evans captured anomalous luminous phenomena on 70mm Hasselblad film and 16mm Maurer Data Acquisition Camera (DAC) footage.\n\nWhile orbiting the Moon in the Command Module 'America' and during surface exploration in the Taurus-Littrow valley, the astronauts reported brilliant flashes, luminous objects moving across the lunar horizon, and high-velocity tracks against the lunar dark side. Frames AS17-147-22470 and AS17-151-23260 show distinct geometric light signatures that could not be attributed to orbital reflections or solar flares.\n\nNASA mission transcripts record Cernan exclaiming about bright objects in proximity to the spacecraft. These photographic frames were cataloged in NASA's Lunar Science Archive and remain subjects of ongoing photographic analysis.",
     "limitationsEn": [
       "Reflections inside the spacecraft window or dust particles near the lens have been proposed for specific individual frames"
+    ],
+    "sensorsEn": [
+      "Photographic Film",
+      "Astronaut Visual Sighting"
     ]
   },
   {
@@ -1913,6 +1984,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On June 4, 1965, during the 20th orbit of the Gemini IV mission, astronaut James McDivitt looked out his spacecraft window and spotted an unidentifiable metallic cylindrical object orbiting alongside the Gemini capsule. McDivitt described the object as having a definite cylindrical shape with extending radial arms or antennas resembling an orbital satellite or craft.\n\nMcDivitt picked up two onboard cameras (a 70mm Hasselblad and a 16mm motion picture camera) and took multiple exposures of the object before orbital shadows and solar glare obscured it. Ground radar tracking was unable to confirm any known Soviet or American orbital debris within proximity of Gemini IV at that timestamp.\n\nNASA officially analyzed the film upon recovery. McDivitt testified in subsequent interviews that while he could not identify the vehicle, it was an indisputable physical object operating in proximity to his spacecraft.",
     "limitationsEn": [
       "NASA initially hypothesized the object was the Gemini Titan II second-stage booster, but orbital mechanics calculations by NORAD proved the booster was hundreds of miles away at the time"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Photographic Film"
     ]
   },
   {
@@ -2046,6 +2121,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In late December 1980, outside RAF Woodbridge and RAF Bentwaters (a joint US-UK NATO airbase storing tactical nuclear warheads), multiple military security personnel encountered mysterious glowing objects. On the night of December 26, Airman John Burroughs and Staff Sergeant Jim Penniston walked into Rendlesham Forest and approached a landed, triangular metallic craft pulsating with colored lights. Penniston touched hieroglyphic-like symbols etched into the hull before the craft lifted off through the canopy.\n\nTwo nights later, on December 28, Base Deputy Commander Lieutenant Colonel Charles Halt led a patrol into the forest carrying a microcassette recorder, Geiger counters, and starlight scopes. Halt witnessed a glowing red beacon maneuvering through the trees, which beamed down pencil-thin laser-like lights near their feet and directly into the base nuclear weapons storage area.\n\nPhysical soil samples taken from the landing site showed three triangular 1.5-inch deep impressions and radiation readings 10 times higher than background levels. Halt's official memorandum to the British Ministry of Defence ('Halt Memo') and his live audio recording remain foundational evidence of the UK's most famous military UAP incident.",
     "limitationsEn": [
       "Skeptics argued Orfordness Lighthouse beams could have caused forest lighting, but the lighthouse is obscured by terrain and cannot account for physical radiation or landed craft inspection"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Physical Trace Evidence",
+      "Official Reports"
     ]
   },
   {
@@ -2190,6 +2270,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "Heavy official debunking and government reports (1994/1997) asserted Project Mogul and anthropomorphic crash dummies",
       "The original physical debris remains absent from public scientific examination"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Physical Trace Evidence"
     ]
   },
   {
@@ -2305,6 +2389,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On the consecutive weekends of July 19–20 and July 26–27, 1952, Washington D.C. airspace was penetrated by multiple unidentified aerial targets flying directly over the White House, the US Capitol building, and the Pentagon. Radar operators at Washington National Airport (CAA), Andrews Air Force Base, and Bolling AFB simultaneously tracked formations of targets maneuvering at speeds ranging from 100 mph to over 7,000 mph.\n\nCommercial airline pilots flying into Washington reported bright glowing orbs darting across their cockpits. USAF F-94 Starfire interceptor jets were scrambled from New Castle AFB. When the jets arrived on station, the objects accelerated away beyond supersonic speeds; as soon as the jets returned to base due to low fuel, the objects returned over the Capitol.\n\nThe resulting panic prompted President Harry Truman to demand an explanation. On July 29, 1952, Major General John Samford held the largest Pentagon press conference since World War II, attributing the radar returns to 'temperature inversions' bending radar beams.\n\nHowever, meteorological data confirmed the temperature inversion was only 1°C, incapable of producing hard primary radar contacts, prompting the subsequent establishment of the CIA's Robertson Panel to manage public UAP reporting.",
     "limitationsEn": [
       "The Air Force officially attributed radar echoes to temperature inversions, a theory strongly disputed by civilian radar engineers and meteorologists"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Visual Observation",
+      "Multi-Source Press Reports"
     ]
   },
   {
@@ -2399,6 +2488,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On February 25, 1996, during the NASA STS-75 Space Shuttle Columbia mission, astronauts deployed the Tethered Satellite System (TSS-1R), a 12-mile-long conducting satellite tether. At an altitude of 300 kilometers, the tether generated high electrical current before suddenly snapping under high voltage, drifting into orbit while glowing brilliantly in solar and plasma lighting.\n\nThe payload bay black-and-white low-light TV camera recorded an astonishing sequence: dozens of large, pulsating disc-shaped objects with distinct central notched rings began swarming around the drifting 12-mile tether.\n\nThe objects ranged from hundreds of meters in apparent diameter and were seen traversing both in front of and behind the tether, executing curved flight paths across the field of view.\n\nNASA explained the phenomenon as nearby out-of-focus dust and ice crystals drifting near the camera aperture. However, optical analyses demonstrated that several objects passed behind the 12-mile-distant tether, indicating immense scale and distance.",
     "limitationsEn": [
       "Optical diffraction of out-of-focus particles by the shuttle camera lens creates similar circular disc appearances with central notches"
+    ],
+    "sensorsEn": [
+      "NASA Mission Video",
+      "Astronaut Visual Sighting"
     ]
   },
   {
@@ -2500,6 +2593,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On November 4, 2010, during the graduation airshow at El Bosque Air Force Base near Santiago, Chile, an aerobatic squadron of Chilean Air Force Halcones (Extra 300L) aircraft flew in tight formation. Spectators and military photographers recorded the demonstration on multiple independent digital video cameras from different vantage points.\n\nUpon reviewing high-definition video, a metallic, elongated disc-shaped object was observed flying across the aerobatic formation at astonishing velocity, calculated by acoustic and trigonometric tracking to exceed 10,000 km/h (Mach 8+). Despite this hypersonic velocity, no sonic boom was generated, and no air turbulence disrupted the nearby light aerobatic aircraft.\n\nThe Chilean government's official UAP investigation body, CEFAA (Committee for the Study of Anomalous Aerial Phenomena), headed by General Ricardo Bermúdez, conducted an exhaustive multi-year analysis involving astronomers, radar experts, and air force engineers. CEFAA officially ruled out birds, insects, meteorites, and conventional aircraft, confirming the object as a genuine unidentified anomalous craft.",
     "limitationsEn": [
       "Some foreign analysts suggested passing insects near camera lenses, though CEFAA triangulation across multiple distant cameras contradicted the single-camera insect hypothesis"
+    ],
+    "sensorsEn": [
+      "Official Video Recording",
+      "Military Investigation"
     ]
   },
   {
@@ -2678,6 +2775,10 @@ export const events: UAPEvent[] = [
     "limitationsEn": [
       "The object departed our solar system rapidly, preventing high-resolution flyby imagery",
       "Mainstream planetary astronomers hypothesized natural hydrogen or nitrogen ice models to explain acceleration without visible tails"
+    ],
+    "sensorsEn": [
+      "Pan-STARRS Survey Telescope",
+      "SETI Radio Monitoring"
     ]
   },
   {
@@ -2792,6 +2893,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In mid-2024, during combat surveillance operations over the southern Red Sea and Yemeni littoral zone, a US Air Force MQ-9 Reaper unmanned aerial vehicle equipped with an advanced Raytheon MTS-B electro-optical/infrared (EO/IR) sensor turret acquired an unidentified aerial craft. The video recorded by the drone's infrared targeting pod shows a high-velocity anomalous object.\n\nAccording to declassified DoD disclosures, an AGM-114 Hellfire air-to-ground precision missile was launched toward the target. In the thermal recording, the missile is seen closing with direct impact trajectory, but upon striking the target, the warhead appears to deflect or pass through without detonating or causing kinematic damage, with the UAP continuing on its flight path unimpeded.\n\nThe Department of Defense classified the incident within the AARO and Congressional UAP record as a verified encounter involving unexplained target resilience and potential directed energy or forcefield characteristics.",
     "limitationsEn": [
       "Certain telemetry overlays and optical weapon impact metadata remain redacted in public congressional files"
+    ],
+    "sensorsEn": [
+      "EO/IR (Electro-Optical/Infrared)",
+      "Radar",
+      "Laser Rangefinder/Designator"
     ]
   },
   {
@@ -2881,6 +2987,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On April 18, 2024, a Department of Homeland Security (DHS) Customs and Border Protection maritime patrol aircraft operating an MX-20 electro-optical/infrared sensor turret was conducting surveillance off the southern coast of Texas near Corpus Christi. The sensor operator tracked an anomalous, compact object measuring approximately the size of an American football flying at low altitude.\n\nThe thermal recording shows the dark object flying against ocean winds with consistent velocity and no aerodynamic surfaces, wings, or thermal exhaust plume. The object demonstrated smooth flight dynamics without tumbling, maintaining a steady course over coastal waters.\n\nThe incident was formally forwarded through the National UFO Reporting Center (NUFORC) and submitted to federal anomaly review panels as an exemplar of small, low-observable transiting objects.",
     "limitationsEn": [
       "Small target dimensions challenge precise range and size calculations at long standoff ranges"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Visual Observation"
     ]
   },
   {
@@ -2971,6 +3081,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In early 2024, a commercial passenger airliner on standard descent into the New York metropolitan area over Long Island experienced a high-speed near-miss with an unidentifiable object. Flight crew members visually observed a sleek metallic cylindrical craft pass directly underneath their right wing at high relative closing velocity.\n\nThe object lacked wings, vertical stabilizers, windows, or jet exhaust plumes, matching the length of a small business jet but with a continuous metallic fuselage. Air traffic control radar confirmed a rapid, momentary primary target return in the flight corridor that did not correlate with any scheduled civil, commercial, or military transponders.\n\nThe incident was formally incorporated into the Department of Defense AARO 2024 Annual Report on Unidentified Anomalous Phenomena as a verified flight safety hazard in controlled airspace.",
     "limitationsEn": [
       "High closing speed precluded passengers from obtaining clear handheld photographs"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Radar"
     ]
   },
   {
@@ -3082,6 +3196,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In late 2024, a veteran test pilot operating an experimental flight test platform for a major US defense contractor in the military operating airspace off Eglin Air Force Base in the Gulf of Mexico encountered a massive metallic cylindrical object hovering motionless at 16,000 feet.\n\nThe pilot maneuvered within optical range and captured high-resolution digital photographs showing a polished, seamless metallic cylinder with rounded ends, approximately 80 to 100 feet in length, devoid of any seams, rivets, cockpits, or propulsion outlets.\n\nThe photographs were formally submitted to congressional intelligence committees and reviewed by Pentagon analysts. The incident was highlighted by CBS News and international defense publications as undeniable photographic evidence of anomalous large-scale craft in restricted military airspace.",
     "limitationsEn": [
       "Raw uncompressed sensor metadata files remain restricted under defense contractor nondisclosure agreements"
+    ],
+    "sensorsEn": [
+      "Visual Observation"
     ]
   },
   {
@@ -3184,6 +3301,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In May 2024, a military optoelectronic reconnaissance platform operating over the Aegean Sea along the Greek maritime boundary acquired and tracked a high-speed diamond-shaped aerial vehicle. The object was designated PR35 in the DoD PURSUE declassified data release.\n\nThe electro-optical sensor system maintained an automated reticle lock on the target as it traversed the horizon in dead-straight, level flight at constant altitude without typical aerodynamic lift drift. High-magnification optical analysis showed a sharp diamond/octahedral geometry reflecting uniform solar radiation.\n\nAir defense radar networks in the region confirmed a target velocity exceeding 430 knots with zero transponder response, cataloged as a verified foreign military operational UAP tracking sequence.",
     "limitationsEn": [
       "Target standoff distance limited sub-meter surface detail resolution"
+    ],
+    "sensorsEn": [
+      "SWIR (Short-Wave Infrared)",
+      "Electro-Optical (EO)",
+      "Visible Spectrum Optical"
     ]
   },
   {
@@ -3286,6 +3408,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In mid-2024, international coalition naval vessels conducting maritime security and commercial escort operations in the Gulf of Aden near the Bab-el-Mandeb Strait detected multiple unidentified anomalous contacts. Forward-looking infrared sensors aboard naval helicopters and patrol craft acquired a distinct inverted teardrop-shaped object.\n\nThe craft traversed the maritime corridor at high sustained speed just dozens of meters above the wave crests, showing a stark cold thermal contrast against the warm sea background. The object made no wake, generated no rotor wash on the sea surface, and displayed no visible exhaust signature.\n\nThe incident was formally cataloged in international maritime anomaly registries and referenced in Pentagon briefings regarding Persian Gulf and Arabian Sea sensor tracking events.",
     "limitationsEn": [
       "High electronic warfare noise in the Bab-el-Mandeb combat zone complicated secondary RF triangulation"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Electro-Optical",
+      "Visual Observation"
     ]
   },
   {
@@ -3368,6 +3495,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In early 2024, during an air superiority training sortie out of Eglin Air Force Base over the Gulf of Mexico, the pilot of an advanced USAF fighter jet (F-22 Raptor) acquired a formation of four silver spherical orbs on APG-77 radar at approximately 16,000 to 18,000 feet. The pilot closed distance to visually inspect the formation.\n\nAs the pilot attempted an active radar lock, the onboard radar and avionics systems experienced an uncommanded computer malfunction and radar shutdown. The pilot visually confirmed four metallic silver orbs hovering in diamond formation, with one orb dropping down to shadow the jet.\n\nRepresentative Matt Gaetz, along with Representatives Anna Paulina Luna and Tim Burchett, received a classified briefing at Eglin AFB in 2023, subsequently testifying to Congress that they viewed high-resolution cockpit radar images of an orb that could not be explained by any known US military or foreign drone technology.",
     "limitationsEn": [
       "AARO later suggested a lighting balloon hypothesis, which the pilot's testimony regarding radar disruption and high-altitude diamond formation strongly challenges"
+    ],
+    "sensorsEn": [
+      "Visual Observation"
     ]
   },
   {
@@ -3449,6 +3579,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "During the NASA STS-80 mission of Space Shuttle Columbia in November 1996, the payload bay video camera recorded several startling sequences of anomalous luminous craft in low Earth orbit. In one 10-minute uninterrupted recording while orbiting over Western Australia, a brilliant luminous disc appeared from deep space.\n\nThe craft accelerated rapidly, joined another luminous object in a synchronized circular formation, and then shot straight into Earth's upper atmosphere at extreme hypersonic speed, leaving an illuminated ionization track.\n\nNASA flight engineers and independent optical physicists (including Dr. Mark Carlotto) conducted computerized frame-by-frame velocity measurements, determining the objects were maneuvering intelligently outside the space shuttle's orbital velocity plane at speeds exceeding Mach 25.",
     "limitationsEn": [
       "NASA officially categorized the objects as out-of-focus orbital debris and thruster propellant crystals"
+    ],
+    "sensorsEn": [
+      "NASA Payload Bay Camera",
+      "Visual & Mission Video"
     ]
   },
   {
@@ -3534,6 +3668,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "Between late 1948 and 1949, the sensitive nuclear weapons research facilities at Los Alamos National Laboratory, Sandia Base, and Kirtland Air Force Base in New Mexico were repeatedly traversed by mysterious brilliant emerald-green luminous spheres, dubbed 'Green Fireballs'.\n\nUnlike meteors, which fall on steep ballistic trajectories and burn up with smoke trails and sonic booms, the Green Fireballs traveled on flat, horizontal trajectories at altitudes of 10,000 to 20,000 feet, maintaining constant speeds of roughly 10,000 to 20,000 mph without sound or explosion. Renowned meteoriticist Dr. Lincoln LaPaz of the University of New Mexico was commissioned by the US Air Force to investigate.\n\nDr. LaPaz conducted extensive triangulation networks and search expeditions across calculated impact areas, finding zero meteorite fragments, impact craters, or chemical residue. LaPaz concluded the phenomena were artificial devices operating under intelligent control. The Air Force subsequently established 'Project Twinkle' in December 1949 to track and photograph the phenomena using optical theodolites.",
     "limitationsEn": [
       "Project Twinkle experienced funding cuts and instrumentation breakdowns before compiling a definitive optical dataset"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Official Briefing Minutes"
     ]
   },
   {
@@ -3622,6 +3760,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In July 2025, a maritime patrol and reconnaissance aircraft operating over international airspace in the Yellow Sea acquired an anomalous geometric target on its mid-wave infrared (MWIR) and optical sensor package. The incident was cataloged as PR101 in declassified DoD PURSUE releases.\n\nThe optical sensor frames captured a distinct geometric profile resembling a six-pointed star with radiant peripheral heat contrast. The object flew in a smooth, continuous horizontal line at high subsonic velocity without control flaps, tail surfaces, or thermal combustion plumes.\n\nDefense intelligence analysts evaluated the sensor telemetry to determine whether the six-pointed shape represented structural geometry or an electromagnetic field ion-trap effect, listing the contact as an unresolved high-interest tracking sequence.",
     "limitationsEn": [
       "Infrared diffraction patterns around high-intensity points can introduce minor hexagonal optical artifacts on certain sensor apertures"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -3709,6 +3850,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In mid-2025, during joint maritime patrol operations in the East China Sea, an airborne electro-optical targeting turret tracked an unidentified aerial vehicle cruising steadily at low altitude above the ocean. The event was designated PR103 in the DoD PURSUE dataset.\n\nThe tracking sequence recorded the object maintaining constant altitude and speed across multiple sensor sweeps. In visual spectrum channels, the object displayed an unusual matte finish with high absorption, while in thermal infrared channels it exhibited distinct contrast boundaries without conventional turbine engine exhaust plumes.\n\nThe contact was formally forwarded to Pacific theatre intelligence wings as part of ongoing baseline monitoring of unexplained aerospace activity in maritime corridors.",
     "limitationsEn": [
       "Electronic emissions surveillance logs for the contact remain classified"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -3798,6 +3942,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In March 2019, while conducting combat training within the W-72 warning area off Virginia Beach, a US Navy weapon system officer flying in the rear seat of an F/A-18F Super Hornet captured a crisp, focused photograph on a personal iPhone showing a dark rectangular object hovering motionless over the ocean.\n\nThe object, known in declassified military files as the 'East Coast Rectangular / Box UAP' (PR201), exhibited crisp right-angled geometric edges, resembling a floating black cuboid or vertical rectangular prism with an inverted triangular appendage at its lower base.\n\nThe photograph was officially cleared for release by the Department of Defense in 2025 and featured prominently in congressional intelligence dossiers as verified pilot imagery of anomalous geometric aerospace structures.",
     "limitationsEn": [
       "Some commentators suggested a radar calibration target or weather target balloon, though stationary hover in 30-knot offshore winds challenges unmoored balloon drift"
+    ],
+    "sensorsEn": [
+      "Airborne Infrared Sensor",
+      "Visual Observation",
+      "Range Fouler Debrief"
     ]
   },
   {
@@ -3882,6 +4031,12 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In September 2015, the Pantex Plant near Amarillo, Texas—the primary United States facility responsible for the assembly, disassembly, and maintenance of the nation's nuclear weapons stockpile—was breached by multiple unidentified aerial craft operating directly inside Prohibited Airspace P-47.\n\nSecurity police and automated ground surveillance sensors observed a cluster of illuminated objects performing coordinated grid search patterns directly over the highly sensitive 'Gravel Gertie' nuclear explosive assembly bays and underground nuclear storage bunkers.\n\nDepartment of Energy (DOE) and FBI security forces initiated emergency security lockdowns. Despite deployment of local law enforcement helicopters and federal counter-drone protocols, the objects operated with complete impunity for over two hours before departing eastward into the night sky, leaving no radar transponder trace.",
     "limitationsEn": [
       "Department of Energy internal security incident logs remain heavily redacted under National Nuclear Security Administration (NNSA) rules"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Ground Surveillance Camera",
+      "Visual Observation",
+      "Optical Binoculars"
     ]
   },
   {
@@ -3973,6 +4128,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In June 2024, an advanced airborne targeting pod operating near Al Dhafra Air Base in the United Arab Emirates tracked an anomalous aerodynamic craft shaped like an inverted teardrop.\n\nThe thermal recording captured the craft maintaining stable, high-speed flight across the desert terrain with zero thermal exhaust plume, control flaps, or visible propulsion mechanics.\n\nThe incident was formally incorporated into the Pentagon's multi-sensor anomaly tracking registry.",
     "limitationsEn": [
       "High desert ground thermals created minor optical heat-shimmer at extreme standoff range"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4065,6 +4223,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On July 12, 2022, an MQ-9 Reaper unmanned aerial vehicle operating over Syria in the Eastern Mediterranean combat theater captured electro-optical and infrared footage of a brilliant, self-luminous white spherical orb flying across its field of view. The video was publicly revealed by AARO Director Dr. Sean Kirkpatrick during congressional hearings.\n\nThe video shows a metallic/white sphere with no wings, visible propulsion, or thermal plume moving smoothly across the terrain and sensor reticle. The object maintained constant speed and altitude, displaying standard characteristics of the ubiquitous 'metallic orb' archetype commonly reported in military operational zones.\n\nThe incident remains classified as an unresolved anomalous encounter within the Pentagon's official AARO case catalog.",
     "limitationsEn": [
       "Single-sensor optical track limits independent radio frequency cross-correlation"
+    ],
+    "sensorsEn": [
+      "Full-Motion Video (FMV)"
     ]
   },
   {
@@ -4163,6 +4324,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On February 15, 2023, while conducting combat training within Warning Area W-291 off the coast of San Diego, the littoral combat ship USS Jackson (LCS-6) detected an anomalous white oblong craft on shipboard radar.\n\nElectro-optical and thermal sensors tracked the smooth, wingless object as it hovered above the Pacific swells before descending rapidly and executing a clean transmedium entry into the ocean without leaving floating wreckage or sea foam.\n\nThe encounter confirmed ongoing transmedium activity in the historical Southern California naval testing range.",
     "limitationsEn": [
       "Subsurface sonar search logs remain restricted under naval fleet security protocols"
+    ],
+    "sensorsEn": [
+      "Radar",
+      "Sapphire Imaging System",
+      "Visual Observation"
     ]
   },
   {
@@ -4260,6 +4426,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "Throughout December 2023, Joint Base Langley-Eustis in Hampton, Virginia—home to the US Air Force 1st Fighter Wing and its premier F-22 Raptor stealth squadrons—was repeatedly penetrated by an anomalous swarm of unidentified aerial craft over 17 consecutive nights.\n\nBase security personnel, pilots, and ground radar tracked dozens of illuminated craft measuring up to 20 feet across, flying in coordinated formations across base runways and heading out over the Atlantic Ocean.\n\nDespite the deployment of NASA high-altitude research aircraft, Coast Guard vessels, and federal electronic warfare countermeasures, the craft operated with total impunity, forcing the Air Force to relocate F-22 fighters to other installations. General Gregory Guillot testified to Congress regarding the unprecedented breach.",
     "limitationsEn": [
       "DoD and FBI investigations have not conclusively identified the launch origin or operator of the swarm"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Radar"
     ]
   },
   {
@@ -4349,6 +4519,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2024, a naval maritime reconnaissance platform operating in the Indo-Pacific theatre recorded a high-velocity infrared target, cataloged as PR45 in defense archives.\n\nThe sensor tracked the target across multiple azimuth sweeps, demonstrating consistent thermal contrast and steady cruise velocity without turbine combustion plumes.\n\nThe contact was archived in Pacific theatre UAP registries as an unresolved high-speed tracking event.",
     "limitationsEn": [
       "Standoff ocean distance limited fine optical surface analysis"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4439,6 +4612,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In early 2025, a maritime patrol aircraft operating along the West African coastal corridor over the Gulf of Guinea acquired an anomalous aerial vehicle on its forward-looking infrared surveillance turret. The contact was cataloged under the DoD PURSUE declassified repository.\n\nThe sensor recording captured a compact, streamlined aerodynamic body flying at steady cruise speed across the ocean horizon with zero thermal turbine signatures. The object exhibited anomalous low observability across optical and radio spectrums.\n\nThe contact was logged in international aerospace monitoring logs as a verified military sensor acquisition in the African regional theatre.",
     "limitationsEn": [
       "Remote ocean tracking geometry limited fine structural resolution"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4532,6 +4708,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2023, an electro-optical coastal tracking installation along the Greek Aegean coastline recorded an anomalous aerial vehicle designated PR34 in declassified defense archives.\n\nThe video demonstrates the craft flying at constant altitude before executing an abrupt, non-inertial 90-degree vector turn without slowing down or showing aerodynamic bank tilt.\n\nAir defense radar networks corroborated the sharp directional shift, confirming non-aerodynamic flight dynamics.",
     "limitationsEn": [
       "Long standoff tracking range limits surface texture resolution"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4624,6 +4803,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2024, an airborne reconnaissance platform operating within the US Indo-Pacific Command theater acquired a distinct anomalous target on mid-wave infrared and high-magnification optical sensors (PR46).\n\nThe imagery captured an elongated football-shaped central fuselage with symmetrical radial structural projections extending outward, maintaining steady cruise speed with zero thermal exhaust.\n\nThe recording was evaluated by Pacific Fleet intelligence units as a verified foreign theater UAP contact.",
     "limitationsEn": [
       "Operational theatre coordinates remain restricted"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4715,6 +4897,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2026, an experimental US Army ground-based electro-optical and infrared targeting battery operating on an undisclosed military reservation tracked an anomalous aerial target in level cruise, cataloged as PR49 in defense research releases.\n\nThe thermal recording shows an object with two sharply defined contrast zones: a bright, high-temperature forward section and a cold, low-temperature trailing section, operating with zero visible engine exhaust or aerodynamic control surfaces.\n\nThe tracking sequence demonstrated precise automated reticle tracking across a 10-kilometer range gate, confirmed as an unresolved military sensor tracking baseline.",
     "limitationsEn": [
       "Testing conditions and specific optical sensor specifications remain restricted"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -4812,6 +4997,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2024, FBI field intelligence surveillance teams investigating unexplained aerospace anomalies in a rural sector of the northeastern United States documented multiple luminous spherical craft hovering low over a secluded pond, cataloged as PR003 in FBI declassified disclosures.\n\nThe thermal and optical recordings show distinct spherical orbs hovering silently just above the water surface, executing synchronized formation shifts and rapid vertical ascents without displacing water or making mechanical noise.\n\nFBI special agent field reports corroborated the electronic sensor data with direct optical observations, submitting the file to the federal Interagency UAP Working Group.",
     "limitationsEn": [
       "Exact geographical coordinates are withheld to protect federal surveillance operations"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Smartphone Video",
+      "FBI Corroboration"
     ]
   },
   {
@@ -4909,6 +5099,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In July 2025, in a rural residential area within 25 miles of the PR003 pond corridor in the northeastern US, federal monitoring cameras and independent witnesses recorded two glowing red spherical objects operating in low-altitude airspace (PR004).\n\nThe video documentation captured the two separate glowing spheres flying toward each other, merging seamlessly into a single larger luminous craft, and executing an instantaneous vertical acceleration into the cloud cover without sound or acceleration lag.\n\nSpectrographic analysis of the emitted radiation indicated coherent, narrow-band optical emissions distinct from conventional aircraft navigation strobes.",
     "limitationsEn": [
       "High-zoom focal compression introduces minor bokeh effects at maximum optical zoom"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "iPhone 14 Pro Max Video",
+      "FBI Corroboration"
     ]
   },
   {
@@ -5005,6 +5200,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2020, an airborne tactical fighter targeting pod operating over a western US military range tracked an unidentified maneuvering object. The incident was designated PR108 in DoD declassified archives.\n\nThe video shows the targeting pod's computerized auto-tracker reticle maintaining a continuous hard lock on the target as it executed rapid directional shifts and abrupt decelerations across varying altitude layers.\n\nAvionics telemetry confirmed high angular tracking rates that pushed the limits of the mechanical gimbal mount, cataloged as an authentic military tracking sequence.",
     "limitationsEn": [
       "Target range gate telemetry is partially redacted from the public video frame overlay"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)",
+      "Gimbal Auto-Tracker"
     ]
   },
   {
@@ -5103,6 +5302,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In November 2021, FBI special surveillance teams conducting night-time operations in the northeastern United States recorded a large triangular craft gliding silently over the forest canopy (PR001).\n\nInfrared and night vision footage revealed a rigid equilateral triangular framework with bright spherical lights situated at each corner vertex. The craft flew with extreme stability at low altitude, maintaining constant speed without engine acoustic signatures or downwash.\n\nThe report was formally cross-referenced with regional FAA radar anomaly logs and archived in FBI investigative files.",
     "limitationsEn": [
       "Night-time low-light conditions precluded high-resolution color texture capture"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "iPhone 12 Pro Video",
+      "FBI Corroboration"
     ]
   },
   {
@@ -5199,6 +5403,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In March 2022, federal field surveillance units in the northeastern United States recorded an anomalous pair of glowing red orbs executing synchronized orbital rotation in mid-air (PR002).\n\nThe high-resolution sensor recordings show two luminous spheres revolving around a shared central barycenter at a constant angular rate while simultaneously traveling horizontally across the sky at 60 knots. The objects maintained exact separation distance without mechanical connecting struts.\n\nThe phenomenon was evaluated by physics research teams as an example of coupled electromagnetic or plasma-like aerodynamic behavior.",
     "limitationsEn": [
       "Optical resolution limits determination of whether an invisible physical structural tether connected the pair"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "iPhone 12 Pro Video",
+      "FBI Corroboration"
     ]
   },
   {
@@ -5292,6 +5501,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2023, an electro-optical coastal tracking turret operating near the Greek maritime boundary acquired a circular disc-shaped craft maneuvering above the ocean, cataloged as PR35 in defense releases.\n\nThe sensor recorded the object cruising at steady altitude before executing abrupt, instantaneous 90-degree bank turns without decelerating or showing aerodynamic rudder deflection. The craft maintained a pristine circular cross-section throughout all viewing angles.\n\nRegional air defense radar confirmed target maneuvers consistent with non-inertial flight dynamics.",
     "limitationsEn": [
       "Standoff maritime distance precluded ultra-fine surface imaging"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -5384,6 +5596,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2023, an airborne FLIR pod aboard a tactical combat aircraft flying over the United Arab Emirates acquired a high-speed thermal contact, designated PR27 in declassified records.\n\nThe thermal recording shows a compact aerodynamic body traveling across the desert expanse at high velocity with a distinctive thermal boundary layer and no conventional turbine exhaust wash.\n\nThe tracking sequence was reviewed by Middle Eastern defense intelligence partners as a confirmed military sensor track.",
     "limitationsEn": [
       "High ground temperature in desert environment introduces thermal blooming at extreme ranges"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -5474,6 +5689,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2019, a US Navy shipboard forward-looking infrared camera operating in the Gulf of Mexico tracked an anomalous aerial target displaying rapid thermal intensity modulation, cataloged as PR115.\n\nThe video shows a craft whose infrared radiance pulses rhythmically, triggering the camera's automatic gain control (AGC) circuits to continually recalibrate. The object maintained stable flight dynamics despite the intense fluctuating thermal aura.\n\nThe event was cataloged as a verified optical tracking sequence demonstrating dynamic electromagnetic or thermal modulation.",
     "limitationsEn": [
       "Camera AGC cycling can accentuate apparent size fluctuations in video playbacks"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -5578,6 +5796,12 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On September 8, 2021, the crew of a US Air Force AC-130J Ghostrider gunship operating an advanced multi-spectral sensor turret over the Gulf of Oman acquired a formation of anomalous spherical craft flying in formation, designated PR117 in declassified dossiers.\n\nThe mid-wave infrared cameras revealed distinct 'cold orbs' appearing darker than the ambient 30°C ocean water, indicating their surface temperature was significantly colder than the surrounding marine atmosphere. The orbs flew synchronously in level cruise with zero thermal heat signature.\n\nThe incident was formally forwarded to Air Force Special Operations Command (AFSOC) intelligence and incorporated into AARO classified briefings.",
     "limitationsEn": [
       "High-altitude gunship sensor angle produced oblique slant-range viewing perspective"
+    ],
+    "sensorsEn": [
+      "EO/IR (AC-130J Gunship)",
+      "Visual (Flight Crew)",
+      "Secondary Video Capture",
+      "Intelligence Information Report"
     ]
   },
   {
@@ -5675,6 +5899,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On July 2, 1952, US Navy Chief Warrant Officer Delbert Newhouse, a veteran aerial photographer, was driving with his family near Tremonton, Utah, when they spotted a formation of 12 to 14 brilliant metallic discs milling in the sky. Newhouse retrieved his Bell & Howell 16mm movie camera with a telephoto lens and captured 75 feet of color motion picture film.\n\nTwo years earlier, in August 1950, Nick Mariana in Great Falls, Montana, had captured clear 16mm color film of two bright silvery rotating discs flying over a baseball stadium.\n\nThe US Navy Photo Interpretation Center (NPIC) in Washington D.C. spent over 1,000 man-hours analyzing both films frame by frame with micro-densitometers, determining that the objects were spherical or disc-shaped vehicles reflecting sunlight with high metallic albedo, operating under intelligent control, and accelerating at speeds impossible for birds or balloons.\n\nProject Blue Book officially classified the cases as 'Unidentified' after exhaustive technical analysis.",
     "limitationsEn": [
       "The 1953 CIA Robertson Panel dismissed the Tremonton film as seagulls without conducting physical optical micro-densitometry"
+    ],
+    "sensorsEn": [
+      "16mm Color Motion Picture Film",
+      "Freeze-Frame Projection & Micro-Densitometer",
+      "Navy Photogrammetric Analysis"
     ]
   },
   {
@@ -5761,6 +5990,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In June 2011, an FBI investigation documented the low-altitude transit of a large isosceles triangular craft over an undisclosed rural US location, cataloged as D028.\n\nWitnesses and security personnel reported a sharp, elongated triangle gliding silently through the night sky. The craft featured three distinct circular amber lights at each apex and a larger pulsating white light in the center of the ventral hull.\n\nFBI field reports documented the absence of conventional FAA strobe beacons, turbine noise, or aerodynamic turbulence as the craft crossed the tree line.",
     "limitationsEn": [
       "The event was primarily documented through field interviews and tactical sketches rather than high-magnification FLIR video"
+    ],
+    "sensorsEn": [
+      "Visual (Dual Veteran Witnesses)",
+      "FBI FD-302 Investigative Report",
+      "Digital Forensic Reconstruction"
     ]
   },
   {
@@ -5848,6 +6082,12 @@ export const events: UAPEvent[] = [
     "descriptionEn": "On June 11, 2026, an FBI Special Agent equipped with military-grade FLIR thermal imaging equipment aboard a UH-60 Black Hawk helicopter recorded an anomalous aerial craft over the western United States, designated D033.\n\nThe thermal recording provided a side-by-side comparison: the Black Hawk's twin GE T700 turboshaft engines and rotor hubs exhibited intense, glowing thermal exhaust signatures (hundreds of degrees Celsius), while the adjacent UAP exhibited zero thermal emissions, appearing as a cold geometric silhouette against the ambient sky.\n\nThe footage was archived as definitive baseline proof of non-combustion aerodynamic operation in military flight domains.",
     "limitationsEn": [
       "Exact flight corridor and military mission objectives remain classified"
+    ],
+    "sensorsEn": [
+      "Handheld Thermal Optics",
+      "Visual Observation",
+      "Known Military Aircraft Thermal Baseline",
+      "FBI FD-302 Investigative Report"
     ]
   },
   {
@@ -5935,6 +6175,12 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2026, FBI field agents stationed along a remote western mountain ridgeline observed a formation of stationary pulsating red luminous objects hovering along the crest (D037/D040).\n\nDuring the 20-minute encounter, all electronic digital watches, quartz timepieces, and tactical GPS receiver clocks on the agents' gear experienced uncommanded time drift and resetting. High-gain directional RF antennas detected localized pulsed electromagnetic interference across UHF radio bands.\n\nThe objects eventually ascended vertically into the stratosphere in synchronized formation, with normal timekeeping resuming once the craft departed.",
     "limitationsEn": [
       "Electromagnetic field measurements were recorded using tactical gear rather than dedicated laboratory spectrum analyzers"
+    ],
+    "sensorsEn": [
+      "Visual Observation",
+      "Night Observation Device (NOD)",
+      "Mechanical Timepiece Anomaly",
+      "FBI FD-302 Investigative Report"
     ]
   },
   {
@@ -6021,6 +6267,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2023, residents and military personnel in Colorado Springs near Peterson Space Force Base and NORAD headquarters reported a semi-translucent, refractive triangular craft maneuvering through clear skies, cataloged as D026.\n\nHigh-definition optical video captured an object with a distinct geometric triangular perimeter whose central body refracted the background sky like optical metamaterial or hot air shimmer, producing an active cloaking effect.\n\nLocal radar networks recorded a weak, intermittent radar cross-section that did not correlate with any scheduled military drone operations.",
     "limitationsEn": [
       "Active optical refraction makes boundary edge-detection challenging under bright sunlight"
+    ],
+    "sensorsEn": [
+      "Visual (Dual Witnesses)",
+      "FBI FD-302 Investigative Report",
+      "Digital Forensic Reconstruction"
     ]
   },
   {
@@ -6117,6 +6368,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2023, an airborne targeting sensor package operating in the Middle East military theater tracked an unidentified high-speed aerodynamic contact, designated PR149 in declassified DoD PURSUE releases.\n\nThe infrared recording captured the target traversing operational airspace at sustained high velocity, maintaining constant altitude across long standoff range gates with zero visible propulsion exhaust.\n\nThe contact was evaluated by US Central Command intelligence as an unresolved foreign operational tracking event.",
     "limitationsEn": [
       "High operational tempo in theater limited long-duration follow-up collection"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -6222,6 +6476,12 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In March 2026, FBI field intelligence units operating in the western United States recorded multiple slow-moving, dark aerodynamic bodies conducting low-altitude grid patterns over rural valleys, designated PR007 in declassified releases.\n\nThe multi-spectral recordings captured dark objects cruising at speeds as low as 15 to 20 knots without stalling or exhibiting aerodynamic wing-dip, demonstrating non-traditional buoyancy or lift mechanisms.\n\nSpecial agent reports corroborated the absence of propeller wash, engine sound, or rotor downwash on surface foliage.",
     "limitationsEn": [
       "Low flight speed in valley terrain precluded long-range acoustic detection"
+    ],
+    "sensorsEn": [
+      "Handheld Thermal Camera",
+      "RF Detection & Alarm",
+      "Visual Observation",
+      "FBI FD-302 Dossier"
     ]
   },
   {
@@ -6319,6 +6579,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2025, a multi-sensor electro-optical/infrared (EO/IR) reconnaissance turret aboard a military aircraft in the Middle East acquired a maneuvering aerial target, cataloged as PR134 in defense archives.\n\nThe simultaneous dual-channel video captured the craft executing rapid altitude adjustments and horizontal turns while maintaining consistent optical reflectivity and low thermal contrast.\n\nThe encounter was archived within the DoD PURSUE repository as a verified dual-band sensor tracking sequence.",
     "limitationsEn": [
       "Target distance in combat zone precluded secondary radar altimeter correlation"
+    ],
+    "sensorsEn": [
+      "Electro-Optical",
+      "Infrared (IR)"
     ]
   },
   {
@@ -6411,6 +6675,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2023, an advanced targeting pod aboard a tactical combat aircraft operating in the Middle East theater achieved an automated reticle lock on an unidentified flying object, designated PR136 in declassified records.\n\nThe thermal recording demonstrates precise automated tracking as the craft crossed the sensor gimbal's central crosshairs, cruising at steady velocity with zero control surfaces or exhaust plumes.\n\nThe sequence was reviewed by military avionics teams as a confirmed auto-tracker lock on an anomalous aerospace vehicle.",
     "limitationsEn": [
       "Electronic emissions logs remain classified under operational security rules"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -6504,6 +6771,9 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In 2023, an infrared targeting pod operating in the Middle East theater acquired an unidentified aerial vehicle displaying dual bright thermal contrast nodes, cataloged as PR024 in defense archives.\n\nThe thermal recording shows a compact craft with two localized high-intensity thermal focal points positioned symmetrically on its fuselage, maintaining straight and level flight without conventional aerodynamic lift surfaces.\n\nThe data was incorporated into the Pentagon's multi-sensor catalog of unexplained aerospace propulsion signatures.",
     "limitationsEn": [
       "Thermal resolution at standoff range leaves internal structural details unresolved"
+    ],
+    "sensorsEn": [
+      "Infrared (IR)"
     ]
   },
   {
@@ -6592,6 +6862,10 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In June 2002, during early operations at Bagram Airfield in Afghanistan, military security personnel, flight line crew, and sentries observed an immense equilateral triangular craft hovering silently over the primary runway.\n\nThe craft was estimated to be roughly the size of a football field, completely dark with three large circular white lights at each vertex and a slowly pulsating red light in the center. The craft hovered for approximately 15 minutes before executing an instantaneous, silent vertical acceleration into the upper atmosphere.\n\nMultiple military witnesses submitted formal incident statements, with the event cataloged in military intelligence historical archives as a premier modern wartime triangle encounter.",
     "limitationsEn": [
       "High wartime security classification in 2002 restricted contemporaneous public disclosure"
+    ],
+    "sensorsEn": [
+      "Visual (Two Pilots)",
+      "FBI FD-302 Dossier"
     ]
   },
   {
@@ -6682,6 +6956,11 @@ export const events: UAPEvent[] = [
     "descriptionEn": "In October 2023, defense research teams and civilian optical tracking stations in Colorado Springs captured high-resolution optical and thermal footage of a triangular craft maneuvering silently over the Rocky Mountain foothills.\n\nThe recording captured a sharp triangular airframe with three brilliant red lights at each vertex and an active thermal boundary layer, cruising silently against strong mountain winds before ascending rapidly into the stratosphere.\n\nThe documentation was submitted to federal research committees as high-confidence modern multi-spectral video evidence of triangular aerospace craft.",
     "limitationsEn": [
       "Low ambient light conditions at night required high-gain sensor amplification"
+    ],
+    "sensorsEn": [
+      "Visual (Two Witnesses)",
+      "Cellular Audio & RF Interference Log",
+      "FBI FD-302 Dossier"
     ]
   }
 ]

@@ -85,7 +85,7 @@ export default function EventCard({ event }: EventCardProps) {
             {t('gallery.viewDetails')} →
           </span>
           <span className="text-xs font-mono-data" style={{ color: theme.muted }}>
-            {event.sensors?.join(' / ') || t('eventDetail.visualWitness')}
+            {(language === 'en' && event.sensorsEn && event.sensorsEn.length > 0 ? event.sensorsEn : event.sensors)?.join(' / ') || t('eventDetail.visualWitness')}
           </span>
         </div>
       </div>

@@ -191,7 +191,7 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
 }
 
 export default function AgenciesGlossary() {
-  const { t } = useI18n()
+  const { language, t } = useI18n()
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
@@ -200,10 +200,12 @@ export default function AgenciesGlossary() {
       .map((matcher) => {
         const agency = agencies.find((a) => a.agency.includes(matcher))
         if (!agency) return null
-        return toPreviewItem(agency.agency, agency.countryEn, agency.description)
+        const name = language === 'en' && agency.agencyEn ? agency.agencyEn : agency.agency
+        const desc = language === 'en' && agency.descriptionEn ? agency.descriptionEn : agency.description
+        return toPreviewItem(name, agency.countryEn, desc)
       })
       .filter((item): item is AgencyPreviewItem => Boolean(item))
-  }, [])
+  }, [language])
 
   const activeItem =
     hoveredIndex !== null

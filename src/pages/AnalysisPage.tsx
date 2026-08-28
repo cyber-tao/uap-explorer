@@ -34,12 +34,19 @@ export default function AnalysisPage() {
     setExpandedGaps(next)
   }
 
-  const confidenceTiers = [
-    { level: 'High' as const, pct: '约2-3%', criteria: '≥3个独立来源，官方档案，多传感器同步，大规模群体性目击(≥100人)+官方确认', example: 'Nimitz Tic Tac', color: '#00D9A5' },
-    { level: 'Medium' as const, pct: '约5-10%', criteria: '单一权威来源或有限多源验证(2个来源)，存在合理替代解释但未被证实', example: '罗斯威尔', color: '#F5A623' },
-    { level: 'Low' as const, pct: '约20-30%', criteria: '单一来源，信息链断裂，无法独立验证', example: '部分民间社交媒体报告', color: '#FF6B35' },
-    { level: 'Speculative' as const, pct: '约60-70%', criteria: '间接推理，缺乏直接物理证据，古代记录，单一目击者近距离接触', example: '古代宇航员假说', color: '#B8B8B8' },
-  ]
+  const confidenceTiers = language === 'en'
+    ? [
+        { level: 'High' as const, pct: 'approx. 2-3%', criteria: '≥3 independent sources, declassified archives, synchronized multi-sensor tracks, mass sightings (≥100 witnesses) + official corroboration', example: 'Nimitz Tic Tac', color: '#00D9A5' },
+        { level: 'Medium' as const, pct: 'approx. 5-10%', criteria: 'Single authoritative source or limited 2-source verification, plausible alternative hypotheses existing but unproven', example: 'Roswell (1947)', color: '#F5A623' },
+        { level: 'Low' as const, pct: 'approx. 20-30%', criteria: 'Single source, fragmented chain of custody, lacking independent validation', example: 'Unverified social media reports', color: '#FF6B35' },
+        { level: 'Speculative' as const, pct: 'approx. 60-70%', criteria: 'Indirect deduction, lacking direct physical evidence, ancient mythic records, single-witness close encounters', example: 'Extraterrestrial Hypothesis (ETH)', color: '#B8B8B8' },
+      ]
+    : [
+        { level: 'High' as const, pct: '约2-3%', criteria: '≥3个独立来源，官方档案，多传感器同步，大规模群体性目击(≥100人)+官方确认', example: 'Nimitz Tic Tac', color: '#00D9A5' },
+        { level: 'Medium' as const, pct: '约5-10%', criteria: '单一权威来源或有限多源验证(2个来源)，存在合理替代解释但未被证实', example: '罗斯威尔', color: '#F5A623' },
+        { level: 'Low' as const, pct: '约20-30%', criteria: '单一来源，信息链断裂，无法独立验证', example: '部分民间社交媒体报告', color: '#FF6B35' },
+        { level: 'Speculative' as const, pct: '约60-70%', criteria: '间接推理，缺乏直接物理证据，古代记录，单一目击者近距离接触', example: '古代宇航员假说', color: '#B8B8B8' },
+      ]
 
   return (
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>
@@ -114,7 +121,7 @@ export default function AnalysisPage() {
                     {obs.eventIds.map((id) => {
                       const ev = getEventById(id)
                       if (!ev) return null
-                      const evName = language !== 'zh' && ev.nameEn ? ev.nameEn : ev.name
+                      const evName = language === 'en' && ev.nameEn ? ev.nameEn : ev.name
                       return (
                         <Link
                           key={id}
@@ -199,6 +206,11 @@ export default function AnalysisPage() {
             <tbody>
               {hypotheses.map((h, idx) => {
                 const color = confidenceColors[h.credibility]
+                const displayName = language === 'en' && h.nameEn ? h.nameEn : h.name
+                const displayModel = language === 'en' && h.physicalModelEn ? h.physicalModelEn : h.physicalModel
+                const displaySupporting = language === 'en' && h.supportingEvidenceEn ? h.supportingEvidenceEn : h.supportingEvidence
+                const displayOpposing = language === 'en' && h.opposingEvidenceEn ? h.opposingEvidenceEn : h.opposingEvidence
+
                 return (
                   <tr
                     key={h.id}
@@ -208,12 +220,12 @@ export default function AnalysisPage() {
                     }}
                   >
                     <td className="px-4 py-4">
-                      <div className="font-semibold" style={{ color: '#EDE8E4' }}>{h.name}</div>
-                      <div className="text-xs" style={{ color: '#8A99A8' }}>{h.nameEn}</div>
+                      <div className="font-semibold" style={{ color: '#EDE8E4' }}>{displayName}</div>
+                      {language !== 'en' && <div className="text-xs" style={{ color: '#8A99A8' }}>{h.nameEn}</div>}
                     </td>
-                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{h.physicalModel}</td>
-                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{h.supportingEvidence}</td>
-                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{h.opposingEvidence}</td>
+                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{displayModel}</td>
+                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{displaySupporting}</td>
+                    <td className="px-4 py-4 text-sm" style={{ color: '#8A99A8' }}>{displayOpposing}</td>
                     <td className="px-4 py-4">
                       <span
                         className="px-2 py-1 rounded text-[11px] font-bold"
@@ -240,6 +252,11 @@ export default function AnalysisPage() {
         <div className="space-y-4">
           {infoGaps.map((gap) => {
             const isExpanded = expandedGaps.has(gap.id)
+            const displayTitle = language === 'en' && gap.titleEn ? gap.titleEn : gap.title
+            const displayDesc = language === 'en' && gap.descriptionEn ? gap.descriptionEn : gap.description
+            const displayImpact = language === 'en' && gap.impactEn ? gap.impactEn : gap.impact
+            const displayRecommendation = language === 'en' && gap.recommendationEn ? gap.recommendationEn : gap.recommendation
+
             return (
               <div
                 key={gap.id}
@@ -258,7 +275,7 @@ export default function AnalysisPage() {
                   </span>
                   <div className="flex-1">
                     <h3 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>
-                      {gap.title}
+                      {displayTitle}
                     </h3>
                   </div>
                   {isExpanded ? (
@@ -270,13 +287,13 @@ export default function AnalysisPage() {
                 {isExpanded && (
                   <div className="px-5 pb-5 pl-16">
                     <p className="text-sm leading-relaxed mb-3" style={{ color: '#8A99A8' }}>
-                      {gap.description}
+                      {displayDesc}
                     </p>
                     <p className="text-sm mb-2" style={{ color: '#FF6B35' }}>
-                      <strong>{t('analysis.impactLabel')}</strong>{gap.impact}
+                      <strong>{t('analysis.impactLabel')}</strong>{displayImpact}
                     </p>
                     <p className="text-sm" style={{ color: '#00D9A5' }}>
-                      <strong>{t('analysis.recommendationLabel')}</strong>{gap.recommendation}
+                      <strong>{t('analysis.recommendationLabel')}</strong>{displayRecommendation}
                     </p>
                   </div>
                 )}
@@ -294,17 +311,22 @@ export default function AnalysisPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {researchDirections.map((dir) => (
-            <div key={dir.id} className="uap-card p-6">
-              <div className="mb-4" style={{ color: '#30B0D0' }}>
-                {iconMap[dir.icon] || <Globe className="w-6 h-6" />}
+          {researchDirections.map((dir) => {
+            const displayTitle = language === 'en' && dir.titleEn ? dir.titleEn : dir.title
+            const displayDesc = language === 'en' && dir.descriptionEn ? dir.descriptionEn : dir.description
+
+            return (
+              <div key={dir.id} className="uap-card p-6">
+                <div className="mb-4" style={{ color: '#30B0D0' }}>
+                  {iconMap[dir.icon] || <Globe className="w-6 h-6" />}
+                </div>
+                <h3 className="font-semibold mb-2" style={{ color: '#EDE8E4' }}>{displayTitle}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: '#8A99A8' }}>
+                  {displayDesc}
+                </p>
               </div>
-              <h3 className="font-semibold mb-2" style={{ color: '#EDE8E4' }}>{dir.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: '#8A99A8' }}>
-                {dir.description}
-              </p>
-            </div>
-          ))}
+            )
+          })}
         </div>
       </section>
     </div>

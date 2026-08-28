@@ -32,6 +32,7 @@ export default function EventDetailPage() {
   const displayLocation = language === 'en' && event.locationEn ? event.locationEn : event.location
   const displayDescription = language === 'en' && event.descriptionEn ? event.descriptionEn : event.description
   const displayLimitations = language === 'en' && event.limitationsEn && event.limitationsEn.length > 0 ? event.limitationsEn : event.limitations
+  const displaySensors = language === 'en' && event.sensorsEn && event.sensorsEn.length > 0 ? event.sensorsEn : event.sensors
   const related = (event.relatedEvents || []).map(getEventById).filter(Boolean)
   const videos = event.media?.filter((m) => m.type === 'video') || []
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${event.location}, ${event.country}`)}`
@@ -146,7 +147,9 @@ export default function EventDetailPage() {
                         </div>
                       </div>
                       <div>
-                        <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>{m.caption}</p>
+                        <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>
+                          {language === 'en' && m.captionEn ? m.captionEn : m.caption}
+                        </p>
                         <p className="text-[10px] mt-1.5 font-mono-data flex items-center gap-1" style={{ color: '#30B0D0' }}><span>▶</span> {t('eventDetail.playVideo')}</p>
                       </div>
                     </a>
@@ -202,7 +205,7 @@ export default function EventDetailPage() {
                     { label: t('eventDetail.date'), value: event.date, color: '#30B0D0' },
                     { label: t('eventDetail.location'), value: `${displayCountry} · ${displayLocation}`, color: '#30B0D0' },
                     { label: t('eventDetail.confidence'), value: confLabel, color: confColor },
-                    { label: t('eventDetail.sensors'), value: event.sensors?.join(', ') || t('eventDetail.visualWitness'), color: '#00D9A5' },
+                    { label: t('eventDetail.sensors'), value: displaySensors?.join(', ') || t('eventDetail.visualWitness'), color: '#00D9A5' },
                   ].map((item, idx, arr) => (
                     <div key={idx} className="flex items-center justify-between py-2" style={{ borderBottom: idx < arr.length - 1 ? '1px solid rgba(138, 153, 168, 0.06)' : 'none' }}>
                       <span className="text-xs uppercase tracking-wider" style={{ color: 'rgba(138, 153, 168, 0.6)' }}>{item.label}</span>

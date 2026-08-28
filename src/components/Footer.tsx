@@ -32,8 +32,15 @@ function ExternalSourceList({ links }: { links: { text: string; href: string }[]
 }
 
 export default function Footer({ variant = 'default' }: { variant?: FooterVariant }) {
-  const { t, dict } = useI18n()
-  const sourceLinks = [...footerConfig.sources, ...footerConfig.archiveLinks]
+  const { language, t, dict } = useI18n()
+  const archiveLinks = language === 'en'
+    ? [
+        { text: 'National Archives of Brazil', href: 'https://www.arquivo.gov.br' },
+        { text: 'The National Archives (UK)', href: 'https://www.nationalarchives.gov.uk' },
+      ]
+    : footerConfig.archiveLinks
+
+  const sourceLinks = [...footerConfig.sources, ...archiveLinks]
 
   const homeNav = [
     { text: dict.footer.homeNav.home, scrollTargetId: 'hero-section' },
