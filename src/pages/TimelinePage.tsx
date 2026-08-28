@@ -47,12 +47,20 @@ export default function TimelinePage() {
 
     const confidenceWeight: Record<string, number> = { High: 4, Medium: 3, Low: 2, Speculative: 1 }
     if (sortBy === 'confidence') {
-      result.sort((a, b) => confidenceWeight[b.confidence] - confidenceWeight[a.confidence])
+      result.sort((a, b) => {
+        const diff = confidenceWeight[b.confidence] - confidenceWeight[a.confidence]
+        if (diff !== 0) return diff
+        const dateA = new Date(a.sortDate).getTime() || 0
+        const dateB = new Date(b.sortDate).getTime() || 0
+        return dateB - dateA
+      })
     } else {
       result.sort((a, b) => {
         const dateA = new Date(a.sortDate).getTime() || 0
         const dateB = new Date(b.sortDate).getTime() || 0
-        return dateB - dateA
+        const diff = dateB - dateA
+        if (diff !== 0) return diff
+        return confidenceWeight[b.confidence] - confidenceWeight[a.confidence]
       })
     }
     return result
@@ -77,7 +85,7 @@ export default function TimelinePage() {
           全球UAP事件时间线
         </h1>
         <p className="max-w-2xl" style={{ color: '#8A99A8' }}>
-          20+高置信度事件与全球目击报告的科学编年。按置信度、地区与物理特征筛选。
+          {events.length} 起高置信度事件与全球目击报告的科学编年。按置信度、地区与物理特征筛选。
         </p>
       </section>
 

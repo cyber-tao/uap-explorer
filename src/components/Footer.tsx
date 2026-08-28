@@ -154,7 +154,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                 LEGAL
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {footerConfig.legal.slice(0, 3).map((text) => (
+                {footerConfig.legal.map((text) => (
                   <span
                     key={text}
                     style={{
@@ -296,7 +296,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
             </span>
           </div>
           <p className="text-xs" style={{ color: theme.muted }}>
-            {footerConfig.copyright} · 数据截至 2026-07-10
+            {footerConfig.copyright} · {footerConfig.legal[0]}
           </p>
         </div>
       </div>
