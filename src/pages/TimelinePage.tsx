@@ -1,10 +1,11 @@
 import { useState, useMemo } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { Search } from 'lucide-react'
-import { events, confidenceColors, confidenceLabels, searchEvents } from '../data/events'
+import { events, confidenceColors, searchEvents } from '../data/events'
 import type { PhysicalCharacteristic } from '../data/events'
 import EventCard from '../components/EventCard'
 import TimelineFilters from '../components/TimelineFilters'
+import { useI18n } from '../i18n'
 
 type SortBy = 'confidence' | 'date'
 type ViewMode = 'grid' | 'timeline'
@@ -14,6 +15,7 @@ function parseSort(value: string | null): SortBy {
 }
 
 export default function TimelinePage() {
+  const { language, t, getConfidenceLabel } = useI18n()
   const [searchParams, setSearchParams] = useSearchParams()
   const navigate = useNavigate()
 
@@ -79,13 +81,13 @@ export default function TimelinePage() {
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 pt-16 pb-8">
         <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#8A99A8' }}>
-          EVENT ARCHIVE / 事件档案
+          {t('timeline.eyebrow')}
         </p>
         <h1 className="font-serif-display text-4xl md:text-5xl font-bold mb-4" style={{ color: '#EDE8E4' }}>
-          全球UAP事件时间线
+          {t('timeline.title')}
         </h1>
         <p className="max-w-2xl" style={{ color: '#8A99A8' }}>
-          {events.length} 起高置信度事件与全球目击报告的科学编年。按置信度、地区与物理特征筛选。
+          {t('timeline.description')}
         </p>
       </section>
 
@@ -103,7 +105,7 @@ export default function TimelinePage() {
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-4">
         <p className="text-sm" style={{ color: '#8A99A8' }}>
-          共 <span className="font-mono-data font-bold" style={{ color: '#30B0D0' }}>{filteredEvents.length}</span> 个事件
+          {t('timeline.totalEvents', { count: filteredEvents.length })}
         </p>
       </div>
 
@@ -111,14 +113,14 @@ export default function TimelinePage() {
         {filteredEvents.length === 0 ? (
           <div className="text-center py-24">
             <Search className="w-12 h-12 mx-auto mb-4" style={{ color: '#8A99A8' }} />
-            <p className="text-lg mb-2" style={{ color: '#EDE8E4' }}>未找到匹配的事件</p>
-            <p className="text-sm mb-6" style={{ color: '#8A99A8' }}>请尝试调整筛选条件</p>
+            <p className="text-lg mb-2" style={{ color: '#EDE8E4' }}>{t('timeline.noMatching')}</p>
+            <p className="text-sm mb-6" style={{ color: '#8A99A8' }}>{t('timeline.noMatchingHint')}</p>
             <button
               onClick={clearFilters}
-              className="px-4 py-2 rounded-md text-sm font-medium transition-colors"
+              className="px-4 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer"
               style={{ background: '#30B0D0', color: '#050A0F' }}
             >
-              重置所有筛选
+              {t('timeline.resetAll')}
             </button>
           </div>
         ) : viewMode === 'grid' ? (
@@ -136,6 +138,7 @@ export default function TimelinePage() {
             {filteredEvents.map((event, idx) => {
               const confColor = confidenceColors[event.confidence]
               const isLeft = idx % 2 === 0
+              const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
               return (
                 <div
                   key={event.id}
@@ -157,11 +160,11 @@ export default function TimelinePage() {
                             className="px-1.5 py-0.5 rounded text-[10px] font-bold"
                             style={{ background: `${confColor}20`, color: confColor }}
                           >
-                            {confidenceLabels[event.confidence]}
+                            {getConfidenceLabel(event.confidence)}
                           </span>
                         </div>
                         <h4 className="font-serif-display font-bold mb-1" style={{ color: '#EDE8E4' }}>
-                          {event.name}
+                          {displayName}
                         </h4>
                         <p className="text-xs line-clamp-2" style={{ color: '#8A99A8' }}>
                           {event.shortDesc}
@@ -178,3 +181,4 @@ export default function TimelinePage() {
     </div>
   )
 }
+

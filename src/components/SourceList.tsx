@@ -1,5 +1,6 @@
 import { ExternalLink, Link2, BookOpen, Sparkles, FileText } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
+import { useI18n } from '../i18n'
 
 export interface SourceItem {
   label: string
@@ -22,19 +23,20 @@ function categorizeSources(sources: SourceItem[]) {
   }
 }
 
-const categories: { key: SourceCategoryKey; label: string; icon: LucideIcon; color: string }[] = [
-  { key: 'official', label: '官方来源', icon: FileText, color: '#00D9A5' },
-  { key: 'media', label: '媒体报道', icon: BookOpen, color: '#30B0D0' },
-  { key: 'academic', label: '学术档案', icon: Sparkles, color: '#F5A623' },
-  { key: 'other', label: '其他资料', icon: Link2, color: '#8A99A8' },
-]
-
 interface SourceListProps {
   sources: SourceItem[]
 }
 
 export default function SourceList({ sources }: SourceListProps) {
+  const { t } = useI18n()
   const sourceCategories = categorizeSources(sources)
+
+  const categories: { key: SourceCategoryKey; label: string; icon: LucideIcon; color: string }[] = [
+    { key: 'official', label: t('sourceCategories.official'), icon: FileText, color: '#00D9A5' },
+    { key: 'media', label: t('sourceCategories.media'), icon: BookOpen, color: '#30B0D0' },
+    { key: 'academic', label: t('sourceCategories.academic'), icon: Sparkles, color: '#F5A623' },
+    { key: 'other', label: t('sourceCategories.other'), icon: Link2, color: '#8A99A8' },
+  ]
 
   return (
     <div className="space-y-4">
@@ -70,3 +72,4 @@ export default function SourceList({ sources }: SourceListProps) {
     </div>
   )
 }
+

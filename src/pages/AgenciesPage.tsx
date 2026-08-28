@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 import { agencies, transparencyMilestones } from '../data/agencies'
+import { useI18n } from '../i18n'
 
 const transparencyColorMap: Record<string, string> = {
   '高': '#00D9A5',
@@ -15,18 +16,61 @@ const milestoneColorMap: Record<string, string> = {
 }
 
 export default function AgenciesPage() {
+  const { t } = useI18n()
+
+  const tableHeaders = [
+    t('agenciesPage.tableHeaders.country'),
+    t('agenciesPage.tableHeaders.agency'),
+    t('agenciesPage.tableHeaders.established'),
+    t('agenciesPage.tableHeaders.cases'),
+    t('agenciesPage.tableHeaders.transparency'),
+    t('agenciesPage.tableHeaders.methodology'),
+    t('agenciesPage.tableHeaders.unexplainedRate'),
+    t('agenciesPage.tableHeaders.link'),
+  ]
+
+  const highlightCards = [
+    {
+      tag: '最成熟的制度',
+      tagColor: '#00D9A5',
+      title: 'GEIPAN — 全球黄金标准',
+      stats: '50年运行 · 9,700+证词 · 3,240+公开案例',
+      desc: '隶属于法国国家航天研究中心(CNES)，由科学家主导而非情报机构。A/B/C/D四级分类系统被全球参考。',
+      link: 'https://www.cnes-geipan.fr',
+      linkLabel: '访问GEIPAN官网 →',
+    },
+    {
+      tag: '最大规模政府调查',
+      tagColor: '#30B0D0',
+      title: 'AARO — 美国国防部全域异常解决办公室',
+      stats: '2022年成立 · 1,600+案例 · 21起真正异常',
+      desc: '美国历史上最大规模政府UAP调查，但结论受争议。2024年年度报告承认21起事件无法解释。',
+      link: 'https://www.aaro.mil',
+      linkLabel: '访问AARO →',
+    },
+    {
+      tag: '历史性透明度',
+      tagColor: '#F5A623',
+      title: 'PURSUE — 2026年解密项目',
+      stats: '2026年5–7月 · 334份档案 · Release 04（7/10）',
+      desc: '美国国防部通过PURSUE平台持续解密UAP档案；2026年7月10日第四批公开40份，含STS-80轨道照片、印太红外视频与洛斯阿拉莫斯历史档案。',
+      link: 'https://www.war.gov/UFO',
+      linkLabel: '访问PURSUE →',
+    },
+  ]
+
   return (
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>
       {/* Page header */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 pt-16 pb-12">
         <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: '#8A99A8' }}>
-          OFFICIAL AGENCIES / 官方调查机构
+          {t('agenciesPage.eyebrow')}
         </p>
         <h1 className="font-serif-display text-4xl md:text-5xl font-bold mb-4" style={{ color: '#EDE8E4' }}>
-          全球UAP制度化响应对比
+          {t('agenciesPage.title')}
         </h1>
         <p className="max-w-2xl" style={{ color: '#8A99A8' }}>
-          从法国GEIPAN的50年科学调查到美国AARO的大规模解密，各国官方机构的响应程度差异显著。
+          {t('agenciesPage.subtitle')}
         </p>
       </section>
 
@@ -36,7 +80,7 @@ export default function AgenciesPage() {
           <table className="w-full min-w-[1000px]">
             <thead>
               <tr style={{ background: '#0F1923' }}>
-                {['国家/地区', '机构', '成立时间', '案例数量', '公开程度', '方法论', '未解释率', '官方链接'].map((h) => (
+                {tableHeaders.map((h) => (
                   <th key={h} className="px-4 py-3 text-left text-xs font-bold tracking-wider uppercase whitespace-nowrap" style={{ color: '#8A99A8', borderBottom: '1px solid rgba(138,153,168,0.1)' }}>
                     {h}
                   </th>
@@ -104,37 +148,9 @@ export default function AgenciesPage() {
 
       {/* Highlight Cards */}
       <section className="max-w-[1400px] mx-auto px-6 md:px-12 py-12">
-        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>重点机构</h2>
+        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>{t('agenciesPage.highlightsTitle')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              tag: '最成熟的制度',
-              tagColor: '#00D9A5',
-              title: 'GEIPAN — 全球黄金标准',
-              stats: '50年运行 · 9,700+证词 · 3,240+公开案例',
-              desc: '隶属于法国国家航天研究中心(CNES)，由科学家主导而非情报机构。A/B/C/D四级分类系统被全球参考。',
-              link: 'https://www.cnes-geipan.fr',
-              linkLabel: '访问GEIPAN官网 →',
-            },
-            {
-              tag: '最大规模政府调查',
-              tagColor: '#30B0D0',
-              title: 'AARO — 美国国防部全域异常解决办公室',
-              stats: '2022年成立 · 1,600+案例 · 21起真正异常',
-              desc: '美国历史上最大规模政府UAP调查，但结论受争议。2024年年度报告承认21起事件无法解释。',
-              link: 'https://www.aaro.mil',
-              linkLabel: '访问AARO →',
-            },
-            {
-              tag: '历史性透明度',
-              tagColor: '#F5A623',
-              title: 'PURSUE — 2026年解密项目',
-              stats: '2026年5–7月 · 334份档案 · Release 04（7/10）',
-              desc: '美国国防部通过PURSUE平台持续解密UAP档案；2026年7月10日第四批公开40份，含STS-80轨道照片、印太红外视频与洛斯阿拉莫斯历史档案。',
-              link: 'https://www.war.gov/UFO',
-              linkLabel: '访问PURSUE →',
-            },
-          ].map((card, idx) => (
+          {highlightCards.map((card, idx) => (
             <div key={idx} className="uap-card overflow-hidden">
               <div className="p-6">
                 <span
@@ -170,7 +186,7 @@ export default function AgenciesPage() {
 
       {/* Transparency Timeline */}
       <section className="max-w-[1100px] mx-auto px-6 md:px-12 py-12">
-        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>全球UAP透明度里程碑</h2>
+        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>{t('agenciesPage.milestonesTitle')}</h2>
         <div className="relative">
           <div
             className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 md:-ml-px"
@@ -179,6 +195,8 @@ export default function AgenciesPage() {
           {transparencyMilestones.map((m, idx) => {
             const isLeft = idx % 2 === 0
             const dotColor = milestoneColorMap[m.type] || '#30B0D0'
+            const typeLabel = m.type === 'transparency' ? t('agenciesPage.milestoneTransparency') : m.type === 'institution' ? t('agenciesPage.milestoneInstitution') : t('agenciesPage.milestoneReport')
+
             return (
               <div
                 key={idx}
@@ -196,7 +214,7 @@ export default function AgenciesPage() {
                         className="px-1.5 py-0.5 rounded text-[10px] font-bold"
                         style={{ background: `${dotColor}15`, color: dotColor, border: `1px solid ${dotColor}30` }}
                       >
-                        {m.type === 'transparency' ? '透明度' : m.type === 'institution' ? '制度化' : '报告'}
+                        {typeLabel}
                       </span>
                     </div>
                     <p className="text-sm" style={{ color: '#EDE8E4' }}>{m.event}</p>
@@ -210,12 +228,12 @@ export default function AgenciesPage() {
 
       {/* Methodology Comparison */}
       <section className="max-w-[1100px] mx-auto px-6 md:px-12 py-12 pb-24">
-        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>方法论对比</h2>
+        <h2 className="font-serif-display text-2xl font-bold mb-8" style={{ color: '#EDE8E4' }}>{t('agenciesPage.methodologyTitle')}</h2>
         <div className="overflow-x-auto uap-scrollbar">
           <table className="w-full min-w-[600px]">
             <thead>
               <tr style={{ background: '#0F1923' }}>
-                {['维度', 'GEIPAN', 'AARO', 'NASA'].map((h) => (
+                {[t('agenciesPage.methodologyHeaders.dimension'), 'GEIPAN', 'AARO', 'NASA'].map((h) => (
                   <th key={h} className="px-4 py-3 text-left text-xs font-bold tracking-wider uppercase" style={{ color: '#8A99A8', borderBottom: '1px solid rgba(138,153,168,0.1)' }}>
                     {h}
                   </th>
@@ -254,3 +272,4 @@ export default function AgenciesPage() {
     </div>
   )
 }
+

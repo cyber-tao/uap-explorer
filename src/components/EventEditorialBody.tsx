@@ -3,6 +3,7 @@ import { ImageIcon } from 'lucide-react'
 import { assetUrl } from '../lib/utils'
 import type { EventFigure } from '../data/events'
 import ImageLightbox from './ImageLightbox'
+import { useI18n } from '../i18n'
 
 function splitParagraphs(text: string): string[] {
   const byBreak = text.split(/\n\n/).map((p) => p.trim()).filter(Boolean)
@@ -32,7 +33,7 @@ function FigureCard({
     <button
       type="button"
       onClick={onOpen}
-      className="group relative w-full text-left rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.01]"
+      className="group relative w-full text-left rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.01] cursor-pointer"
       style={{ background: 'linear-gradient(135deg, #0A1117, #0F1923)' }}
     >
       <div className="relative w-full" style={{ aspectRatio: figure.layout === 'inset' ? '4/3' : '16/10' }}>
@@ -73,6 +74,7 @@ interface EventEditorialBodyProps {
 }
 
 export default function EventEditorialBody({ description, figures }: EventEditorialBodyProps) {
+  const { t } = useI18n()
   const paragraphs = useMemo(() => splitParagraphs(description), [description])
   const limited = useMemo(() => figures.slice(0, 6), [figures])
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
@@ -171,7 +173,7 @@ export default function EventEditorialBody({ description, figures }: EventEditor
           <>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-1 h-5 rounded-full" style={{ background: '#30B0D0' }} />
-              <h3 className="font-serif-display text-base font-bold" style={{ color: '#EDE8E4' }}>影像记录</h3>
+              <h3 className="font-serif-display text-base font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.figures')}</h3>
               <span
                 className="text-xs ml-1 px-2 py-0.5 rounded-full"
                 style={{ background: 'rgba(48, 176, 208, 0.1)', color: '#30B0D0' }}
@@ -187,7 +189,7 @@ export default function EventEditorialBody({ description, figures }: EventEditor
           </>
         ) : limited.length > 0 ? (
           <p className="text-xs font-mono-data" style={{ color: 'rgba(138, 153, 168, 0.5)' }}>
-            共 {limited.length} 张影像已穿插于正文
+            {t('eventDetail.figuresInserted', { count: limited.length })}
           </p>
         ) : null}
       </div>
@@ -203,3 +205,4 @@ export default function EventEditorialBody({ description, figures }: EventEditor
     </div>
   )
 }
+

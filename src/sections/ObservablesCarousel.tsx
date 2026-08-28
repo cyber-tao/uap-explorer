@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { observables, observablesSection } from '../data/analysis'
+import { observables } from '../data/analysis'
+import { useI18n } from '../i18n'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -14,7 +15,9 @@ const ACCENT = '#30B0D0'
  * characteristics from analysis.ts (single content source).
  */
 export default function ObservablesCarousel() {
-  const { eyebrow, title } = observablesSection
+  const { t, dict } = useI18n()
+  const eyebrow = t('observablesSection.eyebrow')
+  const title = t('observablesSection.title')
   const features = observables
   const sectionRef = useRef<HTMLDivElement>(null)
   const fillRef = useRef<HTMLDivElement>(null)
@@ -79,6 +82,11 @@ export default function ObservablesCarousel() {
             {features.map((f, i) => {
               const isActive = i === active
               const offset = isActive ? '0px' : i < active ? '-28px' : '28px'
+              const localized = dict.observables[f.id]
+              const displayTitle = localized?.cnShort || f.cn
+              const displaySub = localized?.title || f.titleEn
+              const displayDesc = localized?.homeDescription || f.homeDescription
+
               return (
                 <div
                   key={f.id}
@@ -99,16 +107,16 @@ export default function ObservablesCarousel() {
                     className="font-serif-display font-normal mb-2"
                     style={{ fontSize: 'clamp(30px,4.2vw,58px)', color: '#fff', lineHeight: 1.05, textShadow: '0 2px 24px rgba(0,0,0,0.55)' }}
                   >
-                    {f.cn}
+                    {displayTitle}
                   </h3>
                   <p className="font-sans-body text-xs md:text-sm tracking-[0.14em] uppercase mb-6" style={{ color: ACCENT }}>
-                    {f.titleEn}
+                    {displaySub}
                   </p>
                   <p
                     className="font-sans-body max-w-[48ch]"
                     style={{ fontSize: 'clamp(14px,1.05vw,17px)', lineHeight: 1.9, color: 'rgba(255,255,255,0.78)', textShadow: '0 2px 18px rgba(0,0,0,0.5)' }}
                   >
-                    {f.homeDescription}
+                    {displayDesc}
                   </p>
                 </div>
               )
@@ -157,20 +165,23 @@ export default function ObservablesCarousel() {
                 ))}
               </div>
               <div className="relative w-full mt-4" style={{ height: '70px' }}>
-                {features.map((f, i) => (
-                  <div
-                    key={f.id}
-                    className="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700"
-                    style={{ opacity: i === active ? 1 : 0 }}
-                  >
-                    <span className="font-mono-data" style={{ fontSize: 'clamp(22px,2.6vw,36px)', color: '#fff', textShadow: `0 0 22px ${ACCENT}90` }}>
-                      {f.metric}
-                    </span>
-                    <span className="font-sans-body text-[11px] tracking-[0.22em] uppercase mt-1.5" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                      {f.metricLabel}
-                    </span>
-                  </div>
-                ))}
+                {features.map((f, i) => {
+                  const localized = dict.observables[f.id]
+                  return (
+                    <div
+                      key={f.id}
+                      className="absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700"
+                      style={{ opacity: i === active ? 1 : 0 }}
+                    >
+                      <span className="font-mono-data" style={{ fontSize: 'clamp(22px,2.6vw,36px)', color: '#fff', textShadow: `0 0 22px ${ACCENT}90` }}>
+                        {localized?.metric || f.metric}
+                      </span>
+                      <span className="font-sans-body text-[11px] tracking-[0.22em] uppercase mt-1.5" style={{ color: 'rgba(255,255,255,0.45)' }}>
+                        {localized?.metricLabel || f.metricLabel}
+                      </span>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -189,3 +200,4 @@ export default function ObservablesCarousel() {
     </section>
   )
 }
+

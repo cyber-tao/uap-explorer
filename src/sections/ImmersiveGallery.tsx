@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
-import { events, confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
+import { events, confidenceColors } from '../data/events'
 import { featuredEventIds } from '../data/featured'
 import { assetUrl } from '../lib/utils'
 import { theme } from '../lib/theme'
+import { useI18n } from '../i18n'
 
 /**
  * 高置信度案例精选画廊 — 首页"Featured Events"
  * 使用真实事件数据，杂志风卡片布局，图片叠加文字，悬停动效
  */
 export default function ImmersiveGallery() {
+  const { language, t, getConfidenceLabel, getCharLabel, getRegionLabel } = useI18n()
   const featured = featuredEventIds
     .map((id) => events.find((e) => e.id === id))
     .filter((e): e is (typeof events)[number] => Boolean(e))
@@ -21,24 +23,25 @@ export default function ImmersiveGallery() {
             className="font-sans-body text-[10px] tracking-[0.25em] uppercase mb-4"
             style={{ color: 'rgba(138, 153, 168, 0.7)' }}
           >
-            FEATURED EVENTS / 重点事件
+            {t('gallery.eyebrow')}
           </p>
           <h2
             className="font-serif-display text-3xl md:text-4xl lg:text-5xl font-light"
             style={{ color: theme.ivory, letterSpacing: '0.05em', lineHeight: 1.2 }}
           >
-            高置信度案例
+            {t('gallery.title')}
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-relaxed" style={{ color: theme.muted }}>
-            从 {events.length} 起全球事件中精选的 {featured.length} 个标杆案例，每个均有多传感器验证、官方记录或大规模目击证据。
+            {t('gallery.description')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {featured.map((event, i) => {
             const confColor = confidenceColors[event.confidence]
-            const confLabel = confidenceLabels[event.confidence]
+            const confLabel = getConfidenceLabel(event.confidence)
             const isLarge = i === 0 || i === 3
+            const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
 
             return (
               <Link
@@ -69,7 +72,7 @@ export default function ImmersiveGallery() {
                 <div className="relative overflow-hidden" style={{ aspectRatio: isLarge ? '3/4' : '16/10' }}>
                   <img
                     src={assetUrl(event.image)}
-                    alt={event.name}
+                    alt={displayName}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     loading="lazy"
                     onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
@@ -109,7 +112,7 @@ export default function ImmersiveGallery() {
                       </span>
                       <span style={{ color: 'rgba(138, 153, 168, 0.3)' }}>·</span>
                       <span className="text-[10px] font-medium" style={{ color: theme.muted }}>
-                        {event.country}
+                        {getRegionLabel(event.region, event.country)}
                       </span>
                     </div>
 
@@ -117,7 +120,7 @@ export default function ImmersiveGallery() {
                       className="font-serif-display text-lg md:text-xl font-semibold leading-snug mb-2"
                       style={{ color: theme.ivory }}
                     >
-                      {event.name}
+                      {displayName}
                     </h3>
 
                     <p
@@ -138,14 +141,14 @@ export default function ImmersiveGallery() {
                             border: '1px solid rgba(48, 176, 208, 0.15)',
                           }}
                         >
-                          {physicalCharLabels[char]?.label || char}
+                          {getCharLabel(char)}
                         </span>
                       ))}
                     </div>
 
                     <div className="mt-3 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-[11px] font-medium" style={{ color: theme.cyan }}>
-                        查看详情
+                        {t('gallery.viewDetails')}
                       </span>
                       <span className="text-[11px]" style={{ color: theme.cyan }}>→</span>
                     </div>
@@ -167,7 +170,7 @@ export default function ImmersiveGallery() {
               textDecoration: 'none',
             }}
           >
-            浏览全部 {events.length} 个事件
+            {t('gallery.browseAll', { count: events.length })}
             <span>→</span>
           </Link>
         </div>
@@ -175,3 +178,4 @@ export default function ImmersiveGallery() {
     </section>
   )
 }
+

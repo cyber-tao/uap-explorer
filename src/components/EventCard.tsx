@@ -1,17 +1,20 @@
 import { Link } from 'react-router-dom'
-import { confidenceColors, confidenceLabels, physicalCharLabels } from '../data/events'
+import { confidenceColors } from '../data/events'
 import type { UAPEvent } from '../data/events'
 import { assetUrl } from '../lib/utils'
 import { theme } from '../lib/theme'
 import { characteristicIconMap } from './characteristicIcons'
+import { useI18n } from '../i18n'
 
 interface EventCardProps {
   event: UAPEvent
 }
 
 export default function EventCard({ event }: EventCardProps) {
+  const { language, t, getConfidenceLabel, getCharLabel } = useI18n()
   const confColor = confidenceColors[event.confidence]
-  const confLabel = confidenceLabels[event.confidence]
+  const confLabel = getConfidenceLabel(event.confidence)
+  const displayName = language !== 'zh' && event.nameEn ? event.nameEn : event.name
 
   return (
     <Link
@@ -22,7 +25,7 @@ export default function EventCard({ event }: EventCardProps) {
       <div className="relative overflow-hidden" style={{ aspectRatio: '16/10' }}>
         <img
           src={assetUrl(event.image)}
-          alt={event.name}
+          alt={displayName}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
@@ -32,7 +35,7 @@ export default function EventCard({ event }: EventCardProps) {
           style={{ background: `linear-gradient(135deg, ${theme.surface}, ${theme.elevated})` }}
         >
           <span className="font-serif-display text-2xl opacity-20" style={{ color: theme.cyan }}>
-            {event.name[0]}
+            {displayName[0]}
           </span>
         </div>
         <div
@@ -57,7 +60,7 @@ export default function EventCard({ event }: EventCardProps) {
           </span>
         </div>
         <h3 className="font-serif-display text-lg font-bold mb-2" style={{ color: theme.ivory }}>
-          {event.name}
+          {displayName}
         </h3>
         <p className="text-sm leading-relaxed mb-4 line-clamp-2" style={{ color: theme.muted }}>
           {event.shortDesc}
@@ -70,19 +73,20 @@ export default function EventCard({ event }: EventCardProps) {
               style={{ background: 'rgba(48,176,208,0.1)', color: theme.cyan, border: '1px solid rgba(48,176,208,0.2)' }}
             >
               {characteristicIconMap[char]}
-              {physicalCharLabels[char]?.label || char}
+              {getCharLabel(char)}
             </span>
           ))}
         </div>
         <div className="flex items-center justify-between">
           <span className="text-sm font-medium" style={{ color: theme.cyan }}>
-            查看详情 →
+            {t('gallery.viewDetails')} →
           </span>
           <span className="text-xs font-mono-data" style={{ color: theme.muted }}>
-            {event.sensors?.join(' / ') || '目视目击'}
+            {event.sensors?.join(' / ') || t('eventDetail.visualWitness')}
           </span>
         </div>
       </div>
     </Link>
   )
 }
+

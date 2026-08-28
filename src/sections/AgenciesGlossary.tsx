@@ -1,51 +1,52 @@
-import { useEffect, useRef, useCallback, useState, useMemo } from 'react';
-import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { agenciesPreviewConfig } from '../config';
-import { agencies } from '../data/agencies';
+import { useEffect, useRef, useCallback, useState, useMemo } from 'react'
+import { Link } from 'react-router-dom'
+import gsap from 'gsap'
+import { agenciesPreviewConfig } from '../config'
+import { agencies } from '../data/agencies'
+import { useI18n } from '../i18n'
 
 interface AgencyPreviewItem {
-  cn: string;
-  en: string;
-  description: string;
+  cn: string
+  en: string
+  description: string
 }
 
 function toPreviewItem(agencyName: string, countryEn: string, description: string): AgencyPreviewItem {
-  const cn = agencyName.replace(/（.*?）/g, '').split(/[\s/]/)[0] || agencyName;
+  const cn = agencyName.replace(/（.*?）/g, '').split(/[\s/]/)[0] || agencyName
   return {
     cn,
     en: `${countryEn}`.toUpperCase(),
     description,
-  };
+  }
 }
 
 function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyPreviewItem; filterId: string; onHover: () => void; onLeaveHover: () => void }) {
-  const rowRef = useRef<HTMLDivElement>(null);
-  const text1Ref = useRef<SVGTextElement>(null);
-  const text2Ref = useRef<SVGTextElement>(null);
-  const textsGroupRef = useRef<SVGGElement>(null);
-  const feBlurRef = useRef<SVGFEGaussianBlurElement>(null);
-  const tlRef = useRef<gsap.core.Timeline | null>(null);
-  const primitiveValues = useRef({ stdDeviation: 0 });
-  const isHovered = useRef(false);
+  const rowRef = useRef<HTMLDivElement>(null)
+  const text1Ref = useRef<SVGTextElement>(null)
+  const text2Ref = useRef<SVGTextElement>(null)
+  const textsGroupRef = useRef<SVGGElement>(null)
+  const feBlurRef = useRef<SVGFEGaussianBlurElement>(null)
+  const tlRef = useRef<gsap.core.Timeline | null>(null)
+  const primitiveValues = useRef({ stdDeviation: 0 })
+  const isHovered = useRef(false)
 
   const buildTimeline = useCallback(() => {
-    if (!text1Ref.current || !text2Ref.current || !textsGroupRef.current || !feBlurRef.current) return;
+    if (!text1Ref.current || !text2Ref.current || !textsGroupRef.current || !feBlurRef.current) return
 
     const tl = gsap.timeline({
       paused: true,
       onComplete: () => {
-        if (textsGroupRef.current) textsGroupRef.current.style.filter = 'none';
+        if (textsGroupRef.current) textsGroupRef.current.style.filter = 'none'
       },
       onReverseComplete: () => {
-        if (textsGroupRef.current) textsGroupRef.current.style.filter = 'none';
+        if (textsGroupRef.current) textsGroupRef.current.style.filter = 'none'
       },
       onUpdate: () => {
         if (feBlurRef.current) {
-          feBlurRef.current.setAttribute('stdDeviation', String(primitiveValues.current.stdDeviation));
+          feBlurRef.current.setAttribute('stdDeviation', String(primitiveValues.current.stdDeviation))
         }
       },
-    });
+    })
 
     // stdDeviation 0 -> 1.5
     tl.to(primitiveValues.current, {
@@ -53,35 +54,35 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
       ease: 'none',
       stdDeviation: 1.5,
       startAt: { stdDeviation: 0 },
-    }, 0);
+    }, 0)
 
     // stdDeviation 1.5 -> 0
     tl.to(primitiveValues.current, {
       duration: 0.5,
       ease: 'none',
       stdDeviation: 0,
-    });
+    })
 
     // text_1 opacity fade out
     tl.to(text1Ref.current, {
       duration: 1,
       ease: 'none',
       opacity: 0,
-    }, 0);
+    }, 0)
 
     // text_2 opacity fade in
     tl.to(text2Ref.current, {
       duration: 1,
       ease: 'none',
       opacity: 1,
-    }, 0);
+    }, 0)
 
     // text_1 slide right
     tl.to(text1Ref.current, {
       duration: 1,
       ease: 'Power2.easeInOut',
       x: 8,
-    }, 0);
+    }, 0)
 
     // text_2 slide from left
     tl.to(text2Ref.current, {
@@ -89,40 +90,40 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
       ease: 'Power2.easeInOut',
       startAt: { x: -8 },
       x: 0,
-    }, 0);
+    }, 0)
 
-    tlRef.current = tl;
-  }, []);
+    tlRef.current = tl
+  }, [])
 
   useEffect(() => {
     // Set initial state
     if (text2Ref.current) {
-      gsap.set(text2Ref.current, { opacity: 0 });
+      gsap.set(text2Ref.current, { opacity: 0 })
     }
-    buildTimeline();
+    buildTimeline()
 
     return () => {
-      if (tlRef.current) tlRef.current.kill();
-    };
-  }, [buildTimeline]);
+      if (tlRef.current) tlRef.current.kill()
+    }
+  }, [buildTimeline])
 
   const onEnter = () => {
-    isHovered.current = true;
+    isHovered.current = true
     if (textsGroupRef.current) {
-      textsGroupRef.current.style.filter = `url(#${filterId})`;
+      textsGroupRef.current.style.filter = `url(#${filterId})`
     }
-    if (tlRef.current) tlRef.current.play();
-    onHover();
-  };
+    if (tlRef.current) tlRef.current.play()
+    onHover()
+  }
 
   const onLeave = () => {
-    isHovered.current = false;
+    isHovered.current = false
     if (textsGroupRef.current) {
-      textsGroupRef.current.style.filter = `url(#${filterId})`;
+      textsGroupRef.current.style.filter = `url(#${filterId})`
     }
-    if (tlRef.current) tlRef.current.reverse();
-    onLeaveHover();
-  };
+    if (tlRef.current) tlRef.current.reverse()
+    onLeaveHover()
+  }
 
   return (
     <div
@@ -186,30 +187,31 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
         </g>
       </svg>
     </div>
-  );
+  )
 }
 
 export default function AgenciesGlossary() {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+  const { t } = useI18n()
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [selectedIndex, setSelectedIndex] = useState<number>(0)
 
   const previewItems = useMemo(() => {
     return agenciesPreviewConfig.previewAgencyMatchers
       .map((matcher) => {
-        const agency = agencies.find((a) => a.agency.includes(matcher));
-        if (!agency) return null;
-        return toPreviewItem(agency.agency, agency.countryEn, agency.description);
+        const agency = agencies.find((a) => a.agency.includes(matcher))
+        if (!agency) return null
+        return toPreviewItem(agency.agency, agency.countryEn, agency.description)
       })
-      .filter((item): item is AgencyPreviewItem => Boolean(item));
-  }, []);
+      .filter((item): item is AgencyPreviewItem => Boolean(item))
+  }, [])
 
   const activeItem =
     hoveredIndex !== null
       ? previewItems[hoveredIndex]
-      : previewItems[selectedIndex] || previewItems[0] || null;
+      : previewItems[selectedIndex] || previewItems[0] || null
 
   if (previewItems.length === 0) {
-    return null;
+    return null
   }
 
   return (
@@ -223,7 +225,7 @@ export default function AgenciesGlossary() {
           className="font-sans-body text-xs tracking-[0.3em] uppercase mb-8 md:mb-12"
           style={{ color: 'rgba(237,232,228,0.35)' }}
         >
-          {agenciesPreviewConfig.sectionLabel}
+          {t('agenciesPreview.sectionLabel')}
         </p>
         <div>
           {previewItems.map((item, idx) => (
@@ -232,8 +234,8 @@ export default function AgenciesGlossary() {
                 item={item}
                 filterId={`goo-suliu-${idx}`}
                 onHover={() => {
-                  setHoveredIndex(idx);
-                  setSelectedIndex(idx);
+                  setHoveredIndex(idx)
+                  setSelectedIndex(idx)
                 }}
                 onLeaveHover={() => setHoveredIndex(null)}
               />
@@ -248,7 +250,7 @@ export default function AgenciesGlossary() {
                 textDecoration: 'none',
               }}
             >
-              查看全部官方机构 →
+              {t('agenciesPreview.viewAll')}
             </Link>
           </div>
         </div>
@@ -284,5 +286,6 @@ export default function AgenciesGlossary() {
         </div>
       </div>
     </section>
-  );
+  )
 }
+

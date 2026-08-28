@@ -2,6 +2,7 @@ import { useEffect, useCallback } from 'react'
 import { X, ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
 import { assetUrl } from '../lib/utils'
 import type { EventFigure } from '../data/events'
+import { useI18n } from '../i18n'
 
 interface ImageLightboxProps {
   figures: EventFigure[]
@@ -11,6 +12,7 @@ interface ImageLightboxProps {
 }
 
 export default function ImageLightbox({ figures, index, onClose, onNavigate }: ImageLightboxProps) {
+  const { t } = useI18n()
   const figure = figures[index]
   const hasPrev = index > 0
   const hasNext = index < figures.length - 1
@@ -55,7 +57,7 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
       style={{ background: 'rgba(5, 10, 15, 0.94)' }}
       role="dialog"
       aria-modal="true"
-      aria-label="影像查看"
+      aria-label="Image View"
       onClick={onClose}
     >
       <div className="flex items-center justify-between px-4 py-3 shrink-0" onClick={(e) => e.stopPropagation()}>
@@ -65,9 +67,9 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
         <button
           type="button"
           onClick={onClose}
-          className="p-2 rounded-md transition-colors hover:bg-[rgba(48,176,208,0.1)]"
+          className="p-2 rounded-md transition-colors hover:bg-[rgba(48,176,208,0.1)] cursor-pointer"
           style={{ color: '#EDE8E4' }}
-          aria-label="关闭"
+          aria-label={t('lightbox.close')}
         >
           <X className="w-5 h-5" />
         </button>
@@ -78,9 +80,9 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
           <button
             type="button"
             onClick={goPrev}
-            className="absolute left-2 md:left-4 z-10 p-2 rounded-full transition-colors hover:bg-[rgba(48,176,208,0.15)]"
+            className="absolute left-2 md:left-4 z-10 p-2 rounded-full transition-colors hover:bg-[rgba(48,176,208,0.15)] cursor-pointer"
             style={{ color: '#30B0D0', background: 'rgba(10, 17, 23, 0.7)' }}
-            aria-label="上一张"
+            aria-label={t('lightbox.prev')}
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -94,9 +96,9 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
           <button
             type="button"
             onClick={goNext}
-            className="absolute right-2 md:right-4 z-10 p-2 rounded-full transition-colors hover:bg-[rgba(48,176,208,0.15)]"
+            className="absolute right-2 md:right-4 z-10 p-2 rounded-full transition-colors hover:bg-[rgba(48,176,208,0.15)] cursor-pointer"
             style={{ color: '#30B0D0', background: 'rgba(10, 17, 23, 0.7)' }}
-            aria-label="下一张"
+            aria-label={t('lightbox.next')}
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -115,7 +117,7 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 hover:text-[#30B0D0]"
               >
-                原始出处 <ExternalLink className="w-3 h-3" />
+                {t('lightbox.originalSource')} <ExternalLink className="w-3 h-3" />
               </a>
             )}
           </p>
@@ -124,3 +126,4 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
     </div>
   )
 }
+

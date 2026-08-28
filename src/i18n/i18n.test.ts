@@ -1,0 +1,47 @@
+import { describe, it, expect } from 'vitest'
+import { zh } from './locales/zh'
+import { en } from './locales/en'
+import { ja } from './locales/ja'
+import { fr } from './locales/fr'
+import { SUPPORTED_LANGUAGES } from './types'
+
+describe('i18n dictionaries integrity', () => {
+  const locales = { zh, en, ja, fr }
+
+  it('supports all 4 required languages', () => {
+    expect(SUPPORTED_LANGUAGES.map((l) => l.code)).toEqual(['zh', 'en', 'ja', 'fr'])
+  })
+
+  it('has identical top-level structure in all locales', () => {
+    const zhKeys = Object.keys(zh).sort()
+    for (const [code, dict] of Object.entries(locales)) {
+      expect(Object.keys(dict).sort(), `Mismatch in ${code}`).toEqual(zhKeys)
+    }
+  })
+
+  it('has all nav links translated in all locales', () => {
+    const zhNavKeys = Object.keys(zh.nav).sort()
+    for (const [code, dict] of Object.entries(locales)) {
+      expect(Object.keys(dict.nav).sort(), `Nav mismatch in ${code}`).toEqual(zhNavKeys)
+    }
+  })
+
+  it('has all 5 observables translated in all locales', () => {
+    const obsKeys = ['instantaneous-acceleration', 'low-observability', 'transmedium', 'anti-gravity', 'multi-sensor']
+    for (const [code, dict] of Object.entries(locales)) {
+      expect(Object.keys(dict.observables).sort(), `Observables keys in ${code}`).toEqual(obsKeys.sort())
+      for (const key of obsKeys) {
+        expect(dict.observables[key].title, `Observable ${key} title in ${code}`).toBeTruthy()
+        expect(dict.observables[key].description, `Observable ${key} description in ${code}`).toBeTruthy()
+        expect(dict.observables[key].homeDescription, `Observable ${key} homeDescription in ${code}`).toBeTruthy()
+      }
+    }
+  })
+
+  it('has all region mappings translated in all locales', () => {
+    const zhRegions = Object.keys(zh.regions).sort()
+    for (const [code, dict] of Object.entries(locales)) {
+      expect(Object.keys(dict.regions).sort(), `Regions mismatch in ${code}`).toEqual(zhRegions)
+    }
+  })
+})

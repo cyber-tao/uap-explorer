@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
 import { footerConfig } from '../config'
 import { theme } from '../lib/theme'
+import { useI18n } from '../i18n'
 
 export type FooterVariant = 'home' | 'default'
 
@@ -31,6 +32,25 @@ function ExternalSourceList({ links }: { links: { text: string; href: string }[]
 }
 
 export default function Footer({ variant = 'default' }: { variant?: FooterVariant }) {
+  const { t, dict } = useI18n()
+  const sourceLinks = [...footerConfig.sources, ...footerConfig.archiveLinks]
+
+  const homeNav = [
+    { text: dict.footer.homeNav.home, scrollTargetId: 'hero-section' },
+    { text: dict.footer.homeNav.observables, scrollTargetId: 'observables' },
+    { text: dict.footer.homeNav.gallery, scrollTargetId: 'gallery' },
+    { text: dict.footer.homeNav.agencies, scrollTargetId: 'agencies-preview' },
+  ]
+
+  const pageNav = [
+    { text: dict.footer.pageNav.home, to: '/' },
+    { text: dict.footer.pageNav.timeline, to: '/timeline' },
+    { text: dict.footer.pageNav.analysis, to: '/analysis' },
+    { text: dict.footer.pageNav.agencies, to: '/agencies' },
+  ]
+
+  const legalItems = dict.footer.legal
+
   if (variant === 'home') {
     return (
       <footer
@@ -55,7 +75,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                 letterSpacing: '0.02em',
               }}
             >
-              {footerConfig.visionText}
+              {t('footer.visionText')}
             </p>
           </div>
 
@@ -79,7 +99,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                   marginBottom: '16px',
                 }}
               >
-                SOURCES
+                {t('footer.sourcesTitle')}
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {footerConfig.sources.map((entry) => (
@@ -113,10 +133,10 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                   marginBottom: '16px',
                 }}
               >
-                NAVIGATION
+                {t('footer.navTitle')}
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {footerConfig.homeNav.map((entry) => (
+                {homeNav.map((entry) => (
                   <button
                     key={entry.scrollTargetId}
                     type="button"
@@ -151,10 +171,10 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                   marginBottom: '16px',
                 }}
               >
-                LEGAL
+                {t('footer.legalTitle')}
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                {footerConfig.legal.map((text) => (
+                {legalItems.map((text) => (
                   <span
                     key={text}
                     style={{
@@ -187,7 +207,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                 color: 'rgba(237,232,228,0.5)',
               }}
             >
-              {footerConfig.brandName}
+              {t('footer.brandName')}
             </p>
             <p
               className="font-sans-body"
@@ -196,15 +216,13 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
                 color: 'rgba(237,232,228,0.25)',
               }}
             >
-              {footerConfig.copyright}
+              {t('footer.copyright')}
             </p>
           </div>
         </div>
       </footer>
     )
   }
-
-  const sourceLinks = [...footerConfig.sources, ...footerConfig.archiveLinks]
 
   return (
     <footer
@@ -227,7 +245,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
             className="font-serif-display text-lg md:text-xl leading-relaxed"
             style={{ color: theme.muted, lineHeight: 1.75 }}
           >
-            {footerConfig.visionText}
+            {t('footer.visionText')}
           </p>
         </div>
 
@@ -237,7 +255,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
               className="text-xs font-bold tracking-widest uppercase mb-6"
               style={{ color: theme.muted }}
             >
-              数据来源
+              {t('footer.sourcesTitle')}
             </h4>
             <ExternalSourceList links={sourceLinks} />
           </div>
@@ -247,10 +265,10 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
               className="text-xs font-bold tracking-widest uppercase mb-6"
               style={{ color: theme.muted }}
             >
-              导航
+              {t('footer.navTitle')}
             </h4>
             <ul className="space-y-3">
-              {footerConfig.pageNav.map((entry) => (
+              {pageNav.map((entry) => (
                 <li key={entry.to}>
                   <Link
                     to={entry.to}
@@ -269,10 +287,10 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
               className="text-xs font-bold tracking-widest uppercase mb-6"
               style={{ color: theme.muted }}
             >
-              声明
+              {t('footer.legalTitle')}
             </h4>
             <ul className="space-y-3">
-              {footerConfig.legal.map((text) => (
+              {legalItems.map((text) => (
                 <li key={text}>
                   <span className="text-sm" style={{ color: theme.muted }}>
                     {text}
@@ -289,17 +307,18 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
         >
           <div className="flex items-center gap-2">
             <span className="font-serif-display font-bold" style={{ color: theme.ivory }}>
-              {footerConfig.brandName}
+              {t('footer.brandName')}
             </span>
             <span className="text-xs" style={{ color: theme.muted }}>
-              · {footerConfig.brandTagline}
+              · {t('footer.brandTagline')}
             </span>
           </div>
           <p className="text-xs" style={{ color: theme.muted }}>
-            {footerConfig.copyright} · {footerConfig.legal[0]}
+            {t('footer.copyright')} · {legalItems[0]}
           </p>
         </div>
       </div>
     </footer>
   )
 }
+

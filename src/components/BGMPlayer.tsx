@@ -1,6 +1,7 @@
 import { useState, useRef, useCallback, useEffect } from 'react'
 import { Music, VolumeX } from 'lucide-react'
 import { assetUrl } from '../lib/utils'
+import { useI18n } from '../i18n'
 
 /**
  * Cornfield Chase 背景音乐播放器（原声 MP3）
@@ -11,6 +12,7 @@ const BGM_SRC = assetUrl('/music/cornfield-chase.mp3')
 const BGM_VOLUME = 0.5
 
 export default function BGMPlayer() {
+  const { t } = useI18n()
   const [isPlaying, setIsPlaying] = useState(false)
   const [needsGesture, setNeedsGesture] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
@@ -110,13 +112,13 @@ export default function BGMPlayer() {
   return (
     <button
       onClick={toggle}
-      className="relative flex items-center gap-2 px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-500 hover:bg-[rgba(48,176,208,0.15)]"
+      className="relative flex items-center gap-2 px-3 py-1.5 rounded-md text-xs font-medium transition-all duration-500 hover:bg-[rgba(48,176,208,0.15)] cursor-pointer"
       style={{
         background: isPlaying ? 'rgba(48, 176, 208, 0.08)' : 'transparent',
         color: isPlaying ? '#30B0D0' : '#8A99A8',
         border: isPlaying ? '1px solid rgba(48, 176, 208, 0.25)' : '1px solid transparent',
       }}
-      title={isPlaying ? '点击暂停 Cornfield Chase' : '点击播放 Cornfield Chase'}
+      title={isPlaying ? t('bgm.pause') : t('bgm.play')}
     >
       <span className="relative flex items-center justify-center w-4 h-4">
         {isPlaying ? (
@@ -136,7 +138,7 @@ export default function BGMPlayer() {
         )}
       </span>
       <span className="hidden md:inline">
-        {isPlaying ? 'Cornfield Chase' : '播放 BGM'}
+        {isPlaying ? 'Cornfield Chase' : t('bgm.buttonText')}
       </span>
 
       <style>{`
@@ -148,3 +150,4 @@ export default function BGMPlayer() {
     </button>
   )
 }
+
