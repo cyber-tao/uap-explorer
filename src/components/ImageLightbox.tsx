@@ -25,14 +25,24 @@ export default function ImageLightbox({ figures, index, onClose, onNavigate }: I
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
-      if (e.key === 'ArrowLeft') goPrev()
-      if (e.key === 'ArrowRight') goNext()
+      if (e.key === 'Escape') {
+        e.preventDefault()
+        onClose()
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault()
+        goPrev()
+      }
+      if (e.key === 'ArrowRight') {
+        e.preventDefault()
+        goNext()
+      }
     }
+    const originalOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     window.addEventListener('keydown', onKey)
     return () => {
-      document.body.style.overflow = ''
+      document.body.style.overflow = originalOverflow
       window.removeEventListener('keydown', onKey)
     }
   }, [onClose, goPrev, goNext])

@@ -102,8 +102,15 @@ export default function Navigation() {
 
       {/* Mobile drawer */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 md:hidden" style={{ background: 'rgba(5, 10, 15, 0.95)', backdropFilter: 'blur(16px)' }}>
-          <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div
+          className="fixed inset-0 z-40 md:hidden flex flex-col items-center justify-center"
+          style={{ background: 'rgba(5, 10, 15, 0.96)', backdropFilter: 'blur(16px)' }}
+          onClick={() => setMobileOpen(false)}
+        >
+          <div
+            className="flex flex-col items-center justify-center gap-7 px-8"
+            onClick={(e) => e.stopPropagation()}
+          >
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -117,6 +124,22 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
+
+            <button
+              onClick={() => {
+                setMobileOpen(false)
+                navigate('/timeline')
+              }}
+              className="flex items-center gap-2 mt-4 px-6 py-2.5 rounded-full text-sm font-medium transition-colors cursor-pointer"
+              style={{
+                background: 'rgba(48, 176, 208, 0.12)',
+                color: '#30B0D0',
+                border: '1px solid rgba(48, 176, 208, 0.25)',
+              }}
+            >
+              <Search className="w-4 h-4" />
+              <span>搜索全部事件</span>
+            </button>
           </div>
         </div>
       )}

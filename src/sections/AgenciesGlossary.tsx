@@ -191,6 +191,8 @@ function GooeyTextRow({ item, filterId, onHover, onLeaveHover }: { item: AgencyP
 
 export default function AgenciesGlossary() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
+
   const previewItems = useMemo(() => {
     return agenciesPreviewConfig.previewAgencyMatchers
       .map((matcher) => {
@@ -200,7 +202,11 @@ export default function AgenciesGlossary() {
       })
       .filter((item): item is AgencyPreviewItem => Boolean(item));
   }, []);
-  const hovered = hoveredIndex !== null ? previewItems[hoveredIndex] : null;
+
+  const activeItem =
+    hoveredIndex !== null
+      ? previewItems[hoveredIndex]
+      : previewItems[selectedIndex] || previewItems[0] || null;
 
   if (previewItems.length === 0) {
     return null;
@@ -209,48 +215,35 @@ export default function AgenciesGlossary() {
   return (
     <section
       id="agencies-preview"
-      style={{
-        position: 'relative',
-        width: '100%',
-        minHeight: '80vh',
-        background: '#050A0F',
-        zIndex: 4,
-        display: 'flex',
-        padding: '16vh 8vw',
-        gap: '8vw',
-      }}
+      className="relative w-full min-h-[70vh] bg-[#050A0F] z-[4] flex flex-col md:flex-row px-6 md:px-[8vw] py-16 md:py-[16vh] gap-8 md:gap-[8vw]"
     >
       {/* Left — titles */}
-      <div style={{ flex: '0 0 50%' }}>
+      <div className="w-full md:w-1/2">
         <p
-          className="font-sans-body"
-          style={{
-            fontSize: '12px',
-            letterSpacing: '0.3em',
-            color: 'rgba(237,232,228,0.35)',
-            textTransform: 'uppercase',
-            marginBottom: '48px',
-          }}
+          className="font-sans-body text-xs tracking-[0.3em] uppercase mb-8 md:mb-12"
+          style={{ color: 'rgba(237,232,228,0.35)' }}
         >
           {agenciesPreviewConfig.sectionLabel}
         </p>
         <div>
           {previewItems.map((item, idx) => (
-            <GooeyTextRow
-              key={item.cn}
-              item={item}
-              filterId={`goo-suliu-${idx}`}
-              onHover={() => setHoveredIndex(idx)}
-              onLeaveHover={() => setHoveredIndex(null)}
-            />
+            <div key={item.cn} onClick={() => setSelectedIndex(idx)}>
+              <GooeyTextRow
+                item={item}
+                filterId={`goo-suliu-${idx}`}
+                onHover={() => {
+                  setHoveredIndex(idx);
+                  setSelectedIndex(idx);
+                }}
+                onLeaveHover={() => setHoveredIndex(null)}
+              />
+            </div>
           ))}
-          <div style={{ marginTop: '40px' }}>
+          <div className="mt-8 md:mt-10">
             <Link
               to="/agencies"
-              className="font-sans-body"
+              className="font-sans-body text-xs md:text-sm tracking-[0.12em] transition-colors hover:underline"
               style={{
-                fontSize: '13px',
-                letterSpacing: '0.12em',
                 color: '#30B0D0',
                 textDecoration: 'none',
               }}
@@ -261,47 +254,30 @@ export default function AgenciesGlossary() {
         </div>
       </div>
 
-      {/* Right — description on hover */}
-      <div
-        style={{
-          flex: '1 1 50%',
-          display: 'flex',
-          alignItems: 'center',
-          position: 'relative',
-        }}
-      >
+      {/* Right — description on hover / touch selection */}
+      <div className="w-full md:w-1/2 flex items-center relative min-h-[160px] md:min-h-0 pt-4 md:pt-0">
         <div
+          className="transition-all duration-400 max-w-[460px]"
           style={{
-            opacity: hovered ? 1 : 0,
-            transform: hovered ? 'translateY(0)' : 'translateY(12px)',
-            transition: 'opacity 0.4s ease, transform 0.4s ease',
-            maxWidth: '420px',
+            opacity: activeItem ? 1 : 0,
+            transform: activeItem ? 'translateY(0)' : 'translateY(12px)',
           }}
         >
-          {hovered && (
+          {activeItem && (
             <>
               <p
-                className="font-sans-body"
-                style={{
-                  fontSize: '12px',
-                  letterSpacing: '0.25em',
-                  color: '#30B0D0',
-                  textTransform: 'uppercase',
-                  marginBottom: '16px',
-                }}
+                className="font-sans-body text-xs tracking-[0.25em] uppercase mb-3 md:mb-4"
+                style={{ color: '#30B0D0' }}
               >
-                {hovered.en}
+                {activeItem.en}
               </p>
               <p
-                className="font-sans-body"
+                className="font-sans-body text-lg md:text-[22px] leading-relaxed md:leading-[2] font-light"
                 style={{
-                  fontSize: '22px',
-                  lineHeight: 2,
-                  color: 'rgba(237,232,228,0.65)',
-                  fontWeight: 300,
+                  color: 'rgba(237,232,228,0.75)',
                 }}
               >
-                {hovered.description}
+                {activeItem.description}
               </p>
             </>
           )}
