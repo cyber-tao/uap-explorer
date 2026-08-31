@@ -84,33 +84,58 @@ export default function HeroField() {
             </p>
           )}
 
-          {ctaText && (
-            <button
-              className="font-sans-body px-8 py-3.5 rounded-full text-xs md:text-sm tracking-[0.15em] transition-all duration-300 cursor-pointer"
-              onClick={() => {
-                document
-                  .getElementById('observables')
-                  ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-              }}
+          <div className="flex flex-wrap items-center gap-3">
+            {ctaText && (
+              <button
+                className="font-sans-body px-7 py-3 rounded-full text-xs md:text-sm tracking-[0.15em] transition-all duration-300 cursor-pointer"
+                onClick={() => {
+                  document
+                    .getElementById('observables')
+                    ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }}
+                style={{
+                  background: 'rgba(255,255,255,0.08)',
+                  border: '1px solid rgba(255,255,255,0.5)',
+                  color: '#ffffff',
+                  backdropFilter: 'blur(6px)',
+                  WebkitBackdropFilter: 'blur(6px)',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.18)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.8)'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255,255,255,0.08)'
+                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'
+                }}
+              >
+                {ctaText}
+              </button>
+            )}
+
+            <a
+              href="/hotspots"
+              className="font-sans-body px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.12em] transition-all duration-300 flex items-center gap-2 cursor-pointer"
               style={{
-                background: 'rgba(255,255,255,0.08)',
-                border: '1px solid rgba(255,255,255,0.5)',
-                color: '#ffffff',
+                background: 'rgba(48, 176, 208, 0.15)',
+                border: '1px solid rgba(48, 176, 208, 0.5)',
+                color: '#30B0D0',
                 backdropFilter: 'blur(6px)',
                 WebkitBackdropFilter: 'blur(6px)',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.18)'
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.8)'
+                e.currentTarget.style.background = 'rgba(48, 176, 208, 0.3)'
+                e.currentTarget.style.borderColor = 'rgba(48, 176, 208, 0.9)'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.08)'
-                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'
+                e.currentTarget.style.background = 'rgba(48, 176, 208, 0.15)'
+                e.currentTarget.style.borderColor = 'rgba(48, 176, 208, 0.5)'
               }}
             >
-              {ctaText}
-            </button>
-          )}
+              <span>{t('nav.hotspots')}</span>
+              <span>→</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

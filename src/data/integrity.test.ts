@@ -80,4 +80,18 @@ describe('event data integrity', () => {
       expect(/^[\x20-\x7E\u00C0-\u024F]+$/.test(event.mapsQuery!), `${event.id} mapsQuery English`).toBe(true)
     }
   })
+
+  it('provides valid geographic coordinates for all events', () => {
+    for (const event of events) {
+      expect(event.coordinates, `${event.id} coordinates defined`).toBeDefined()
+      expect(event.coordinates?.length, `${event.id} coordinates length`).toBe(2)
+      const [lng, lat] = event.coordinates!
+      expect(typeof lng).toBe('number')
+      expect(typeof lat).toBe('number')
+      expect(lng).toBeGreaterThanOrEqual(-180)
+      expect(lng).toBeLessThanOrEqual(180)
+      expect(lat).toBeGreaterThanOrEqual(-90)
+      expect(lat).toBeLessThanOrEqual(90)
+    }
+  })
 })

@@ -15,6 +15,7 @@ export interface TranslationDictionary {
   nav: {
     home: string
     timeline: string
+    hotspots: string
     analysis: string
     agencies: string
     search: string
@@ -186,11 +187,58 @@ export interface TranslationDictionary {
     pageNav: {
       home: string
       timeline: string
+      hotspots: string
       analysis: string
       agencies: string
     }
     legal: string[]
     copyright: string
+  }
+  hotspots: {
+    eyebrow: string
+    title: string
+    subtitle: string
+    statsIncidents: string
+    statsCorridors: string
+    statsDeclassified: string
+    layerModeLabel: string
+    layerHeatmap: string
+    layerTactical: string
+    layerHybrid: string
+    regionFilterLabel: string
+    confidenceFilterLabel: string
+    characteristicFilterLabel: string
+    yearFilterLabel: string
+    allYears: string
+    resetZoom: string
+    zoomIn: string
+    zoomOut: string
+    fitBounds: string
+    fullscreen: string
+    exitFullscreen: string
+    clusterLabel: string
+    drawerTitle: string
+    drawerCoordinates: string
+    drawerDate: string
+    drawerLocation: string
+    drawerConfidence: string
+    drawerSensors: string
+    drawerCharacteristics: string
+    viewFullDossier: string
+    corridorsTitle: string
+    corridorsSubtitle: string
+    activeFilterCount: string
+    clearFilters: string
+    noEventsMatch: string
+    radarSweep: string
+    legendHigh: string
+    legendMedium: string
+    legendLow: string
+    legendSpeculative: string
+    legendCluster: string
+    legendHeatmap: string
+    orbitalEventNote: string
+    quickJump: string
   }
   bgm: {
     play: string

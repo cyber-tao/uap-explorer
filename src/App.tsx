@@ -5,6 +5,7 @@ import ErrorBoundary from './components/ErrorBoundary'
 import HomePage from './pages/HomePage'
 
 const TimelinePage = lazy(() => import('./pages/TimelinePage'))
+const HotspotsPage = lazy(() => import('./pages/HotspotsPage'))
 const AnalysisPage = lazy(() => import('./pages/AnalysisPage'))
 const AgenciesPage = lazy(() => import('./pages/AgenciesPage'))
 const EventDetailPage = lazy(() => import('./pages/EventDetailPage'))
@@ -45,6 +46,14 @@ function App() {
           element={
             <LazyPage>
               <TimelinePage />
+            </LazyPage>
+          }
+        />
+        <Route
+          path="/hotspots"
+          element={
+            <LazyPage>
+              <HotspotsPage />
             </LazyPage>
           }
         />

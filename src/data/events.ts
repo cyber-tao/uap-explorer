@@ -99,6 +99,7 @@ export interface UAPEvent {
   location: string
   locationEn?: string
   mapsQuery?: string
+  coordinates?: [number, number]
   country: string
   countryEn?: string
   region: 'North America' | 'South America' | 'Europe' | 'Asia' | 'Oceania' | 'Africa' | 'Space'
@@ -134,6 +135,7 @@ export const confidenceColors: Record<ConfidenceLevel, string> = {
 export const events: UAPEvent[] = [
   {
     "id": "nimitz-tic-tac",
+    "coordinates": [-117.8, 31.5],
     "date": "2004-11-14",
     "sortDate": "2004-11-14",
     "location": "加利福尼亚州圣地亚哥外海",
@@ -264,6 +266,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gimbal-gofast",
+    "coordinates": [-75.8, 36.2],
     "date": "2014-2015",
     "sortDate": "2014-01-01",
     "location": "弗吉尼亚州及佛罗里达州东海岸外海",
@@ -377,6 +380,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "colares",
+    "coordinates": [-48.28, -0.93],
     "date": "1977-07",
     "sortDate": "1977-07-01",
     "location": "帕拉州科拉雷斯岛",
@@ -512,6 +516,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "jal-1628",
+    "coordinates": [-149.9, 64.8],
     "date": "1986-11-17",
     "sortDate": "1986-11-17",
     "location": "阿拉斯加州安克雷奇至塔尔基特纳空域",
@@ -631,6 +636,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "malmstrom-icbm",
+    "coordinates": [-111.18, 47.5],
     "date": "1967-03",
     "sortDate": "1967-03-01",
     "location": "蒙大拿州大瀑布城马尔姆斯特罗姆空军基地",
@@ -743,6 +749,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "belgium-ufo-wave",
+    "coordinates": [4.8, 50.6],
     "date": "1989-1991",
     "sortDate": "1989-01-01",
     "location": "比利时瓦隆大区及布鲁塞尔",
@@ -860,6 +867,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "xiaoshan-airport",
+    "coordinates": [120.43, 30.23],
     "date": "2010-07-07",
     "sortDate": "2010-07-07",
     "location": "浙江省杭州市萧山国际机场",
@@ -983,6 +991,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "guizhou-forest",
+    "coordinates": [106.7, 26.6],
     "date": "1994-12-01",
     "sortDate": "1994-12-01",
     "location": "贵州省贵阳市修文县都溪林场",
@@ -1116,6 +1125,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "shanghai-hongqiao",
+    "coordinates": [121.33, 31.19],
     "date": "1991-03-18",
     "sortDate": "1991-03-18",
     "location": "上海市虹桥国际机场及苏州空域",
@@ -1235,6 +1245,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "kofu-incident",
+    "coordinates": [138.56, 35.66],
     "date": "1975-02-23",
     "sortDate": "1975-02-23",
     "location": "山梨县甲府市日之出町",
@@ -1344,6 +1355,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "imphal-airport",
+    "coordinates": [93.89, 24.76],
     "date": "2023-11-19",
     "sortDate": "2023-11-19",
     "location": "曼尼普尔邦英帕尔国际机场",
@@ -1461,6 +1473,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "submarine-transmedium",
+    "coordinates": [-118.5, 32.8],
     "date": "2022",
     "sortDate": "2022-01-01",
     "location": "加利福尼亚州圣地亚哥近海",
@@ -1600,6 +1613,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "salyut6",
+    "coordinates": [37.61, 55.75],
     "date": "1981-05",
     "sortDate": "1981-05-01",
     "location": "低地球轨道（礼炮6号空间站）",
@@ -1699,6 +1713,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "salyut7-angels",
+    "coordinates": [63.3, 45.96],
     "date": "1984-07-12",
     "sortDate": "1984-07-12",
     "location": "低地球轨道（礼炮7号空间站）",
@@ -1802,6 +1817,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "apollo17",
+    "coordinates": [-80.6, 28.57],
     "date": "1972-12",
     "sortDate": "1972-12-01",
     "location": "月球金牛-利特罗峡谷（发射地：肯尼迪航天中心）",
@@ -1914,6 +1930,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gemini4-mcdivitt",
+    "coordinates": [-80.55, 28.45],
     "date": "1965-06-04",
     "sortDate": "1965-06-04",
     "location": "低地球轨道（发射地：卡纳维拉尔角）",
@@ -2022,6 +2039,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "rendelsham-forest",
+    "coordinates": [1.44, 52.09],
     "date": "1980-12",
     "sortDate": "1980-12-01",
     "location": "萨福克郡兰德沙姆森林及本特沃特斯皇家空军基地",
@@ -2163,6 +2181,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "roswell",
+    "coordinates": [-104.52, 33.39],
     "date": "1947",
     "sortDate": "1947-01-01",
     "location": "新墨西哥州科罗纳福斯特牧场及罗斯威尔",
@@ -2315,6 +2334,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "washington-invasion",
+    "coordinates": [-77.03, 38.9],
     "date": "1952",
     "sortDate": "1952-01-01",
     "location": "华盛顿特区国家广场及国会大厦空域",
@@ -2438,6 +2458,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "sts75-tether",
+    "coordinates": [-80.6, 28.6],
     "date": "1996",
     "sortDate": "1996-01-01",
     "location": "低地球轨道（哥伦比亚号航天飞机）",
@@ -2539,6 +2560,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "chile-san-clemente",
+    "coordinates": [-71.49, -35.53],
     "date": "2010",
     "sortDate": "2010-01-01",
     "location": "马乌莱大区圣克莱门特及埃尔博斯克空军基地",
@@ -2647,6 +2669,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "oumuamua",
+    "coordinates": [0, 0],
     "date": "2017",
     "sortDate": "2017-01-01",
     "location": "深空双曲线轨道（发现地：哈雷阿卡拉天文台）",
@@ -2835,6 +2858,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "mq-9-yemen-hellfire-2024",
+    "coordinates": [44.2, 15.3],
     "date": "2024-10-30",
     "sortDate": "2024-10-30",
     "location": "也门沿海亚丁湾海域",
@@ -2957,6 +2981,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "dhs-pilot-football-object-2024",
+    "coordinates": [-67.15, 18.5],
     "date": "2024-09-17",
     "sortDate": "2024-09-17",
     "location": "德克萨斯州科珀斯克里斯蒂沿海空域",
@@ -3053,6 +3078,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "ny-commercial-cylinder-near-miss-2024",
+    "coordinates": [-73.78, 40.64],
     "date": "2024",
     "sortDate": "2024-01-01",
     "location": "纽约州长岛近海空域",
@@ -3150,6 +3176,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gov-contractor-metallic-cylinder-2024",
+    "coordinates": [-104.99, 39.74],
     "date": "2024-11",
     "sortDate": "2024-11-01",
     "location": "佛罗里达州埃格林空军基地近海靶场",
@@ -3268,6 +3295,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "greece-diamond-uap-2024",
+    "coordinates": [25, 37.5],
     "date": "2024-01",
     "sortDate": "2024-01-01",
     "location": "希腊爱琴海空域",
@@ -3378,6 +3406,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gulf-of-aden-uap-2024",
+    "coordinates": [48, 12.5],
     "date": "2024-07-14",
     "sortDate": "2024-07-14",
     "location": "亚丁湾曼德海峡空域",
@@ -3489,6 +3518,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "eglin-afb-silver-orbs-2024",
+    "coordinates": [-86.54, 30.46],
     "date": "2024-06-04",
     "sortDate": "2024-06-04",
     "location": "佛罗里达州埃格林空军基地空域",
@@ -3576,6 +3606,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "sts-80-columbia-1996",
+    "coordinates": [-80.6, 28.58],
     "date": "1996-11",
     "sortDate": "1996-11-01",
     "location": "低地球轨道（哥伦比亚号航天飞机）",
@@ -3662,6 +3693,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "los-alamos-green-fireballs-1949",
+    "coordinates": [-106.3, 35.88],
     "date": "1949-02",
     "sortDate": "1949-02-18",
     "location": "新墨西哥州洛斯阿拉莫斯国家实验室及桑迪亚基地",
@@ -3752,6 +3784,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "yellow-sea-six-pointed-star-2025",
+    "coordinates": [124, 36.5],
     "date": "2025",
     "sortDate": "2025-01-01",
     "location": "黄海国际空域",
@@ -3845,6 +3878,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "east-china-sea-uap-2025",
+    "coordinates": [125, 29],
     "date": "2025",
     "sortDate": "2025-01-02",
     "location": "东海国际空域",
@@ -3937,6 +3971,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "east-us-rectangular-uap-2019",
+    "coordinates": [-75.5, 36.8],
     "date": "2019",
     "sortDate": "2019-01-01",
     "location": "弗吉尼亚州弗吉尼亚海滩外海军事作战区",
@@ -4033,6 +4068,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "pantex-intrusion-2015",
+    "coordinates": [-101.56, 35.31],
     "date": "2015-09",
     "sortDate": "2015-09-01",
     "location": "德克萨斯州阿马里洛潘泰克斯核武器工厂",
@@ -4124,6 +4160,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "uae-inverted-teardrop-2024",
+    "coordinates": [54.54, 24.25],
     "date": "2024-06",
     "sortDate": "2024-06-01",
     "location": "阿布扎比阿尔达夫拉空军基地空域",
@@ -4221,6 +4258,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "syria-white-light-orb-2024",
+    "coordinates": [35.78, 35.53],
     "date": "2024-10",
     "sortDate": "2024-10-01",
     "location": "叙利亚拉塔基亚近海空域",
@@ -4319,6 +4357,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "uss-jackson-tictac-2023",
+    "coordinates": [-118.5, 32.9],
     "date": "2023-02-15",
     "sortDate": "2023-02-15",
     "location": "南加州圣克莱门特岛W-291海空作战区",
@@ -4425,6 +4464,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "langley-afb-drone-swarm-2023",
+    "coordinates": [-76.36, 37.08],
     "date": "2023-12",
     "sortDate": "2023-12-01",
     "location": "弗吉尼亚州汉普顿兰利-尤斯蒂斯联合基地",
@@ -4529,6 +4569,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "indopacom-ir-uap-2024",
+    "coordinates": [144.79, 13.44],
     "date": "2024",
     "sortDate": "2024-06-15",
     "location": "关岛及印太战区空域",
@@ -4624,6 +4665,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "africa-uap-2025",
+    "coordinates": [2, 4],
     "date": "2025",
     "sortDate": "2025-01-03",
     "location": "西非几内亚湾空域",
@@ -4720,6 +4762,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "greece-ocean-90deg-2023",
+    "coordinates": [24.5, 38],
     "date": "2023-10",
     "sortDate": "2023-10-01",
     "location": "希腊爱琴海近海海空域",
@@ -4819,6 +4862,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "indopacom-football-radial-2024",
+    "coordinates": [130, 18],
     "date": "2024",
     "sortDate": "2024-03-01",
     "location": "菲律宾海及印太战区空域",
@@ -4917,6 +4961,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "army-ir-dual-contrast-2026",
+    "coordinates": [-106.4, 32.38],
     "date": "2026",
     "sortDate": "2026-01-01",
     "location": "新墨西哥州白沙导弹靶场",
@@ -5014,6 +5059,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-orbs-over-pond-2024",
+    "coordinates": [-74.2, 44.1],
     "date": "2024-10",
     "sortDate": "2024-10-01",
     "location": "纽约州阿迪朗达克山区森林池塘区",
@@ -5119,6 +5165,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-northeastern-orb-2025",
+    "coordinates": [-72.8, 43.8],
     "date": "2025-07",
     "sortDate": "2025-07-01",
     "location": "佛蒙特州绿山山脉走廊",
@@ -5224,6 +5271,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "western-us-autotrack-2020",
+    "coordinates": [-115.5, 37.2],
     "date": "2020",
     "sortDate": "2020-06-15",
     "location": "内华达州内华达测试与训练靶场",
@@ -5327,6 +5375,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-triangle-orbs-2021",
+    "coordinates": [-73.2, 42.4],
     "date": "2021-11",
     "sortDate": "2021-11-01",
     "location": "马萨诸塞州伯克夏县山区",
@@ -5433,6 +5482,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-red-orb-rotation-2022",
+    "coordinates": [-74.3, 42],
     "date": "2022-03",
     "sortDate": "2022-03-01",
     "location": "纽约州卡茨基尔山脉走廊",
@@ -5537,6 +5587,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "greece-circular-ocean-2023",
+    "coordinates": [25.5, 36.8],
     "date": "2023-10",
     "sortDate": "2023-10-29",
     "location": "希腊爱琴海近海海域",
@@ -5636,6 +5687,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "uae-ir-track-2023",
+    "coordinates": [54.37, 24.45],
     "date": "2023-10",
     "sortDate": "2023-10-15",
     "location": "阿联酋阿布扎比空域",
@@ -5734,6 +5786,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gulf-of-america-flicker-2019",
+    "coordinates": [-90, 27.5],
     "date": "2019",
     "sortDate": "2019-06-01",
     "location": "墨西哥湾近海军事作战区",
@@ -5830,6 +5883,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "gulf-of-oman-cold-orbs-2021",
+    "coordinates": [58.5, 24.5],
     "date": "2021-09-08",
     "sortDate": "2021-09-08",
     "location": "阿曼湾国际水域",
@@ -5943,6 +5997,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "tremonton-great-falls-1952",
+    "coordinates": [-111.3, 47.5],
     "date": "1952-07-02",
     "sortDate": "1952-07-02",
     "location": "蒙大拿州大瀑布城及犹他州特雷蒙顿",
@@ -6047,6 +6102,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-isosceles-triangle-2011",
+    "coordinates": [-76.74, 39.1],
     "date": "2011-06",
     "sortDate": "2011-06-15",
     "location": "马里兰州米德堡军事设施周边",
@@ -6139,6 +6195,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-blackhawk-thermal-2026",
+    "coordinates": [-105.8, 39.7],
     "date": "2026-06-11",
     "sortDate": "2026-06-11",
     "location": "科罗拉多州落基山脉走廊",
@@ -6233,6 +6290,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-western-red-lights-2026",
+    "coordinates": [-119.5, 37.8],
     "date": "2026",
     "sortDate": "2026-03-01",
     "location": "加利福尼亚州内华达山脉走廊",
@@ -6327,6 +6385,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "colorado-springs-translucent-2023",
+    "coordinates": [-104.82, 38.83],
     "date": "2023-10",
     "sortDate": "2023-10-15",
     "location": "科罗拉多州科罗拉多斯普林斯空域",
@@ -6419,6 +6478,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "middle-east-ir-track-2023",
+    "coordinates": [52, 26.5],
     "date": "2023",
     "sortDate": "2023-06-01",
     "location": "中东波斯湾海空域",
@@ -6521,6 +6581,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "fbi-slow-moving-objects-2026",
+    "coordinates": [-105.9, 37.5],
     "date": "2026-03",
     "sortDate": "2026-03-01",
     "location": "科罗拉多州圣路易斯谷",
@@ -6635,6 +6696,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "middle-east-eoir-2025",
+    "coordinates": [62, 20],
     "date": "2025",
     "sortDate": "2025-06-01",
     "location": "中东阿拉伯海海空域",
@@ -6739,6 +6801,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "middle-east-reticle-2023",
+    "coordinates": [56.3, 26.6],
     "date": "2023",
     "sortDate": "2023-08-01",
     "location": "中东霍尔木兹海峡空域",
@@ -6837,6 +6900,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "middle-east-dual-contrast-2023",
+    "coordinates": [38, 20],
     "date": "2023",
     "sortDate": "2023-03-01",
     "location": "中东红海海空域",
@@ -6936,6 +7000,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "bagram-triangle-2002",
+    "coordinates": [69.26, 34.94],
     "date": "2002-06",
     "sortDate": "2002-06-15",
     "location": "帕尔旺省巴格拉姆空军基地",
@@ -7029,6 +7094,7 @@ export const events: UAPEvent[] = [
   },
   {
     "id": "colorado-springs-triangle-2023",
+    "coordinates": [-104.82, 38.83],
     "date": "2023-10",
     "sortDate": "2023-10-15",
     "location": "科罗拉多州科罗拉多斯普林斯空域",

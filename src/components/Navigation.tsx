@@ -17,6 +17,7 @@ export default function Navigation() {
   const navLinks = [
     { label: t('nav.home'), path: '/' },
     { label: t('nav.timeline'), path: '/timeline' },
+    { label: t('nav.hotspots'), path: '/hotspots' },
     { label: t('nav.analysis'), path: '/analysis' },
     { label: t('nav.agencies'), path: '/agencies' },
   ]

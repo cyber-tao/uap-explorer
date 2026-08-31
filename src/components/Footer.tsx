@@ -47,6 +47,7 @@ export default function Footer({ variant = 'default' }: { variant?: FooterVarian
   const pageNav = [
     { text: dict.footer.pageNav.home, to: '/' },
     { text: dict.footer.pageNav.timeline, to: '/timeline' },
+    { text: dict.footer.pageNav.hotspots, to: '/hotspots' },
     { text: dict.footer.pageNav.analysis, to: '/analysis' },
     { text: dict.footer.pageNav.agencies, to: '/agencies' },
   ]
