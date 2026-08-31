@@ -10,16 +10,21 @@ import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
 const src = readFileSync(join(root, 'src/data/events.ts'), 'utf8')
-const starts = [...src.matchAll(/^\s+id:\s*'([^']+)'/gm)]
+const starts = [...src.matchAll(/^\s*["']?id["']?\s*:\s*["']([^"']+)["']/gm)]
 
 const events = []
 for (let i = 0; i < starts.length; i++) {
   const id = starts[i][1]
   const block = src.slice(starts[i].index, i + 1 < starts.length ? starts[i + 1].index : src.length)
-  const image = (block.match(/image:\s*'([^']+)'/) || [])[1]
-  const figureSrcs = [...block.matchAll(/src:\s*'(\/images\/[^']+)'/g)].map((m) => m[1])
-  const mediaUrls = [...block.matchAll(/\{ type: 'video',\s*url: '([^']+)'/g)].map((m) => m[1])
+  const image = (block.match(/["']?image["']?\s*:\s*["']([^"']+)["']/) || [])[1]
+  const figureSrcs = [...block.matchAll(/["']?src["']?\s*:\s*["'](\/images\/[^"']+)["']/g)].map((m) => m[1])
+  const mediaUrls = [...block.matchAll(/\{\s*["']?type["']?\s*:\s*["']video["']\s*,\s*["']?url["']?\s*:\s*["']([^"']+)["']/g)].map((m) => m[1])
   events.push({ id, image, figureSrcs, mediaUrls, block })
+}
+
+if (events.length === 0) {
+  console.error('FAIL: parsed 0 events from src/data/events.ts')
+  process.exit(1)
 }
 
 const issues = []

@@ -26,7 +26,7 @@ export function rootPath(...parts: string[]) {
 export function parseEventsFile(filePath = rootPath('src/data/events.ts')): ParsedEventMedia[] {
   const text = readFileSync(filePath, 'utf8')
   const events: ParsedEventMedia[] = []
-  const idRe = /\bid:\s*'([^']+)'/g
+  const idRe = /(?:["']?id["']?)\s*:\s*["']([^"']+)["']/g
   const matches = [...text.matchAll(idRe)]
 
   for (let i = 0; i < matches.length; i++) {
@@ -37,28 +37,32 @@ export function parseEventsFile(filePath = rootPath('src/data/events.ts')): Pars
     const block = text.slice(start, end)
 
     // Event blocks always have sortDate nearby
-    if (!/\bsortDate:\s*'/.test(block) || !/\bimage:\s*'/.test(block)) continue
+    if (!/(?:["']?sortDate["']?)\s*:\s*["']/.test(block) || !/(?:["']?image["']?)\s*:\s*["']/.test(block)) continue
 
-    const name = block.match(/\bname:\s*'((?:\\'|[^'])*)'/)?.[1] ?? id
-    const image = block.match(/\bimage:\s*'([^']+)'/)?.[1] ?? ''
-    const mediaMatch = block.match(/\bmedia:\s*\[([\s\S]*?)\]\s*,?\s*(?:limitations|relatedEvents|figures|sources)/)
-      ?? block.match(/\bmedia:\s*\[([\s\S]*?)\]/)
+    const name = block.match(/(?:["']?name["']?)\s*:\s*["']((?:\\.|[^"'])*)["']/)?.[1] ?? id
+    const image = block.match(/(?:["']?image["']?)\s*:\s*["']([^"']+)["']/)?.[1] ?? ''
+    const mediaMatch = block.match(/(?:["']?media["']?)\s*:\s*\[([\s\S]*?)\]\s*,?\s*(?:["']?(?:limitations|relatedEvents|figures|sources)["']?)/)
+      ?? block.match(/(?:["']?media["']?)\s*:\s*\[([\s\S]*?)\]/)
 
     const images: Array<{ url: string; caption: string }> = []
     const videos: Array<{ url: string; caption: string }> = []
 
     if (mediaMatch) {
       const itemRe =
-        /\{\s*type:\s*'(image|video)'\s*,\s*url:\s*'((?:\\'|[^'])*)'\s*,\s*caption:\s*'((?:\\'|[^'])*)'\s*\}/g
+        /\{\s*["']?type["']?\s*:\s*["'](image|video)["']\s*,\s*["']?url["']?\s*:\s*["']((?:\\.|[^"'])*)["']\s*,\s*["']?caption["']?\s*:\s*["']((?:\\.|[^"'])*)["']/g
       let m: RegExpExecArray | null
       while ((m = itemRe.exec(mediaMatch[1]))) {
-        const item = { url: m[2].replace(/\\'/g, "'"), caption: m[3].replace(/\\'/g, "'") }
+        const item = { url: m[2].replace(/\\'/g, "'").replace(/\\"/g, '"'), caption: m[3].replace(/\\'/g, "'").replace(/\\"/g, '"') }
         if (m[1] === 'image') images.push(item)
         else videos.push(item)
       }
     }
 
     events.push({ id, name, image, images, videos })
+  }
+
+  if (events.length === 0) {
+    throw new Error(`parseEventsFile failed to parse any events from ${filePath}`)
   }
 
   return events

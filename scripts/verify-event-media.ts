@@ -13,25 +13,31 @@ function main() {
   const events = parseEventsFile(eventsPath)
   const errors: string[] = []
 
+  if (events.length === 0) {
+    console.error('FAIL: No events parsed from events.ts')
+    process.exit(1)
+  }
+
   for (const ev of events) {
-    const idToken = `id: '${ev.id}'`
-    const idIdx = text.indexOf(idToken)
-    if (idIdx < 0) {
+    const idRe = new RegExp(`["']?id["']?\\s*:\\s*["']${ev.id}["']`)
+    const idMatch = idRe.exec(text)
+    if (!idMatch || idMatch.index == null) {
       errors.push(`${ev.id}: missing in file`)
       continue
     }
+    const idIdx = idMatch.index
     const rest = text.slice(idIdx)
-    const next = rest.slice(idToken.length).match(/\n\s+id:\s*'/)
+    const next = rest.slice(idMatch[0].length).match(/\n\s*["']?id["']?\s*:\s*["']/)
     const block =
-      next?.index != null ? rest.slice(0, idToken.length + next.index) : rest.slice(0, 12000)
+      next?.index != null ? rest.slice(0, idMatch[0].length + next.index) : rest.slice(0, 12000)
 
-    const figuresMatch = block.match(/figures:\s*\[([\s\S]*?)\]/)
+    const figuresMatch = block.match(/["']?figures["']?\s*:\s*\[([\s\S]*?)\]/)
     if (!figuresMatch) {
       errors.push(`${ev.id}: no figures array`)
       continue
     }
 
-    const srcs = [...figuresMatch[1].matchAll(/src:\s*'([^']+)'/g)].map((m) => m[1])
+    const srcs = [...figuresMatch[1].matchAll(/["']?src["']?\s*:\s*["']([^"']+)["']/g)].map((m) => m[1])
     if (srcs.length < MIN || srcs.length > MAX) {
       errors.push(`${ev.id}: figures.length=${srcs.length} not in [${MIN},${MAX}]`)
     }
@@ -55,7 +61,7 @@ function main() {
       }
     }
 
-    if (/type:\s*'image'/.test(block)) {
+    if (/["']?type["']?\s*:\s*["']image["']/.test(block)) {
       errors.push(`${ev.id}: still has type:'image' in media`)
     }
   }

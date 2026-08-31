@@ -81,19 +81,20 @@ function main() {
       continue
     }
 
-    const idToken = `id: '${ev.id}'`
-    const idIdx = text.indexOf(idToken)
-    if (idIdx < 0) continue
+    const idRe = new RegExp(`["']?id["']?\\s*:\\s*["']${ev.id}["']`)
+    const idMatch = idRe.exec(text)
+    if (!idMatch || idMatch.index == null) continue
 
-    const rest = text.slice(idIdx + idToken.length)
-    const next = rest.match(/\n\s+id:\s*'/)
-    const blockEnd = next?.index != null ? idIdx + idToken.length + next.index : text.length
+    const idIdx = idMatch.index
+    const rest = text.slice(idIdx + idMatch[0].length)
+    const next = rest.match(/\n\s*["']?id["']?\s*:\s*["']/)
+    const blockEnd = next?.index != null ? idIdx + idMatch[0].length + next.index : text.length
     let block = text.slice(idIdx, blockEnd)
 
     block = stripArrayProp(block, 'figures')
     block = stripArrayProp(block, 'media')
 
-    const imageMatch = block.match(/\n(\s*)image:\s*'[^']*',?/)
+    const imageMatch = block.match(/\n(\s*)["']?image["']?\s*:\s*["'][^"']*["'],?/)
     if (!imageMatch || imageMatch.index == null) {
       console.warn(`No image field for ${ev.id}`)
       continue
