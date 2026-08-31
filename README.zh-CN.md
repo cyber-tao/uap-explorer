@@ -22,7 +22,7 @@
 
 | 特性 | 说明 |
 |------|------|
-| 🌐 **四国语言国际化** | 原生支持中文 (zh)、英文 (en)、日文 (ja)、法文 (fr)，自动跟随系统语言并支持手动切换与本地持久化 |
+| 🌐 **中英双语国际化** | 原生支持中文 (zh) 与英文 (en)，自动跟随系统语言并支持手动切换与本地持久化 |
 | 🌌 **星系粒子 Hero** | 基于 Three.js 的星系粒子背景，IntersectionObserver 控制视口内渲染 |
 | 🗺 **双视图时间线** | 网格卡片 + 时间轴双视图，按年代、置信度、地区、物理特征多维度筛选 |
 | 📖 **深度事件档案** | 每个事件详细描述，真实媒体资源（图片/视频）与多条来源链接 |
@@ -42,7 +42,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ├── GSAP + Lenis — 首页滚动与动效
 ├── React Router DOM 7 — HashRouter 静态路由
 ├── Lucide React — 图标系统
-└── Custom Zero-Dep i18n — 中/英/日/法 4 语言体系
+└── Custom Zero-Dep i18n — 中/英双语体系
 ```
 
 ---
@@ -52,7 +52,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ### 环境要求
 
 - Node.js ≥ 18
-- npm
+- npm 或 bun
 
 ### 安装与运行
 
@@ -122,9 +122,7 @@ uap-explorer/
 │   │   ├── i18n.test.ts          # 字典完整性自动化测试
 │   │   └── locales/              # 词典文件
 │   │       ├── zh.ts             # 中文
-│   │       ├── en.ts             # 英文
-│   │       ├── ja.ts             # 日文
-│   │       └── fr.ts             # 法文
+│   │       └── en.ts             # 英文
 │   ├── lib/
 │   │   ├── utils.ts              # assetUrl（对齐 Vite base）
 │   │   └── theme.ts              # 设计 token（对齐 --uap-*）
@@ -265,7 +263,7 @@ Tailwind 映射：`colors.uap.*`（见 `tailwind.config.js`）。
 | v1.7 | Lenis/Hash 导航修复、统一 Footer 与机构预览、清理 shadcn 残留、设计 token 落地 |
 | v1.8 | 全球事件扩充至 65 起；多媒体多源管线建立，279 张本地影像 100% 完整校验 |
 | v1.9 | 杂志化图文混排 (Figure 穿插排版)、移动端响应式重构、代码分包性能优化与 CI 质量门禁 |
-| v2.0 | **多语言全栈支持 (中/英/日/法)**，系统语言自适应与持久化切换，双语 README 与国际化测试护栏 |
+| v2.0 | **多语言全栈支持 (中/英双语)**，系统语言自适应与持久化切换，双语 README 与国际化测试护栏 |
 
 ---
 

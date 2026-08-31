@@ -22,7 +22,7 @@ Live Site: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.
 
 | Feature | Description |
 |---------|-------------|
-| 🌐 **Multi-Language (i18n)** | Native support for English (`en`), Chinese (`zh`), Japanese (`ja`), and French (`fr`). Auto-detects browser/system language with manual switcher and local persistence. |
+| 🌐 **Multi-Language (i18n)** | Native support for English (`en`) and Chinese (`zh`). Auto-detects browser/system language with manual switcher and local persistence. |
 | 🌌 **Galaxy Particle Hero** | Three.js particle galaxy background, optimized with IntersectionObserver for viewport-only rendering. |
 | 🗺 **Dual-View Timeline** | Grid card and timeline views with real-time filtering across eras, confidence tiers, continents, and physical observables. |
 | 📖 **Deep Event Dossiers** | Rich narrative descriptions, authentic verified media (images/videos), and comprehensive source attribution. |
@@ -42,7 +42,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ├── GSAP + Lenis — Smooth scrolling and choreographed transitions
 ├── React Router DOM 7 — HashRouter static client-side routing
 ├── Lucide React — Modern icon library
-└── Zero-Dependency Custom i18n — Type-safe English / Chinese / Japanese / French localization
+└── Zero-Dependency Custom i18n — Type-safe English / Chinese localization
 ```
 
 ---
@@ -52,7 +52,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ### Prerequisites
 
 - Node.js ≥ 18
-- npm
+- npm or bun
 
 ### Installation and Run
 
@@ -122,9 +122,7 @@ uap-explorer/
 │   │   ├── i18n.test.ts          # Automated dictionary integrity tests
 │   │   └── locales/              # Dictionaries
 │   │       ├── en.ts             # English
-│   │       ├── zh.ts             # Chinese (Simplified)
-│   │       ├── ja.ts             # Japanese
-│   │       └── fr.ts             # French
+│   │       └── zh.ts             # Chinese (Simplified)
 │   ├── lib/
 │   │   ├── utils.ts              # assetUrl (Vite base aligned)
 │   │   └── theme.ts              # Design tokens (matching --uap-*)

@@ -131,23 +131,6 @@ export const confidenceColors: Record<ConfidenceLevel, string> = {
   Speculative: '#B8B8B8',
 }
 
-export const confidenceLabels: Record<ConfidenceLevel, string> = {
-  High: '高置信度',
-  Medium: '中等置信度',
-  Low: '低置信度',
-  Speculative: '推测性',
-}
-
-export const regionLabels: Record<string, string> = {
-  'North America': '北美洲',
-  'South America': '南美洲',
-  'Europe': '欧洲',
-  'Asia': '亚洲',
-  'Oceania': '大洋洲',
-  'Africa': '非洲',
-  'Space': '太空/月球',
-}
-
 export const events: UAPEvent[] = [
   {
     "id": "nimitz-tic-tac",
