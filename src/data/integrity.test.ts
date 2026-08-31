@@ -76,8 +76,8 @@ describe('event data integrity', () => {
     for (const event of events) {
       expect(event.mapsQuery, `${event.id} mapsQuery`).toBeTruthy()
       expect(event.locationEn, `${event.id} locationEn`).toBeTruthy()
-      // Ensure mapsQuery is in ASCII / English format for Google Maps
-      expect(/^[\x00-\x7F\u00C0-\u024F\s,.'()&-]+$/.test(event.mapsQuery!), `${event.id} mapsQuery English`).toBe(true)
+      // Ensure mapsQuery is in printable ASCII / Latin format for Google Maps
+      expect(/^[\x20-\x7E\u00C0-\u024F]+$/.test(event.mapsQuery!), `${event.id} mapsQuery English`).toBe(true)
     }
   })
 })
