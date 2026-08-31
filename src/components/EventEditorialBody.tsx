@@ -131,10 +131,14 @@ export default function EventEditorialBody({ description, figures }: EventEditor
     <div className="space-y-6">
       {paragraphs.map((para, idx) => {
         const isFirst = idx === 0
+        const hasDatePattern =
+          (para.includes('年') && (para.includes('月') || para.includes('日'))) ||
+          (/\b(?:19\d\d|20\d\d)\b/.test(para) && /\b(?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/i.test(para)) ||
+          /\b(?:19\d\d|20\d\d)-(?:0[1-9]|1[0-2])\b/.test(para)
         const isHighlight =
           !isFirst &&
           para.length < 90 &&
-          (para.length < 45 || (para.includes('年') && (para.includes('月') || para.includes('日'))))
+          (para.length < 45 || hasDatePattern)
         const slotIndices = slotMap.get(idx)
 
         return (

@@ -9,18 +9,54 @@ export interface SourceItem {
 
 type SourceCategoryKey = 'official' | 'media' | 'academic' | 'other'
 
-const OFFICIAL_KEYS = ['dod', 'pentagon', 'navy', 'defense', 'government', 'official', 'foia', 'declassified']
-const MEDIA_KEYS = ['times', 'news', 'bbc', 'cbs', '60 minutes', 'cnn', 'washington post', 'guardian']
-const ACADEMIC_KEYS = ['scientific', 'arxiv', 'nature', 'peer', 'journal', 'research', 'analysis', 'archive']
-const ALL_KEYS = [...OFFICIAL_KEYS, ...MEDIA_KEYS, ...ACADEMIC_KEYS]
+const OFFICIAL_PATTERNS = [
+  /\.gov(\/|$|\.)/i,
+  /\.mil(\/|$|\.)/i,
+  /cnes-geipan\.fr|dvidshub\.net|blackvault\.com/i,
+  /\b(dod|pentagon|navy|defense|government|official|foia|declassified|centcom|indopacom|fbi|aaro|geipan|cnes|usaf|air force|faa|ntsb|pursue)\b/i,
+  /(?:国防|军方|政府|档案|解密|官方|国家航天|空军|海军)/,
+]
+
+const ACADEMIC_PATTERNS = [
+  /\.edu(\/|$|\.)/i,
+  /\.ac\.uk(\/|$|\.)/i,
+  /arxiv\.org|nature\.com|science\.org|springer\.com|wiley\.com|researchgate\.net|sciencedirect\.com|agu\.org|ieee\.org/i,
+  /\b(scientific|arxiv|nature|peer|journal|research|analysis|cufos|nicap|mufon|academic|university)\b/i,
+  /(?:学术|论文|期刊|研究|科学|分析报告|调查报告)/,
+]
+
+const MEDIA_PATTERNS = [
+  /nytimes\.com|bbc\.(?:com|co\.uk)|cnn\.com|cbsnews\.com|washingtonpost\.com|theguardian\.com|reuters\.com|apnews\.com|usatoday\.com|nbcnews\.com|forbes\.com|time\.com|thehill\.com|politico\.com|thepaper\.cn|xinhuanet\.com/i,
+  /\b(times|news|bbc|cbs|60 minutes|cnn|washington post|guardian|reuters|associated press|nbc|abc|forbes|press|media|newspaper|broadcasting)\b/i,
+  /(?:新闻|时报|卫报|路透社|新华社|央视|澎湃|报道|通讯社)/,
+]
+
+function matchesAny(item: SourceItem, patterns: RegExp[]): boolean {
+  const target = `${item.label} ${item.url}`
+  return patterns.some((p) => p.test(target))
+}
 
 function categorizeSources(sources: SourceItem[]) {
-  return {
-    official: sources.filter((s) => OFFICIAL_KEYS.some((k) => s.label.toLowerCase().includes(k))),
-    media: sources.filter((s) => MEDIA_KEYS.some((k) => s.label.toLowerCase().includes(k))),
-    academic: sources.filter((s) => ACADEMIC_KEYS.some((k) => s.label.toLowerCase().includes(k))),
-    other: sources.filter((s) => !ALL_KEYS.some((k) => s.label.toLowerCase().includes(k))),
+  const result: Record<SourceCategoryKey, SourceItem[]> = {
+    official: [],
+    academic: [],
+    media: [],
+    other: [],
   }
+
+  for (const item of sources) {
+    if (matchesAny(item, OFFICIAL_PATTERNS)) {
+      result.official.push(item)
+    } else if (matchesAny(item, ACADEMIC_PATTERNS)) {
+      result.academic.push(item)
+    } else if (matchesAny(item, MEDIA_PATTERNS)) {
+      result.media.push(item)
+    } else {
+      result.other.push(item)
+    }
+  }
+
+  return result
 }
 
 interface SourceListProps {
