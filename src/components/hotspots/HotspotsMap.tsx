@@ -57,6 +57,10 @@ export default function HotspotsMap({
     y: 0,
     zoom: 1,
   })
+  const viewStateRef = useRef(viewState)
+  useEffect(() => {
+    viewStateRef.current = viewState
+  }, [viewState])
 
   // Dragging interaction state
   const [isDragging, setIsDragging] = useState(false)
@@ -150,9 +154,9 @@ export default function HotspotsMap({
   useEffect(() => {
     if (!flyToTarget || !containerRef.current) return
 
-    const startX = viewState.x
-    const startY = viewState.y
-    const startZoom = viewState.zoom
+    const startX = viewStateRef.current.x
+    const startY = viewStateRef.current.y
+    const startZoom = viewStateRef.current.zoom
 
     const targetZoom = flyToTarget.zoom
     const rect = containerRef.current.getBoundingClientRect()
