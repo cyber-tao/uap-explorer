@@ -128,6 +128,13 @@ export interface TranslationDictionary {
     }
     impactLabel: string
     recommendationLabel: string
+    confidenceTiers: Array<{
+      level: 'High' | 'Medium' | 'Low' | 'Speculative'
+      pct: string
+      criteria: string
+      example: string
+      color: string
+    }>
   }
   agenciesPage: {
     eyebrow: string
@@ -149,7 +156,18 @@ export interface TranslationDictionary {
     milestoneInstitution: string
     milestoneReport: string
     methodologyTitle: string
+    methodologyDimension: string
     visitOfficial: string
+    highlightCards: Array<{
+      tag: string
+      tagColor: string
+      title: string
+      stats: string
+      desc: string
+      link: string
+      linkLabel: string
+    }>
+    methodologyRows: string[][]
   }
   footer: {
     visionText: string
@@ -158,6 +176,7 @@ export interface TranslationDictionary {
     sourcesTitle: string
     navTitle: string
     legalTitle: string
+    archiveLinks: Array<{ text: string; href: string }>
     homeNav: {
       home: string
       observables: string

@@ -34,19 +34,7 @@ export default function AnalysisPage() {
     setExpandedGaps(next)
   }
 
-  const confidenceTiers = language === 'en'
-    ? [
-        { level: 'High' as const, pct: 'approx. 2-3%', criteria: '≥3 independent sources, declassified archives, synchronized multi-sensor tracks, mass sightings (≥100 witnesses) + official corroboration', example: 'Nimitz Tic Tac', color: '#00D9A5' },
-        { level: 'Medium' as const, pct: 'approx. 5-10%', criteria: 'Single authoritative source or limited 2-source verification, plausible alternative hypotheses existing but unproven', example: 'Roswell (1947)', color: '#F5A623' },
-        { level: 'Low' as const, pct: 'approx. 20-30%', criteria: 'Single source, fragmented chain of custody, lacking independent validation', example: 'Unverified social media reports', color: '#FF6B35' },
-        { level: 'Speculative' as const, pct: 'approx. 60-70%', criteria: 'Indirect deduction, lacking direct physical evidence, ancient mythic records, single-witness close encounters', example: 'Extraterrestrial Hypothesis (ETH)', color: '#B8B8B8' },
-      ]
-    : [
-        { level: 'High' as const, pct: '约2-3%', criteria: '≥3个独立来源，官方档案，多传感器同步，大规模群体性目击(≥100人)+官方确认', example: 'Nimitz Tic Tac', color: '#00D9A5' },
-        { level: 'Medium' as const, pct: '约5-10%', criteria: '单一权威来源或有限多源验证(2个来源)，存在合理替代解释但未被证实', example: '罗斯威尔', color: '#F5A623' },
-        { level: 'Low' as const, pct: '约20-30%', criteria: '单一来源，信息链断裂，无法独立验证', example: '部分民间社交媒体报告', color: '#FF6B35' },
-        { level: 'Speculative' as const, pct: '约60-70%', criteria: '间接推理，缺乏直接物理证据，古代记录，单一目击者近距离接触', example: '古代宇航员假说', color: '#B8B8B8' },
-      ]
+  const confidenceTiers = dict.analysis.confidenceTiers
 
   return (
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>

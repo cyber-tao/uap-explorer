@@ -155,6 +155,12 @@ export const en: TranslationDictionary = {
     },
     impactLabel: 'Impact: ',
     recommendationLabel: 'Recommendation: ',
+    confidenceTiers: [
+      { level: 'High', pct: 'approx. 2-3%', criteria: '≥3 independent sources, declassified archives, synchronized multi-sensor tracks, mass sightings (≥100 witnesses) + official corroboration', example: 'Nimitz Tic Tac', color: '#00D9A5' },
+      { level: 'Medium', pct: 'approx. 5-10%', criteria: 'Single authoritative source or limited 2-source verification, plausible alternative hypotheses existing but unproven', example: 'Roswell (1947)', color: '#F5A623' },
+      { level: 'Low', pct: 'approx. 20-30%', criteria: 'Single source, fragmented chain of custody, lacking independent validation', example: 'Unverified social media reports', color: '#FF6B35' },
+      { level: 'Speculative', pct: 'approx. 60-70%', criteria: 'Indirect deduction, lacking direct physical evidence, ancient mythic records, single-witness close encounters', example: 'Extraterrestrial Hypothesis (ETH)', color: '#B8B8B8' },
+    ],
   },
   agenciesPage: {
     eyebrow: 'OFFICIAL AGENCIES & INSTITUTIONS',
@@ -176,7 +182,46 @@ export const en: TranslationDictionary = {
     milestoneInstitution: 'Institution',
     milestoneReport: 'Official Report',
     methodologyTitle: 'Comparative Scientific Methodologies',
+    methodologyDimension: 'Dimension',
     visitOfficial: 'Visit Portal →',
+    highlightCards: [
+      {
+        tag: 'Most Mature System',
+        tagColor: '#00D9A5',
+        title: 'GEIPAN — Global Gold Standard',
+        stats: '50 Years in Operation · 9,700+ Testimonies · 3,240+ Public Cases',
+        desc: 'Affiliated with the French space agency (CNES), led by civilian scientists. The A/B/C/D 4-tier classification is referenced worldwide.',
+        link: 'https://www.cnes-geipan.fr',
+        linkLabel: 'Visit GEIPAN Website →',
+      },
+      {
+        tag: 'Largest Official Inquiry',
+        tagColor: '#30B0D0',
+        title: 'AARO — US DoD All-Domain Anomaly Resolution Office',
+        stats: 'Established 2022 · 1,600+ Cases · 21 Truly Anomalous',
+        desc: 'The largest official government UAP investigation in US history. The 2024 annual report acknowledged 21 unexplained anomalies.',
+        link: 'https://www.aaro.mil',
+        linkLabel: 'Visit AARO →',
+      },
+      {
+        tag: 'Historic Transparency',
+        tagColor: '#F5A623',
+        title: 'PURSUE — 2026 Public Declassification Project',
+        stats: 'May–July 2026 · 334 Files · Release 04 (July 10)',
+        desc: 'US Department of Defense ongoing declassification portal; Release 04 declassified 40 files including STS-80 photos and Indo-Pacific videos.',
+        link: 'https://www.war.gov/UFO',
+        linkLabel: 'Visit PURSUE →',
+      },
+    ],
+    methodologyRows: [
+      ['Parent Agency', 'CNES (Civilian Space)', 'DoD (Defense/Intel)', 'Independent Study Panel'],
+      ['Leadership', 'Civilian Scientists', 'Military / Intelligence', 'Civilian Scientists'],
+      ['Data Openness', '3,240+ cases publicly accessible', 'Annual unclassified summary', 'Methodology whitepapers'],
+      ['Classification', 'A/B/C/D 4-tier model', 'Unpublished internal schema', 'Not applicable'],
+      ['Core Strength', 'Longitudinal rigor, transparency', 'Multi-sensor military datasets', 'Scientific data standards'],
+      ['Core Critique', 'Category D ambiguity', 'Analytical bias & omission', 'No direct case review'],
+      ['Extraterrestrial Stance', 'Neutral (Cat D ≠ Alien)', 'Dismissive (No evidence found)', 'Open (Demands more data)'],
+    ],
   },
   footer: {
     visionText:
@@ -186,6 +231,10 @@ export const en: TranslationDictionary = {
     sourcesTitle: 'Data Sources',
     navTitle: 'Navigation',
     legalTitle: 'Disclaimers',
+    archiveLinks: [
+      { text: 'National Archives of Brazil', href: 'https://www.arquivo.gov.br' },
+      { text: 'The National Archives (UK)', href: 'https://www.nationalarchives.gov.uk' },
+    ],
     homeNav: {
       home: 'Home',
       observables: 'Observables',

@@ -16,7 +16,7 @@ const milestoneColorMap: Record<string, string> = {
 }
 
 export default function AgenciesPage() {
-  const { language, t } = useI18n()
+  const { language, t, dict } = useI18n()
 
   const tableHeaders = [
     t('agenciesPage.tableHeaders.country'),
@@ -26,88 +26,11 @@ export default function AgenciesPage() {
     t('agenciesPage.tableHeaders.transparency'),
     t('agenciesPage.tableHeaders.methodology'),
     t('agenciesPage.tableHeaders.unexplainedRate'),
-    t('agenciesPage.tableHeaders.link'),
+    t('agenciesPage.tableHeaders.officialLink'),
   ]
 
-  const highlightCards = language === 'en'
-    ? [
-        {
-          tag: 'Most Mature System',
-          tagColor: '#00D9A5',
-          title: 'GEIPAN — Global Gold Standard',
-          stats: '50 Years in Operation · 9,700+ Testimonies · 3,240+ Public Cases',
-          desc: 'Affiliated with the French space agency (CNES), led by civilian scientists. The A/B/C/D 4-tier classification is referenced worldwide.',
-          link: 'https://www.cnes-geipan.fr',
-          linkLabel: 'Visit GEIPAN Website →',
-        },
-        {
-          tag: 'Largest Official Inquiry',
-          tagColor: '#30B0D0',
-          title: 'AARO — US DoD All-Domain Anomaly Resolution Office',
-          stats: 'Established 2022 · 1,600+ Cases · 21 Truly Anomalous',
-          desc: 'The largest official government UAP investigation in US history. The 2024 annual report acknowledged 21 unexplained anomalies.',
-          link: 'https://www.aaro.mil',
-          linkLabel: 'Visit AARO →',
-        },
-        {
-          tag: 'Historic Transparency',
-          tagColor: '#F5A623',
-          title: 'PURSUE — 2026 Public Declassification Project',
-          stats: 'May–July 2026 · 334 Files · Release 04 (July 10)',
-          desc: 'US Department of Defense ongoing declassification portal; Release 04 declassified 40 files including STS-80 photos and Indo-Pacific videos.',
-          link: 'https://www.war.gov/UFO',
-          linkLabel: 'Visit PURSUE →',
-        },
-      ]
-    : [
-        {
-          tag: '最成熟的制度',
-          tagColor: '#00D9A5',
-          title: 'GEIPAN — 全球黄金标准',
-          stats: '50年运行 · 9,700+证词 · 3,240+公开案例',
-          desc: '隶属于法国国家航天研究中心(CNES)，由科学家主导而非情报机构。A/B/C/D四级分类系统被全球参考。',
-          link: 'https://www.cnes-geipan.fr',
-          linkLabel: '访问GEIPAN官网 →',
-        },
-        {
-          tag: '最大规模政府调查',
-          tagColor: '#30B0D0',
-          title: 'AARO — 美国国防部全域异常解决办公室',
-          stats: '2022年成立 · 1,600+案例 · 21起真正异常',
-          desc: '美国历史上最大规模政府UAP调查，但结论受争议。2024年年度报告承认21起事件无法解释。',
-          link: 'https://www.aaro.mil',
-          linkLabel: '访问AARO →',
-        },
-        {
-          tag: '历史性透明度',
-          tagColor: '#F5A623',
-          title: 'PURSUE — 2026年解密项目',
-          stats: '2026年5–7月 · 334份档案 · Release 04（7/10）',
-          desc: '美国国防部通过PURSUE平台持续解密UAP档案；2026年7月10日第四批公开40份，含STS-80轨道照片、印太红外视频与洛斯阿拉莫斯历史档案。',
-          link: 'https://www.war.gov/UFO',
-          linkLabel: '访问PURSUE →',
-        },
-      ]
-
-  const methodologyRows = language === 'en'
-    ? [
-        ['Parent Agency', 'CNES (Civilian Space)', 'DoD (Defense/Intel)', 'Independent Study Panel'],
-        ['Leadership', 'Civilian Scientists', 'Military / Intelligence', 'Civilian Scientists'],
-        ['Data Openness', '3,240+ cases publicly accessible', 'Annual unclassified summary', 'Methodology whitepapers'],
-        ['Classification', 'A/B/C/D 4-tier model', 'Unpublished internal schema', 'Not applicable'],
-        ['Core Strength', 'Longitudinal rigor, transparency', 'Multi-sensor military datasets', 'Scientific data standards'],
-        ['Core Critique', 'Category D ambiguity', 'Analytical bias & omission', 'No direct case review'],
-        ['Extraterrestrial Stance', 'Neutral (Cat D ≠ Alien)', 'Dismissive (No evidence found)', 'Open (Demands more data)'],
-      ]
-    : [
-        ['隶属机构', 'CNES (航天)', 'DoD (国防)', '独立研究小组'],
-        ['主导者', '科学家', '情报/军事', '科学家'],
-        ['数据公开', '3,240+案例完全公开', '年度报告摘要', '方法论报告'],
-        ['分类系统', 'A/B/C/D四级', '未公开分类', '不适用'],
-        ['核心优势', '透明度、长期数据', '多传感器分析', '科学方法论'],
-        ['核心争议', 'D类误判率', '分析偏见、遗漏', '无案例审查'],
-        ['对ETH态度', '中性（D类≠外星）', '否定（未发现证据）', '开放（需更多数据）'],
-      ]
+  const highlightCards = dict.agenciesPage.highlightCards
+  const methodologyRows = dict.agenciesPage.methodologyRows
 
   return (
     <div className="pt-16 min-h-[100dvh]" style={{ background: '#050A0F' }}>
@@ -293,7 +216,7 @@ export default function AgenciesPage() {
           <table className="w-full min-w-[600px]">
             <thead>
               <tr style={{ background: '#0F1923' }}>
-                {[t('agenciesPage.methodologyHeaders.dimension'), 'GEIPAN', 'AARO', 'NASA'].map((h) => (
+                {[t('agenciesPage.methodologyDimension'), 'GEIPAN', 'AARO', 'NASA'].map((h) => (
                   <th key={h} className="px-4 py-3 text-left text-xs font-bold tracking-wider uppercase" style={{ color: '#8A99A8', borderBottom: '1px solid rgba(138,153,168,0.1)' }}>
                     {h}
                   </th>

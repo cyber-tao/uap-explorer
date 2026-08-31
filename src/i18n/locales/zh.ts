@@ -155,6 +155,12 @@ export const zh: TranslationDictionary = {
     },
     impactLabel: '影响：',
     recommendationLabel: '建议：',
+    confidenceTiers: [
+      { level: 'High', pct: '约2-3%', criteria: '≥3个独立来源，官方档案，多传感器同步，大规模群体性目击(≥100人)+官方确认', example: 'Nimitz Tic Tac', color: '#00D9A5' },
+      { level: 'Medium', pct: '约5-10%', criteria: '单一权威来源或有限多源验证(2个来源)，存在合理替代解释但未被证实', example: '罗斯威尔', color: '#F5A623' },
+      { level: 'Low', pct: '约20-30%', criteria: '单一来源，信息链断裂，无法独立验证', example: '部分民间社交媒体报告', color: '#FF6B35' },
+      { level: 'Speculative', pct: '约60-70%', criteria: '间接推理，缺乏直接物理证据，古代记录，单一目击者近距离接触', example: '古代宇航员假说', color: '#B8B8B8' },
+    ],
   },
   agenciesPage: {
     eyebrow: 'OFFICIAL AGENCIES / 官方调查机构',
@@ -176,7 +182,46 @@ export const zh: TranslationDictionary = {
     milestoneInstitution: '机构',
     milestoneReport: '官方报告',
     methodologyTitle: '方法论对比',
+    methodologyDimension: '评估维度',
     visitOfficial: '访问官网 →',
+    highlightCards: [
+      {
+        tag: '最成熟的制度',
+        tagColor: '#00D9A5',
+        title: 'GEIPAN — 全球黄金标准',
+        stats: '50年运行 · 9,700+证词 · 3,240+公开案例',
+        desc: '隶属于法国国家航天研究中心(CNES)，由科学家主导而非情报机构。A/B/C/D四级分类系统被全球参考。',
+        link: 'https://www.cnes-geipan.fr',
+        linkLabel: '访问GEIPAN官网 →',
+      },
+      {
+        tag: '最大规模政府调查',
+        tagColor: '#30B0D0',
+        title: 'AARO — 美国国防部全域异常解决办公室',
+        stats: '2022年成立 · 1,600+案例 · 21起真正异常',
+        desc: '美国历史上最大规模政府UAP调查，但结论受争议。2024年年度报告承认21起事件无法解释。',
+        link: 'https://www.aaro.mil',
+        linkLabel: '访问AARO →',
+      },
+      {
+        tag: '历史性透明度',
+        tagColor: '#F5A623',
+        title: 'PURSUE — 2026年解密项目',
+        stats: '2026年5–7月 · 334份档案 · Release 04（7/10）',
+        desc: '美国国防部通过PURSUE平台持续解密UAP档案；2026年7月10日第四批公开40份，含STS-80轨道照片、印太红外视频与洛斯阿拉莫斯历史档案。',
+        link: 'https://www.war.gov/UFO',
+        linkLabel: '访问PURSUE →',
+      },
+    ],
+    methodologyRows: [
+      ['隶属机构', 'CNES (航天)', 'DoD (国防)', '独立研究小组'],
+      ['主导者', '科学家', '情报/军事', '科学家'],
+      ['数据公开', '3,240+案例完全公开', '年度报告摘要', '方法论报告'],
+      ['分类系统', 'A/B/C/D四级', '未公开分类', '不适用'],
+      ['核心优势', '透明度、长期数据', '多传感器分析', '科学方法论'],
+      ['核心争议', 'D类误判率', '分析偏见、遗漏', '无案例审查'],
+      ['对ETH态度', '中性（D类≠外星）', '否定（未发现证据）', '开放（需更多数据）'],
+    ],
   },
   footer: {
     visionText:
@@ -186,6 +231,10 @@ export const zh: TranslationDictionary = {
     sourcesTitle: '数据来源',
     navTitle: '导航',
     legalTitle: '声明',
+    archiveLinks: [
+      { text: '巴西国家档案馆', href: 'https://www.arquivo.gov.br' },
+      { text: '英国国家档案馆', href: 'https://www.nationalarchives.gov.uk' },
+    ],
     homeNav: {
       home: '首页',
       observables: '物理特征',
