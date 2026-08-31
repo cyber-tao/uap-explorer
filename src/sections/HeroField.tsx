@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useI18n } from '../i18n'
 
 export default function HeroField() {
@@ -113,8 +114,8 @@ export default function HeroField() {
               </button>
             )}
 
-            <a
-              href="/hotspots"
+            <Link
+              to="/hotspots"
               className="font-sans-body px-6 py-3 rounded-full text-xs md:text-sm tracking-[0.12em] transition-all duration-300 flex items-center gap-2 cursor-pointer"
               style={{
                 background: 'rgba(48, 176, 208, 0.15)',
@@ -134,7 +135,7 @@ export default function HeroField() {
             >
               <span>{t('nav.hotspots')}</span>
               <span>→</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
