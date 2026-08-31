@@ -71,4 +71,13 @@ describe('event data integrity', () => {
       }
     }
   })
+
+  it('provides valid English mapsQuery for all events', () => {
+    for (const event of events) {
+      expect(event.mapsQuery, `${event.id} mapsQuery`).toBeTruthy()
+      expect(event.locationEn, `${event.id} locationEn`).toBeTruthy()
+      // Ensure mapsQuery is in ASCII / English format for Google Maps
+      expect(/^[\x00-\x7F\u00C0-\u024F\s,.'()&-]+$/.test(event.mapsQuery!), `${event.id} mapsQuery English`).toBe(true)
+    }
+  })
 })

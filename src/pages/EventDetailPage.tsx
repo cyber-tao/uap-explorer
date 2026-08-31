@@ -35,7 +35,8 @@ export default function EventDetailPage() {
   const displaySensors = language === 'en' && event.sensorsEn && event.sensorsEn.length > 0 ? event.sensorsEn : event.sensors
   const related = (event.relatedEvents || []).map(getEventById).filter(Boolean)
   const videos = event.media?.filter((m) => m.type === 'video') || []
-  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${event.location}, ${event.country}`)}`
+  const mapsQuery = event.mapsQuery || `${event.locationEn || event.location}, ${event.countryEn || event.country}`
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapsQuery)}`
 
   const navItems = [
     { label: t('eventDetail.description'), icon: FileText, id: 'section-description' },
@@ -203,13 +204,27 @@ export default function EventDetailPage() {
                 <div className="space-y-3">
                   {[
                     { label: t('eventDetail.date'), value: event.date, color: '#30B0D0' },
-                    { label: t('eventDetail.location'), value: `${displayCountry} · ${displayLocation}`, color: '#30B0D0' },
+                    { label: t('eventDetail.location'), value: `${displayCountry} · ${displayLocation}`, color: '#30B0D0', href: mapsUrl },
                     { label: t('eventDetail.confidence'), value: confLabel, color: confColor },
                     { label: t('eventDetail.sensors'), value: displaySensors?.join(', ') || t('eventDetail.visualWitness'), color: '#00D9A5' },
                   ].map((item, idx, arr) => (
                     <div key={idx} className="flex items-center justify-between py-2" style={{ borderBottom: idx < arr.length - 1 ? '1px solid rgba(138, 153, 168, 0.06)' : 'none' }}>
                       <span className="text-xs uppercase tracking-wider" style={{ color: 'rgba(138, 153, 168, 0.6)' }}>{item.label}</span>
-                      <span className="text-sm font-medium text-right max-w-[60%]" style={{ color: item.color }}>{item.value}</span>
+                      {item.href ? (
+                        <a
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-right max-w-[60%] inline-flex items-center justify-end gap-1.5 transition-colors hover:underline hover:opacity-100"
+                          style={{ color: item.color }}
+                          title={t('eventDetail.viewOnMap')}
+                        >
+                          <span className="truncate">{item.value}</span>
+                          <ExternalLink className="w-3 h-3 opacity-60 shrink-0" />
+                        </a>
+                      ) : (
+                        <span className="text-sm font-medium text-right max-w-[60%]" style={{ color: item.color }}>{item.value}</span>
+                      )}
                     </div>
                   ))}
                 </div>
