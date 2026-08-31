@@ -145,6 +145,9 @@ export interface TranslationDictionary {
     }
     highlightsTitle: string
     milestonesTitle: string
+    milestoneTransparency: string
+    milestoneInstitution: string
+    milestoneReport: string
     methodologyTitle: string
     visitOfficial: string
   }

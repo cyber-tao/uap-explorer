@@ -42,4 +42,25 @@ describe('i18n dictionaries integrity', () => {
       expect(Object.keys(dict.regions).sort(), `Regions mismatch in ${code}`).toEqual(zhRegions)
     }
   })
+
+  it('has complete English translations for all event media and telemetry', async () => {
+    const { events } = await import('../data/events')
+    for (const ev of events) {
+      expect(ev.nameEn, `Event ${ev.id} nameEn`).toBeTruthy()
+      expect(ev.countryEn, `Event ${ev.id} countryEn`).toBeTruthy()
+      expect(ev.locationEn, `Event ${ev.id} locationEn`).toBeTruthy()
+      expect(ev.shortDescEn, `Event ${ev.id} shortDescEn`).toBeTruthy()
+      expect(ev.descriptionEn, `Event ${ev.id} descriptionEn`).toBeTruthy()
+      expect(ev.limitationsEn?.length, `Event ${ev.id} limitationsEn`).toBeGreaterThan(0)
+      expect(ev.sensorsEn?.length, `Event ${ev.id} sensorsEn`).toBeGreaterThan(0)
+
+      for (const fig of ev.figures) {
+        expect(fig.captionEn, `Figure captionEn in ${ev.id}`).toBeTruthy()
+      }
+
+      for (const m of ev.media || []) {
+        expect(m.captionEn, `Media captionEn in ${ev.id}`).toBeTruthy()
+      }
+    }
+  })
 })

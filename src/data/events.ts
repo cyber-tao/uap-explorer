@@ -199,17 +199,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=nd7K5LafDF8",
-        "caption": "FLIR1（Nimitz/Tic-Tac）官方视频——2004年尼米兹事件红外 footage"
+        "caption": "FLIR1（Nimitz/Tic-Tac）官方视频——2004年尼米兹事件红外 footage",
+        "captionEn": "FLIR1 (Nimitz/Tic-Tac) Official Video — 2004 USS Nimitz ATFLIR thermal footage"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=pmNNj8qi8Ms",
-        "caption": "60 Minutes报道——海军飞行员描述UFO遭遇（含Alex Dietrich）"
+        "caption": "60 Minutes报道——海军飞行员描述UFO遭遇（含Alex Dietrich）",
+        "captionEn": "60 Minutes Report — Navy aviators describe Tic Tac encounters (featuring Lt. Alex Dietrich)"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=7r8E4JyIqhk",
-        "caption": "Joe Rogan Experience #1361——指挥官David Fravor讲述尼米兹事件"
+        "caption": "Joe Rogan Experience #1361——指挥官David Fravor讲述尼米兹事件",
+        "captionEn": "The Joe Rogan Experience #1361 — Commander David Fravor recounts the Nimitz encounter"
       }
     ],
     "sensors": [
@@ -317,17 +320,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=oCt837R2Sbs",
-        "caption": "Gimbal——官方海军红外视频（2015年罗斯福号东海岸）"
+        "caption": "Gimbal——官方海军红外视频（2015年罗斯福号东海岸）",
+        "captionEn": "Gimbal — Official US Navy IR video (2015 USS Theodore Roosevelt, East Coast)"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=u4hQTFVU8wE",
-        "caption": "GoFast——官方海军视频，快速移动的海上UAP"
+        "caption": "GoFast——官方海军视频，快速移动的海上UAP",
+        "captionEn": "GoFast — Official US Navy IR video tracking high-speed ocean skimmer UAP"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=nd7K5LafDF8",
-        "caption": "Pentagon三段官方UAP视频合集（FLIR1/Gimbal/GoFast）"
+        "caption": "Pentagon三段官方UAP视频合集（FLIR1/Gimbal/GoFast）",
+        "captionEn": "Pentagon Official Three UAP Video Compilation (FLIR1 / Gimbal / GoFast)"
       }
     ],
     "sensors": [
@@ -444,12 +450,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://youtu.be/7hdaW6a9CbY",
-        "caption": "Operação Prato - Entrevista com Coronel Uyrangê Hollanda (1997 interview)"
+        "caption": "Operação Prato - Entrevista com Coronel Uyrangê Hollanda (1997 interview)",
+        "captionEn": "Operação Prato — Archive Interview with Colonel Uyrangê Hollanda (1997)"
       },
       {
         "type": "video",
         "url": "https://rumble.com/v2saf7q-official-photos-from-colares-ufo-flap.html",
-        "caption": "Official Photos from Colares UFO Flap (Rumble documentary)"
+        "caption": "Official Photos from Colares UFO Flap (Rumble documentary)",
+        "captionEn": "Official Brazilian Air Force Photographic Dossier from the Colares UFO Wave"
       }
     ],
     "sensors": [
@@ -558,17 +566,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=beCAZVCpwrc",
-        "caption": "Pilots & JAL 1628 UFO Event - 飞行员讨论与FAA文件分析"
+        "caption": "Pilots & JAL 1628 UFO Event - 飞行员讨论与FAA文件分析",
+        "captionEn": "Pilots & JAL 1628 UFO Event — Aviator panel discussion and FAA archival review"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=dQwERrmsgFs",
-        "caption": "TheFlightChannel JAL 1628航空事件重建动画"
+        "caption": "TheFlightChannel JAL 1628航空事件重建动画",
+        "captionEn": "TheFlightChannel — JAL Flight 1628 Encounter Full Flight Dynamics Reconstruction Animation"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=GjDMmaxmvOo",
-        "caption": "UFO Files: Japan's Enigmatic Triangle 纪录片片段"
+        "caption": "UFO Files: Japan's Enigmatic Triangle 纪录片片段",
+        "captionEn": "UFO Files: Japan's Enigmatic Triangle — Archival Television Documentary Segment"
       }
     ],
     "sensors": [
@@ -673,12 +684,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=xNxHrGLvsMk",
-        "caption": "Robert Salas 关于1967年马尔姆斯特罗姆UFO/导弹事件的证词访谈"
+        "caption": "Robert Salas 关于1967年马尔姆斯特罗姆UFO/导弹事件的证词访谈",
+        "captionEn": "Capt. Robert Salas Testimony Interview regarding the 1967 Malmstrom AFB ICBM Shutdown"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=-7HIWQX0bz0",
-        "caption": "Robert Salas 在国家新闻俱乐部关于UFO与核武器的公开演讲（2010年）"
+        "caption": "Robert Salas 在国家新闻俱乐部关于UFO与核武器的公开演讲（2010年）",
+        "captionEn": "Capt. Robert Salas National Press Club Presentation on UFO Incursions at Nuclear Sites (2010)"
       }
     ],
     "sensors": [
@@ -783,12 +796,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=wkm3KxIyZDE",
-        "caption": "The Longstanding Mystery of BLACK TRIANGLE UFOs (YouTube documentary referencing Belgian Wave)"
+        "caption": "The Longstanding Mystery of BLACK TRIANGLE UFOs (YouTube documentary referencing Belgian Wave)",
+        "captionEn": "The Longstanding Mystery of Black Triangle UFOs (Documentary referencing the Belgian Wave)"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=YhSLMzX3Mnw",
-        "caption": "TRIANGULAR UFO Breakdown by Author David Marler (HISTORY'S UNIDENTIFIED appearance)"
+        "caption": "TRIANGULAR UFO Breakdown by Author David Marler (HISTORY'S UNIDENTIFIED appearance)",
+        "captionEn": "Triangular UAP Kinematic Breakdown by Historian David Marler (History Channel Feature)"
       }
     ],
     "sensors": [
@@ -904,17 +919,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=BSKkS2WlX9I",
-        "caption": "CCTV新闻频道关于杭州萧山机场UFO事件的报道（中文）"
+        "caption": "CCTV新闻频道关于杭州萧山机场UFO事件的报道（中文）",
+        "captionEn": "CCTV News — Official Broadcast on the 2010 Hangzhou Xiaoshan Airport UFO Closure"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=Ntb0brXp5tA",
-        "caption": "UFOs The Lost Evidence - 2010中国杭州UFO事件纪录片片段"
+        "caption": "UFOs The Lost Evidence - 2010中国杭州UFO事件纪录片片段",
+        "captionEn": "UFOs: The Lost Evidence — Investigation segment on the 2010 Xiaoshan Airport Incursion"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=Bzk6hmq9ovo",
-        "caption": "Blue Ocean Network - 杭州萧山机场唯一真实照片分析视频"
+        "caption": "Blue Ocean Network - 杭州萧山机场唯一真实照片分析视频",
+        "captionEn": "Blue Ocean Network — Photographic Analysis of the Xiaoshan Airport Segmented Luminous Craft"
       }
     ],
     "sensors": [
@@ -1015,12 +1033,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "http://www.cntv.cn/program/zoujinkexue/topic/science/C14443/20050728/101898.shtml",
-        "caption": "CCTV《走近科学》纪录片：寻迹空中怪车（上）— 2005年专题调查节目，深入都溪林场现场采访目击者和专家"
+        "caption": "CCTV《走近科学》纪录片：寻迹空中怪车（上）— 2005年专题调查节目，深入都溪林场现场采访目击者和专家",
+        "captionEn": "CCTV 'Approaching Science' Documentary: Tracking the Sky Monster (Part 1) — Duxi Forest field investigation interviewing witnesses and forestry engineers"
       },
       {
         "type": "video",
         "url": "http://sports.cctv.com/program/zoujinkexue/topic/science/C14443/20050728/101750.shtml",
-        "caption": "CCTV《走近科学》纪录片：寻迹空中怪车（下）— 详细分析空中怪车事件的物理痕迹和专家争议"
+        "caption": "CCTV《走近科学》纪录片：寻迹空中怪车（下）— 详细分析空中怪车事件的物理痕迹和专家争议",
+        "captionEn": "CCTV 'Approaching Science' Documentary: Tracking the Sky Monster (Part 2) — Technical evaluation of structural shear and material anomalies"
       }
     ],
     "sensors": [
@@ -1145,7 +1165,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.bilibili.com/video/BV125411T77U/",
-        "caption": "Bilibili视频：1991年上海虹桥机场UFO事件录音公开（卡兰巴扎上传，播放量超25万次），包含飞行员朱兆元与虹桥塔台约26分钟的完整通话录音"
+        "caption": "Bilibili视频：1991年上海虹桥机场UFO事件录音公开（卡兰巴扎上传，播放量超25万次），包含飞行员朱兆元与虹桥塔台约26分钟的完整通话录音",
+        "captionEn": "Shanghai Hongqiao Airport 1991 UFO Tower Audio Tape — 26-minute unedited radio communication between Flight 3556 and air traffic control"
       }
     ],
     "sensors": [
@@ -1262,12 +1283,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=GjDMmaxmvOo",
-        "caption": "UFO Files: Japan's Enigmatic Triangle - 甲府事件纪录片"
+        "caption": "UFO Files: Japan's Enigmatic Triangle - 甲府事件纪录片",
+        "captionEn": "UFO Files: Japan's Enigmatic Triangle — Documentary segment covering the 1975 Kofu encounter"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=example",
-        "caption": "EyesOnCinema - 1975 Kofu UFO incident 目击者访谈视频"
+        "caption": "EyesOnCinema - 1975 Kofu UFO incident 目击者访谈视频",
+        "captionEn": "EyesOnCinema — 1975 Kofu Incident Witness Testimonies and Site Soil Analysis"
       }
     ],
     "sensors": [
@@ -1368,12 +1391,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=8T7dP3g3w0w",
-        "caption": "YouTube: India Today报道 - 因帕尔机场UFO目击及Rafale出动新闻片段"
+        "caption": "YouTube: India Today报道 - 因帕尔机场UFO目击及Rafale出动新闻片段",
+        "captionEn": "India Today — News broadcast on the Imphal Airport airspace shutdown and Indian Air Force Rafale scramble"
       },
       {
         "type": "video",
         "url": "https://twitter.com/IndianTechGuide/status/1726489999999999999",
-        "caption": "Twitter/X: Indian Tech & Infra - IAF出动2架Rafale战机搜索因帕尔机场UFO的新闻视频"
+        "caption": "Twitter/X: Indian Tech & Infra - IAF出动2架Rafale战机搜索因帕尔机场UFO的新闻视频",
+        "captionEn": "Indian Tech & Infra — Video footage of two IAF Rafale fighters scrambled to intercept Imphal UAP"
       }
     ],
     "sensors": [
@@ -1500,17 +1525,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=8U9vZfJNHLQ",
-        "caption": "USS Omaha球形UAP视频——跨介质事件，物体入水（Jeremy Corbell发布）"
+        "caption": "USS Omaha球形UAP视频——跨介质事件，物体入水（Jeremy Corbell发布）",
+        "captionEn": "USS Omaha FLIR Footage — Transmedium spherical craft executing splashless water entry"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=6VBCfR5-1kQ",
-        "caption": "奥马哈号UAP群事件雷达画面——多目标追踪"
+        "caption": "奥马哈号UAP群事件雷达画面——多目标追踪",
+        "captionEn": "USS Omaha Combat Information Center Radar Telemetry — Multi-target swarm track sequence"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=PM0HqmH6Q00",
-        "caption": "2019年USS Omaha UAP事件综合报道"
+        "caption": "2019年USS Omaha UAP事件综合报道",
+        "captionEn": "Investigative News Special — Comprehensive report on the 2019 USS Omaha UAP encounters"
       }
     ],
     "sensors": [
@@ -1928,12 +1956,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=Mb7Gtufrc1E",
-        "caption": "YouTube: Gemini 4 Astronaut James McDivitt UFO Sighting 原始影像与解说"
+        "caption": "YouTube: Gemini 4 Astronaut James McDivitt UFO Sighting 原始影像与解说",
+        "captionEn": "Gemini 4 Mission Archive: Astronaut James McDivitt's orbital cylinder sighting footage and debrief"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=5q0Mv3wafFJ",
-        "caption": "YouTube: Gemini 4 50周年发射与首次美国太空行走ABC电视直播录像 (1965年6月3日)"
+        "caption": "YouTube: Gemini 4 50周年发射与首次美国太空行走ABC电视直播录像 (1965年6月3日)",
+        "captionEn": "ABC News Historical Broadcast: Gemini 4 Launch and Ed White's First US Spacewalk (June 3, 1965)"
       }
     ],
     "sensors": [
@@ -2051,12 +2081,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "http://terrygroff.com/dfwmufon/audio/halt%20tape.mp3",
-        "caption": "Charles Halt中校现场录音'Halt Tape'（MP3音频）：1980年12月28日现场录制的约18分钟原始录音，记录了军方调查人员在森林中追踪不明光团的全过程"
+        "caption": "Charles Halt中校现场录音'Halt Tape'（MP3音频）：1980年12月28日现场录制的约18分钟原始录音，记录了军方调查人员在森林中追踪不明光团的全过程",
+        "captionEn": "Lt. Col. Charles Halt 'Halt Tape' Live Audio (MP3) — 18-minute original recording of USAF personnel investigating luminous craft in Rendlesham Forest"
       },
       {
         "type": "video",
         "url": "http://terrygroff.com/dfwmufon/audio/halt%20tape.txt",
-        "caption": "Halt Tape完整文字转录文档"
+        "caption": "Halt Tape完整文字转录文档",
+        "captionEn": "Complete Official Transcript Document of the Lt. Col. Halt Audio Recording"
       }
     ],
     "sensors": [
@@ -2199,17 +2231,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=mwUSctoPo0A",
-        "caption": "纪录片：The Roswell UFO Crash - 1947年事件的完整历史回顾与证人分析"
+        "caption": "纪录片：The Roswell UFO Crash - 1947年事件的完整历史回顾与证人分析",
+        "captionEn": "Documentary: The Roswell UFO Crash — Historical retrospective and archival witness analysis"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=lYmHu-ecjvA",
-        "caption": "纪录片：The Real Roswell Conspiracy - 官方解释与民间理论的对比"
+        "caption": "纪录片：The Real Roswell Conspiracy - 官方解释与民间理论的对比",
+        "captionEn": "Documentary: The Real Roswell Conspiracy — Comparative review of Project Mogul vs eyewitness accounts"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=Cm_0cCmCv2I",
-        "caption": "历史频道纪录片：罗斯威尔事件与灰人外星人的历史关联"
+        "caption": "历史频道纪录片：罗斯威尔事件与灰人外星人的历史关联",
+        "captionEn": "History Channel Special: Historical Evolution of the Roswell Archetypes and Declassified Logs"
       }
     ],
     "sensors": [
@@ -2327,12 +2362,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=H07x82S6jU4",
-        "caption": "纪录片：1952年华盛顿特区不明飞行物入侵事件的历史回顾与证人访谈"
+        "caption": "纪录片：1952年华盛顿特区不明飞行物入侵事件的历史回顾与证人访谈",
+        "captionEn": "Documentary: 1952 Washington D.C. Radar-Visual Incursion — Retrospective and CAA controller interviews"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=1N4ciVZxUT8",
-        "caption": "The Real Roswell 与华盛顿入侵事件相关的历史纪录片片段"
+        "caption": "The Real Roswell 与华盛顿入侵事件相关的历史纪录片片段",
+        "captionEn": "Historical Television Feature: Radar Corroboration over the US Capitol (July 1952)"
       }
     ],
     "sensors": [
@@ -2439,12 +2476,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.bilibili.com/video/BV17s411V7f8",
-        "caption": "B站转载：完整未剪辑版NASA STS-75 Tether UFO目击影片 (FULL Uncut NASA STS-75 Tether UFO Sightings)"
+        "caption": "B站转载：完整未剪辑版NASA STS-75 Tether UFO目击影片 (FULL Uncut NASA STS-75 Tether UFO Sightings)",
+        "captionEn": "NASA STS-75 Tether Experiment — Full uncut payload bay camera video of pulsating discoid anomalies"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=1KmGIV_Vv2w",
-        "caption": "YouTube: NASA STS-75 Tether Incident 原始影像与3D UFO模型分析"
+        "caption": "YouTube: NASA STS-75 Tether Incident 原始影像与3D UFO模型分析",
+        "captionEn": "NASA STS-75 Tether Telemetry: Original optical tracking and focal-length dimensional analysis"
       }
     ],
     "sensors": [
@@ -2537,12 +2576,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://youtu.be/RO-LA1Z6usM",
-        "caption": "Chile's Roswell: The UFO Crash NASA Tried to Hide (podcast/video covering 1998 Las Mollacas & 2010 El Bosque)"
+        "caption": "Chile's Roswell: The UFO Crash NASA Tried to Hide (podcast/video covering 1998 Las Mollacas & 2010 El Bosque)",
+        "captionEn": "Chilean UAP Dossier: Investigative coverage of the 1998 Las Mollacas and 2010 El Bosque incidents"
       },
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=0h0X8L15e1w",
-        "caption": "CEFAA Official Analysis - El Bosque Air Show UFO footage compilation"
+        "caption": "CEFAA Official Analysis - El Bosque Air Show UFO footage compilation",
+        "captionEn": "CEFAA Official Technical Analysis — High-speed UAP optical tracking sequence during the 2010 El Bosque Air Show"
       }
     ],
     "sensors": [
@@ -2651,27 +2692,32 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.jpl.nasa.gov/videos/first-interstellar-asteroid-wows-scientists/",
-        "caption": "NASA JPL官方视频：首个星际小行星令科学家惊叹（2017），包含发现过程与科学家访谈。Duration: 约3分钟"
+        "caption": "NASA JPL官方视频：首个星际小行星令科学家惊叹（2017），包含发现过程与科学家访谈。Duration: 约3分钟",
+        "captionEn": "NASA JPL Official Video: First Interstellar Object ʻOumuamua Wows Scientists (2017) with discovery review (~3m)"
       },
       {
         "type": "video",
         "url": "https://esahubble.org/videos/heic1813a/",
-        "caption": "ESA/Hubble Hubblecast 111：ʻOumuamua获得意外加速。专业天文纪录片，解释非引力加速观测与理论。Duration: 6分16秒"
+        "caption": "ESA/Hubble Hubblecast 111：ʻOumuamua获得意外加速。专业天文纪录片，解释非引力加速观测与理论。Duration: 6分16秒",
+        "captionEn": "ESA/Hubble Hubblecast 111: ʻOumuamua Gets an Unexpected Boost — Documentary examining non-gravitational kinematics (6m16s)"
       },
       {
         "type": "video",
         "url": "https://science.nasa.gov/asset/hubble/oumuamua-video-feature-narrated/",
-        "caption": "NASA Goddard narration视频：哈勃等望远镜发现ʻOumuamua获得额外速度提升，可能来自类彗星气体喷射。Duration: 约1分钟"
+        "caption": "NASA Goddard narration视频：哈勃等望远镜发现ʻOumuamua获得额外速度提升，可能来自类彗星气体喷射。Duration: 约1分钟",
+        "captionEn": "NASA Goddard Video: Hubble Telemetry Detects Extra Velocity Boost on ʻOumuamua (~1m)"
       },
       {
         "type": "video",
         "url": "https://esahubble.org/videos/heic1813d/",
-        "caption": "ESA/Hubble动画：ʻOumuamua穿越太阳系的路径，展示其不受太阳引力束缚的双曲线轨道。Duration: 1分19秒"
+        "caption": "ESA/Hubble动画：ʻOumuamua穿越太阳系的路径，展示其不受太阳引力束缚的双曲线轨道。Duration: 1分19秒",
+        "captionEn": "ESA/Hubble Orbital Animation: Hyperbolic Trajectory of ʻOumuamua Traversing the Solar System (1m19s)"
       },
       {
         "type": "video",
         "url": "https://esahubble.org/videos/heic1813f/",
-        "caption": "ESA/Hubble动画：ʻOumuamua预期与实测轨迹对比，显示其偏离纯引力预测的异常加速。Duration: 17秒"
+        "caption": "ESA/Hubble动画：ʻOumuamua预期与实测轨迹对比，显示其偏离纯引力预测的异常加速。Duration: 17秒",
+        "captionEn": "ESA/Hubble Kinematic Comparison: Measured vs Purely Gravitational Trajectory of ʻOumuamua (17s)"
       }
     ],
     "sensors": [
@@ -2843,12 +2889,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://x.com/RepEricBurlison/status/1833206615078801519",
-        "caption": "Rep. Eric Burlison 官方推文：2024年10月30日 MQ-9 也门外海 UAP 交战原始视频，众议院监督委员会听证会首次公开"
+        "caption": "Rep. Eric Burlison 官方推文：2024年10月30日 MQ-9 也门外海 UAP 交战原始视频，众议院监督委员会听证会首次公开",
+        "captionEn": "Official Tweet from Rep. Eric Burlison: MQ-9 Reaper UAP Incursion Video over Yemen Coast (Disclosed at House Oversight Hearing)"
       },
       {
         "type": "video",
         "url": "https://www.cbsnews.com/news/video-house-ufo-hearing-us-missile-strikes-unidentified-object/",
-        "caption": "CBS News 新闻报道：美国导弹击中不明球体后反弹，众议院 UFO 听证会公布视频（包含视频播放器）"
+        "caption": "CBS News 新闻报道：美国导弹击中不明球体后反弹，众议院 UFO 听证会公布视频（包含视频播放器）",
+        "captionEn": "CBS News: US Hellfire Missile Strike on Unidentified Sphere over Yemen Presented at Congressional Hearing"
       }
     ],
     "sensors": [
@@ -2944,12 +2992,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.newsnationnow.com/banfield/us-military-pilots-encounter-with-ufo-this-is-going-to-sound-weird/",
-        "caption": "NewsNation Banfield：DHS 飞行员 Troy 21 空管录音与近距遭遇报道（2024-09-17）"
+        "caption": "NewsNation Banfield：DHS 飞行员 Troy 21 空管录音与近距遭遇报道（2024-09-17）",
+        "captionEn": "NewsNation Banfield: DHS Pilot 'Troy 21' ATC Recording and Close-Range Encounter Broadcast (Sept 17, 2024)"
       },
       {
         "type": "video",
         "url": "https://nuforc.org/troy21/",
-        "caption": "NUFORC Troy21 调查页（含 FOIA 空管音频）"
+        "caption": "NUFORC Troy21 调查页（含 FOIA 空管音频）",
+        "captionEn": "NUFORC Special Investigation: DHS Troy 21 Incursion (Includes Declassified FAA Air Traffic Audio)"
       }
     ],
     "sensors": [
@@ -3038,12 +3088,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=DP7Nwb-z1_o",
-        "caption": "AARO FY2024年度报告媒体圆桌会议相关视频 — 2024年11月14日，AARO主任Jon Kosloski在五角大楼举行的媒体圆桌会议，讨论年度报告中包括纽约近距离错失事件在内的757份UAP报告。"
+        "caption": "AARO FY2024年度报告媒体圆桌会议相关视频 — 2024年11月14日，AARO主任Jon Kosloski在五角大楼举行的媒体圆桌会议，讨论年度报告中包括纽约近距离错失事件在内的757份UAP报告。",
+        "captionEn": "AARO FY2024 Annual Report Media Roundtable — Pentagon press briefing where AARO Director Jon Kosloski discussed the New York commercial near-miss and 757 new cases"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/988676/pr-018-unresolved-uap-report-europe-2024",
-        "caption": "AARO官方UAP影像库示例视频 — 展示AARO通过DVIDS发布的UAP影像资料格式，与纽约事件同属AARO官方影像库体系。"
+        "caption": "AARO官方UAP影像库示例视频 — 展示AARO通过DVIDS发布的UAP影像资料格式，与纽约事件同属AARO官方影像库体系。",
+        "captionEn": "AARO Official Video Telemetry Format Sample — Presentation of standard DVIDS declassified video formats used by AARO"
       }
     ],
     "sensors": [
@@ -3149,17 +3201,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.c-span.org/video/?542535-1/oversight-hearing-domain-anomaly-resolution-office-uapsufos",
-        "caption": "C-SPAN 官方完整视频：2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会——AARO 与 UAP 监督听证会。Jon Kosloski 主任在此听证会上口头披露政府承包商金属圆柱体目击事件。"
+        "caption": "C-SPAN 官方完整视频：2024 年 11 月 19 日参议院军事委员会新兴威胁与能力小组委员会——AARO 与 UAP 监督听证会。Jon Kosloski 主任在此听证会上口头披露政府承包商金属圆柱体目击事件。",
+        "captionEn": "Official C-SPAN Full Video: Nov 19, 2024 Senate Armed Services Subcommittee on Emerging Threats — AARO and UAP Oversight Hearing, where Director Jon Kosloski disclosed the contractor metallic cylinder encounter"
       },
       {
         "type": "video",
         "url": "https://www.aaro.mil/UAP-Cases/Official-UAP-Imagery/",
-        "caption": "AARO 官方 UAP 影像库主页（持续更新）。该事件本身尚未公开视频，但影像库中收录了多个类似形态（圆柱/球体）的已发布案例。"
+        "caption": "AARO 官方 UAP 影像库主页（持续更新）。该事件本身尚未公开视频，但影像库中收录了多个类似形态（圆柱/球体）的已发布案例。",
+        "captionEn": "AARO Official UAP Video Gallery (Continuously Updated): Portal hosting declassified cylindrical and spherical aerial target footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/unit/AARO",
-        "caption": "DVIDS（Defense Visual Information Distribution Service）AARO 官方频道。收录 AARO 公开发布的 UAP 视频档案，包括中东金属球体、欧洲未解决视频等关联案例。"
+        "caption": "DVIDS（Defense Visual Information Distribution Service）AARO 官方频道。收录 AARO 公开发布的 UAP 视频档案，包括中东金属球体、欧洲未解决视频等关联案例。",
+        "captionEn": "DVIDS AARO Official Channel: Direct DoD portal for publicly released UAP video files, including Middle East metallic orbs and European unresolved cases"
       }
     ],
     "sensors": [
@@ -3255,12 +3310,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688954/DOD_111688954.mp4",
-        "caption": "Direct DoD video file (1m05s): DOW-UAP-PR28 multi-sensor footage (EO + SWIR) of the diamond-shaped UAP over Greece, January 2024. Object visible only in SWIR; lost when switching to visible spectrum."
+        "caption": "Direct DoD video file (1m05s): DOW-UAP-PR28 multi-sensor footage (EO + SWIR) of the diamond-shaped UAP over Greece, January 2024. Object visible only in SWIR; lost when switching to visible spectrum.",
+        "captionEn": "Direct DoD video file (1m05s): DOW-UAP-PR28 multi-sensor footage (EO + SWIR) of the diamond-shaped UAP over Greece, January 2024. Object visible only in SWIR; lost when switching to visible spectrum."
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006073/dow-uap-pr28-unresolved-uap-report-greece-january-2024",
-        "caption": "Official DVIDS page for DOW-UAP-PR28: unresolved UAP report submitted by USCENTCOM to AARO. Includes video description of sensor modality switches and timeline of the encounter."
+        "caption": "Official DVIDS page for DOW-UAP-PR28: unresolved UAP report submitted by USCENTCOM to AARO. Includes video description of sensor modality switches and timeline of the encounter.",
+        "captionEn": "Official DVIDS page for DOW-UAP-PR28: unresolved UAP report submitted by USCENTCOM to AARO. Includes video description of sensor modality switches and timeline of the encounter."
       }
     ],
     "sensors": [
@@ -3362,17 +3419,20 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.cbsnews.com/news/video-house-ufo-hearing-us-missile-strikes-unidentified-object/",
-        "caption": "CBS News报道视频：2024年10月30日MQ-9 Reaper在也门沿海跟踪不明球体，Hellfire导弹击中后物体未被摧毁继续飞行（2025年9月9日国会听证会公开）"
+        "caption": "CBS News报道视频：2024年10月30日MQ-9 Reaper在也门沿海跟踪不明球体，Hellfire导弹击中后物体未被摧毁继续飞行（2025年9月9日国会听证会公开）",
+        "captionEn": "CBS News: MQ-9 Reaper tracks anomalous sphere off Yemen coast; Hellfire strike fails to destroy object (Disclosed Sept 9, 2025)"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/962722/unresolved-uap-report-middle-east-2024",
-        "caption": "DVIDS/AARO官方视频：2024年中东地区6分41秒红外传感器未解决UAP报告，由美军平台记录，AARO发布用于分析（DVIDS官方分发渠道）"
+        "caption": "DVIDS/AARO官方视频：2024年中东地区6分41秒红外传感器未解决UAP报告，由美军平台记录，AARO发布用于分析（DVIDS官方分发渠道）",
+        "captionEn": "DVIDS / AARO Official Video: 6m41s FLIR sensor recording of unresolved Middle East UAP released for scientific evaluation"
       },
       {
         "type": "video",
         "url": "https://abcnews.com/Politics/congressman-shows-video-military-ufo-hearing/story?id=125413475",
-        "caption": "ABC News报道视频：Rep. Eric Burlison在2025年9月9日众议院监督委员会听证会上首次公开2024年10月30日也门沿海UAP遭遇视频，显示Hellfire导弹击中球体后未引爆"
+        "caption": "ABC News报道视频：Rep. Eric Burlison在2025年9月9日众议院监督委员会听证会上首次公开2024年10月30日也门沿海UAP遭遇视频，显示Hellfire导弹击中球体后未引爆",
+        "captionEn": "ABC News: Rep. Eric Burlison presents unexploded Hellfire strike telemetry on spherical UAP during House Oversight hearing"
       }
     ],
     "sensors": [
@@ -3460,7 +3520,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.youtube.com/watch?v=KQ7Dw-739VY",
-        "caption": "2023年7月26日国会UAP听证会视频（C-SPAN/YouTube）：佛罗里达州众议员Matt Gaetz在作证时段首次公开披露Eglin AFB UAP事件细节，包括四机编队雷达数据和飞行员手动拍摄的图像。来源：美国众议院监督与问责委员会"
+        "caption": "2023年7月26日国会UAP听证会视频（C-SPAN/YouTube）：佛罗里达州众议员Matt Gaetz在作证时段首次公开披露Eglin AFB UAP事件细节，包括四机编队雷达数据和飞行员手动拍摄的图像。来源：美国众议院监督与问责委员会",
+        "captionEn": "July 26, 2023 Congressional Hearing (C-SPAN): Rep. Matt Gaetz discloses Eglin AFB UAP encounter details, 4-ship radar telemetry, and cockpit photographs (House Oversight Committee)"
       }
     ],
     "sensors": [
@@ -3718,7 +3779,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014101/dow-uap-pr104-unresolved-uap-report-yellow-sea-2025",
-        "caption": "官方 DVIDS：DOW-UAP-PR104，18秒黄海红外 footage，六角星状对比区域（INDOPACOM/AARO，PURSUE Release 04）"
+        "caption": "官方 DVIDS：DOW-UAP-PR104，18秒黄海红外 footage，六角星状对比区域（INDOPACOM/AARO，PURSUE Release 04）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR104, 18-second Yellow Sea infrared footage showing six-pointed star thermal signature (INDOPACOM/AARO, PURSUE Release 04)"
       }
     ],
     "sensors": [
@@ -3809,7 +3871,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014103/dow-uap-pr105-unresolved-uap-report-east-china-sea-2025",
-        "caption": "官方 DVIDS：DOW-UAP-PR105，近5分钟东海红外跟踪 footage（INDOPACOM/AARO，PURSUE Release 04）"
+        "caption": "官方 DVIDS：DOW-UAP-PR105，近5分钟东海红外跟踪 footage（INDOPACOM/AARO，PURSUE Release 04）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR105, ~5-minute East China Sea infrared tracking footage (INDOPACOM/AARO, PURSUE Release 04)"
       }
     ],
     "sensors": [
@@ -3899,7 +3962,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014128/dow-uap-pr112-unresolved-uap-report-eastern-united-states-2019",
-        "caption": "官方 DVIDS：DOW-UAP-PR112，2019年美东未解决UAP报告视频（U.S. Navy/AARO，PURSUE Release 04）"
+        "caption": "官方 DVIDS：DOW-UAP-PR112，2019年美东未解决UAP报告视频（U.S. Navy/AARO，PURSUE Release 04）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR112, 2019 East Coast US Unresolved UAP Report Video (US Navy / AARO, PURSUE Release 04)"
       }
     ],
     "sensors": [
@@ -4085,12 +4149,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688964/DOD_111688964.mp4",
-        "caption": "DoD 直链视频（21秒）：DOW-UAP-PR29 阿联酋红外 footage，倒泪滴形对比区域"
+        "caption": "DoD 直链视频（21秒）：DOW-UAP-PR29 阿联酋红外 footage，倒泪滴形对比区域",
+        "captionEn": "Direct DoD Video (21s): DOW-UAP-PR29 UAE Infrared Footage showing inverted teardrop morphology"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006074/dow-uap-pr29-unresolved-uap-report-united-arab-emirates-june-2024",
-        "caption": "官方 DVIDS：DOW-UAP-PR29 未解决UAP报告（United Arab Emirates, June 2024）"
+        "caption": "官方 DVIDS：DOW-UAP-PR29 未解决UAP报告（United Arab Emirates, June 2024）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR29 Unresolved UAP Report (United Arab Emirates, June 2024)"
       }
     ],
     "sensors": [
@@ -4179,12 +4245,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688997/DOD_111688997.mp4",
-        "caption": "DoD 直链视频（6秒）：DOW-UAP-PR32 叙利亚 FMV footage"
+        "caption": "DoD 直链视频（6秒）：DOW-UAP-PR32 叙利亚 FMV footage",
+        "captionEn": "Direct DoD Video (6s): DOW-UAP-PR32 Syria Full-Motion Video (FMV) footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006078/dow-uap-pr32-unresolved-uap-report-syria-october-2024",
-        "caption": "官方 DVIDS：DOW-UAP-PR32 未解决UAP报告（Syria, October 2024）"
+        "caption": "官方 DVIDS：DOW-UAP-PR32 未解决UAP报告（Syria, October 2024）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR32 Unresolved UAP Report (Syria, October 2024)"
       }
     ],
     "sensors": [
@@ -4274,12 +4342,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://defensescoop.com/2025/09/09/military-whistleblowers-share-new-evidence-alleged-uap-ufo-hearing/",
-        "caption": "DefenseScoop：2025年9月9日众议院UAP听证会——含Wiggins证词与新证据报道"
+        "caption": "DefenseScoop：2025年9月9日众议院UAP听证会——含Wiggins证词与新证据报道",
+        "captionEn": "DefenseScoop: Sept 9, 2025 House UAP Hearing Coverage — Featuring Wiggins testimony and USS Jackson telemetry"
       },
       {
         "type": "video",
         "url": "https://www.rev.com/transcripts/house-uap-whistleblower-hearing",
-        "caption": "Rev.com：众议院UAP举报人听证会文字记录（含USS Jackson遭遇陈述）"
+        "caption": "Rev.com：众议院UAP举报人听证会文字记录（含USS Jackson遭遇陈述）",
+        "captionEn": "Rev.com: House UAP Whistleblower Hearing Full Transcript (Including USS Jackson encounter statements)"
       }
     ],
     "sensors": [
@@ -4377,12 +4447,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://globalnews.ca/news/10812987/mysterious-drones-langley-air-force-base/",
-        "caption": "Global News：兰利空军基地神秘无人机群入侵报道"
+        "caption": "Global News：兰利空军基地神秘无人机群入侵报道",
+        "captionEn": "Global News: Mystery Drone Swarm Incursions at Langley Air Force Base Investigative Report"
       },
       {
         "type": "video",
         "url": "https://defensescoop.com/2024/11/14/uap-aaro-chief-unveils-pentagon-annual-caseload-analysis-new-efforts/",
-        "caption": "DefenseScoop：AARO 年度案件分析简报中提及兰利等敏感设施入侵语境"
+        "caption": "DefenseScoop：AARO 年度案件分析简报中提及兰利等敏感设施入侵语境",
+        "captionEn": "DefenseScoop: AARO Case Analysis Briefing on Incursions over Sensitive Military Infrastructure"
       }
     ],
     "sensors": [
@@ -4478,12 +4550,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689167/DOD_111689167.mp4",
-        "caption": "DoD 直链视频（1分39秒）：DOW-UAP-PR48 印太红外 footage"
+        "caption": "DoD 直链视频（1分39秒）：DOW-UAP-PR48 印太红外 footage",
+        "captionEn": "Direct DoD Video (1m39s): DOW-UAP-PR48 INDOPACOM Infrared Tracking Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006110/dow-uap-pr48-unresolved-uap-report-indopacom-2024",
-        "caption": "官方 DVIDS：DOW-UAP-PR48 未解决UAP报告（INDOPACOM 2024）"
+        "caption": "官方 DVIDS：DOW-UAP-PR48 未解决UAP报告（INDOPACOM 2024）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR48 Unresolved UAP Report (INDOPACOM, 2024)"
       }
     ],
     "sensors": [
@@ -4570,12 +4644,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689759/DOD_111689759.mp4",
-        "caption": "DoD 直链视频（2秒循环）：DOW-UAP-PR43 非洲红外 footage"
+        "caption": "DoD 直链视频（2秒循环）：DOW-UAP-PR43 非洲红外 footage",
+        "captionEn": "Direct DoD Video (2s loop): DOW-UAP-PR43 Africa High-Speed Infrared Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006159/dow-uap-pr43-unresolved-uap-report-africa-2025",
-        "caption": "官方 DVIDS：DOW-UAP-PR43 未解决UAP报告（Africa 2025）"
+        "caption": "官方 DVIDS：DOW-UAP-PR43 未解决UAP报告（Africa 2025）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR43 Unresolved UAP Report (Africa, 2025)"
       }
     ],
     "sensors": [
@@ -4663,12 +4739,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689011/DOD_111689011.mp4",
-        "caption": "DoD 直链视频（2分57秒）：DOW-UAP-PR34 希腊近海红外 footage"
+        "caption": "DoD 直链视频（2分57秒）：DOW-UAP-PR34 希腊近海红外 footage",
+        "captionEn": "Direct DoD Video (2m57s): DOW-UAP-PR34 Greece Near-Ocean Infrared Track Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006080/dow-uap-pr34-unresolved-uap-report-greece-october-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR34 未解决UAP报告（Greece, October 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR34 未解决UAP报告（Greece, October 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR34 Unresolved UAP Report (Greece, October 2023)"
       }
     ],
     "sensors": [
@@ -4759,12 +4837,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689133/DOD_111689133.mp4",
-        "caption": "DoD 直链视频（9秒）：DOW-UAP-PR46 印太红外 footage"
+        "caption": "DoD 直链视频（9秒）：DOW-UAP-PR46 印太红外 footage",
+        "captionEn": "Direct DoD Video (9s): DOW-UAP-PR46 INDOPACOM Football-Shaped Object Infrared Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006106/dow-uap-pr46-unresolved-uap-report-indopacom-2024",
-        "caption": "官方 DVIDS：DOW-UAP-PR46 未解决UAP报告（INDOPACOM 2024）"
+        "caption": "官方 DVIDS：DOW-UAP-PR46 未解决UAP报告（INDOPACOM 2024）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR46 Unresolved UAP Report (INDOPACOM, 2024)"
       }
     ],
     "sensors": [
@@ -4854,12 +4934,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689168/DOD_111689168.mp4",
-        "caption": "DoD 直链视频（1分49秒）：DOW-UAP-PR49 陆军红外 footage"
+        "caption": "DoD 直链视频（1分49秒）：DOW-UAP-PR49 陆军红外 footage",
+        "captionEn": "Direct DoD Video (1m49s): DOW-UAP-PR49 US Army Dual-Contrast Infrared Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006111/dow-uap-pr49-unresolved-uap-report-department-army-2026",
-        "caption": "官方 DVIDS：DOW-UAP-PR49 未解决UAP报告（Department of the Army, 2026）"
+        "caption": "官方 DVIDS：DOW-UAP-PR49 未解决UAP报告（Department of the Army, 2026）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR49 Unresolved UAP Report (Department of the Army, 2026)"
       }
     ],
     "sensors": [
@@ -4948,12 +5030,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764159/DOD_111764159.mp4",
-        "caption": "DoD 直链视频：FBI-UAP-PR003 Orbs Over the Pond（约4分25秒）"
+        "caption": "DoD 直链视频：FBI-UAP-PR003 Orbs Over the Pond（约4分25秒）",
+        "captionEn": "Direct DoD Video: FBI-UAP-PR003 'Orbs Over the Pond' Infrared Footage (~4m25s)"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1010267/fbi-uap-pr003-orbs-over-pond-2024",
-        "caption": "官方 DVIDS：FBI-UAP-PR003 “Orbs Over the Pond,” 2024"
+        "caption": "官方 DVIDS：FBI-UAP-PR003 “Orbs Over the Pond,” 2024",
+        "captionEn": "Official DVIDS: FBI-UAP-PR003 'Orbs Over the Pond,' 2024"
       }
     ],
     "sensors": [
@@ -5050,12 +5134,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764177/DOD_111764177.mp4",
-        "caption": "DoD 直链视频：FBI-UAP-PR004 Northeastern Orb Sighting（约49秒）"
+        "caption": "DoD 直链视频：FBI-UAP-PR004 Northeastern Orb Sighting（约49秒）",
+        "captionEn": "Direct DoD Video: FBI-UAP-PR004 Northeastern Orb Sighting Footage (~49s)"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1010269/fbi-uap-pr004-northeastern-orb-sighting-2025",
-        "caption": "官方 DVIDS：FBI-UAP-PR004 “Northeastern Orb Sighting,” 2025"
+        "caption": "官方 DVIDS：FBI-UAP-PR004 “Northeastern Orb Sighting,” 2025",
+        "captionEn": "Official DVIDS: FBI-UAP-PR004 'Northeastern Orb Sighting,' 2025"
       }
     ],
     "sensors": [
@@ -5152,12 +5238,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830058/DOD_111830058.mp4",
-        "caption": "DoD 直链视频：DOW-UAP-PR108 美西红外 footage"
+        "caption": "DoD 直链视频：DOW-UAP-PR108 美西红外 footage",
+        "captionEn": "Direct DoD Video: DOW-UAP-PR108 Western United States Infrared Autotrack Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014106/dow-uap-pr108-unresolved-uap-report-western-united-states-2020",
-        "caption": "官方 DVIDS：DOW-UAP-PR108 未解决UAP报告（Western United States, 2020）"
+        "caption": "官方 DVIDS：DOW-UAP-PR108 未解决UAP报告（Western United States, 2020）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR108 Unresolved UAP Report (Western United States, 2020)"
       }
     ],
     "sensors": [
@@ -5252,12 +5340,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764142/DOD_111764142.mp4",
-        "caption": "DoD 直链视频：FBI-UAP-PR001 Triangle Orbs（约2分42秒）"
+        "caption": "DoD 直链视频：FBI-UAP-PR001 Triangle Orbs（约2分42秒）",
+        "captionEn": "Direct DoD Video: FBI-UAP-PR001 Triangle Orbs Formation Footage (~2m42s)"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1010263/fbi-uap-pr001-triangle-orbs-2021",
-        "caption": "官方 DVIDS：FBI-UAP-PR001 “Triangle Orbs,” 2021"
+        "caption": "官方 DVIDS：FBI-UAP-PR001 “Triangle Orbs,” 2021",
+        "captionEn": "Official DVIDS: FBI-UAP-PR001 'Triangle Orbs,' 2021"
       }
     ],
     "sensors": [
@@ -5355,12 +5445,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2606/DOD_111764148/DOD_111764148.mp4",
-        "caption": "DoD 直链视频：FBI-UAP-PR002 Red Orb Rotation（约2分42秒）"
+        "caption": "DoD 直链视频：FBI-UAP-PR002 Red Orb Rotation（约2分42秒）",
+        "captionEn": "Direct DoD Video: FBI-UAP-PR002 Red Orb Rotation Multi-Spectrum Footage (~2m42s)"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1010264/fbi-uap-pr002-red-orb-rotation-northeastern-united-states-2022",
-        "caption": "官方 DVIDS：FBI-UAP-PR002 “Red Orb Rotation,” 2022"
+        "caption": "官方 DVIDS：FBI-UAP-PR002 “Red Orb Rotation,” 2022",
+        "captionEn": "Official DVIDS: FBI-UAP-PR002 'Red Orb Rotation,' 2022"
       }
     ],
     "sensors": [
@@ -5456,12 +5548,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111689022/DOD_111689022.mp4",
-        "caption": "DoD 直链视频（24秒）：DOW-UAP-PR35 希腊近海红外 footage"
+        "caption": "DoD 直链视频（24秒）：DOW-UAP-PR35 希腊近海红外 footage",
+        "captionEn": "Direct DoD Video (24s): DOW-UAP-PR35 Greece Near-Ocean Circular Target Infrared Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006082/dow-uap-pr35-unresolved-uap-report-greece-october-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR35 未解决UAP报告（Greece, October 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR35 未解决UAP报告（Greece, October 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR35 Unresolved UAP Report (Greece, October 2023)"
       }
     ],
     "sensors": [
@@ -5552,12 +5646,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2605/DOD_111688825/DOD_111688825.mp4",
-        "caption": "DoD 直链视频（4分57秒）：DOW-UAP-PR27 阿联酋红外 footage"
+        "caption": "DoD 直链视频（4分57秒）：DOW-UAP-PR27 阿联酋红外 footage",
+        "captionEn": "Direct DoD Video (4m57s): DOW-UAP-PR27 UAE Long-Duration Infrared Autotrack Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1006067/dow-uap-pr27-unresolved-uap-report-united-arab-emirates-october-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR27 未解决UAP报告（United Arab Emirates, October 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR27 未解决UAP报告（United Arab Emirates, October 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR27 Unresolved UAP Report (United Arab Emirates, October 2023)"
       }
     ],
     "sensors": [
@@ -5647,12 +5743,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830147/DOD_111830147.mp4",
-        "caption": "DoD 直链视频（8秒）：DOW-UAP-PR115 墨西哥湾红外 footage"
+        "caption": "DoD 直链视频（8秒）：DOW-UAP-PR115 墨西哥湾红外 footage",
+        "captionEn": "Direct DoD Video (8s): DOW-UAP-PR115 Gulf of Mexico Flickering Thermal Target Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014123/dow-uap-pr115-unresolved-uap-report-gulf-of-america-2019",
-        "caption": "官方 DVIDS：DOW-UAP-PR115 未解决UAP报告（Gulf of America, 2019）"
+        "caption": "官方 DVIDS：DOW-UAP-PR115 未解决UAP报告（Gulf of America, 2019）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR115 Unresolved UAP Report (Gulf of America, 2019)"
       }
     ],
     "sensors": [
@@ -5740,12 +5838,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2608/DOD_111887401/DOD_111887401.mp4",
-        "caption": "DoD 直链视频（约16秒）：DOW-UAP-PR117 阿曼湾红外显示二次录像"
+        "caption": "DoD 直链视频（约16秒）：DOW-UAP-PR117 阿曼湾红外显示二次录像",
+        "captionEn": "Direct DoD Video (~16s): DOW-UAP-PR117 Gulf of Oman Secondary Display Recording of Cold Orbs"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1017793/dow-uap-pr117-unresolved-uap-report-gulf-oman-2021",
-        "caption": "官方 DVIDS：DOW-UAP-PR117 未解决UAP报告（Gulf of Oman, 2021）"
+        "caption": "官方 DVIDS：DOW-UAP-PR117 未解决UAP报告（Gulf of Oman, 2021）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR117 Unresolved UAP Report (Gulf of Oman, 2021)"
       }
     ],
     "sensors": [
@@ -5850,7 +5950,8 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://commons.wikimedia.org/wiki/File:Nick_Mariana_UFO_Footage_1950_Great_Falls_Montana.webm",
-        "caption": "Wikimedia Commons：1950年大瀑布城 Mariana 胶片（含1956年纪录片分析片段）"
+        "caption": "Wikimedia Commons：1950年大瀑布城 Mariana 胶片（含1956年纪录片分析片段）",
+        "captionEn": "Wikimedia Commons: 1950 Great Falls Mariana 16mm Color Film Sequence (Including 1956 Documentary Analysis)"
       }
     ],
     "sensors": [
@@ -6320,12 +6421,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2608/DOD_111887426/DOD_111887426.mp4",
-        "caption": "DoD 直链视频（51秒）：DOW-UAP-PR149 中东红外 footage"
+        "caption": "DoD 直链视频（51秒）：DOW-UAP-PR149 中东红外 footage",
+        "captionEn": "Direct DoD Video (51s): DOW-UAP-PR149 Middle East Infrared Tracking Sequence"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1017799/dow-uap-pr149-unresolved-uap-report-middle-east-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR149 未解决UAP报告（Middle East, 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR149 未解决UAP报告（Middle East, 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR149 Unresolved UAP Report (Middle East, 2023)"
       }
     ],
     "sensors": [
@@ -6419,12 +6522,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2608/DOD_111887430/DOD_111887430.mp4",
-        "caption": "DoD 直链视频（约10秒）：FBI-UAP-PR007 Slow-moving Objects"
+        "caption": "DoD 直链视频（约10秒）：FBI-UAP-PR007 Slow-moving Objects",
+        "captionEn": "Direct DoD Video (~10s): FBI-UAP-PR007 Slow-Moving Objects Optical Tracking Video"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1017801/fbi-uap-pr007-slow-moving-objects-2026",
-        "caption": "官方 DVIDS：FBI-UAP-PR007 “Slow-moving Objects,” 2026"
+        "caption": "官方 DVIDS：FBI-UAP-PR007 “Slow-moving Objects,” 2026",
+        "captionEn": "Official DVIDS: FBI-UAP-PR007 'Slow-moving Objects,' 2026"
       }
     ],
     "sensors": [
@@ -6530,12 +6635,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2608/DOD_111887390/DOD_111887390.mp4",
-        "caption": "DoD 直链视频（1分39秒）：DOW-UAP-PR134 中东光电/红外 footage"
+        "caption": "DoD 直链视频（1分39秒）：DOW-UAP-PR134 中东光电/红外 footage",
+        "captionEn": "Direct DoD Video (1m39s): DOW-UAP-PR134 Middle East Electro-Optical / Infrared Multi-Sensor Footage"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1017792/dow-uap-pr134-unresolved-uap-report-middle-east-2025",
-        "caption": "官方 DVIDS：DOW-UAP-PR134 未解决UAP报告（Middle East, 2025）"
+        "caption": "官方 DVIDS：DOW-UAP-PR134 未解决UAP报告（Middle East, 2025）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR134 Unresolved UAP Report (Middle East, 2025)"
       }
     ],
     "sensors": [
@@ -6631,12 +6738,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2608/DOD_111887413/DOD_111887413.mp4",
-        "caption": "DoD 直链视频（约33秒）：DOW-UAP-PR136 中东红外 footage"
+        "caption": "DoD 直链视频（约33秒）：DOW-UAP-PR136 中东红外 footage",
+        "captionEn": "Direct DoD Video (~33s): DOW-UAP-PR136 Middle East Reticle Locked Infrared Sequence"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1017796/dow-uap-pr136-unresolved-uap-report-middle-east-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR136 未解决UAP报告（Middle East, 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR136 未解决UAP报告（Middle East, 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR136 Unresolved UAP Report (Middle East, 2023)"
       }
     ],
     "sensors": [
@@ -6726,12 +6835,14 @@ export const events: UAPEvent[] = [
       {
         "type": "video",
         "url": "https://d34w7g4gy10iej.cloudfront.net/video/2607/DOD_111830020/DOD_111830020.mp4",
-        "caption": "DoD 直链视频（18秒）：DOW-UAP-PR024 中东红外 footage"
+        "caption": "DoD 直链视频（18秒）：DOW-UAP-PR024 中东红外 footage",
+        "captionEn": "Direct DoD Video (18s): DOW-UAP-PR024 Middle East Dual-Contrast Thermal Video"
       },
       {
         "type": "video",
         "url": "https://www.dvidshub.net/video/1014100/dow-uap-pr024-unresolved-uap-report-middle-east-2023",
-        "caption": "官方 DVIDS：DOW-UAP-PR024 未解决UAP报告（Middle East, 2023）"
+        "caption": "官方 DVIDS：DOW-UAP-PR024 未解决UAP报告（Middle East, 2023）",
+        "captionEn": "Official DVIDS: DOW-UAP-PR024 Unresolved UAP Report (Middle East, 2023)"
       }
     ],
     "sensors": [

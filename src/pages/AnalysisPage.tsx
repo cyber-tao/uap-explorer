@@ -96,23 +96,12 @@ export default function AnalysisPage() {
                         {t('analysis.consistencyLabel')}: {consistency}
                       </span>
                     </div>
-                    <p className="text-xs" style={{ color: '#8A99A8' }}>{obs.titleEn}</p>
+                    {language !== 'en' && <p className="text-xs" style={{ color: '#8A99A8' }}>{obs.titleEn}</p>}
                   </div>
                 </div>
                 <p className="text-sm leading-relaxed mb-4" style={{ color: '#8A99A8' }}>
                   {desc}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-3">
-                  {obs.examples.map((ex) => (
-                    <span
-                      key={ex}
-                      className="px-2 py-1 rounded text-xs"
-                      style={{ background: 'rgba(138, 153, 168, 0.1)', color: '#8A99A8' }}
-                    >
-                      {ex}
-                    </span>
-                  ))}
-                </div>
                 {obs.eventIds.length > 0 && (
                   <div className="flex flex-wrap items-center gap-2 pt-3" style={{ borderTop: '1px solid rgba(138, 153, 168, 0.08)' }}>
                     <span className="text-[11px] uppercase tracking-wider" style={{ color: 'rgba(138, 153, 168, 0.6)' }}>
