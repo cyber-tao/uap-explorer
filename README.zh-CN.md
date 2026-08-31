@@ -4,7 +4,7 @@
 
 > 一个科幻探索风格的动态响应式网站，展示全球 65 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
 
-[📅 事件时间线](https://cyber-tao.github.io/uap-explorer/#/timeline) · [📊 分析](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 机构](https://cyber-tao.github.io/uap-explorer/#/agencies)
+[📅 事件时间线](https://cyber-tao.github.io/uap-explorer/#/timeline) · [🌍 全球热点地图](https://cyber-tao.github.io/uap-explorer/#/hotspots) · [📊 分析](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 机构](https://cyber-tao.github.io/uap-explorer/#/agencies)
 
 在线站点：[https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.io/uap-explorer/)
 
@@ -25,6 +25,7 @@
 | 🌐 **中英双语国际化** | 原生支持中文 (zh) 与英文 (en)，自动跟随系统语言并支持手动切换与本地持久化 |
 | 🌌 **星系粒子 Hero** | 基于 Three.js 的星系粒子背景，IntersectionObserver 控制视口内渲染 |
 | 🗺 **双视图时间线** | 网格卡片 + 时间轴双视图，按年代、置信度、地区、物理特征多维度筛选 |
+| 🌍 **战术热点地图 HUD** | 基于 D3 Geo 与 TopoJSON 的 177 国全球矢量交互地图，支持空间聚集透视、热力图层与热点走廊排行 |
 | 📖 **深度事件档案** | 每个事件详细描述，真实媒体资源（图片/视频）与多条来源链接 |
 | 🔗 **特征标签联动** | 事件详情页物理特征标签可点击，跳转时间线自动筛选同类特征事件 |
 | 🖼 **媒体画廊与图文排版** | 杂志化图文混排、图片悬停缩放、视频可点击播放，媒体资源经来源验证 |
@@ -40,6 +41,7 @@
 React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ├── Three.js — 星系粒子背景 (GalaxyBackground)
 ├── GSAP + Lenis — 首页滚动与动效
+├── D3 Geo + TopoJSON Client + World Atlas — 战术矢量地图投影与空间 HUD
 ├── React Router DOM 7 — HashRouter 静态路由
 ├── Lucide React — 图标系统
 └── Custom Zero-Dep i18n — 中/英双语体系
@@ -93,6 +95,11 @@ uap-explorer/
 │   └── raw/                 # 研究子代理产出的原始 JSON（不进构建）
 ├── src/
 │   ├── components/
+│   │   ├── hotspots/             # 战术地图 HUD 组件库
+│   │   │   ├── HotspotsMap.tsx
+│   │   │   ├── HotspotsControls.tsx
+│   │   │   ├── HotspotsDrawer.tsx
+│   │   │   └── HotspotsSidebar.tsx
 │   │   ├── GalaxyBackground.tsx  # Three.js 星系粒子背景
 │   │   ├── Navigation.tsx        # 顶部导航 + 多语言切换 + BGMPlayer
 │   │   ├── Layout.tsx            # 布局壳
@@ -112,8 +119,10 @@ uap-explorer/
 │   │   ├── events.ts             # 65 个事件完整数据
 │   │   ├── analysis.ts           # 分析/首页可观测特征单一来源
 │   │   ├── agencies.ts           # 机构数据
+│   │   ├── worldGeoData.ts       # TopoJSON 几何矢量、D3 投影与热点走廊
 │   │   ├── featured.ts           # 首页精选事件 ID
-│   │   └── integrity.test.ts     # 引用完整性护栏
+│   │   ├── integrity.test.ts     # 引用完整性护栏
+│   │   └── images.integrity.test.ts # 图片唯一性与本地资产完整性
 │   ├── i18n/                     # 多语言核心模块
 │   │   ├── types.ts              # 语言类型与字典接口定义
 │   │   ├── context.ts            # 语言上下文与系统语言检测
@@ -129,6 +138,7 @@ uap-explorer/
 │   ├── pages/
 │   │   ├── HomePage.tsx
 │   │   ├── TimelinePage.tsx
+│   │   ├── HotspotsPage.tsx
 │   │   ├── EventDetailPage.tsx
 │   │   ├── AnalysisPage.tsx
 │   │   └── AgenciesPage.tsx

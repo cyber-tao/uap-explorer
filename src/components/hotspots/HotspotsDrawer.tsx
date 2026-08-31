@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { X, MapPin, Calendar, Radio, Sparkles, Layers, ChevronRight } from 'lucide-react'
 import type { UAPEvent } from '../../data/events'
 import { confidenceColors, physicalCharLabels } from '../../data/events'
+import { assetUrl } from '../../lib/utils'
 import { useI18n } from '../../i18n'
 
 interface HotspotsDrawerProps {
@@ -10,7 +11,7 @@ interface HotspotsDrawerProps {
   onClose: () => void
   selectedEvent: UAPEvent | null
   clusterEvents: UAPEvent[] | null
-  onSelectEvent: (event: UAPEvent) => void
+  onSelectEvent: (event: UAPEvent | null) => void
 }
 
 export default function HotspotsDrawer({
@@ -140,7 +141,7 @@ export default function HotspotsDrawer({
             {clusterEvents && clusterEvents.length > 1 && (
               <button
                 type="button"
-                onClick={() => onSelectEvent(null as unknown as UAPEvent)}
+                onClick={() => onSelectEvent(null)}
                 className="flex items-center gap-1.5 text-xs text-[#30B0D0] hover:underline cursor-pointer mb-2 font-mono-data"
               >
                 <Layers className="w-3.5 h-3.5" />
@@ -155,7 +156,7 @@ export default function HotspotsDrawer({
             {/* Cover Image & Confidence Badge */}
             <div className="relative rounded-lg overflow-hidden border border-[rgba(138,153,168,0.2)] bg-black aspect-video">
               <img
-                src={selectedEvent.image}
+                src={assetUrl(selectedEvent.image)}
                 alt={selectedEvent.name}
                 className="w-full h-full object-cover"
                 loading="lazy"

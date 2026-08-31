@@ -164,7 +164,7 @@ export default function EventDetailPage() {
                 <Link2 className="w-4 h-4" style={{ color: '#30B0D0' }} />
                 <h2 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.sources')}</h2>
               </div>
-              <SourceList sources={event.sources} />
+              <SourceList sources={(language === 'en' && event.sourcesEn && event.sourcesEn.length > 0) ? event.sourcesEn : event.sources} />
             </div>
 
             {related.length > 0 && (

@@ -4,7 +4,7 @@
 
 > A sci-fi exploratory dynamic web platform showcasing scientific chronology, deep analysis, and multi-source verified media archives for 65 high-confidence UAP (Unidentified Anomalous Phenomena) incidents across the globe.
 
-[📅 Timeline](https://cyber-tao.github.io/uap-explorer/#/timeline) · [📊 Analysis](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 Official Agencies](https://cyber-tao.github.io/uap-explorer/#/agencies)
+[📅 Timeline](https://cyber-tao.github.io/uap-explorer/#/timeline) · [🌍 Hotspots](https://cyber-tao.github.io/uap-explorer/#/hotspots) · [📊 Analysis](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 Official Agencies](https://cyber-tao.github.io/uap-explorer/#/agencies)
 
 Live Site: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.io/uap-explorer/)
 
@@ -25,6 +25,7 @@ Live Site: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.
 | 🌐 **Multi-Language (i18n)** | Native support for English (`en`) and Chinese (`zh`). Auto-detects browser/system language with manual switcher and local persistence. |
 | 🌌 **Galaxy Particle Hero** | Three.js particle galaxy background, optimized with IntersectionObserver for viewport-only rendering. |
 | 🗺 **Dual-View Timeline** | Grid card and timeline views with real-time filtering across eras, confidence tiers, continents, and physical observables. |
+| 🌍 **Tactical Hotspots Map HUD** | Interactive 177-country vector world map powered by D3 Geo & TopoJSON with tactical cluster inspection, heatmap overlays, and recurring corridor top-lists. |
 | 📖 **Deep Event Dossiers** | Rich narrative descriptions, authentic verified media (images/videos), and comprehensive source attribution. |
 | 🔗 **Observable Tag Linking** | Interactive physical characteristic tags on event detail pages for quick cross-event correlation. |
 | 🖼 **Editorial Layout & Media Lightbox** | Editorial image-text interweaving, image zoom lightbox, playable video embeds, and 100% verified asset pipelines. |
@@ -40,6 +41,7 @@ Live Site: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.
 React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 ├── Three.js — Galaxy particle background (GalaxyBackground)
 ├── GSAP + Lenis — Smooth scrolling and choreographed transitions
+├── D3 Geo + TopoJSON Client + World Atlas — Tactical vector map projection & spatial HUD
 ├── React Router DOM 7 — HashRouter static client-side routing
 ├── Lucide React — Modern icon library
 └── Zero-Dependency Custom i18n — Type-safe English / Chinese localization
@@ -93,6 +95,11 @@ uap-explorer/
 │   └── raw/                 # Raw research data JSONs (excluded from build)
 ├── src/
 │   ├── components/
+│   │   ├── hotspots/             # Tactical map HUD components
+│   │   │   ├── HotspotsMap.tsx
+│   │   │   ├── HotspotsControls.tsx
+│   │   │   ├── HotspotsDrawer.tsx
+│   │   │   └── HotspotsSidebar.tsx
 │   │   ├── GalaxyBackground.tsx  # Three.js galaxy animation
 │   │   ├── Navigation.tsx        # Top navigation + i18n switcher + BGM player
 │   │   ├── Layout.tsx            # App layout shell
@@ -112,8 +119,10 @@ uap-explorer/
 │   │   ├── events.ts             # Complete dataset for 65 events
 │   │   ├── analysis.ts           # Observables, hypotheses, and research gaps
 │   │   ├── agencies.ts           # Official government agency records
+│   │   ├── worldGeoData.ts       # TopoJSON geometry, D3 projection & hotspots
 │   │   ├── featured.ts           # Featured landing page event IDs
-│   │   └── integrity.test.ts     # Reference integrity test guardrails
+│   │   ├── integrity.test.ts     # Reference integrity test guardrails
+│   │   └── images.integrity.test.ts # Image uniqueness & local asset integrity
 │   ├── i18n/                     # Internationalization core
 │   │   ├── types.ts              # Language types & dictionary schema
 │   │   ├── context.ts            # Context, hooks & system language detector
@@ -129,6 +138,7 @@ uap-explorer/
 │   ├── pages/
 │   │   ├── HomePage.tsx
 │   │   ├── TimelinePage.tsx
+│   │   ├── HotspotsPage.tsx
 │   │   ├── EventDetailPage.tsx
 │   │   ├── AnalysisPage.tsx
 │   │   └── AgenciesPage.tsx
