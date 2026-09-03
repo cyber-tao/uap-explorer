@@ -11,8 +11,7 @@
     "test": "vitest run",
     "media:extract": "bun scripts/extract-media-candidates.ts",
     "media:mirror": "bun scripts/mirror-event-media.ts --apply",
-    "media:verify": "bun scripts/verify-event-media.ts",
-    "media:apply": "bun scripts/apply-figures-manifest.ts"
+    "media:verify": "bun scripts/verify-event-media.ts"
   },
   "dependencies": {
     "gsap": "^3.14.2",

@@ -99,7 +99,7 @@ function main() {
     'utf8',
   )
 
-  const applied = spawnSync('bun', ['scripts/apply-figures-manifest.ts'], {
+  const applied = spawnSync('bun', ['scripts/apply-figures-manifest.legacy.ts'], {
     cwd: rootPath(),
     stdio: 'inherit',
   })

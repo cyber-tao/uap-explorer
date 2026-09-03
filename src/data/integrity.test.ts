@@ -2,6 +2,8 @@ import { describe, expect, it } from 'vitest'
 import { events, getEventById, physicalCharLabels, searchEvents } from './events'
 import { observables } from './analysis'
 import { featuredEventIds } from './featured'
+import { agencies } from './agencies'
+import { agenciesPreviewConfig } from '../config'
 
 const eventIds = new Set(events.map((e) => e.id))
 
@@ -92,6 +94,13 @@ describe('event data integrity', () => {
       expect(lng).toBeLessThanOrEqual(180)
       expect(lat).toBeGreaterThanOrEqual(-90)
       expect(lat).toBeLessThanOrEqual(90)
+    }
+  })
+
+  it('resolves every agencies preview matcher to at least one agency', () => {
+    for (const matcher of agenciesPreviewConfig.previewAgencyMatchers) {
+      const match = agencies.some((a) => a.agency.includes(matcher))
+      expect(match, `agency preview matcher "${matcher}" did not match any agency in agencies.ts`).toBe(true)
     }
   })
 })

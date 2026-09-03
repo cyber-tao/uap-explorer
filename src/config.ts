@@ -20,7 +20,7 @@ export const agenciesPreviewConfig: AgenciesPreviewConfig = {
     "AARO",
     "NASA UAP",
     "PURSUE",
-    "防卫省UAP",
+    "跨党派",
   ],
 }
 
