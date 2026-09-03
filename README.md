@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> A sci-fi exploratory dynamic web platform showcasing scientific chronology, deep analysis, and multi-source verified media archives for 65 high-confidence UAP (Unidentified Anomalous Phenomena) incidents across the globe.
+> A sci-fi exploratory dynamic web platform showcasing scientific chronology, deep analysis, and multi-source verified media archives for 77 high-confidence UAP (Unidentified Anomalous Phenomena) incidents across the globe.
 
 [📅 Timeline](https://cyber-tao.github.io/uap-explorer/#/timeline) · [🌍 Hotspots](https://cyber-tao.github.io/uap-explorer/#/hotspots) · [📊 Analysis](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 Official Agencies](https://cyber-tao.github.io/uap-explorer/#/agencies)
 
@@ -14,7 +14,7 @@ Live Site: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.
 
 ![Timeline](https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800)
 
-*Global UAP Timeline — 65 high-confidence events chronologically cataloged with multi-dimensional filtering by confidence, region, and physical observables.*
+*Global UAP Timeline — 77 high-confidence events chronologically cataloged with multi-dimensional filtering by confidence, region, and physical observables.*
 
 ---
 
@@ -172,7 +172,7 @@ uap-explorer/
 | Apollo 17 | 1972 | Space | Medium | 4 | 10 |
 | Roswell Incident | 1947 | North America | Medium | 9 | 9 |
 | Washington D.C. Flap | 1952 | North America | Medium | 5 | 8 |
-| ... Total **65 Events** | | | | **230+** | **310+** |
+| ... Total **77 Events** | | | | **250+** | **320+** |
 
 *Raw research assets are preserved under [`research/raw/`](research/raw/) and excluded from the production bundle.*
 
@@ -268,6 +268,7 @@ npm run build
 | v1.8 | Expansion to 65 global events; 279 verified local media assets |
 | v1.9 | Editorial inline figure composition, responsive mobile drawer, chunking optimization |
 | v2.0 | **Full i18n support (English, Chinese, Japanese, French)** with system auto-detection, dual-language READMEs, and test suites |
+| v2.1 | **Global Archive Expansion to 77 Events**: Researched and integrated 12 premier military declassified, radar-visual, and mass-sighting cases (Tehran, Brazilian Night of UFOs, RB-47, Kaikoura, Phoenix Lights, O'Hare, etc.) with verified authentic media dossiers |
 
 ---
 

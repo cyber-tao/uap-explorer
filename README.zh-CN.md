@@ -2,7 +2,7 @@
 
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-> 一个科幻探索风格的动态响应式网站，展示全球 65 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
+> 一个科幻探索风格的动态响应式网站，展示全球 77 起高置信度 UAP（不明异常现象）事件的科学编年、深度分析与多源媒体档案。
 
 [📅 事件时间线](https://cyber-tao.github.io/uap-explorer/#/timeline) · [🌍 全球热点地图](https://cyber-tao.github.io/uap-explorer/#/hotspots) · [📊 分析](https://cyber-tao.github.io/uap-explorer/#/analysis) · [🏛 机构](https://cyber-tao.github.io/uap-explorer/#/agencies)
 
@@ -14,7 +14,7 @@
 
 ![时间线](https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800)
 
-*全球 UAP 事件时间线 — 65 起高置信度事件按时间线编年，支持按置信度、地区、物理特征多维筛选。*
+*全球 UAP 事件时间线 — 77 起高置信度事件按时间线编年，支持按置信度、地区、物理特征多维筛选。*
 
 ---
 
@@ -116,7 +116,7 @@ uap-explorer/
 │   │   ├── ImmersiveGallery.tsx
 │   │   └── AgenciesGlossary.tsx
 │   ├── data/
-│   │   ├── events.ts             # 65 个事件完整数据
+│   │   ├── events.ts             # 77 个事件完整数据
 │   │   ├── analysis.ts           # 分析/首页可观测特征单一来源
 │   │   ├── agencies.ts           # 机构数据
 │   │   ├── worldGeoData.ts       # TopoJSON 几何矢量、D3 投影与热点走廊
@@ -172,7 +172,7 @@ uap-explorer/
 | 阿波罗17号 | 1972 | 太空 | 中 | 4 | 10 |
 | 罗斯威尔 | 1947 | 北美 | 中 | 9 | 9 |
 | 华盛顿入侵 | 1952 | 北美 | 中 | 5 | 8 |
-| ... 共 **65 个事件** | | | | **230+** | **310+** |
+| ... 共 **77 个事件** | | | | **250+** | **320+** |
 
 研究原始物料归档于 [`research/raw/`](research/raw/)，不参与 Vite 构建。
 
@@ -274,6 +274,7 @@ Tailwind 映射：`colors.uap.*`（见 `tailwind.config.js`）。
 | v1.8 | 全球事件扩充至 65 起；多媒体多源管线建立，279 张本地影像 100% 完整校验 |
 | v1.9 | 杂志化图文混排 (Figure 穿插排版)、移动端响应式重构、代码分包性能优化与 CI 质量门禁 |
 | v2.0 | **多语言全栈支持 (中/英双语)**，系统语言自适应与持久化切换，双语 README 与国际化测试护栏 |
+| v2.1 | **全球高置信度事件扩充至 77 起**：深度调研集成德黑兰、巴西UFO之夜、RB-47、凯库拉、菲尼克斯、奥黑尔、特朗斯、韦斯托尔等12起军方解密与经典民航档案，经全面数据完整性验证 |
 
 ---
 
