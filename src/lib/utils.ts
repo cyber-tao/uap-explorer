@@ -15,3 +15,14 @@ export function assetUrl(p: string | undefined | null): string {
   const base = import.meta.env.BASE_URL || "/"
   return base.replace(/\/$/, "") + "/" + p.replace(/^\/+/, "")
 }
+
+/**
+ * Format longitude and latitude into tactical scientific display, e.g. "31.50°N, 117.80°W".
+ * Note: input coords follows standard GeoJSON order [longitude, latitude].
+ */
+export function formatCoordinates(coords: [number, number], digits = 2): string {
+  const [lng, lat] = coords
+  const latStr = `${Math.abs(lat).toFixed(digits)}°${lat >= 0 ? 'N' : 'S'}`
+  const lngStr = `${Math.abs(lng).toFixed(digits)}°${lng >= 0 ? 'E' : 'W'}`
+  return `${latStr}, ${lngStr}`
+}

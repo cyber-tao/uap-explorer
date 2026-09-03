@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { X, MapPin, Calendar, Radio, Sparkles, Layers, ChevronRight } from 'lucide-react'
 import type { UAPEvent } from '../../data/events'
 import { confidenceColors, physicalCharLabels } from '../../data/events'
-import { assetUrl } from '../../lib/utils'
+import { assetUrl, formatCoordinates } from '../../lib/utils'
 import { useI18n } from '../../i18n'
 
 interface HotspotsDrawerProps {
@@ -227,7 +227,7 @@ export default function HotspotsDrawer({
                     {t('hotspots.drawerCoordinates')}
                   </span>
                   <span className="text-[#30B0D0]">
-                    {selectedEvent.coordinates[1].toFixed(2)}°N, {selectedEvent.coordinates[0].toFixed(2)}°E
+                    {formatCoordinates(selectedEvent.coordinates, 2)}
                   </span>
                 </div>
               )}

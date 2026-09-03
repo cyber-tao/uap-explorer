@@ -88,9 +88,9 @@ export default function SourceList({ sources }: SourceListProps) {
               <span className="text-[10px] px-1.5 py-0.5 rounded-full" style={{ background: `${cat.color}15`, color: cat.color }}>{items.length}</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {items.map((source) => (
+              {items.map((source, sIdx) => (
                 <a
-                  key={source.label}
+                  key={`${source.label}-${source.url}-${sIdx}`}
                   href={source.url}
                   target="_blank"
                   rel="noopener noreferrer"

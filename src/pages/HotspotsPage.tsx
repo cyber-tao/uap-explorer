@@ -44,6 +44,7 @@ export default function HotspotsPage() {
     y: number
     zoom: number
     timestamp: number
+    inPlace?: boolean
   } | null>(null)
 
   // Filtered events calculation
@@ -154,12 +155,13 @@ export default function HotspotsPage() {
   const handleZoomIn = () => {
     setCurrentZoom((prev) => {
       const next = Math.min(10, prev * 1.3)
-      setFlyToTarget((target) => ({
-        x: target?.x ?? 500,
-        y: target?.y ?? 260,
+      setFlyToTarget({
+        x: 500,
+        y: 260,
         zoom: next,
         timestamp: Date.now(),
-      }))
+        inPlace: true,
+      })
       return next
     })
   }
@@ -167,12 +169,13 @@ export default function HotspotsPage() {
   const handleZoomOut = () => {
     setCurrentZoom((prev) => {
       const next = Math.max(0.75, prev * 0.75)
-      setFlyToTarget((target) => ({
-        x: target?.x ?? 500,
-        y: target?.y ?? 260,
+      setFlyToTarget({
+        x: 500,
+        y: 260,
         zoom: next,
         timestamp: Date.now(),
-      }))
+        inPlace: true,
+      })
       return next
     })
   }
@@ -184,6 +187,7 @@ export default function HotspotsPage() {
       y: 260,
       zoom: 1,
       timestamp: Date.now(),
+      inPlace: false,
     })
   }
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, ChevronUp, Navigation2, Flame } from 'lucide-react'
 import { HOTSPOT_CORRIDORS, type HotspotCorridor } from '../../data/worldGeoData'
+import { formatCoordinates } from '../../lib/utils'
 import { useI18n } from '../../i18n'
 
 interface HotspotsSidebarProps {
@@ -96,7 +97,7 @@ export default function HotspotsSidebar({
                   <span className="flex items-center gap-1">
                     <Navigation2 className="w-3 h-3 rotate-45" />
                     <span>
-                      {corridor.center.lat.toFixed(1)}°N, {corridor.center.lng.toFixed(1)}°E
+                      {formatCoordinates([corridor.center.lng, corridor.center.lat], 1)}
                     </span>
                   </span>
                   <span className="group-hover:underline">

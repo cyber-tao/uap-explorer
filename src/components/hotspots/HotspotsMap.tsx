@@ -23,7 +23,7 @@ interface HotspotsMapProps {
   onSelectCluster: (cluster: UAPEvent[]) => void
   selectedEventId: string | null
   activeCorridorEventIds: string[] | null
-  flyToTarget: { x: number; y: number; zoom: number; timestamp: number } | null
+  flyToTarget: { x: number; y: number; zoom: number; timestamp: number; inPlace?: boolean } | null
   onZoomChange: (zoom: number) => void
 }
 
@@ -161,8 +161,16 @@ export default function HotspotsMap({
     const targetZoom = flyToTarget.zoom
     const rect = containerRef.current.getBoundingClientRect()
 
-    const targetX = rect.width / 2 - (flyToTarget.x * (rect.width / MAP_WIDTH)) * targetZoom
-    const targetY = rect.height / 2 - (flyToTarget.y * (rect.height / MAP_HEIGHT)) * targetZoom
+    let targetX = rect.width / 2 - (flyToTarget.x * (rect.width / MAP_WIDTH)) * targetZoom
+    let targetY = rect.height / 2 - (flyToTarget.y * (rect.height / MAP_HEIGHT)) * targetZoom
+
+    if (flyToTarget.inPlace) {
+      const scale = targetZoom / (startZoom || 1)
+      const centerX = rect.width / 2
+      const centerY = rect.height / 2
+      targetX = centerX - (centerX - startX) * scale
+      targetY = centerY - (centerY - startY) * scale
+    }
 
     const duration = 650
     const startTime = performance.now()
@@ -686,14 +694,17 @@ export default function HotspotsMap({
             <div>
               <div className="flex items-center justify-between gap-2 mb-1">
                 <span className="text-xs font-mono-data font-bold text-[#30B0D0]">
-                  {hoveredNode.node.events.length} INCIDENTS CLUSTER
+                  {hoveredNode.node.events.length} {language === 'zh' ? '起事件聚合' : 'INCIDENTS CLUSTER'}
                 </span>
                 <span className="text-[10px] font-mono-data text-[#8A99A8]">
-                  Click to inspect
+                  {language === 'zh' ? '点击查看' : 'Click to inspect'}
                 </span>
               </div>
               <p className="text-xs text-[#EDE8E4] font-medium truncate">
-                {hoveredNode.node.events.map((e) => e.name).slice(0, 2).join(' / ')}
+                {hoveredNode.node.events
+                  .map((e) => (language === 'en' && e.nameEn ? e.nameEn : e.name))
+                  .slice(0, 2)
+                  .join(' / ')}
                 {hoveredNode.node.events.length > 2 && ' ...'}
               </p>
             </div>
@@ -761,7 +772,7 @@ export default function HotspotsMap({
 
       {/* Map Legend (Bottom Right HUD Overlay) */}
       <div
-        className="hidden md:flex items-center gap-4 px-3.5 py-2 rounded-xl border backdrop-blur-md absolute bottom-6 right-88 z-10 text-[11px] font-mono-data"
+        className="hidden md:flex items-center gap-4 px-3.5 py-2 rounded-xl border backdrop-blur-md absolute bottom-6 right-[21.5rem] z-10 text-[11px] font-mono-data"
         style={{
           background: 'rgba(7, 13, 19, 0.85)',
           borderColor: 'rgba(138, 153, 168, 0.2)',
