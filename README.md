@@ -210,7 +210,7 @@ Automatic building and publishing is configured via GitHub Actions:
 
 - Workflow File: [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
 - Triggers: Push to `main` branch or manual trigger via `workflow_dispatch`
-- Action Steps: `npm ci` → `npm run build` → deploy `dist/` to GitHub Pages
+- Action Steps: `bun install` → `bun run build` → deploy `dist/` to GitHub Pages
 - Hosted Endpoint: [https://cyber-tao.github.io/uap-explorer/](https://cyber-tao.github.io/uap-explorer/)
 
 To enable GitHub Pages in your fork: navigate to **Settings → Pages → Build and deployment → Source**, and select **GitHub Actions**.

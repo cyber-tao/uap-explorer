@@ -210,7 +210,7 @@ uap-explorer/
 
 - Workflow：[`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)
 - 触发：推送到 `main`，或在 Actions 页手动 `workflow_dispatch`
-- 产物：`npm ci` → `npm run build` → 部署 `dist/`
+- 产物：`bun install` → `bun run build` → 部署 `dist/`
 - 站点：https://cyber-tao.github.io/uap-explorer/
 
 首次启用时，在仓库 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。
