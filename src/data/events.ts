@@ -7188,6 +7188,612 @@ export const events: UAPEvent[] = [
       "Cellular Audio & RF Interference Log",
       "FBI FD-302 Dossier"
     ]
+  },
+  {
+    "id": "tehran-1976",
+    "coordinates": [
+      51.389,
+      35.6892
+    ],
+    "date": "1976-09-19",
+    "sortDate": "1976-09-19",
+    "location": "伊朗德黑兰及沙赫罗希空军基地周边空域",
+    "locationEn": "Airspace over Tehran and Shahrokhi AFB, Iran",
+    "mapsQuery": "Tehran Iran",
+    "country": "伊朗",
+    "countryEn": "Iran",
+    "region": "Asia",
+    "name": "1976年德黑兰UFO拦截事件",
+    "nameEn": "1976 Tehran UFO Incident",
+    "shortDesc": "帝国空军F-4战机拦截超亮不明飞行物，雷达锁定后机载火控与航电设备遭遇严重电磁压制",
+    "shortDescEn": "Imperial Iranian Air Force F-4 interceptors acquire radar lock on brilliant anomalous craft before complete avionics and weapons systems jamming.",
+    "description": "1976年9月19日凌晨，伊朗帝国空军（IIAF）雷达与首都德黑兰众多市民目击夜空中出现极其明亮且变换颜色的飞行物体。军方随即从沙赫罗希空军基地紧急升空第一架F-4E鬼怪II战斗机进行拦截。当战机接近目标至25海里范围时，机载所有通讯、仪表及导航系统骤然瘫痪，飞行员被迫调头脱离，脱离后航电设备立即奇迹恢复。\n\n随后，由帕尔维兹·贾法里中尉（后晋升为空军准将）驾驶的第二架F-4E战机紧急升空。贾法里成功在机载AN/APQ-120雷达上捕获目标，目标雷达截面积（RCS）与一架波音707客机相当。当战机在27海里距离保持稳定雷达锁定时，UAP突然脱离出一个较小的发光体并极速扑向F-4E。贾法里判断遭遇敌对威胁，立刻尝试发射AIM-9响尾蛇空空导弹，但此时导弹发射火控面板与无线电通讯瞬间完全失效。发光体随后绕战机机动并降落至地面，主飞行物则以极高速度瞬间向北空域飞离。\n\n该事件被美国国防情报局（DIA）列为最高级别的UAP调查案之一，并在解密的机密评估备忘录中明确指出：该案例具有极高可信度，由高素质军事飞行员目击、多传感器（地面警戒雷达、机载相控阵雷达及两架战机航电）同步确证，并展现出超越常规航空技术的强电磁干扰与机动性能。",
+    "descriptionEn": "In the early morning hours of September 19, 1976, multiple visual reports from citizens and military observation posts prompted the Imperial Iranian Air Force to scramble an F-4E Phantom II interceptor from Shahrokhi Air Force Base.\n\nAs the first interceptor closed within 25 nautical miles of the intensely radiant object, all communications and instrument systems completely failed, forcing the pilot to abort. A second F-4E piloted by Lieutenant Parviz Jafari achieved an airborne radar lock at 27 nautical miles, noting a radar return comparable to a Boeing 707.\n\nWhen a smaller secondary orb detached from the primary craft and rapidly closed in, Jafari attempted to fire an AIM-9 Sidewinder missile, only for his weapons control panel and avionics to immediately lose power. The U.S. Defense Intelligence Agency (DIA) later authored a declassified memorandum describing the incident as an outstanding case with high credibility and confirmed multi-sensor electromagnetic effects.",
+    "confidence": "High",
+    "image": "/images/event-tehran-1976.jpg",
+    "figures": [
+      {
+        "src": "/images/events/tehran-1976/01.jpg",
+        "caption": "美国国防情报局（DIA）解密关于1976年德黑兰UFO事件的机密评估备忘录（第1页）",
+        "captionEn": "U.S. Defense Intelligence Agency (DIA) Declassified Evaluation Memorandum on 1976 Tehran UFO Incident (Page 1)",
+        "credit": "美国国防情报局 (DIA) / FOIA 解密",
+        "creditEn": "Defense Intelligence Agency (DIA) / FOIA Declassified",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/tehran-1976/02.jpg",
+        "caption": "DIA解密报告第2页——记录F-4战机雷达锁定（27海里）及响尾蛇导弹电磁失灵细节",
+        "captionEn": "DIA Report Page 2 detailing F-4 radar lock at 27 nautical miles and Sidewinder missile electrical failure",
+        "credit": "美国国防情报局 (DIA) / 国防部解密",
+        "creditEn": "Defense Intelligence Agency (DIA) / DoD Declassified",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/tehran-1976/03.jpg",
+        "caption": "DIA解密报告第3页——确认高置信度多源目击与多传感器雷达/视觉同步",
+        "captionEn": "DIA Report Page 3 confirming high-confidence multi-source radar and visual correlation",
+        "credit": "美国国防情报局 (DIA) / FOIA 档案",
+        "creditEn": "Defense Intelligence Agency (DIA) / FOIA Archive",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/tehran-1976/04.jpg",
+        "caption": "伊朗空域与沙赫罗希空军基地拦截走廊区位图",
+        "captionEn": "Iran Airspace and Shahrokhi Air Base Intercept Corridor Map",
+        "credit": "CIA Cartographic Center / Public Domain",
+        "creditEn": "CIA Cartography / Public Domain",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "机载AN/APQ-120火控雷达",
+      "德黑兰梅赫拉巴德地面进近雷达",
+      "空军防空警戒雷达",
+      "目视双机多机组目击"
+    ],
+    "sensorsEn": [
+      "Airborne AN/APQ-120 Fire Control Radar",
+      "Tehran Mehrabad Ground Approach Radar",
+      "Air Defense Surveillance Radar",
+      "Dual Aircrew Visual Sightings"
+    ],
+    "physicalCharacteristics": [
+      "multi-sensor",
+      "instantaneous-acceleration",
+      "electromagnetic",
+      "high-speed"
+    ],
+    "sources": [
+      {
+        "label": "美国国防情报局 (DIA) 解密评估报告",
+        "url": "https://www.theblackvault.com/documentarchive/the-1976-tehran-iran-ufo-incident/"
+      },
+      {
+        "label": "美国参谋长联席会议 (JCS) 军事情报档案",
+        "url": "https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "U.S. Defense Intelligence Agency (DIA) Declassified Memo",
+        "url": "https://www.theblackvault.com/documentarchive/the-1976-tehran-iran-ufo-incident/"
+      },
+      {
+        "label": "U.S. Joint Chiefs of Staff Intelligence Dossier",
+        "url": "https://en.wikipedia.org/wiki/1976_Tehran_UFO_incident"
+      }
+    ],
+    "limitations": [
+      "未能回收降落于地面的次级发光体实物样本"
+    ],
+    "limitationsEn": [
+      "No physical debris recovered from the secondary landed orb location"
+    ],
+    "relatedEvents": [
+      "jal-1628",
+      "belgium-ufo-wave",
+      "nimitz-tic-tac"
+    ]
+  },
+  {
+    "id": "brazilian-night-of-ufos-1986",
+    "coordinates": [
+      -45.8869,
+      -23.1896
+    ],
+    "date": "1986-05-19",
+    "sortDate": "1986-05-19",
+    "location": "巴西圣若泽杜斯坎普斯及圣保罗空域",
+    "locationEn": "Airspace over São José dos Campos and São Paulo, Brazil",
+    "mapsQuery": "Sao Jose dos Campos Brazil",
+    "country": "巴西",
+    "countryEn": "Brazil",
+    "region": "South America",
+    "name": "1986年巴西UFO之夜",
+    "nameEn": "1986 Official Night of UFOs in Brazil",
+    "shortDesc": "军民雷达锁定21个高机动光斑，巴西空军紧急起飞多架超音速战机截击，航空部长召开电视直播发布会",
+    "shortDescEn": "Civilian and military radars detect 21 high-speed anomalous contacts; Brazilian Air Force scrambles Mirage III and F-5 fighters before live national press conference.",
+    "description": "1986年5月19日夜间，巴西航空管制雷达与防空防御中心（CINDACTA I）在圣若泽杜斯坎普斯、圣保罗及里约热内卢空域连续侦测到至少21个雷达反射信号极强的不明飞行目标。航空管制塔台多名工作人员肉眼观察到直径数米、发出耀眼红绿彩光的球体在机场周边空域静止悬停与剧烈加速。\n\n巴西空军（FAB）随即下达最高级别防空拦截令，先后紧急升空两架幻影III（F-103）超音速战机与三架F-5E战斗机进行拦截。阿曼多·平托上尉驾驶的幻影战机在加力燃烧全开状态下开启机载西诺普雷达，捕获前方目标以超过15马赫（约18,000公里/小时）的极速在纵深空域规避，并反向尾随战机。\n\n事件发生数小时后，巴西空军部长奥克塔维奥·莫雷拉·利马准将（Brigadeiro Moreira Lima）率空军作战指挥部高官召开历史性的全国电视直播新闻发布会，五位参战飞行员公开现身证实与UAP进行了多次近距视觉与雷达对抗。巴西国家档案馆随后解密的军方官方报告确认：“该批目标具有高智力操控特征，能够瞬时改变航向并在极宽速度区间（从悬停到超高马赫）自由切换，对常规防空系统构成客观挑战。”",
+    "descriptionEn": "On the night of May 19, 1986, Brazilian integrated air traffic and air defense radar centers detected at least 21 anomalous targets maneuvering over São Paulo and Rio de Janeiro.\n\nThe Brazilian Air Force scrambled two Mirage III supersonic fighters and three F-5E jets to intercept. Pilots achieved visual contacts and airborne radar tracks on brilliant multi-colored objects that exhibited extreme acceleration and impossible evasive maneuvers up to Mach 15.\n\nShortly following the encounters, Brazilian Aeronautics Minister Brigadier Octávio Moreira Lima held a historic live national press conference alongside the fighter pilots, officially confirming the military contacts. Declassified Brazilian Air Force dossiers concluded the objects possessed intelligent flight capabilities and radical aerodynamic performance.",
+    "confidence": "High",
+    "image": "/images/event-brazilian-night-of-ufos-1986.jpg",
+    "figures": [
+      {
+        "src": "/images/events/brazilian-night-of-ufos-1986/01.jpg",
+        "caption": "巴西空军幻影III（F-103）超音速战机——1986年5月19日紧急升空进行超音速雷达拦截",
+        "captionEn": "Brazilian Air Force Mirage III (F-103) Supersonic Interceptor — Scrambled for High-Speed Radar Intercept on May 19, 1986",
+        "credit": "Força Aérea Brasileira / Wikimedia Commons",
+        "creditEn": "Brazilian Air Force / Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/brazilian-night-of-ufos-1986/02.jpg",
+        "caption": "巴西圣若泽杜斯坎普斯机场——多目标雷达初次探测与航空航天研究核心基地",
+        "captionEn": "São José dos Campos Airport and Aerospace Technology Center — Primary Radar Detection Facility",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/brazilian-night-of-ufos-1986/03.png",
+        "caption": "巴西国家档案馆（Arquivo Nacional）解密空军UAP档案结构",
+        "captionEn": "Brazilian National Archives (Arquivo Nacional) Declassified Air Force UAP Documentary Structure",
+        "credit": "Arquivo Nacional / Wikimedia Commons",
+        "creditEn": "National Archives of Brazil / Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "CINDACTA I综合空防雷达系统",
+      "圣若泽杜斯坎普斯民航进近雷达",
+      "幻影III战机机载单脉冲火控雷达",
+      "五名军机机组肉眼直接观测"
+    ],
+    "sensorsEn": [
+      "CINDACTA I Integrated Air Defense Radar",
+      "São José dos Campos Approach Radar",
+      "Mirage III Monopulse Fire Control Radar",
+      "Five Military Interceptor Crews Visual Sighting"
+    ],
+    "physicalCharacteristics": [
+      "multi-sensor",
+      "instantaneous-acceleration",
+      "high-speed",
+      "mach-2+"
+    ],
+    "sources": [
+      {
+        "label": "巴西国家档案馆解密空军UAP调查总报告",
+        "url": "https://en.wikipedia.org/wiki/1986_Brazilian_UFO_incident"
+      },
+      {
+        "label": "巴西空军部长莫雷拉·利马准将电视发布会官方档案",
+        "url": "https://www.ufo.com.br/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Brazilian National Archives (Arquivo Nacional) Declassified Report",
+        "url": "https://en.wikipedia.org/wiki/1986_Brazilian_UFO_incident"
+      },
+      {
+        "label": "Minister Brigadier Moreira Lima National Press Conference Record",
+        "url": "https://en.wikipedia.org/wiki/1986_Brazilian_UFO_incident"
+      }
+    ],
+    "limitations": [
+      "超高速度使得战机无法取得近距持续光学照相记录"
+    ],
+    "limitationsEn": [
+      "Extreme velocities prevented continuous gun-camera optical documentation"
+    ],
+    "relatedEvents": [
+      "colares",
+      "nimitz-tic-tac"
+    ]
+  },
+  {
+    "id": "rb47-elint-1957",
+    "coordinates": [
+      -91.1871,
+      30.4515
+    ],
+    "date": "1957-07-17",
+    "sortDate": "1957-07-17",
+    "location": "美国密西西比州至德克萨斯州墨西哥湾沿岸空域",
+    "locationEn": "Airspace over Gulf Coast from Mississippi to Texas, USA",
+    "mapsQuery": "Gulf Coast Louisiana USA",
+    "country": "美国",
+    "countryEn": "United States",
+    "region": "North America",
+    "name": "1957年美空军RB-47电子侦察机UAP接触事件",
+    "nameEn": "1957 RB-47 Electronic Intelligence Encounter",
+    "shortDesc": "装备专业电子对抗仪器的战略侦察机在700英里航程中，机载雷达、被动脉冲分析仪与地面雷达同步锁定未知辐射源",
+    "shortDescEn": "USAF RB-47 electronic reconnaissance aircraft tracks anomalous radiating craft across 700 miles via simultaneous ELINT sensors, radar, and visual contacts.",
+    "description": "1957年7月17日清晨，美国空军第55战略侦察联队的一架波音RB-47H电子侦察机在墨西哥湾沿岸执行导航与电子情报（ELINT）训练飞行。该机载有6名军官，其中包括3名专门操作ALA-5脉冲分析仪与APD-4侦察接收机的电子战军官（被称为“渡鸦”Raven）。\n\n在密西西比州上空，机载被动雷达监测仪首先拦截到一个异常雷达脉冲信号（频率为2800 MHz，脉冲宽度2微秒，脉冲重复率600 pps），其信号特征与典型S波段地面雷达一致，但信号源正以高速在空中机动。随后，飞行员与副驾驶肉眼观测到一个发出强烈蓝白光芒的椭圆飞行器正在以相同高度（34,500英尺）与RB-47平行飞行。\n\n在接下来的两个小时内，该物体沿路易斯安那州一直伴飞至德克萨斯州沃斯堡以西，飞行跨度超过700英里。犹他州邓肯空军基地第745防空雷达中队的地面雷达（CPS-6B高度探测雷达）与机载APS-23搜索雷达同时锁定了该目标。目标在雷达屏幕上展现出从瞬时停滞到超过每小时2,000英里的超常规加速机动，并伴随脉冲信号强度的同步剧烈波动。\n\n该案被物理学家詹姆斯·麦克唐纳博士（Dr. James E. McDonald）与《康登委员会报告》（Condon Report）深度调查。康登报告第2章将其列为该官方项目中极少数“完全无法通过任何已知大气折射、等离子体或雷达假目标予以科学解释”的最高置信度UAP多传感器电子战硬接触案例。",
+    "descriptionEn": "On July 17, 1957, a Boeing RB-47H Stratojet electronic reconnaissance aircraft assigned to the USAF 55th Strategic Reconnaissance Wing was on an ELINT mission over the Gulf Coast.\n\nEquipped with specialized radar intercept equipment including ALA-5 pulse analyzers, the electronic warfare officers detected an intense electromagnetic signal at 2800 MHz pacing the aircraft. Moments later, the flight crew observed a brilliant blue-white luminous craft flying at their exact altitude of 34,500 feet.\n\nOver the course of 700 miles through Louisiana and Texas, the unidentified craft was tracked simultaneously by ground GCI radar (745th Radar Squadron), airborne APS-23 radar, and specialized passive RF intercept gear. The phenomenon was extensively analyzed in the Condon Report, which concluded that no conventional radar anomaly or astronomical explanation could account for the simultaneous visual, radar, and ELINT data.",
+    "confidence": "High",
+    "image": "/images/event-rb47-elint-1957.jpg",
+    "figures": [
+      {
+        "src": "/images/events/rb47-elint-1957/01.jpg",
+        "caption": "美国空军第55战略侦察联队波音RB-47H Stratojet电子侦察机（配备ALA-5/6雷达脉冲分析仪）",
+        "captionEn": "USAF 55th Strategic Reconnaissance Wing Boeing RB-47H Stratojet Electronic Reconnaissance Aircraft",
+        "credit": "U.S. Air Force / Wikimedia Commons",
+        "creditEn": "U.S. Air Force / Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/rb47-elint-1957/02.jpg",
+        "caption": "雷达PPI平面位置显示器——机载APS-23雷达与地面CPS-6B防空雷达同步锁定多目标信号",
+        "captionEn": "Radar Plan Position Indicator (PPI) Display — Airborne APS-23 and Ground CPS-6B Radars Maintained Simultaneous Lock",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/rb47-elint-1957/03.jpg",
+        "caption": "RB-47H机队在战略空军司令部服役历史影像档案",
+        "captionEn": "Strategic Air Command RB-47H Aircraft Historical Flight Archive",
+        "credit": "U.S. Air Force / Wikimedia Commons",
+        "creditEn": "U.S. Air Force / Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "机载ALA-5雷达脉冲分析仪",
+      "机载APS-23搜索雷达",
+      "第745雷达中队地面CPS-6B防空雷达",
+      "6名资深空军机组目视连续跟踪"
+    ],
+    "sensorsEn": [
+      "Airborne ALA-5 Radar Pulse Analyzer",
+      "Airborne APS-23 Search Radar",
+      "745th Radar Squadron Ground CPS-6B Radar",
+      "Visual Tracking by 6 Senior Air Force Officers"
+    ],
+    "physicalCharacteristics": [
+      "multi-sensor",
+      "electromagnetic",
+      "high-speed"
+    ],
+    "sources": [
+      {
+        "label": "康登委员会最终科学报告 (Case 10) 深度调查",
+        "url": "https://en.wikipedia.org/wiki/Condon_Committee"
+      },
+      {
+        "label": "麦克唐纳博士向美国众议院科学与宇航委员会呈递之科学备忘录",
+        "url": "http://users.erols.com/mcdonald/rb-47.htm"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Condon Committee Scientific Report (Case 10)",
+        "url": "https://en.wikipedia.org/wiki/Condon_Committee"
+      },
+      {
+        "label": "Dr. James E. McDonald Congressional Statement on RB-47 Incident",
+        "url": "http://users.erols.com/mcdonald/rb-47.htm"
+      }
+    ],
+    "limitations": [
+      "年代久远未留下彩色机载光学影像"
+    ],
+    "limitationsEn": [
+      "Historical military era without modern high-definition color guncam records"
+    ],
+    "relatedEvents": [
+      "tremonton-great-falls-1952",
+      "nimitz-tic-tac"
+    ]
+  },
+  {
+    "id": "kaikoura-lights-1978",
+    "coordinates": [
+      173.6814,
+      -42.4008
+    ],
+    "date": "1978-12-30",
+    "sortDate": "1978-12-30",
+    "location": "新西兰南岛凯库拉海岸与库克海峡空域",
+    "locationEn": "Airspace over Kaikoura Peninsula and Cook Strait, New Zealand",
+    "mapsQuery": "Kaikoura Peninsula New Zealand",
+    "country": "新西兰",
+    "countryEn": "New Zealand",
+    "region": "Oceania",
+    "name": "1978年新西兰凯库拉光团雷达视觉事件",
+    "nameEn": "1978 Kaikoura Lights Radar-Visual Encounter",
+    "shortDesc": "货机机组与澳大利亚电视摄制组在万米高空用16mm电影胶片记录发光UAP，惠灵顿空管雷达全程同步锁定",
+    "shortDescEn": "Cargo aircrew and Australian television network camera crew film pulsing luminous UAP on 16mm color film while Wellington air traffic radars confirm simultaneous tracks.",
+    "description": "1978年12月21日至31日期间，新西兰南岛东北部凯库拉（Kaikoura）海域发生了一系列震动国际的雷达-视觉UAP事件。起初，Safe Air航空公司的一架阿姆斯特朗·惠特沃斯“阿戈西”（Argosy）货机在夜间航行时，机组目击多个巨大的明亮光团跟随飞机飞行，同时惠灵顿与基督城机场的民航雷达屏幕上也出现了伴随飞机高速运动的异常回波。\n\n由于早前目击引起公众轰动，12月30日夜间，澳大利亚第0-10电视网记者昆汀·福格蒂（Quentin Fogarty）携专业摄影师大卫·克罗克特携带一台16毫米彩色电影摄影机登上一架阿戈西货机进行跟机拍摄。在飞越凯库拉半岛上空时，机组与摄制组再次遭遇多个闪烁着刺眼白光、带有微弱红绿色晕的巨大球体与飞碟状光斑。\n\n克罗克特在机舱舷窗处拍摄了长达数分钟的珍贵16mm彩色胶片。胶片画面清晰捕捉到发光物体的光度脉动与剧烈相对位移。同一时刻，惠灵顿空中交通管制中心的地面雷达多次证实有不明目标在战机高度以高达数百节的速度平行伴飞，甚至在雷达屏幕上出现突然加速脱离雷达盲区的高敏反应。\n\n新西兰皇家空军（RNZAF）与国防部随后调取全部雷达磁带、空地通话录音与底片展开专项机密调查。新西兰国防军于2010年全面解密其长达数百页的UFO官方档案，确认凯库拉事件的雷达追踪与目视光学影像完全吻合，至今未有任何已知常规气象或天文模型能够合理解释全案。",
+    "descriptionEn": "Between December 21 and 30, 1978, a series of remarkable radar-visual sightings occurred over the Kaikoura Peninsula on New Zealand's South Island.\n\nFollowing initial pilot reports and air traffic radar detections, an Australian television crew from Channel 0-10 boarded a Safe Air Armstrong Whitworth Argosy freight aircraft with a 16mm color movie camera. During the flight, the crew and journalists observed and filmed bright luminous objects that maneuvered alongside the aircraft for several minutes.\n\nWellington air traffic control radar simultaneously tracked the targets, confirming real-time target positions that corresponded precisely with the visual and filmed sightings. The New Zealand Defence Force investigated the incident and declassified hundreds of pages of official dossiers in 2010, upholding the case as one of the most thoroughly documented civilian radar-visual-photographic UAP events in aviation history.",
+    "confidence": "High",
+    "image": "/images/event-kaikoura-lights-1978.jpg",
+    "figures": [
+      {
+        "src": "/images/events/kaikoura-lights-1978/01.jpg",
+        "caption": "新西兰南岛凯库拉半岛与库克海峡海岸线——1978年12月30日阿戈西货机夜间航线区域",
+        "captionEn": "Kaikoura Peninsula and Cook Strait Coastline, South Island, New Zealand — Argosy Cargo Flight Track Area (Dec 30, 1978)",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/kaikoura-lights-1978/02.jpg",
+        "caption": "Safe Air 阿姆斯特朗·惠特沃斯 AW.660 Argosy 货运飞机——机组与澳大利亚电视台记者搭乘该机拍摄到UAP",
+        "captionEn": "Safe Air Armstrong Whitworth AW.660 Argosy Freighter — Crew and Australian TV Cameraman Filmed the Phenomenon Onboard",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/kaikoura-lights-1978/03.svg",
+        "caption": "新西兰惠灵顿海峡与凯库拉雷达空管追踪走廊区位图",
+        "captionEn": "New Zealand Cook Strait and Kaikoura Radar Tracking Corridor Map",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "惠灵顿空管中心地面空管监控雷达",
+      "基督城机场进近雷达",
+      "机载气象机载雷达",
+      "16毫米彩色专业电影胶片摄影",
+      "专业机组与记者直接目视"
+    ],
+    "sensorsEn": [
+      "Wellington Air Traffic Control Surveillance Radar",
+      "Christchurch Approach Radar",
+      "Airborne Weather Radar",
+      "Professional 16mm Color Film Motion Picture",
+      "Visual Observation by Flight Crew and Journalists"
+    ],
+    "physicalCharacteristics": [
+      "multi-sensor",
+      "self-luminous",
+      "high-speed"
+    ],
+    "sources": [
+      {
+        "label": "新西兰国防军 (NZDF) 解密官方UFO调查档案 (2010)",
+        "url": "https://en.wikipedia.org/wiki/Kaikoura_lights"
+      },
+      {
+        "label": "澳大利亚国家影视档案馆 (NFSA) 凯库拉原版16mm影像存根",
+        "url": "https://www.nfsa.gov.au/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "New Zealand Defence Force (NZDF) Declassified UFO Dossiers",
+        "url": "https://en.wikipedia.org/wiki/Kaikoura_lights"
+      },
+      {
+        "label": "National Film and Sound Archive of Australia (NFSA) 16mm Film Reference",
+        "url": "https://www.nfsa.gov.au/"
+      }
+    ],
+    "limitations": [
+      "部分怀疑者试图归咎于大气异常折射，但无法解释雷达与摄影多角度同步"
+    ],
+    "limitationsEn": [
+      "Skeptics suggested atmospheric ducting, which cannot fully explain multi-sensor geometric lock"
+    ],
+    "relatedEvents": [
+      "jal-1628",
+      "belgium-ufo-wave"
+    ]
+  },
+  {
+    "id": "aguadilla-transmedium-2013",
+    "coordinates": [
+      -67.1294,
+      18.4949
+    ],
+    "date": "2013-04-25",
+    "sortDate": "2013-04-25",
+    "location": "波多黎各阿瓜迪亚拉斐尔·埃尔南德斯机场及近海空域",
+    "locationEn": "Airspace over Rafael Hernández Airport and coastal waters, Aguadilla, Puerto Rico",
+    "mapsQuery": "Rafael Hernandez Airport Aguadilla Puerto Rico",
+    "country": "美国 (波多黎各)",
+    "countryEn": "United States (Puerto Rico)",
+    "region": "North America",
+    "name": "2013年波多黎各阿瓜迪亚机场跨介质UAP事件",
+    "nameEn": "2013 Aguadilla Puerto Rico Transmedium Incident",
+    "shortDesc": "美国海关巡逻机FLIR高清红外镜头追踪未知球体，掠海高速滑行并无减速潜入大西洋，水下分裂出次级飞行体",
+    "shortDescEn": "U.S. Customs and Border Protection DHC-8 FLIR system records anomalous thermal sphere entering ocean without slowing down and splitting in two.",
+    "description": "2013年4月25日晚间21点20分许，美国国土安全部下属海关与边境保护局（CBP）一架庞巴迪DHC-8海上巡逻机在波多黎各西北部阿瓜迪亚的拉斐尔·埃尔南德斯机场准备起飞巡逻。起飞滑行中，机组人员发现跑道北侧空域有一个发出红外热辐射特征的低空未知物体快速掠过。\n\n巡逻机升空后立即启动机腹挂载的高精度L-3 Wescam MX-15红外前视热像仪，进入自动红外跟踪模式，录下了长达3分54秒的经典热成像视频。视频显示，该物体直径约3至5英尺，无任何机翼、机尾、旋翼或常规废气羽流。它在阿瓜迪亚市区与机场低空以40至120节的速度高速机动。\n\n随后，该物体以约100节的速度直接冲入大西洋海浪中，在穿透海空界面的瞬间没有任何速度衰减、姿态震荡或明显水花溅射（展现出极度反常规的水空无缝跨介质流体力学特征）。更令人震惊的是，在水下高速穿行片刻后，该目标分裂为两个独立的红外发热源，并双双重新破水而出，在红外画面末端并排消失在夜空中。\n\nUAP科学研究联盟（SCU）随后获取了该段原始FLIR视频及FAA圣胡安空管中心与BQN雷达的完整原始数据，发表了长达160页的同行评审式严谨科研报告，确证该目标具有高度反常的跨介质航行力学。美国国防部全域异常解决办公室（AARO）亦将该案例列入重点解析案。",
+    "descriptionEn": "On the night of April 25, 2013, a U.S. Customs and Border Protection (CBP) DHC-8 turboprop aircraft equipped with an MX-15 thermal imaging camera observed an unidentified low-flying object near Rafael Hernández Airport in Aguadilla, Puerto Rico.\n\nThe airborne sensor tracked the object for nearly four minutes as it traversed the airport perimeter and residential areas at speeds between 40 and 120 mph without visible propulsion surfaces or thermal exhaust plumes.\n\nThe footage captured the object plunging into the Atlantic Ocean without deceleration or significant water splash, continuing to travel submerged before appearing to divide into two distinct bodies that both emerged from the ocean. The Scientific Coalition for UAP Studies (SCU) conducted a comprehensive radar-telemetry investigation, and the event remains one of the premier thermal transmedium cases analyzed by researchers and the Pentagon's AARO.",
+    "confidence": "High",
+    "image": "/images/event-aguadilla-transmedium-2013.jpg",
+    "figures": [
+      {
+        "src": "/images/events/aguadilla-transmedium-2013/01.jpg",
+        "caption": "美国海关与边境保护局（CBP）DHC-8海上巡逻机——配备高分辨率FLIR前视红外吊舱",
+        "captionEn": "U.S. Customs and Border Protection (CBP) DHC-8 Patrol Aircraft with MX-15 High-Resolution FLIR System",
+        "credit": "U.S. CBP / Wikimedia Commons",
+        "creditEn": "U.S. CBP / Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/aguadilla-transmedium-2013/02.jpg",
+        "caption": "CBP海上巡逻机空中作业影像——阿瓜迪亚近海红外追踪巡逻平台载具档案",
+        "captionEn": "CBP Maritime Patrol Aircraft Operational Flight Context — Sensor Platform Archive",
+        "credit": "U.S. CBP / Wikimedia Commons",
+        "creditEn": "U.S. CBP / Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/aguadilla-transmedium-2013/03.jpg",
+        "caption": "波多黎各阿瓜迪亚机场跑道与海岸线关键交界空域",
+        "captionEn": "Aguadilla Coastal and Runway Terminal Airspace Zone",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/aguadilla-transmedium-2013/04.jpg",
+        "caption": "阿瓜迪亚机场应急救援与航空保障设施全景",
+        "captionEn": "Rafael Hernández Airport Operational Ground Facilities in Aguadilla",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "机载L-3 Wescam MX-15多光谱红外吊舱 (FLIR)",
+      "FAA圣胡安终端多普勒空管雷达",
+      "波多黎各罗德曼空军基地雷达",
+      "CBP两名专业飞行员目视直接接触"
+    ],
+    "sensorsEn": [
+      "Airborne L-3 Wescam MX-15 Multi-Spectral FLIR Turret",
+      "FAA San Juan Terminal Doppler Air Traffic Radar",
+      "Puerto Rico Regional Radar Coverage",
+      "Visual Confirmation by CBP Patrol Flight Crew"
+    ],
+    "physicalCharacteristics": [
+      "transmedium",
+      "thermal-contrast",
+      "auto-track",
+      "multi-sensor"
+    ],
+    "sources": [
+      {
+        "label": "UAP科学研究联盟 (SCU) 160页阿瓜迪亚跨介质UAP科学报告",
+        "url": "https://www.explorescu.org/post/2013-aguadilla-puerto-rico-uap-incident-report"
+      },
+      {
+        "label": "美国国防部全域异常解决办公室 (AARO) 案例评估公告",
+        "url": "https://www.aaro.mil/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Scientific Coalition for UAP Studies (SCU) Comprehensive Report",
+        "url": "https://www.explorescu.org/post/2013-aguadilla-puerto-rico-uap-incident-report"
+      },
+      {
+        "label": "Pentagon All-domain Anomaly Resolution Office (AARO) Case Resolution",
+        "url": "https://www.aaro.mil/"
+      }
+    ],
+    "limitations": [
+      "红外镜头下的尺寸与分裂形态在不同温度背景对比下存在视角解释争议"
+    ],
+    "limitationsEn": [
+      "Sensor look-angle and parallax create differing perspectives on object division"
+    ],
+    "relatedEvents": [
+      "submarine-transmedium",
+      "nimitz-tic-tac",
+      "gimbal-gofast"
+    ]
+  },
+  {
+    "id": "trans-en-provence-1981",
+    "coordinates": [
+      6.4864,
+      43.5036
+    ],
+    "date": "1981-01-08",
+    "sortDate": "1981-01-08",
+    "location": "法国普罗旺斯地区特朗斯（瓦尔省）",
+    "locationEn": "Trans-en-Provence, Var Department, France",
+    "mapsQuery": "Trans-en-Provence Var France",
+    "country": "法国",
+    "countryEn": "France",
+    "region": "Europe",
+    "name": "1981年法国普罗旺斯地区特朗斯物理痕迹事件",
+    "nameEn": "1981 Trans-en-Provence Physical Trace Case",
+    "shortDesc": "飞碟白昼着陆留下环形压痕与土壤高温烧结，法国空间局官方UAP调查组GEPAN开展深入生化分析",
+    "shortDescEn": "Daylight disc landing leaves circular compression indentation and vitrified soil; French Space Agency (CNES/GEPAN) documents biochemical trauma in vegetation.",
+    "description": "1981年1月8日下午约17点10分，法国瓦尔省普罗旺斯地区特朗斯的55岁农场主雷纳托·尼古拉（Renato Nicolaï）正在自家梯田花园里修筑水泥平台。他突然听到空中传来微弱的哨鸣声，随即抬头看到一个铅灰色、外形酷似两个倒扣碟形并拢的小型飞行器正在快速下降。\n\n该物体降落在一处土质车道草地上，离尼古拉约50米远。飞行器无声悬停或短暂停留了数十秒，随后以极快速度升空，向德拉吉尼昂方向疾驰消失。尼古拉随即走到降落点，发现地面被压出一个直径约2米的圆形深印，圆环表面的土壤被严重压实，甚至显现出高温烘烤与坚硬烧结的痕迹。\n\n尼古拉向当地国家宪兵队（Gendarmerie Nationale）报案。宪兵队不仅对现场进行了拍照、石膏倒模和取样，还将案件正式移交给了法国国家空间研究中心（CNES）旗下的官方UAP调查机构GEPAN（后更名为GEIPAN）。\n\nGEPAN与法国国家农业研究所（INRA）展开了严密的生化检验。植物生化专家米歇尔·布纳斯教授（Prof. Michel Bounias）对降落点及周围不同距离的紫花苜蓿叶片进行了分子生物学分析，发现距离压痕中心越近的植物，其叶绿素A/B分子链破坏程度呈显著的指数级衰变梯度，老化加速因子高达数倍，且土壤样本中检测出高密度的机械重压（估算机械垂直压力达4至5吨）与强电磁微波热辐射复合作用。特朗斯事件被公认为世界UAP历史上经官方权威科学实验室生化检验最彻底的硬物理痕迹案之一。",
+    "descriptionEn": "On January 8, 1981, farmer Renato Nicolaï was working in his terraced property in Trans-en-Provence, France, when he observed a lead-gray disc descend and touch down roughly 50 meters away before rapidly accelerating into the sky.\n\nLocal French National Gendarmerie cordoned off the landing spot and sampled the soil and vegetation, handing the investigation over to GEPAN (the official UAP research group within the French National Space Agency, CNES).\n\nScientific analysis led by biochemist Prof. Michel Bounias at the National Institute of Agronomic Research (INRA) discovered severe trauma in wild alfalfa growing at the landing center: chlorophyll and amino acid degradation decayed logarithmically with distance from the impact center, alongside mechanical compression estimates of 4–5 metric tons and intense thermal-electromagnetic radiation. The case remains one of Europe's most rigorously documented physical-trace events.",
+    "confidence": "High",
+    "image": "/images/event-trans-en-provence-1981.jpg",
+    "figures": [
+      {
+        "src": "/images/events/trans-en-provence-1981/01.jpg",
+        "caption": "法国瓦尔省普罗旺斯地区特朗斯——1981年1月8日飞碟着陆目击与物理痕迹采样现场",
+        "captionEn": "Trans-en-Provence, Var, France — Landing Sighting and Physical Soil Trace Sampling Location (Jan 8, 1981)",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/trans-en-provence-1981/02.jpg",
+        "caption": "特朗斯市政厅与司法取样记录保全档案",
+        "captionEn": "Trans-en-Provence Municipal and Judicial Evidence Archive",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/trans-en-provence-1981/03.jpg",
+        "caption": "特朗斯当地特色干旱气候与石灰岩农田土壤地貌",
+        "captionEn": "Regional Terraced Limestone Soil Environment in Trans-en-Provence",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/trans-en-provence-1981/04.jpg",
+        "caption": "德拉吉尼昂空中俯瞰图——瓦尔省周边环境与生化对照样本采集区",
+        "captionEn": "Aerial View of Draguignan Area — Comparative Ecology Sampling Region",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "法国宪兵队现场司法取样与硬度计测量",
+      "INRA生物化学分子分析仪 (叶绿素衰变梯度)",
+      "土壤晶相与高温烧结谱学分析",
+      "目击者近距白昼直接目击"
+    ],
+    "sensorsEn": [
+      "Gendarmerie Forensics & Penetrometer Hardness Measurement",
+      "INRA Biochemical Molecular Spectroscopy (Chlorophyll Decay)",
+      "Soil Crystallographic & Thermal Sintering Analysis",
+      "Daylight Direct Close-Range Visual Observation"
+    ],
+    "physicalCharacteristics": [
+      "physical-traces",
+      "stationary-hover"
+    ],
+    "sources": [
+      {
+        "label": "法国国家空间研究中心 (CNES/GEPAN) 第16号官方技术报告 (Note Technique No 16)",
+        "url": "https://en.wikipedia.org/wiki/Trans-en-Provence_case"
+      },
+      {
+        "label": "法国国家农业研究所 (INRA) 科学论文: 紫花苜蓿生化变异报告",
+        "url": "https://en.wikipedia.org/wiki/Trans-en-Provence_case"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "French Space Agency (CNES/GEPAN) Technical Report No. 16",
+        "url": "https://en.wikipedia.org/wiki/Trans-en-Provence_case"
+      },
+      {
+        "label": "National Institute of Agronomic Research (INRA) Botanical Analysis Paper",
+        "url": "https://en.wikipedia.org/wiki/Trans-en-Provence_case"
+      }
+    ],
+    "limitations": [
+      "仅有一名直接目视目击者，但有无可辩驳的多机构物理与植物学实验数据支持"
+    ],
+    "limitationsEn": [
+      "Single primary eyewitness, though supported by rigorous multi-lab physical and botanical forensic evidence"
+    ],
+    "relatedEvents": [
+      "guizhou-forest",
+      "rendelsham-forest"
+    ]
   }
 ]
 
