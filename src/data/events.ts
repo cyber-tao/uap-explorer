@@ -7794,6 +7794,599 @@ export const events: UAPEvent[] = [
       "guizhou-forest",
       "rendelsham-forest"
     ]
+  },
+  {
+    "id": "phoenix-lights-1997",
+    "coordinates": [
+      -112.074,
+      33.4484
+    ],
+    "date": "1997-03-13",
+    "sortDate": "1997-03-13",
+    "location": "美国亚利桑那州菲尼克斯大都会区及周边空域",
+    "locationEn": "Airspace over Phoenix Metropolitan Area, Arizona, USA",
+    "mapsQuery": "Phoenix Arizona USA",
+    "country": "美国",
+    "countryEn": "United States",
+    "region": "North America",
+    "name": "1997年菲尼克斯光团事件",
+    "nameEn": "1997 Phoenix Lights Phenomenon",
+    "shortDesc": "数千名市民目睹数英里宽的无声V字形发光黑色飞行物横穿亚利桑那州，前州长十年后公开承认亲历真实UAP",
+    "shortDescEn": "Thousands of witnesses observe a massive silent V-shaped craft gliding over Arizona; former Governor Fife Symington later confirms sighting otherworldly vehicle.",
+    "description": "1997年3月13日傍晚至深夜，美国亚利桑那州及内华达州上演了现代历史上规模最大、目击人数最多的UAP群体目击事件。事件实际上由两个截然不同的波次组成。\n\n第一波次发生在晚上20点至20点45分前后：成千上万的民众、专业飞行员及警官目击到一个体积空前巨大的黑色飞行器以极低速度（约30至40英里/小时）无声掠过普雷斯科特、菲尼克斯上空。目击者一致描述该物体呈现巨大的“V”字形或木工角尺形，翼展估算达一至数英里，底部排列着5至7个不刺眼的琥珀色球形发光体。由于物体以极低空飞行，飞行体本身的致密黑体完全遮挡了背后的夜空繁星。\n\n第二波次发生在晚上22点左右：菲尼克斯西南部埃斯特雷拉山脉（Estrella Mountains）上空出现一排悬浮在天际线附近的弧形黄色光团。美国空军随后声称该第二波次光团为马里兰州空军国民警卫队A-10攻击机在巴里·戈德华特靶场进行训练时投放的LUU-2B/B照明弹。然而，这一军方说法只能用于解释第二波次，根本无法解释此前数小时低空低速无声飞越整座城市的超大实体V形飞行器。\n\n时任亚利桑那州州长法伊夫·塞明顿（Fife Symington）在当年的新闻发布会上曾以让幕僚身穿外星人戏服的滑稽剧嘲弄舆论以平息恐慌。但在事件十周年（2007年）时，塞明顿公开向公众致歉并作证称：他当晚在市中心亲眼目睹了该V形巨物，作为一名资深空军退役飞行员，他确信那是一个“无可争议的外星或非人类未知飞行器”，当年之所以掩盖是为了防止全州陷入大范围混乱。",
+    "descriptionEn": "On the evening of March 13, 1997, thousands of citizens across Arizona and Nevada witnessed one of the most widely observed aerial phenomena in modern history.\n\nThe event unfolded in two phases: first, between 8:00 and 8:45 PM, a colossal, solid V-shaped dark craft spanning up to a mile in width silently glided at low altitude over Prescott and Phoenix, completely eclipsing the starfield above.\n\nLater, around 10:00 PM, a secondary formation of stationary amber lights appeared over the Estrella Mountains, which the U.S. Air Force attributed to LUU-2 flares dropped by A-10 Thunderbolt II aircraft during training exercises.\n\nWhile Arizona Governor Fife Symington initially staged a humorous press conference to quell public panic, he publicly recanted on the 10th anniversary, confirming that he had personally observed the massive geometric craft and deemed it an authentic extraterrestrial or unknown aerospace craft that defied conventional aerodynamics.",
+    "confidence": "High",
+    "image": "/images/event-phoenix-lights-1997.jpg",
+    "figures": [
+      {
+        "src": "/images/events/phoenix-lights-1997/01.jpg",
+        "caption": "1997年3月13日菲尼克斯夜空出现的多点光弧编队与巨大V型结构体模型",
+        "captionEn": "Multiple Amber Light Arc Formation and Massive V-Shaped Craft Model over Phoenix Sky (March 13, 1997)",
+        "credit": "Phoenix Lights Network Archive",
+        "creditEn": "Phoenix Lights Network Archive",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/phoenix-lights-1997/02.png",
+        "caption": "美国国家档案与记录管理局（NARA）UAP历史目击档案对照",
+        "captionEn": "National Archives and Records Administration (NARA) Historical Aerial Sighting Record",
+        "credit": "U.S. National Archives / NARA",
+        "creditEn": "U.S. National Archives / NARA",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/phoenix-lights-1997/03.svg",
+        "caption": "亚利桑那州地理走廊与卢克空军基地防区地图",
+        "captionEn": "Arizona Geographic Corridor and Luke AFB Defense Airspace Map",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "数千名市民及专业飞行员多角度目视直接观测",
+      "多部家用VHS摄像机独立多点三角光学拍摄",
+      "卢克空军基地民用进近空管雷达记录"
+    ],
+    "sensorsEn": [
+      "Direct Visual Observations by Thousands of Witnesses & Pilots",
+      "Multi-Angle Triangulated Optical Home Video Camcorder Footage",
+      "Luke Air Force Base Air Traffic Radar Logs"
+    ],
+    "physicalCharacteristics": [
+      "group-sighting",
+      "silent",
+      "low-observability",
+      "stationary-hover"
+    ],
+    "sources": [
+      {
+        "label": "亚利桑那州前州长法伊夫·塞明顿公开证词与访谈记录",
+        "url": "https://en.wikipedia.org/wiki/Phoenix_Lights"
+      },
+      {
+        "label": "菲尼克斯光团目击者调查网络 (Phoenix Lights Network) 档案库",
+        "url": "https://www.thephoenixlights.net/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Governor Fife Symington Official Public Sighting Testimony",
+        "url": "https://en.wikipedia.org/wiki/Phoenix_Lights"
+      },
+      {
+        "label": "Phoenix Lights Research Network Historical Dossier",
+        "url": "https://www.thephoenixlights.net/"
+      }
+    ],
+    "limitations": [
+      "第二波次军事照明弹演习干扰了公众对第一波次实体巨型飞船的客观聚焦"
+    ],
+    "limitationsEn": [
+      "Secondary flare training exercises confused public analysis of the primary giant V-craft"
+    ],
+    "relatedEvents": [
+      "belgium-ufo-wave",
+      "rendelsham-forest"
+    ]
+  },
+  {
+    "id": "chicago-ohare-2006",
+    "coordinates": [
+      -87.9073,
+      41.9742
+    ],
+    "date": "2006-11-07",
+    "sortDate": "2006-11-07",
+    "location": "美国伊利诺伊州芝加哥奥黑尔国际机场C17登机口",
+    "locationEn": "Gate C17, Concourse C, Terminal 1, O'Hare International Airport, Chicago, USA",
+    "mapsQuery": "Chicago OHare International Airport Gate C17",
+    "country": "美国",
+    "countryEn": "United States",
+    "region": "North America",
+    "name": "2006年芝加哥奥黑尔国际机场UFO事件",
+    "nameEn": "2006 Chicago O'Hare Airport UFO Sighting",
+    "shortDesc": "金属圆盘在联航C17登机口上空近距无声悬停数分钟，极速垂直拔升冲入云霄并留下规整透光圆洞",
+    "shortDescEn": "Metallic disc hovers silently over Gate C17 before shooting straight up into overcast cloud layer, punching a crisp circular hole through the overcast.",
+    "description": "2006年11月7日下午16时30分左右，美国联合航空公司（United Airlines）位于芝加哥奥黑尔国际机场1号航站楼C大厅的C17登机口停机坪发生了一起极具震撼力的日间UAP目击事件。\n\n当时一架由奥黑尔飞往北卡罗来纳州夏洛特的联航波音客机正在被推移出停机位。机坪坡道作业人员突然发现正上方约1900英尺处悬停着一个深灰色、具有光滑金属质感、直径估算在6至15米（20至50英尺）之间的扁平圆盘状物体。该物体没有机翼、发动机或排气痕迹，完全静默地悬停在厚重的阴云底面下方。\n\n随后数分钟内，该机机组、隔壁登机口的联航飞行员、地面机械师以及两名联合航空主管共十余人共同目睹了这一景象。多名机师透过挡风玻璃用肉眼持续注视。突然之间，该金属圆盘以无法想象的极端垂直加速度向上弹射冲刺，垂直穿透低空厚云层。在其穿透云层的瞬间，在阴霾的云幕中留下了一个边缘极其锋利、规整且透出高空蓝天的圆形空洞，该空洞在数分钟后才逐渐闭合。\n\n美国联邦航空管理局（FAA）最初对外宣称并未探测到任何雷达回波，并以“奇特的气象现象（如落幡云穿洞）”为由拒不立案。然而《芝加哥论坛报》资深调查记者乔恩·希尔克维奇（Jon Hilkevitch）介入调查后，依据《信息自由法案》（FOIA）调取了FAA内部空管电话录音，证实事发时联航主管曾紧急致电塔台协调员，空管人员在内部明确讨论了这起突发目击。该报道成为《芝加哥论坛报》历史上在线点击量最高的调查新闻之一。",
+    "descriptionEn": "On the afternoon of November 7, 2006, approximately a dozen United Airlines employees—including commercial pilots, avionics technicians, and ramp coordinators—witnessed a metallic saucer-shaped craft hovering silently over Gate C17 at Chicago O'Hare International Airport.\n\nThe dark gray disc, estimated between 20 to 50 feet in diameter, remained completely stationary beneath a 1,900-foot overcast cloud deck for several minutes. Witnesses watched the craft suddenly accelerate straight up at blinding speed, punching a crisp, perfectly circular hole through the dense cloud layer that remained open for several minutes.\n\nWhile the FAA officially dismissed the sighting as a weather illusion or hole-punch cloud without launching a formal inquiry, FOIA releases obtained by the Chicago Tribune revealed recorded ATC communications discussing the object with airline supervisors, making it one of the most famous aviation employee sightings in history.",
+    "confidence": "High",
+    "image": "/images/event-chicago-ohare-2006.jpg",
+    "figures": [
+      {
+        "src": "/images/events/chicago-ohare-2006/01.jpg",
+        "caption": "芝加哥奥黑尔国际机场联合航空停机坪与登机口全景",
+        "captionEn": "United Airlines Terminal Apron and Gate Complex at Chicago O'Hare Airport",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/chicago-ohare-2006/02.jpg",
+        "caption": "联合航空C大厅连廊走道——目击飞行员与地勤人员聚集观察区域",
+        "captionEn": "United Airlines Concourse Corridor — Observation Sector for Flight Crews and Mechanics",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/chicago-ohare-2006/03.jpg",
+        "caption": "奥黑尔国际机场B-C航站楼连接通道地下景观",
+        "captionEn": "Terminal 1 Underground Concourse Network at O'Hare",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/chicago-ohare-2006/04.jpg",
+        "caption": "奥黑尔1号航站楼内部候机休息区环境档案",
+        "captionEn": "O'Hare Terminal 1 Passenger Lounge Facility",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "十余名民航资深机长、副驾驶及高级地勤机械师目视连续接触",
+      "FAA塔台内部协调专线音频磁带录音",
+      "穿透云层留下的宏观物理云洞气象观测"
+    ],
+    "sensorsEn": [
+      "Direct Visual Tracking by Over a Dozen Senior Airline Pilots & Mechanics",
+      "FAA Air Traffic Control Internal Recorded Audio Transcripts",
+      "Physical Circular Punch-Hole Evidentiary Cloud Disruption"
+    ],
+    "physicalCharacteristics": [
+      "instantaneous-acceleration",
+      "metallic",
+      "stationary-hover",
+      "silent"
+    ],
+    "sources": [
+      {
+        "label": "《芝加哥论坛报》调查记者 Jon Hilkevitch 深度独家调查报道",
+        "url": "https://en.wikipedia.org/wiki/2006_O%27Hare_International_Airport_UFO_sighting"
+      },
+      {
+        "label": "国家航空异常报告中心 (NARCAP) 针对奥黑尔UFO之第10号技术报告",
+        "url": "https://www.narcap.org/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Chicago Tribune Investigative Feature by Jon Hilkevitch",
+        "url": "https://en.wikipedia.org/wiki/2006_O%27Hare_International_Airport_UFO_sighting"
+      },
+      {
+        "label": "National Aviation Reporting Center on Anomalous Phenomena (NARCAP) Report",
+        "url": "https://www.narcap.org/"
+      }
+    ],
+    "limitations": [
+      "FAA未将初级雷达反射磁带归档，主要依靠目击机组一致证词与内部通话录音"
+    ],
+    "limitationsEn": [
+      "FAA did not preserve raw primary radar sweeps, relying on crew testimonies and recorded ATC logs"
+    ],
+    "relatedEvents": [
+      "xiaoshan-airport",
+      "shanghai-hongqiao"
+    ]
+  },
+  {
+    "id": "stephenville-2008",
+    "coordinates": [
+      -98.2023,
+      32.2207
+    ],
+    "date": "2008-01-08",
+    "sortDate": "2008-01-08",
+    "location": "美国德克萨斯州斯蒂芬维尔及伊拉斯县周边空域",
+    "locationEn": "Airspace over Stephenville and Erath County, Texas, USA",
+    "mapsQuery": "Stephenville Texas USA",
+    "country": "美国",
+    "countryEn": "United States",
+    "region": "North America",
+    "name": "2008年德克萨斯州斯蒂芬维尔UFO目击事件",
+    "nameEn": "2008 Stephenville UFO Incident",
+    "shortDesc": "私人飞行员与警官等数十人目睹无应答机超音速飞行物直奔总统农场，FAA雷达证实超高速目标并出动F-16战机",
+    "shortDescEn": "Dozens of witnesses including pilots and law enforcement sight silent massive craft heading toward Bush Ranch; FAA radar FOIA confirms supersonic non-transponder track.",
+    "description": "2008年1月8日傍晚18时15分许，德克萨斯州斯蒂芬维尔（Stephenville）及邻近的都柏林镇数十名居民目击到一个难以置信的巨大飞行物。目击者中包括具有30多年飞行经验的私人飞机飞行员史蒂夫·艾伦（Steve Allen）、伊拉斯县警官李·罗伊·盖坦（Lee Roy Gaitan）以及当地多位知名商人。\n\n目击者报告称，一个宽达数百米至近千米的无声发光体以极高速度掠过低空，其底部带有闪烁白光和水平光束。更具安全敏感性的是，该物体的航行轨迹正笔直指向美国总统乔治·W·布什位于克劳福德（Crawford）的私人农场禁飞区。\n\n空军最初对媒体坚决否认当晚有任何军机升空，声称市民看到的只是“日落余晖反射与客机灯光”。然而两周后，在公众强烈质疑与雷达证据的压力下，美国空军第301战斗机联队不得不修改声明，承认当晚确实紧急起飞了多架F-16战隼战斗机进入斯蒂芬维尔空域进行拦截任务。\n\nUAP调查团队通过《信息自由法案》（FOIA）从美国联邦航空管理局（FAA）成功调取了四座关键军民雷达站（包括达拉斯/沃斯堡终端多普勒天气雷达与三座民航航路长程监控雷达）的事发原始数据。雷达分析清晰揭示：在当晚18点18分至20点间，雷达多次捕获一个未开启敌我应答机（Mode 3/C）的实体目标，该目标在数秒内由悬停加速至每小时约2,000英里（近3马赫），且雷达轨迹与空军F-16战机拦截矢量完全重合。",
+    "descriptionEn": "On January 8, 2008, dozens of credible witnesses—including private pilot Steve Allen, Erath County Constable Lee Roy Gaitan, and local business owners—sighted a massive, silent luminous craft flying low over Stephenville, Texas, directly heading toward President George W. Bush's ranch in Crawford.\n\nWhile the USAF initially stated no military aircraft were operating in the area, official spokespersons later retracted the statement, admitting that F-16 fighters from the 301st Fighter Wing had been scrambled in the area.\n\nResearchers Glen Schulze and Robert Powell obtained raw radar data from the FAA under FOIA from four radar sites. The radar analysis confirmed a primary unidentified target without an active transponder traveling at speeds approaching 2,000 mph, maneuvering in direct correlation with the eyewitness reports and F-16 intercept maneuvers.",
+    "confidence": "High",
+    "image": "/images/event-stephenville-2008.jpg",
+    "figures": [
+      {
+        "src": "/images/events/stephenville-2008/01.jpg",
+        "caption": "德克萨斯州斯蒂芬维尔市中心与伊拉斯县法院广场——2008年1月8日晚数十名居民直击巨大静音发光体",
+        "captionEn": "Downtown Stephenville and Erath County Courthouse Square — Multiple Witnesses Sighted Massive Silent Glowing Object",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/stephenville-2008/02.jpg",
+        "caption": "伊拉斯县历史法院大楼——多名目击者与警官联合提交报告",
+        "captionEn": "Erath County Historic Courthouse — Location Where Multiple Citizens and Law Enforcement Filed Formal Reports",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/stephenville-2008/03.jpg",
+        "caption": "美国空军第301战斗机联队F-16战隼战机——空军随后证实两架F-16紧急拦截涉入空域",
+        "captionEn": "USAF 301st Fighter Wing F-16 Fighting Falcon — Air Force Confirmed Two F-16s Scrambled into Incident Airspace",
+        "credit": "U.S. Air Force / Wikimedia Commons",
+        "creditEn": "U.S. Air Force / Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/stephenville-2008/04.svg",
+        "caption": "德克萨斯州伊拉斯县与克劳福德总统农场禁飞区区位图",
+        "captionEn": "Erath County and Crawford Presidential Ranch Prohibited Airspace Location Map, Texas",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "FAA达拉斯/沃斯堡终端多普勒气象与航路监控雷达 (4座雷达数据整合)",
+      "空军F-16战机截击协同机载雷达",
+      "私人飞行员、副警长及数十名地面目击者交叉直视"
+    ],
+    "sensorsEn": [
+      "FAA DFW Terminal Doppler & En-Route Surveillance Radars (4-Radar Integration)",
+      "USAF F-16 Airborne Radar Intercept Vectors",
+      "Cross-Verified Sightings by Pilots, Deputy Constables, and Citizens"
+    ],
+    "physicalCharacteristics": [
+      "multi-sensor",
+      "high-speed",
+      "silent",
+      "group-sighting"
+    ],
+    "sources": [
+      {
+        "label": "MUFON与SCU关于斯蒂芬维尔FAA雷达数据的专项科学分析报告 (77页)",
+        "url": "https://en.wikipedia.org/wiki/Stephenville,_Texas#UFO_sightings"
+      },
+      {
+        "label": "美联社 (AP) 与《达拉斯晨报》关于空军承认战机拦截之深度报道",
+        "url": "https://en.wikipedia.org/wiki/Stephenville,_Texas"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "MUFON & SCU Special Radar Telemetry Analysis Report (77 pages)",
+        "url": "https://en.wikipedia.org/wiki/Stephenville,_Texas#UFO_sightings"
+      },
+      {
+        "label": "Associated Press & Dallas Morning News Coverage on USAF F-16 Scramble",
+        "url": "https://en.wikipedia.org/wiki/Stephenville,_Texas"
+      }
+    ],
+    "limitations": [
+      "目标在雷达屏幕上出现断续丢失，由于其高速切入地面雷达盲区"
+    ],
+    "limitationsEn": [
+      "Target experienced intermittent radar track loss due to terrain masking and high-speed maneuvers"
+    ],
+    "relatedEvents": [
+      "phoenix-lights-1997",
+      "belgium-ufo-wave"
+    ]
+  },
+  {
+    "id": "montreal-bonaventure-1990",
+    "coordinates": [
+      -73.5651,
+      45.4995
+    ],
+    "date": "1990-11-07",
+    "sortDate": "1990-11-07",
+    "location": "加拿大魁北克省蒙特利尔波拿文都尔广场酒店屋顶露天泳池上空",
+    "locationEn": "Rooftop Pool, Place Bonaventure Hotel, Montreal, Quebec, Canada",
+    "mapsQuery": "Place Bonaventure Montreal Quebec Canada",
+    "country": "加拿大",
+    "countryEn": "Canada",
+    "region": "North America",
+    "name": "1990年加拿大蒙特利尔波拿文都尔酒店UFO事件",
+    "nameEn": "1990 Montreal Place Bonaventure Incident",
+    "shortDesc": "巨大发光金属飞行物在市中心高层酒店露天泳池上方悬停近3小时，多名警官、机场宪兵与百名市民共同见证",
+    "shortDescEn": "Large metallic illuminated object hovers silently directly over downtown Montreal luxury hotel rooftop pool for nearly 3 hours; confirmed by police and radar.",
+    "description": "1990年11月7日晚间19点20分许，加拿大蒙特利尔市中心的波拿文都尔广场希尔顿酒店（Hotel Bonaventure）屋顶发生了一起长达近3小时的高置信度UAP目击事件。\n\n当时在酒店17层露天温水游泳池游泳的宾客首先发现，在泳池正上方数百米处悬浮着一个极为庞大的发光飞行器。该物体被描述为一个巨大的深色金属结构圆盘，底部嵌有一圈8至10个发出耀眼金黄色/琥珀色光芒的椭圆光束，光束向下投射，宛如一个巨大的聚光灯阵列。\n\n酒店救生员与前台主管随即报警。蒙特利尔市警察局（SPVM）的多名巡逻警官迅速抵达屋顶泳池现场。警官罗伯特·弗莱舍（Robert Fleischer）及随行警员抬头观测，确认该物体完全静音、在近千英尺高空顶着剧烈风力纹丝不动地悬停。警方立刻上报至加拿大皇家骑警（RCMP）与军方，并联络了蒙特利尔多尔瓦勒国际机场（Dorval Airport）。\n\n机场空中交通管制雷达证实：在波拿文都尔广场上空的特定高度区域，雷达屏幕上存在一个持续未移动但反射信号极其强烈的实体回波。现场数十名酒店住客、SPVM警官与《新闻报》（La Presse）记者马塞尔·拉罗什在现场目睹该物体持续静止悬浮至晚上22点10分左右，随后缓缓没入浓密的积雨云层中离去。\n\n前美国宇航局（NASA）艾姆斯研究中心高级科学家理查德·海因斯博士（Dr. Richard Haines）受加拿大航空航天安全部门委托对该案开展深入调查，并撰写了98页的权威科研专著。海因斯博士在排除了极光、聚光灯反射、热气球及常规气象假象后判定：这是一个真实存在的、直径估计在400至500米之间的超常规刚性金属人造或非人类工程飞行体。",
+    "descriptionEn": "On the evening of November 7, 1990, an extraordinary UAP encounter occurred directly above the rooftop pool of the Place Bonaventure Hotel in downtown Montreal, Quebec.\n\nSwimmers and hotel staff observed a massive metallic object with 8 to 10 brilliant amber lights arranged in a large oval pattern hovering silently roughly 800 to 1,000 feet above the hotel. The Montreal City Police (SPVM) responded, and multiple officers observed the object continuously over a three-hour span.\n\nAir traffic control radar at Dorval Airport detected an anomalous stationary primary target directly above the hotel coordinates. The object finally drifted into heavy cloud cover around 10:10 PM. Former NASA Ames research scientist Dr. Richard Haines conducted an exhaustive investigation, concluding the object was an unknown solid vehicle spanning an estimated 400 to 500 meters across.",
+    "confidence": "High",
+    "image": "/images/event-montreal-bonaventure-1990.jpg",
+    "figures": [
+      {
+        "src": "/images/events/montreal-bonaventure-1990/01.jpg",
+        "caption": "加拿大蒙特利尔波拿文都尔广场（Place Bonaventure）综合体建筑外景",
+        "captionEn": "Place Bonaventure Complex Exterior in Downtown Montreal, Quebec, Canada",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/montreal-bonaventure-1990/02.jpg",
+        "caption": "波拿文都尔酒店屋顶露天泳池平台——发光金属巨物在此上方无声悬停近3小时",
+        "captionEn": "Place Bonaventure Rooftop Pool Terrace — Sighting Location Directly Below Hovering Craft",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/montreal-bonaventure-1990/03.jpg",
+        "caption": "蒙特利尔市警察局（SPVM）警车——现场执勤警官全程目睹并撰写正式警务记录",
+        "captionEn": "Montreal Police (SPVM) Patrol Vehicle — Responding Officers Filed Official Incident Reports",
+        "credit": "SPVM / Wikimedia Commons",
+        "creditEn": "SPVM / Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/montreal-bonaventure-1990/04.svg",
+        "caption": "加拿大魁北克省与蒙特利尔市地理区位图",
+        "captionEn": "Quebec Province and Montreal City Location Map, Canada",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "inset"
+      }
+    ],
+    "sensors": [
+      "蒙特利尔SPVM警察局多名警官直接目视并留存警务公文",
+      "蒙特利尔多尔瓦勒国际机场民航一次监视雷达 (PSR)",
+      "数十名酒店宾客与管理人员近距离目视"
+    ],
+    "sensorsEn": [
+      "Direct Visual Tracking by Multiple SPVM Police Officers & Formal Police Log",
+      "Montreal Dorval Airport Primary Surveillance Radar (PSR)",
+      "Direct Close-Range Sightings by Hotel Guests and Staff"
+    ],
+    "physicalCharacteristics": [
+      "stationary-hover",
+      "metallic",
+      "group-sighting",
+      "silent"
+    ],
+    "sources": [
+      {
+        "label": "理查德·海因斯博士 (前NASA Ames高级科学家) 98页蒙特利尔UAP专项科学报告",
+        "url": "https://en.wikipedia.org/wiki/Place_Bonaventure#UFO_sighting"
+      },
+      {
+        "label": "加拿大蒙特利尔市警察局 (SPVM) 官方事件调度记录与目击档案",
+        "url": "https://en.wikipedia.org/wiki/Place_Bonaventure"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Dr. Richard Haines 98-Page Scientific Investigation Dossier",
+        "url": "https://en.wikipedia.org/wiki/Place_Bonaventure#UFO_sighting"
+      },
+      {
+        "label": "Montreal Police Department (SPVM) Official Incident Logs",
+        "url": "https://en.wikipedia.org/wiki/Place_Bonaventure"
+      }
+    ],
+    "limitations": [
+      "当时现场拍摄的数张黑白照片因夜间低照度与逆光产生光晕晕影"
+    ],
+    "limitationsEn": [
+      "Nighttime high contrast and backlight caused flare halo on contemporary snapshots"
+    ],
+    "relatedEvents": [
+      "chicago-ohare-2006",
+      "xiaoshan-airport"
+    ]
+  },
+  {
+    "id": "westall-1966",
+    "coordinates": [
+      145.1328,
+      -37.9356
+    ],
+    "date": "1966-04-06",
+    "sortDate": "1966-04-06",
+    "location": "澳大利亚维多利亚州墨尔本克莱顿南区韦斯托尔高中与格林奇保护区",
+    "locationEn": "Westall High School and The Grange Reserve, Clayton South, Melbourne, Australia",
+    "mapsQuery": "Clayton South Melbourne Victoria Australia",
+    "country": "澳大利亚",
+    "countryEn": "Australia",
+    "region": "Oceania",
+    "name": "1966年澳大利亚墨尔本韦斯托尔UFO事件",
+    "nameEn": "1966 Westall High School UFO Encounter",
+    "shortDesc": "墨尔本200余名师生大白天目睹银色飞碟降落邻近草甸，随后军警封锁现场并留存机密调查档案",
+    "shortDescEn": "Over 200 students and teachers watch a silvery saucer-shaped craft descend into a nearby paddock before shooting upward at high speed; military and police seal the site.",
+    "description": "1966年4月6日周三上午约11时，澳大利亚维多利亚州墨尔本东南郊克莱顿南区的韦斯托尔高中（Westall High School，现名Westall Secondary College）及邻近小学发生了一场轰动全国的日间群体UAP目击。\n\n当时正值课间休息与室外体育课，开阔操场上有超过200名学生和多名任课教师（包括科学教师安德鲁·格林伍德 Andrew Greenwood）。师生们突然看到南面天空出现一个灰白发银色金属光泽的碟形飞行物，体积相当于两架小型民航客机，在其圆周边缘带有微微的紫色光晕。\n\n该飞碟在数百名师生众目睽睽之下缓缓下降，穿过附近的松树林冠，降落在学校旁边名为“格林奇”（The Grange Reserve）的农田草甸中并停留了数分钟。随后，该物体以惊人的垂直速度瞬间拔地而起，向西北方向高速爬升并迅速消失在视野中。\n\n学生与教师随即奔向降落点，发现草甸中央留下了一个清晰的圆形烧焦压痕，草茎呈顺时针方向整齐倒伏。在事发后不到一小时内，多辆军用卡车、全副武装的军人以及大批维多利亚州警方迅速封锁了草甸与校园。军方人员对草甸土壤进行了深挖采样，并使用重型压路机械将压痕现场彻底推平铲除。学校校长随后在全校集会上严厉命令所有学生不得向外界讨论此事，物理老师安德鲁·格林伍德多年后证实曾遭到两名军方情报人员的严密盘问与言语警告。\n\n澳大利亚国家档案馆（NAA）近年解密的机密空军（RAAF）与国防安全档案证实，澳大利亚军方当年曾调阅民航空管雷达记录并开展秘密辐射与土壤取样调查。韦斯托尔事件是大洋洲历史上目击人数最多、证据链最完整的硬核白昼UAP遭遇事件之一。",
+    "descriptionEn": "On April 6, 1966, over 200 students and teachers at Westall High School in suburban Melbourne, Australia, observed a silvery disc-shaped craft maneuvering in broad daylight.\n\nThe craft, described as smooth, wingless, and slightly purple-hued, descended into a nearby pine grove and paddock known as The Grange Reserve, remaining on the ground for several minutes before rocketing vertically into the sky.\n\nWhen students and teachers reached the landing site, they found a distinct flattened circular swirl in the grass. Within hours, Australian military personnel and state police cordoned off the reserve, excavated the soil ring, and burned/flattened the area. Declassified records from the National Archives of Australia confirm extensive military involvement and investigation into what remains Australia's largest daytime mass UAP sighting.",
+    "confidence": "High",
+    "image": "/images/event-westall-1966.jpg",
+    "figures": [
+      {
+        "src": "/images/events/westall-1966/01.png",
+        "caption": "澳大利亚墨尔本克莱顿南区格林奇自然保护区（The Grange Reserve）——1966年银色碟形UAP降落草甸现场",
+        "captionEn": "The Grange Reserve in Clayton South, Melbourne — Actual Paddock Landing Site of the Silvery Disc UAP (April 6, 1966)",
+        "credit": "City of Kingston / Wikimedia Commons",
+        "creditEn": "City of Kingston / Wikimedia Commons",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/westall-1966/02.svg",
+        "caption": "维多利亚州大墨尔本地区与韦斯托尔高中区位地图",
+        "captionEn": "Greater Melbourne and Westall High School Location Map, Victoria, Australia",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/westall-1966/03.jpg",
+        "caption": "澳大利亚皇家空军（RAAF）驻维多利亚州拦截战斗机队历史档案",
+        "captionEn": "Royal Australian Air Force (RAAF) Interceptor Squadron Historical Flight Archive",
+        "credit": "RAAF / Wikimedia Commons",
+        "creditEn": "RAAF / Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "韦斯托尔高中与小学200余名师生开阔日间直接目视",
+      "农田草甸物理顺时针压实与高温烧焦痕迹",
+      "澳大利亚军方现场挖掘与辐射取样"
+    ],
+    "sensorsEn": [
+      "Daylight Direct Visual Sightings by Over 200 Students and Faculty",
+      "Physical Clockwise Swirled Compression Trace in Grass Paddock",
+      "Australian Military On-Site Excavation and Radiation Sampling"
+    ],
+    "physicalCharacteristics": [
+      "group-sighting",
+      "metallic",
+      "physical-traces",
+      "instantaneous-acceleration"
+    ],
+    "sources": [
+      {
+        "label": "澳大利亚国家档案馆 (NAA) 解密国防部与空军专项UFO档案",
+        "url": "https://en.wikipedia.org/wiki/Westall_UFO"
+      },
+      {
+        "label": "墨尔本《丹德农先驱报》(Dandenong Journal) 当代头版专题报道",
+        "url": "https://en.wikipedia.org/wiki/Westall_UFO"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "National Archives of Australia (NAA) Declassified Department of Air Files",
+        "url": "https://en.wikipedia.org/wiki/Westall_UFO"
+      },
+      {
+        "label": "The Dandenong Journal Contemporary Front-Page Investigative Report",
+        "url": "https://en.wikipedia.org/wiki/Westall_UFO"
+      }
+    ],
+    "limitations": [
+      "当时现场拍摄的学生底片据称被到场军方情报人员没收未能公开"
+    ],
+    "limitationsEn": [
+      "Contemporary cameras and film rolls reportedly confiscated by military personnel on site"
+    ],
+    "relatedEvents": [
+      "kofu-incident",
+      "rendelsham-forest"
+    ]
+  },
+  {
+    "id": "ariel-school-1994",
+    "coordinates": [
+      31.2458,
+      -17.8897
+    ],
+    "date": "1994-09-16",
+    "sortDate": "1994-09-16",
+    "location": "津巴布韦东马绍纳兰省鲁瓦阿里尔学校",
+    "locationEn": "Ariel School, Ruwa, Mashonaland East Province, Zimbabwe",
+    "mapsQuery": "Ruwa Zimbabwe",
+    "country": "津巴布韦",
+    "countryEn": "Zimbabwe",
+    "region": "Africa",
+    "name": "1994年津巴布韦阿里尔学校群体目击事件",
+    "nameEn": "1994 Ariel School UFO Encounter",
+    "shortDesc": "62名小学生在课间休息时近距离目击银色碟形飞行器着陆与非人类实体，哈佛医学院精神病学专家主导实地科学访谈",
+    "shortDescEn": "62 schoolchildren in Ruwa observe a silver disc land in a nearby field and encounter non-human beings; investigated on site by Harvard psychiatrist Dr. John Mack.",
+    "description": "1994年9月16日周五上午约10时15分，位于津巴布韦首都哈拉雷东南约20公里处的小镇鲁瓦（Ruwa），私立阿里尔学校（Ariel School）发生了一起震惊国际精神病学与科学界的近距离第三类接触事件。\n\n当时全校教师正在教研室开会，约62名年龄在6至12岁之间的小学生在操场上进行大课间玩耍。突然，孩子们看到三个带有红蓝光晕的银色椭圆碟形飞行器在天空滑行，其中一个主飞行器越过操场边界的铁丝网，缓缓降落在学校旁边一片长满粗糙灌木与刺槐的荒地上，距离孩子们仅约100米。\n\n根据数十名儿童完全一致的描述，从着陆飞行器附近出现了一个或两个身高约1米出头、体态纤细、身着紧身黑色连体衣、长着不成比例的大黑眼睛和光秃头部的实体。该实体在粗糙地面上以缓慢或飘浮状移动，并凝视着围观的孩子们。多数较年幼的儿童受到惊吓大哭，而多名年长学生回忆称脑海中接收到了关于地球生态与环境崩溃的强力心理投射信息。数分钟后，飞行器与实体以超越肉眼捕捉的速度瞬间消失。\n\nBBC著名非洲战地记者蒂姆·里奇（Tim Leach）与津巴布韦UFO研究员辛西娅·欣德（Cynthia Hind）在事发后48小时内赶抵学校，对数十名儿童进行了隔离手绘与录像访谈。更为关键的是，哈佛大学医学院精神病学系主任、普利策奖得主约翰·马克博士（Dr. John E. Mack）亲赴鲁瓦，对全部62名目击学生进行了细致入微的临床心理学深度评估。\n\n马克博士在严格的临床精神评估后得出结论：这些儿童心智健全、情感真实，绝对没有任何集体癔症、群体臆想或蓄意编造的心理学征兆，他们完全是在以纯真自然的语言描述一场客观发生在前方的未知非人类遭遇。三十年后，成年后的当事学生在纪录片《阿里尔现象》（The Ariel Phenomenon）中再次齐聚受访，坚守其当年目击的真实性。该案是非洲大陆乃至全球最为可信的儿童群体UAP近距离接触典范。",
+    "descriptionEn": "On September 16, 1994, approximately 62 pupils aged six to twelve at the Ariel School in Ruwa, Zimbabwe, observed a silver craft touch down in an overgrown field adjacent to their playground during morning recess.\n\nThe children described seeing a silver disc landing in the rough terrain and encountering one or two slender figures with large dark eyes dressed in one-piece suits. Multiple children described receiving sudden telepathic messages regarding environmental protection and planetary stewardship.\n\nBBC war correspondent Tim Leach and Cynthia Hind documented the children's independent drawings within days. Harvard Medical School professor of psychiatry Dr. John E. Mack traveled to Zimbabwe to conduct comprehensive psychiatric evaluations of the witnesses, concluding the children were psychologically healthy and had experienced a genuine traumatic encounter with an unexplained phenomenon.",
+    "confidence": "High",
+    "image": "/images/event-ariel-school-1994.jpg",
+    "figures": [
+      {
+        "src": "/images/events/ariel-school-1994/01.jpg",
+        "caption": "哈佛大学医学院精神病学教授约翰·马克博士（Dr. John E. Mack）——主导现场逐一儿童深度临床心理访谈",
+        "captionEn": "Dr. John E. Mack, Professor of Psychiatry at Harvard Medical School — Conducted Direct Child Witness Field Interviews",
+        "credit": "John E. Mack Institute / Public Domain",
+        "creditEn": "John E. Mack Institute / Public Domain",
+        "layout": "full"
+      },
+      {
+        "src": "/images/events/ariel-school-1994/02.svg",
+        "caption": "津巴布韦鲁瓦选区与行政区位图",
+        "captionEn": "Ruwa Constituency Administrative District Map, Zimbabwe",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      },
+      {
+        "src": "/images/events/ariel-school-1994/03.svg",
+        "caption": "津巴布韦国家地理背景档案",
+        "captionEn": "Zimbabwe National Geographic and Historical Archive Context",
+        "credit": "Wikimedia Commons",
+        "creditEn": "Wikimedia Commons",
+        "layout": "pair"
+      }
+    ],
+    "sensors": [
+      "62名学童多视角近距离直接白昼目视",
+      "事发48小时内数十张独立儿童手绘图稿",
+      "哈佛大学医学院临床心理学访谈磁带档案"
+    ],
+    "sensorsEn": [
+      "Direct Daytime Visual Sightings by 62 Independent Schoolchildren",
+      "Original Colored Witness Sketches Produced Within 48 Hours",
+      "Harvard Medical School Clinical Psychiatric Video Interviews"
+    ],
+    "physicalCharacteristics": [
+      "group-sighting",
+      "silent",
+      "metallic"
+    ],
+    "sources": [
+      {
+        "label": "约翰·马克博士 (哈佛大学医学院精神病学教授) 阿里尔案例研究论著",
+        "url": "https://en.wikipedia.org/wiki/Ariel_School_UFO_incident"
+      },
+      {
+        "label": "BBC 战地记者 Tim Leach 与《阿里尔现象》历史影视文献档案",
+        "url": "https://www.arielphenomenon.com/"
+      }
+    ],
+    "sourcesEn": [
+      {
+        "label": "Dr. John E. Mack (Harvard Medical School) Ariel Clinical Sighting Research",
+        "url": "https://en.wikipedia.org/wiki/Ariel_School_UFO_incident"
+      },
+      {
+        "label": "BBC Correspondent Tim Leach Archival Field Recordings",
+        "url": "https://www.arielphenomenon.com/"
+      }
+    ],
+    "limitations": [
+      "事发时校内教师正在开会未能亲临草甸现场，主要依靠学生群体高度一致之描述"
+    ],
+    "limitationsEn": [
+      "Adult teachers were in a staff meeting and did not witness the landing firsthand"
+    ],
+    "relatedEvents": [
+      "westall-1966",
+      "kofu-incident"
+    ]
   }
 ]
 
