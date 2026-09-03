@@ -53,8 +53,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 
 ### 环境要求
 
-- Node.js ≥ 18
-- npm 或 bun
+- Bun ≥ 1.1
 
 ### 安装与运行
 
@@ -63,23 +62,23 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 git clone https://github.com/cyber-tao/uap-explorer.git
 cd uap-explorer
 
-# 安装依赖（推荐使用 lockfile）
-npm ci
+# 安装依赖
+bun install
 
 # 开发服务器
-npm run dev
+bun run dev
 # → http://localhost:5173
 
 # 生产构建
-npm run build
+bun run build
 # → dist/ 目录，可部署到任意静态托管
 
 # 预览构建产物
-npm run preview
+bun run preview
 # → http://localhost:4173
 
 # 数据完整性与 i18n 测试
-npm test
+bun test
 ```
 
 ---
@@ -219,8 +218,8 @@ uap-explorer/
 ### 本地构建
 
 ```bash
-npm ci
-npm run build
+bun install
+bun run build
 # dist/ 为纯静态文件，可部署到任意静态托管
 ```
 

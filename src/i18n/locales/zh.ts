@@ -75,7 +75,7 @@ export const zh: TranslationDictionary = {
   gallery: {
     eyebrow: 'FEATURED EVENTS / 重点事件',
     title: '高置信度案例',
-    description: '从 65 起全球事件中精选的标杆案例，每个均有多传感器验证、官方记录或大规模目击证据。',
+    description: '从 77 起全球事件中精选的标杆案例，每个均有多传感器验证、官方记录或大规模目击证据。',
     viewDetails: '查看详情',
     browseAll: '浏览全部 {count} 个事件',
   },
@@ -86,7 +86,7 @@ export const zh: TranslationDictionary = {
   timeline: {
     eyebrow: 'EVENT ARCHIVE / 事件档案',
     title: '全球UAP事件时间线',
-    description: '65 起高置信度事件与全球目击报告的科学编年。按置信度、地区与物理特征筛选。',
+    description: '77 起高置信度事件与全球目击报告的科学编年。按置信度、地区与物理特征筛选。',
     searchPlaceholder: '搜索事件、地点...',
     allConfidence: '全部置信度',
     allRegions: '全部地区',
@@ -260,7 +260,7 @@ export const zh: TranslationDictionary = {
   hotspots: {
     eyebrow: 'GLOBAL HOTSPOTS & TACTICAL INCIDENT MATRIX / 全球热点与事件矩阵',
     title: '全球热点态势图',
-    subtitle: '多维战术世界地图，汇聚全球 65 起解密与重要目击事件的地理空间分布、雷达追踪轨迹与聚集热力走廊。',
+    subtitle: '多维战术世界地图，汇聚全球 77 起解密与重要目击事件的地理空间分布、雷达追踪轨迹与聚集热力走廊。',
     statsIncidents: '个解密/目击点位',
     statsCorridors: '大战略聚集走廊',
     statsDeclassified: '高置信度多传感器验证',

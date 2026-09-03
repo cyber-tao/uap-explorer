@@ -53,8 +53,7 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 
 ### Prerequisites
 
-- Node.js ≥ 18
-- npm or bun
+- Bun ≥ 1.1
 
 ### Installation and Run
 
@@ -63,23 +62,23 @@ React 19 + TypeScript 5.9 + Vite 7 + Tailwind CSS 3
 git clone https://github.com/cyber-tao/uap-explorer.git
 cd uap-explorer
 
-# Install dependencies (recommended with lockfile)
-npm ci
+# Install dependencies
+bun install
 
 # Start development server
-npm run dev
+bun run dev
 # → http://localhost:5173
 
 # Production build
-npm run build
+bun run build
 # → dist/ directory ready for static hosting
 
 # Preview build artifact locally
-npm run preview
+bun run preview
 # → http://localhost:4173
 
 # Run data integrity and i18n test suites
-npm test
+bun test
 ```
 
 ---
@@ -219,8 +218,8 @@ To enable GitHub Pages in your fork: navigate to **Settings → Pages → Build 
 ### Local Build
 
 ```bash
-npm ci
-npm run build
+bun install
+bun run build
 # dist/ directory contains zero-backend static assets
 ```
 

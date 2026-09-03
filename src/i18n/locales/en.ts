@@ -75,7 +75,7 @@ export const en: TranslationDictionary = {
   gallery: {
     eyebrow: 'FEATURED EVENTS',
     title: 'High-Confidence Cases',
-    description: 'A curated selection of benchmark cases from 65 global incidents, each backed by multi-sensor telemetry, official records, or mass eyewitness documentation.',
+    description: 'A curated selection of benchmark cases from 77 global incidents, each backed by multi-sensor telemetry, official records, or mass eyewitness documentation.',
     viewDetails: 'View Details',
     browseAll: 'Browse All {count} Events',
   },
@@ -86,7 +86,7 @@ export const en: TranslationDictionary = {
   timeline: {
     eyebrow: 'EVENT ARCHIVE',
     title: 'Global UAP Chronological Timeline',
-    description: 'Scientific chronicle of 65 high-confidence incidents and worldwide reports. Filter by confidence level, geographic region, and physical observables.',
+    description: 'Scientific chronicle of 77 high-confidence incidents and worldwide reports. Filter by confidence level, geographic region, and physical observables.',
     searchPlaceholder: 'Search events, locations, keywords...',
     allConfidence: 'All Confidence',
     allRegions: 'All Regions',
@@ -260,7 +260,7 @@ export const en: TranslationDictionary = {
   hotspots: {
     eyebrow: 'GLOBAL HOTSPOTS & TACTICAL INCIDENT MATRIX',
     title: 'Global Hotspots Map',
-    subtitle: 'Interactive multi-dimensional tactical world map synthesizing geospatial distributions, radar tracking vectors, and strategic concentration corridors across 65 declassified UAP events.',
+    subtitle: 'Interactive multi-dimensional tactical world map synthesizing geospatial distributions, radar tracking vectors, and strategic concentration corridors across 77 declassified UAP events.',
     statsIncidents: 'Declassified / Verified Incidents',
     statsCorridors: 'Strategic Hotspot Corridors',
     statsDeclassified: 'Multi-Sensor Validated',
