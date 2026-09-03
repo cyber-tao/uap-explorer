@@ -324,6 +324,7 @@ export const en: TranslationDictionary = {
     title: 'Failed to load page',
     description: 'Resources may be temporarily unavailable. Please reload or return to home.',
     backHome: 'Return to Home',
+    reload: 'Reload Page',
   },
   regions: {
     'North America': 'North America',

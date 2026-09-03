@@ -324,6 +324,7 @@ export const zh: TranslationDictionary = {
     title: '页面加载失败',
     description: '资源可能暂时不可用。请刷新页面或返回首页重试。',
     backHome: '返回首页',
+    reload: '刷新页面',
   },
   regions: {
     'North America': '北美洲',

@@ -261,6 +261,7 @@ export interface TranslationDictionary {
     title: string
     description: string
     backHome: string
+    reload: string
   }
   regions: Record<string, string>
   characteristics: Record<string, string>

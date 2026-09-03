@@ -31,8 +31,8 @@ export default function EventDetailPage() {
   const displayCountry = language === 'en' && event.countryEn ? event.countryEn : event.country
   const displayLocation = language === 'en' && event.locationEn ? event.locationEn : event.location
   const displayDescription = language === 'en' && event.descriptionEn ? event.descriptionEn : event.description
-  const displayLimitations = language === 'en' && event.limitationsEn && event.limitationsEn.length > 0 ? event.limitationsEn : event.limitations
-  const displaySensors = language === 'en' && event.sensorsEn && event.sensorsEn.length > 0 ? event.sensorsEn : event.sensors
+  const displayLimitations = language === 'en' && event.limitationsEn && event.limitationsEn.length > 0 ? event.limitationsEn : (event.limitations || [])
+  const displaySensors = language === 'en' && event.sensorsEn && event.sensorsEn.length > 0 ? event.sensorsEn : (event.sensors || [])
   const related = (event.relatedEvents || []).map(getEventById).filter(Boolean)
   const videos = event.media?.filter((m) => m.type === 'video') || []
   const mapsQuery = event.mapsQuery || `${event.locationEn || event.location}, ${event.countryEn || event.country}`
@@ -99,7 +99,7 @@ export default function EventDetailPage() {
                 <h2 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.description')}</h2>
               </div>
               <div className="rounded-xl p-6" style={{ background: 'rgba(10, 17, 23, 0.6)', border: '1px solid rgba(138, 153, 168, 0.06)' }}>
-                <EventEditorialBody description={displayDescription} figures={event.figures} />
+                <EventEditorialBody description={displayDescription || ''} figures={event.figures || []} />
               </div>
             </div>
 
@@ -164,7 +164,7 @@ export default function EventDetailPage() {
                 <Link2 className="w-4 h-4" style={{ color: '#30B0D0' }} />
                 <h2 className="font-serif-display text-lg font-bold" style={{ color: '#EDE8E4' }}>{t('eventDetail.sources')}</h2>
               </div>
-              <SourceList sources={(language === 'en' && event.sourcesEn && event.sourcesEn.length > 0) ? event.sourcesEn : event.sources} />
+              <SourceList sources={(language === 'en' && event.sourcesEn && event.sourcesEn.length > 0) ? event.sourcesEn : (event.sources || [])} />
             </div>
 
             {related.length > 0 && (

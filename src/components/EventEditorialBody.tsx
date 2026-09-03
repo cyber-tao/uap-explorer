@@ -6,10 +6,13 @@ import ImageLightbox from './ImageLightbox'
 import { useI18n } from '../i18n'
 
 function splitParagraphs(text: string): string[] {
+  if (!text) return []
   const byBreak = text.split(/\n\n+/).map((p) => p.trim()).filter(Boolean)
   if (byBreak.length > 1) return byBreak
 
-  const sentences = text.split(/(?<=[。！？.!?])\s+/).filter(Boolean)
+  const sentenceRegex = /[^。！？.!?]+[。！？.!?]+(?:\s*|$)|[^。！？.!?]+$/g
+  const matched = text.match(sentenceRegex)
+  const sentences = (matched && matched.length > 0) ? matched.map((s) => s.trim()).filter(Boolean) : [text]
   const chunks: string[] = []
   let current: string[] = []
   sentences.forEach((s, i) => {
@@ -79,8 +82,8 @@ interface EventEditorialBodyProps {
 
 export default function EventEditorialBody({ description, figures }: EventEditorialBodyProps) {
   const { t } = useI18n()
-  const paragraphs = useMemo(() => splitParagraphs(description), [description])
-  const limited = useMemo(() => figures.slice(0, 6), [figures])
+  const paragraphs = useMemo(() => splitParagraphs(description || ''), [description])
+  const limited = useMemo(() => (figures || []).slice(0, 6), [figures])
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null)
 
   const openAt = (globalIndex: number) => setLightboxIndex(globalIndex)
